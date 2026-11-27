@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-SOURCE-RECONCILIATION
 title: "Matriz de reconciliação de fontes"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -31,14 +31,16 @@ references:
   - "sources/normative-integration-mandate-01.md"
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
   - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
+  - "reviews/cto-source-transfer-01.md"
+  - "../validation/evidence/ni-source-transfer-intake.json"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:governance/SOURCE-RECONCILIATION.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:governance/SOURCE-RECONCILIATION.md@0.3"
 ---
 
 # Reconciliação de fontes
 
-> As seções KF e CLOSURE abaixo preservam a história da recepção e das buscas. O estado corrente de NI está no [manifesto](SOURCE-MANIFEST.md) e no aditivo ao final: original localizado por relato, textos integrais pendentes de transferência; T01 com direção normativa aprovada.
+> As seções KF e CLOSURE abaixo preservam a história da recepção e das buscas. O estado corrente está no [manifesto](SOURCE-MANIFEST.md): pacote do Planner recebido/inspecionado; original, construção, instruções e parecer disponíveis; somente SOURCE-06/07/09 continuam pendentes do CTO. SOURCE_MISSING/SOURCE_TRANSFER_PENDING nas seções históricas não são o estado das fontes já recebidas.
 
 Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de proveniência, não caminho pessoal. SHA-256 identifica os bytes do snapshot original, mantido intacto fora do repositório. As cópias Markdown receberam metadados e aviso de fonte; resíduos de CSS e texto de diagrama achatado na mesma linha foram removidos quando presentes, sem reconstruir diagrama. Datas e estados internos pertencem à época da fonte.
 
@@ -87,8 +89,17 @@ Reconciliação possível: preservadas as fontes e classificações de DEC-01–
 O [VAL original](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md) e JSONs da execução inicial permanecem inalterados. A [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) registra 12 PASS, 0 FAIL, 1 BLOCKED e 2 NOT_EXECUTED; os novos PASS de AC-KF-11/13 são evidências CTO, não novos testes do agente. A confirmação local do HEAD e a leitura remota do README são evidências distintas, limitadas à verificação do checkpoint.
 
 
-## Intake corrente — NI-01
+## Histórico — intake NI-01 anterior ao ZIP
 
 O [mandato NI 1.0](sources/normative-integration-mandate-01.md) foi recebido integralmente com hash de anexo e cópia no [manifesto](SOURCE-MANIFEST.md). Ele informa a localização do original (Texto colado(1).txt, 1.328 linhas na biblioteca do CTO) e a existência do instrumento distinto ANCESTRALIDADE-M01-MANDATE-DIRECTORY-CONSTRUCTION-01 no estado PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, conforme Planner. Esses textos não foram transferidos ao agente. As instruções globais, mandato do Planner, consolidado 1.0, deliberação A–G e pareceres também não chegaram integralmente. SOURCE-05 KF é fonte existente reutilizada, sem duplicação. Não repetir buscas extensivas; transferência direta solicitada nesta tarefa.
 
 NI-G01 BLOCKED. Não foi feita comparação definitiva original↔consolidado nem criada Rev. 1.1/redline. A ratificação de DEC-01–09, preservação de DEC-10–16, T01 e AC-KF-03-R1 são direções expressas reportadas no mandato NI; não equivalem ao texto integral da deliberação ou a comprovação de sua execução. T01 passa a NORMATIVE_DIRECTION_APPROVED e mantém contrato NOT_FROZEN. C10 permanece OPEN_SOURCE_RECONCILIATION_PENDING, sem classificação antecipada de resolução. AC-KF-03-R1 BLOCKED até todos os gates; o AC-KF-03 BLOCKED anterior e SOURCE_MISSING permanecem históricos. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md) e [VAL-NI](../validation/VAL-NORMATIVE-INTEGRATION-01.md).
+
+
+## Intake corrente — pacote do Planner recebido
+
+Na [disposição ANCESTRALIDADE-CTO-SOURCE-TRANSFER-01](reviews/cto-source-transfer-01.md), o CTO encerra a solicitação ao Planner. O agente recebeu o ZIP e conferiu CRC, UTF-8, hashes e texto integral de SOURCE-01/02/03/03A/04/08. SOURCE-05 já existente foi reutilizada. [Intake verificável](../validation/evidence/ni-source-transfer-intake.json), [manifesto](SOURCE-MANIFEST.md). Não se repetiram buscas extensivas ou fontes equivalentes.
+
+O mandato original tem 32 seções e 18 critérios; construção distinta tem 28 seções e 26 critérios, em estado PROPOSED_FOR_EXECUTIVE_AUTHORIZATION. Instruções correntes SOURCE-03 e mandato operacional Planner são efetivamente recebidos; SOURCE-03A extensa é histórica. Parecer Planner SOURCE-08 favorável não equivale a deliberação presidencial. Nenhuma identidade/hash/versão/data ausente foi inventada. Cópias com metadados preservam texto integral e têm hashes diferentes dos bytes das entradas ZIP, explicitados no manifesto.
+
+Apenas SOURCE-06/07/09, responsabilidade do CTO, permanecem SOURCE_TRANSFER_PENDING. NI-G01 PARTIALLY_SATISFIED (4/7 essenciais; 6/9 requeridas disponíveis), sem concluir comparação ou 1.1. Preparação da matriz usa MVP:AC-*, CONSTRUCTION:AC-* e destino CONSOLIDATED não inferido; o mesmo número não implica o mesmo conteúdo. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md). As constatações preliminares do CTO sobre fluxos positivos são registradas como relato, não como comparação pelo agente com texto consolidado ainda ausente. C10 OPEN e AC-KF-03-R1 BLOCKED. Fonte original recebida não substitui os gates de rebaseline prospectiva, ratificação e aceite.

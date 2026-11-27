@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-PROJECT-CONTEXT
 title: "Contexto do projeto"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -11,11 +11,14 @@ references:
   - "../governance/sources/technical-planning-mandate-01.md"
   - "../governance/sources/wp01-product-decision-record-1.1.md"
   - "../governance/sources/knowledge-foundation-mandate-01.md"
+  - "../governance/sources/m01-mvp-original-mandate-01.md"
   - "../status/CURRENT-STATUS.md"
   - "../governance/sources/normative-integration-mandate-01.md"
+  - "../governance/sources/project-instructions-authoritative.md"
+  - "../governance/SOURCE-MANIFEST.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:context/PROJECT-CONTEXT.md@0.1"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:context/PROJECT-CONTEXT.md@0.2"
 ---
 
 # Contexto do Ancestralidade.org
@@ -26,7 +29,10 @@ O M01 permite localizar e conhecer instituições religiosas e espirituais ligad
 
 A instituição mantém identidade independente da conta que a cadastrou. Pesquisa pública não exige conta nem declaração religiosa do visitante. Representação e consentimento são condições de publicação; selo de autenticidade é complementar e opcional.
 
-Fontes: [mandato técnico](../governance/sources/technical-planning-mandate-01.md), [registro de produto 1.1](../governance/sources/wp01-product-decision-record-1.1.md) e [mandato KF](../governance/sources/knowledge-foundation-mandate-01.md). O mandato superior original do MVP continua ausente; este documento é derivado, não sua reconstrução. Veja [estado corrente](../status/CURRENT-STATUS.md).
+Fontes: [mandato técnico](../governance/sources/technical-planning-mandate-01.md), [registro de produto 1.1](../governance/sources/wp01-product-decision-record-1.1.md) e [mandato KF](../governance/sources/knowledge-foundation-mandate-01.md). O [mandato superior original MVP](../governance/sources/m01-mvp-original-mandate-01.md) foi recebido integralmente e este documento continua uma consolidação, não substituto da fonte. Veja [estado corrente](../status/CURRENT-STATUS.md).
 
 
-Qualificação COR-06 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md): CLIENT_PROJECT não determina titularidade jurídica, modelo econômico ou responsabilidade contratual. A independência arquitetural do Axodus Core permanece. O original MVP foi localizado por relato do CTO, mas seu texto integral e as demais fontes essenciais ainda aguardam transferência; não se afirma inexistência ou reconciliação já concluída.
+Qualificação COR-06 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md): CLIENT_PROJECT não determina titularidade jurídica, modelo econômico ou responsabilidade contratual. A independência arquitetural do Axodus Core permanece. O original MVP, a construção proposta, instruções correntes e parecer Planner foram recebidos; somente o complemento 06/07/09 depende do CTO. Não se declara reconciliação com o consolidado ainda não recebido.
+
+
+Instruções globais vigentes: [SOURCE-03](../governance/sources/project-instructions-authoritative.md), distinta da extensa histórica. [Manifesto de recebimento](../governance/SOURCE-MANIFEST.md).

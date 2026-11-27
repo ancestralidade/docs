@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-REQUIREMENT-REGISTER
 title: "Rastreabilidade REQ, IMP e VAL"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -22,9 +22,13 @@ references:
   - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
   - "../governance/SOURCE-MANIFEST.md"
   - "../status/NI-DELIVERY-HANDOFF.md"
+  - "../governance/reviews/cto-source-transfer-01.md"
+  - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../status/NI-SOURCE-TRANSFER-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:engineering/REQUIREMENT-REGISTER.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:engineering/REQUIREMENT-REGISTER.md@0.3"
 ---
 
 # Registro de engenharia
@@ -58,6 +62,11 @@ Cada IMP futuro: NOT_AUTHORIZED. Gate de requisitos/contratos deve preceder libe
 ANCESTRALIDADE-IMP-KF-CLOSURE-01 executa o [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md), sem nova rodada integral de KF-01–05. [Revisão CTO](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md): checkpoint aaa4d4b aceito, recuperação remota RAG-T01–06 pelo CTO, matriz atual 12 PASS/0 FAIL/1 BLOCKED/2 NOT_EXECUTED no [aditivo VAL](../validation/VAL-KF-CLOSURE-01.md). AC-KF-03/C10 e reconciliação T01 continuam bloqueados por fonte; KF-06 e qualquer IMP de aplicativo permanecem NOT_AUTHORIZED. Parar em CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW.
 
 
-## Execução corrente — integração normativa
+## Histórico — preparação NI anterior ao pacote
 
 [REQ-NI](REQ-NORMATIVE-INTEGRATION-01.md) → [IMP-NI](IMP-NORMATIVE-INTEGRATION-01.md) → [VAL-NI](../validation/VAL-NORMATIVE-INTEGRATION-01.md). A autorização é documental restrita; NI-G01 BLOCKED por transferência de fontes essenciais, NI-02/03 não concluídos e revisão 1.1 NOT_PREPARED. T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; AC-KF-03-R1 BLOCKED e C10 aberta. [Manifesto](../governance/SOURCE-MANIFEST.md) e [handoff](../status/NI-DELIVERY-HANDOFF.md). Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Nenhum IMP de aplicativo ou KF-06 autorizado.
+
+
+## Continuidade corrente da mesma REQ
+
+Não foi emitida nova REQ: o [aceite de transferência CTO](../governance/reviews/cto-source-transfer-01.md) prossegue REQ-NORMATIVE-INTEGRATION-01. Seis arquivos do Planner recebidos e íntegros; SOURCE-05 reutilizada; 6/9 requeridas e 4/7 essenciais disponíveis. O [aditivo VAL corrente](../validation/VAL-NI-SOURCE-TRANSFER-01.md) distingue recebimento/inspeção da comparação integral e preserva o VAL-NI inicial. [Critérios qualificados](../validation/M01-NORMATIVE-TRACEABILITY.md) e [handoff](../status/NI-SOURCE-TRANSFER-HANDOFF.md). Faltam apenas 06/07/09 pelo CTO; Planner encerrado; NI-G01 PARTIALLY_SATISFIED, 1.1 NOT_PREPARED, R1 BLOCKED e C10 OPEN. Gate CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum IMP de aplicativo autorizado.

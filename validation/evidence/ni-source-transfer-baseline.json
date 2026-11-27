@@ -1,0 +1,279 @@
+{
+    "id":  "ANCESTRALIDADE-NI-SOURCE-TRANSFER-BASELINE",
+    "date":  "2026-11-27",
+    "repository":  "ancestralidade/docs",
+    "branch":  "dev",
+    "initial_head":  "dc51d86a6b3968f7c4d5489b44fcf73f34428a01",
+    "accepted_checkpoint":  "dc51d86a6b3968f7c4d5489b44fcf73f34428a01",
+    "initial_working_tree":  "CLEAN",
+    "preexisting_changes":  [
+
+                            ],
+    "remote_readme_blob":  "fbc1bd301bb9e4f397c292f466e4cd95572d3d5b",
+    "files":  [
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "b75071b89bfc66deafb8bd5f5ce4196f869c3bf314b7df2e4a2b0c8e34c6b621"
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "0c203918f7db92355913f84e10e71259c9a4de213c755d7855071f173d0ba1e3"
+                  },
+                  {
+                      "path":  "architecture/ADR-REGISTER.md",
+                      "sha256":  "403526629dcb04becc5d2d93eff042c113b67774b42e8ce31ac8474aa206167a"
+                  },
+                  {
+                      "path":  "architecture/ARCHITECTURE-BASELINE.md",
+                      "sha256":  "c1333b1e9562481114a5e48e6ccf013e9957306cbfba7319f0f8d5ba4b08027b"
+                  },
+                  {
+                      "path":  "context/PROJECT-CONTEXT.md",
+                      "sha256":  "4c798222458824ea328f9e074faf3ee1b674986c144079682d1b71c33e6da77f"
+                  },
+                  {
+                      "path":  "decisions/DECISION-REGISTER.md",
+                      "sha256":  "d36f901bc126de2f19f965f689d04644e2a253de49dddf55392d5c19fa57cf80"
+                  },
+                  {
+                      "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                      "sha256":  "6480a501494f140bdf6274ad527d53d2a3853e0d9324b1c741be1487e00f9d67"
+                  },
+                  {
+                      "path":  "engineering/IMP-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "ffa753cb43d9a7da1ce5c2f049be03f56fa6cbfd146a60a41395151970e79c5c"
+                  },
+                  {
+                      "path":  "engineering/IMP-NORMATIVE-INTEGRATION-01.md",
+                      "sha256":  "3d49170cfa288214be47d9e8cab36e2f1c057a6b712cbee3ad57cfb327c12cd2"
+                  },
+                  {
+                      "path":  "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "e8d7198a342a71610071ebb7b8ca862b06ab4c480a52771196886bbeb065b6e7"
+                  },
+                  {
+                      "path":  "engineering/REQ-NORMATIVE-INTEGRATION-01.md",
+                      "sha256":  "b9c73c1a48c934eb2e821925ee3a2f13058213485f8e56cf2c63141bf88bf4b5"
+                  },
+                  {
+                      "path":  "engineering/REQUIREMENT-REGISTER.md",
+                      "sha256":  "df542a410c82239e1c04ad3a6b080a3bc33d8a509b6e46c8ed2f97ff73dcc9e3"
+                  },
+                  {
+                      "path":  "governance/AUTHORITY-MODEL.md",
+                      "sha256":  "f951ab3fe106df6acf435ee63b54485d3a7cd0cb4c595b09fd657588f4f0aebd"
+                  },
+                  {
+                      "path":  "governance/DOCUMENTATION-PROTOCOL.md",
+                      "sha256":  "13d59794b020d464ccb9c4aed2409b4e6d51936c355d110ccf569c7041beba98"
+                  },
+                  {
+                      "path":  "governance/PROJECT-INSTRUCTIONS.md",
+                      "sha256":  "055980c0562e29ea52cbcf29ba8aa7bab7b1dc719781009df20928e784acdc08"
+                  },
+                  {
+                      "path":  "governance/RAG-PROTOCOL.md",
+                      "sha256":  "3db3f731a8b4168b2d2e38c3552176725422bc17cf4d9bfa0aab0ce4b5885867"
+                  },
+                  {
+                      "path":  "governance/REPOSITORY-INVENTORY.md",
+                      "sha256":  "dbd031395685126716f5b0ea9d063107373804e8b2a7f4db58f739ebe7e4584c"
+                  },
+                  {
+                      "path":  "governance/SOURCE-MANIFEST.md",
+                      "sha256":  "b33022da82eb3f0d50f931c64e5d26337ac05f11fe4f02152e5c264708105f33"
+                  },
+                  {
+                      "path":  "governance/SOURCE-RECONCILIATION.md",
+                      "sha256":  "a1a570b08d70e8acf2667dcddc75ce1a504e7edafaa7bbf39397fa152536a485"
+                  },
+                  {
+                      "path":  "governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md",
+                      "sha256":  "59be535e83f0854f7e83c17c38b458d00e04397211a92bc805066b098169f9f5"
+                  },
+                  {
+                      "path":  "governance/sources/cto-planning-review.md",
+                      "sha256":  "5650fc07e3241640df4b967cc8b58630e848c1590cc879d894544e86396d0fc5"
+                  },
+                  {
+                      "path":  "governance/sources/cto-product-alignment-review.md",
+                      "sha256":  "c634015cff9bd7be0d8dc5414e19764cce3932f852b1430818d01ab2864d5914"
+                  },
+                  {
+                      "path":  "governance/sources/cto-technical-review-01.md",
+                      "sha256":  "31f599fa582516666f1d35b85657b6a142b50f1b879c5b258c67b6ad7b148085"
+                  },
+                  {
+                      "path":  "governance/sources/cto-technical-review-02.md",
+                      "sha256":  "7390b776840e1e082416d669356accba61656a6ec51863c9084bc5ff20f74ee3"
+                  },
+                  {
+                      "path":  "governance/sources/knowledge-foundation-closure-mandate-01.md",
+                      "sha256":  "aa1571bb68fa16226623299aaa8ddd13e90d4d1fed2315757b5ccdf038c84d8c"
+                  },
+                  {
+                      "path":  "governance/sources/knowledge-foundation-mandate-01.md",
+                      "sha256":  "b7a9bcad8ed1ac5a9747bcccb354394379e59718cb79f69678a4f27fde02f3f9"
+                  },
+                  {
+                      "path":  "governance/sources/normative-integration-mandate-01.md",
+                      "sha256":  "c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7"
+                  },
+                  {
+                      "path":  "governance/sources/product-planning-review.md",
+                      "sha256":  "8fc40f6c2f3a711068d33d8aa4059cef95f83d38477730fadaa5082f947d78db"
+                  },
+                  {
+                      "path":  "governance/sources/technical-planning-mandate-01.md",
+                      "sha256":  "0dac508167ec1750436fa43b4782fc07399264c184ae8e94bbe5fdb13a5da06e"
+                  },
+                  {
+                      "path":  "governance/sources/wp01-product-decision-record-1.1.md",
+                      "sha256":  "971f83d3664708dd55b80c662048bff4e76b9cc25b94f0757d67b742d26eb939"
+                  },
+                  {
+                      "path":  "operations/INFORMATION-CLASSIFICATION.md",
+                      "sha256":  "4841fb98d4a5e3038f8f62cc7753e174e645c7bd23b0eaf38e45fec2b260fc87"
+                  },
+                  {
+                      "path":  "operations/INSTITUTIONAL-OPERATIONS.md",
+                      "sha256":  "58f2f2a50851086ecc0700a2c1cad8e539dfba37bc51230aa2bd8e030b6779f8"
+                  },
+                  {
+                      "path":  "planejamento/m01/README.md",
+                      "sha256":  "1f600017456fb3b6bca584453e15a9628ab9355338b63b7b0c4c271a0d9b9920"
+                  },
+                  {
+                      "path":  "planejamento/m01/disposicao-e-proximos-passos.md",
+                      "sha256":  "e86f6c19b027e2778d4c210541022a272baa05d8249bbc00a25ed92bf90ce920"
+                  },
+                  {
+                      "path":  "planejamento/m01/planejamento-tecnico-rev-0.2.md",
+                      "sha256":  "9a777421af6df7928e99c72bb5a2510ac3ef072988ed4aeff1097c783c95d84e"
+                  },
+                  {
+                      "path":  "planning/ECONOMIC-ASSUMPTIONS.md",
+                      "sha256":  "0b6c965ba10cd2998f088d46b3bb10909b51ee0dbcea34cc5336e714414fb622"
+                  },
+                  {
+                      "path":  "planning/M01-ROADMAP.md",
+                      "sha256":  "18e8d522d48c821d53324d57d183746702ce0addffe46149387f32bec08447ba"
+                  },
+                  {
+                      "path":  "planning/WORK-PACKAGE-REGISTER.md",
+                      "sha256":  "97395a6142cbad987aa2fd443edbd0a821d7d9f842739fd99151048f049107e2"
+                  },
+                  {
+                      "path":  "product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                      "sha256":  "4baf5f72085c88223df91fb4a9f763ab57e355d16f48e45fced0393d468a7f15"
+                  },
+                  {
+                      "path":  "product/M01-PRODUCT-BASELINE.md",
+                      "sha256":  "e62885d8dd0ee947cf82b349bc7354b9055a1ad24b066eec144cbc87e5a65c9a"
+                  },
+                  {
+                      "path":  "product/PRODUCT-VISION.md",
+                      "sha256":  "a488a187761320f958b3324ffc6557ab718bb0d493b69eea2f70cc7b1233e0f9"
+                  },
+                  {
+                      "path":  "research/RESEARCH-REGISTER.md",
+                      "sha256":  "c44c5f8d7315262e449a371d7e80100e612e8b5c92b2b67edd315995b3da7748"
+                  },
+                  {
+                      "path":  "research/WP02-DOCUMENTARY-QUALIFICATION.md",
+                      "sha256":  "907311aaab2172c2d9eeaf36e9f474062fef0db9c9d33fa77a6b425806486e08"
+                  },
+                  {
+                      "path":  "status/CTO-DELIVERY-HANDOFF.md",
+                      "sha256":  "5fb5e7ca58147da02755fe767a4463e2ec03eda0deecd682de7f507bf4ad577e"
+                  },
+                  {
+                      "path":  "status/CURRENT-STATUS.md",
+                      "sha256":  "5a4c7fde83d6b1c08bce702278fba4bcfe7aceb8653d6c4737fdfcf524f9cfe0"
+                  },
+                  {
+                      "path":  "status/KF-CLOSURE-HANDOFF.md",
+                      "sha256":  "d6f9adac3c54aec7baea821b58a63b5cce8c72ba5833ceb4edb555d28a7bf831"
+                  },
+                  {
+                      "path":  "status/NI-DELIVERY-HANDOFF.md",
+                      "sha256":  "ae3756fc13cfa928984a1898d89b8e645f5f4a1dcfdfe4c12fb27bba1cb89f87"
+                  },
+                  {
+                      "path":  "status/NORMATIVE-CONFLICT-REGISTER.md",
+                      "sha256":  "e8b90c9d55b834ff2013fc0dc4d490e9cd78afe965fd8d16c419195bccbfe5df"
+                  },
+                  {
+                      "path":  "status/RISK-REGISTER.md",
+                      "sha256":  "2a886f6739181df20575d8bf88abeb0344df80a7ddd4652639deb9f67e370c06"
+                  },
+                  {
+                      "path":  "validation/KNOWLEDGE-READINESS.md",
+                      "sha256":  "631e736f56f7f0c76c7af811de048f51abf0fb78c99f8409d3afa7ffaaf0b959"
+                  },
+                  {
+                      "path":  "validation/M01-ACCEPTANCE-CRITERIA.md",
+                      "sha256":  "02a0da4774703e2edf3efde79e267e7b3b5f0febf9a699164de5cd36408b23ce"
+                  },
+                  {
+                      "path":  "validation/M01-NORMATIVE-TRACEABILITY.md",
+                      "sha256":  "01ecde247b7f587b229fea33d16c25354d921dec7d25c939a6a3f676c5398bb7"
+                  },
+                  {
+                      "path":  "validation/RAG-SCENARIOS.md",
+                      "sha256":  "d1074c73d5ede2afd6ab246424affdd43b789d411032293d0b82c91d592a495a"
+                  },
+                  {
+                      "path":  "validation/VAL-KF-CLOSURE-01.md",
+                      "sha256":  "ea1a81307b84f8822243d49f97ca7598163f260fbc6273659e02163abadb3b38"
+                  },
+                  {
+                      "path":  "validation/VAL-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "8f5c9fc599986857712e0b1f0aa43bd4877907902bb2f37dcc92d5ee780e89d2"
+                  },
+                  {
+                      "path":  "validation/VAL-NORMATIVE-INTEGRATION-01.md",
+                      "sha256":  "1ed6196b94ba6337ade7aabdc90625cff3d34db3f7269b5569d428f55b0d7d3d"
+                  },
+                  {
+                      "path":  "validation/evidence/document-validation.json",
+                      "sha256":  "7ef70cf6250395e980a86ba34b7e2b86e73408a13c817c76e651628af7649609"
+                  },
+                  {
+                      "path":  "validation/evidence/kf-closure-baseline.json",
+                      "sha256":  "5a87ea43e1beef68ccd0b79669f3f2b8c516a5080ad1331ef71c704384d64218"
+                  },
+                  {
+                      "path":  "validation/evidence/kf-closure-source-recovery.json",
+                      "sha256":  "6a013441cd0debc5eb715a2aef0936af8aee0d1e3d0e6663e4c82a243cc5424a"
+                  },
+                  {
+                      "path":  "validation/evidence/kf-closure-validation.json",
+                      "sha256":  "d67915eb4d89558dca91967af31c82ce3171fdb340fbf8ac6120f0a78842d023"
+                  },
+                  {
+                      "path":  "validation/evidence/ni-baseline.json",
+                      "sha256":  "cb67973eeea52c1b8920dd173835ff7802b4ad08dea79b0a4ba05323b1e31c41"
+                  },
+                  {
+                      "path":  "validation/evidence/ni-validation.json",
+                      "sha256":  "264a0c97b75cec8953c5d51fa388978c7b4bce1df0e37937cd0267970d46a495"
+                  },
+                  {
+                      "path":  "validation/evidence/rag-local-results.json",
+                      "sha256":  "7f9aae1b83bf5fccc53f0d6a0cb4272543081b3286d3987abc6d8db7f4366177"
+                  },
+                  {
+                      "path":  "validation/validate-documentation.ps1",
+                      "sha256":  "21c1b5b23636fe51cf4bf7f59a954d68b39bf6f40583c45d5162791d42763005"
+                  },
+                  {
+                      "path":  "validation/validate-kf-closure.ps1",
+                      "sha256":  "a3ac27bcd08ce9982ad94650f2c4da19170d96b30095ae02a36c6bcb7fedccf1"
+                  },
+                  {
+                      "path":  "validation/validate-normative-integration.ps1",
+                      "sha256":  "86e0d0c98be337313ee594d57e49d57c41729ccb58e7b74c0f86acc502e14205"
+                  }
+              ]
+}

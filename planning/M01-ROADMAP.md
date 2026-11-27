@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-M01-ROADMAP
 title: "Roadmap do M01 e gates"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -15,9 +15,11 @@ references:
   - "WORK-PACKAGE-REGISTER.md"
   - "../governance/sources/normative-integration-mandate-01.md"
   - "../governance/SOURCE-MANIFEST.md"
+  - "../governance/reviews/cto-source-transfer-01.md"
+  - "../status/CURRENT-STATUS.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:planning/M01-ROADMAP.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:planning/M01-ROADMAP.md@0.3"
 ---
 
 # Roadmap vigente de planejamento
@@ -40,3 +42,6 @@ O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-m
 
 
 O [mandato NI](../governance/sources/normative-integration-mandate-01.md) é o pacote corrente de preparação documental: receber fontes, reconciliar e preparar revisão 1.1 para ratificação presidencial, condicionado a NI-G01. A transferência continua pendente; não houve revisão integral 1.1 ou cronograma novo. Gate imediato: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Commit/publicação/aceite e qualquer construção permanecem gates separados. [Intake](../governance/SOURCE-MANIFEST.md).
+
+
+Na [retomada por transferência](../governance/reviews/cto-source-transfer-01.md), a mesma REQ NI recebe o pacote do Planner, sem nova fase ou revisão conceitual. NI-G01 parcialmente satisfeito; falta complemento 06/07/09 pelo CTO. Preparar matriz com critérios por origem e positivos funcionais, sem concluir comparação integral ou preparar 1.1 sem a base. O sequenciamento de implementação e suas estimativas permanecem inalterados e não autorizados. [Estado corrente](../status/CURRENT-STATUS.md).

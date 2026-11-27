@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -18,9 +18,14 @@ references:
   - "sources/knowledge-foundation-closure-mandate-01.md"
   - "../validation/VAL-KF-CLOSURE-01.md"
   - "SOURCE-MANIFEST.md"
+  - "sources/project-instructions-authoritative.md"
+  - "sources/product-planner-mandate.md"
+  - "sources/m01-mvp-original-mandate-01.md"
+  - "sources/m01-directory-construction-mandate-01.md"
+  - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:governance/RAG-PROTOCOL.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:governance/RAG-PROTOCOL.md@0.3"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -49,3 +54,10 @@ Gate anterior: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Gate de parada 
 
 
 No intake NI, recuperar apenas fontes efetivamente transferidas e identificar o [manifesto](SOURCE-MANIFEST.md). O relato de localização de um arquivo na biblioteca ou em outra sessão não significa que seu texto esteja acessível ao agente. Não substituir a fonte por resumo, inferir 1.1 ou atribuir ao agente testes do CTO/Planner. A aprovação de direções A–G reportada no mandato NI e T01 NORMATIVE_DIRECTION_APPROVED não demonstra completude de fonte ou cumprimento de AC-KF-03-R1. As novas alterações NI ainda são locais, sem commit ou validação remota própria.
+
+
+## Rotas após recebimento do pacote
+
+[Manifesto](SOURCE-MANIFEST.md) → [SOURCE-03 vigente](sources/project-instructions-authoritative.md) e [mandato do Planner](sources/product-planner-mandate.md) para autoridade; [MVP original](sources/m01-mvp-original-mandate-01.md) e [construção proposta](sources/m01-directory-construction-mandate-01.md) para critérios qualificados. SOURCE-03A extensa é histórica, não preferência sobre a vigente. As cópias foram inspecionadas localmente; ainda não se atribui recuperação remota dessas novas cópias ao agente ou ao CTO.
+
+Planner concluiu sua transferência; não lhe solicitar novamente os textos. Somente SOURCE-06/07/09 dependem do CTO. Ler namespace e estado da fonte antes de tratar um AC como aprovado ou equivalente; CONSOLIDATED só recebe conteúdo após transferência efetiva. Preservar autoria dos testes anteriores e evidências antigas. [VAL corrente](../validation/VAL-NI-SOURCE-TRANSFER-01.md); gate CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW, sem commit/publicação autorizados.

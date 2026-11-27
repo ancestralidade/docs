@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-DECISION-REGISTER
 title: "Registro consolidado de decisões"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -9,20 +9,24 @@ module: M01
 classification: PUBLIC
 references:
   - "../governance/sources/technical-planning-mandate-01.md"
+  - "../governance/sources/m01-mvp-original-mandate-01.md"
   - "../governance/sources/wp01-product-decision-record-1.1.md"
   - "../governance/sources/knowledge-foundation-mandate-01.md"
   - "../architecture/ADR-REGISTER.md"
   - "../status/CURRENT-STATUS.md"
   - "../governance/sources/normative-integration-mandate-01.md"
   - "../governance/SOURCE-MANIFEST.md"
+  - "../governance/reviews/cto-source-transfer-01.md"
+  - "../governance/reviews/planner-m01-normative-review-01.md"
+  - "../governance/sources/product-planner-mandate.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:decisions/DECISION-REGISTER.md@0.1"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:decisions/DECISION-REGISTER.md@0.2"
 ---
 
 # Registro de decisões
 
-Este registro é derivado de fontes; não concede aprovações. DEC-01–09 são identificadas como aprovadas pelo [mandato técnico](../governance/sources/technical-planning-mandate-01.md), mas o mandato superior integral não está disponível para reconciliação. DEC-10–16 são deliberações expressas registradas no [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md), que substitui a revisão 1.0 não disponibilizada. Não reconstruir a versão ausente.
+Este registro é derivado de fontes; não concede aprovações. DEC-01–09 são identificadas como aprovadas pelo [mandato técnico](../governance/sources/technical-planning-mandate-01.md), e o [mandato superior integral](../governance/sources/m01-mvp-original-mandate-01.md) agora está recebido para reconciliação; o consolidado 1.0 ainda falta. DEC-10–16 são deliberações expressas registradas no [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md), que substitui a revisão 1.0 não disponibilizada. Não reconstruir a versão ausente.
 
 | ID | Decisão | Estado e limites |
 |---|---|---|
@@ -69,3 +73,8 @@ O [mandato NI 1.0](../governance/sources/normative-integration-mandate-01.md) in
 T01: NORMATIVE_DIRECTION_APPROVED. PUBLICATION_ELIGIBLE e PUBLIC_EXPOSURE_ALLOWED distintos; disputa admitida bloqueia publicação inicial/republicação; denúncia ou admissão não suspende automaticamente perfil existente; restrição exige autoridade humana e fundamento aplicável; retirada de consentimento interrompe exposição controlada. Contrato NOT_FROZEN; T02–T04 continuam abertos.
 
 AC-KF-03-R1 é critério prospectivo aprovado conforme a fonte NI; não possui PASS enquanto faltarem fontes, reconciliação, aprovação final 1.1, integração, validação, recuperação independente e aceite CTO. Os estados históricos e respectivas fontes permanecem preservados.
+
+
+## Recebimento comprovado — sem nova deliberação de produto
+
+O [pacote aceito pelo CTO](../governance/reviews/cto-source-transfer-01.md) entrega o original MVP, instruções e [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md). O parecer é FAVORABLE_WITH_SOURCE_RECONCILIATION e não substitui deliberação da liderança; o [mandato do Planner](../governance/sources/product-planner-mandate.md) veda autoaprovação de produto/técnica. Os 26 critérios de CONSTRUCTION:AC-* da proposta de construção não são decisões aprovadas por simples recuperação. DEC-01–16 permanecem preservadas e DEC-16 APPROVED_FRAMEWORK. T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN. Falta SOURCE-06/07/09 do CTO para comparação integral; não houve reabertura das decisões ou aceite 1.1.

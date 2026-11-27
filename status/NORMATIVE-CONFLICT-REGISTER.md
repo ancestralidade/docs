@@ -1,34 +1,37 @@
 ---
 id: ANCESTRALIDADE-NI-MATERIAL-CONFLICT-REGISTER
 title: "Lacunas e conflitos materiais — integração normativa"
-version: "1.0"
+version: "1.1"
 status: SOURCE_TRANSFER_PENDING
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "../governance/reviews/cto-source-transfer-01.md"
   - "../governance/sources/normative-integration-mandate-01.md"
   - "../governance/SOURCE-MANIFEST.md"
-  - "RISK-REGISTER.md"
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../validation/M01-ACCEPTANCE-CRITERIA.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:status/NORMATIVE-CONFLICT-REGISTER.md@1.0"
 ---
 
-# Registro de lacunas e conflitos — NI
+# Pendências e comparação preliminar após transferência
 
-Origem: [mandato NI](../governance/sources/normative-integration-mandate-01.md) e [intake](../governance/SOURCE-MANIFEST.md). **Conflitos materiais demonstrados por comparação original/consolidado: nenhum avaliado**; não equivale a ausência comprovada de conflito. Não há base para declarar EXECUTIVE_DECISION_REQUIRED por uma divergência material específica ainda não inspecionada.
+Fontes: [aceitação CTO](../governance/reviews/cto-source-transfer-01.md), [mandato NI](../governance/sources/normative-integration-mandate-01.md), originais e [manifesto](../governance/SOURCE-MANIFEST.md). Integridade dos seis arquivos foi conferida pelo agente; equivalência com registros históricos inacessíveis não foi demonstrada.
 
-| Item | Estado da evidência | Impacto e ação |
+| Item | Evidência e estado | Tratamento |
 |---|---|---|
-| NI-G01 / fontes essenciais | SOURCE_TRANSFER_PENDING | obter original, construção, instruções, consolidado 1.0, deliberação A–G e pareceres integrais; bloqueia NI-02/03 |
-| ACs originais versus reemitidos | UNRESOLVED — conteúdo não recebido | não assumir equivalência pela numeração; manter esquemas e histórico, não declarar conformidade |
-| aprovação A–G e condições | direção reportada no mandato NI; texto integral da deliberação pendente | aprovação não pode ser separada das condições; não aprovar 1.1 por inferência |
-| COR-01–06 na 1.1 | incorporação BLOCKED | dependências preparadas parcialmente, sem criar versão conceitual substituta |
-| C10 | OPEN_SOURCE_RECONCILIATION_PENDING | não declarar RESOLVED_BY_SOURCE_RECONCILIATION_AND_AUTHORIZED_NORMATIVE_REBASELINE antes de evidências e aceite |
-| T01 | NORMATIVE_DIRECTION_APPROVED | manter distinção de predicados e ausência de suspensão automática; contrato técnico NOT_FROZEN |
-| T02–T04 | abertos | não inferir recuperação de representação nem validação técnica de restore/mídia |
-| CLIENT_PROJECT / DEC-16 | classificação administrativa preliminar e framework aprovado | sem titularidade, modelo comercial ou responsabilidade contratual determinados |
+| NI-G01 | 6/9 requeridas, 4/7 essenciais recebidas | PARTIALLY_SATISFIED; complemento 06/07/09 pelo CTO, Planner encerrado |
+| 18 critérios MVP versus consolidado | origem integral recebida; destino não recebido | comparação integral pendente; não classificar equivalência por número |
+| 26 critérios de construção | fonte íntegra no estado PROPOSED_FOR_EXECUTIVE_AUTHORIZATION | manter CONSTRUCTION:AC-* separado; recebimento não aprova critérios |
+| fluxos positivos | CTO relata redução de explicitação em critérios consolidados; o agente confirmou o conteúdo dos originais | preservar testes de pesquisa/rota/cadastro/email/indicação/visitação/desafio/retirada; comparação com consolidado é PENDING |
+| instruções e hierarquia | SOURCE-03 recebida e corrente, SOURCE-03A histórica | não usar a versão extensa para sobrepor instruções vigentes |
+| A–G e parecer CTO normativo | textos integrais 07/09 não recebidos | aceite do ZIP não substitui esses instrumentos |
+| C10 / Rev. 1.1 | base consolidada 1.0 não recebida, C10 OPEN | não reconstruir 36 seções, não emitir redline fictício ou classificar resolução antecipada |
+| AC-KF-03-R1 | original recebido é só uma condição da cadeia | BLOCKED até reconciliação, ratificação, integração, validação e aceite |
+| T01 / T02–T04 | direção T01 aprovada, contrato NOT_FROZEN; demais abertos | não inferir recuperação do último representante ou qualificação técnica |
 
-Não foram reabertas DEC-01–16 ou criadas novas decisões de produto. O histórico anterior de SOURCE_MISSING, T01 e AC-KF-03 BLOCKED permanece nas fontes e evidências da época. O estado corrente reconhece localização reportada e nova direção normativa, mantendo transferência e integração como etapas distintas. [Riscos gerais](RISK-REGISTER.md) e [rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md).
+Nenhuma divergência material entre texto consolidado e original foi demonstrada pelo Agent Coder porque o texto de destino falta. O relato preliminar do CTO é atribuído a ele e serve de requisito de preservação; não é conclusão independente do agente. As linhas UNRESOLVED da matriz representam destinos ainda desconhecidos, não aprovação de eliminação ou equivalência. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md), [testes futuros](../validation/M01-ACCEPTANCE-CRITERIA.md).

@@ -1,33 +1,40 @@
 ---
 id: ANCESTRALIDADE-PROJECT-INSTRUCTIONS
 title: "Instruções globais disponíveis e limites"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "sources/project-instructions-authoritative.md"
+  - "sources/project-instructions-extended-historical.md"
   - "../AGENTS.md"
-  - "sources/knowledge-foundation-mandate-01.md"
-  - "sources/normative-integration-mandate-01.md"
-  - "../operations/INFORMATION-CLASSIFICATION.md"
-  - "../status/CURRENT-STATUS.md"
+  - "sources/product-planner-mandate.md"
+  - "AUTHORITY-MODEL.md"
+  - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
   - "SOURCE-MANIFEST.md"
+  - "../status/CURRENT-STATUS.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:governance/PROJECT-INSTRUCTIONS.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:governance/PROJECT-INSTRUCTIONS.md@0.3"
 ---
 
-# Instruções vigentes disponíveis
+# Instruções vigentes e protocolo de execução
 
-Fonte operacional efetiva: [AGENTS.md](../AGENTS.md), instruções do usuário e [mandato KF-01](sources/knowledge-foundation-mandate-01.md). O instrumento global oficial referido pelo CTO não foi disponibilizado; a presente consolidação não o recria.
+**Fonte integral vigente recebida:** [SOURCE-03 — Project Instructions](sources/project-instructions-authoritative.md), aceita pelo CTO. Esta página é rota e consolidação operacional, não outra cópia normativa independente. [SOURCE-03A extensa](sources/project-instructions-extended-historical.md) é histórica. [AGENTS](../AGENTS.md) complementa as instruções no workspace. [SOURCE-04](sources/product-planner-mandate.md) esclarece o mandato funcional do Planner.
 
-Escrever em português brasileiro; diferenciar fatos, decisões, hipóteses e propostas; preservar contribuições existentes; usar links relativos e validar referências; não inserir informações confidenciais ou pessoais sem autorização. Consultar estado, autoridade, decisões e contratos antes de agir. Não converter pesquisa documental em evidência de implementação ou fornecedor validado.
+Priorizar o M01, autonomia, diversidade, neutralidade religiosa, consentimento, segurança, privacidade, simplicidade e acessibilidade. Português brasileiro por padrão; artefatos técnicos podem usar inglês. Usar documentação canônica e recuperar contexto seletivamente; verificar versões, decisões, autorizações e estado antes de agir. Distinguir fatos, hipóteses, aprovação, execução, teste, validação, aceite, merge e deploy.
 
-O escopo é M01. Representação administrativa, autenticidade institucional e legitimidade religiosa são conceitos distintos. Marketing e Business não devem anunciar certificação espiritual, lançamento, garantia de segurança ou escala comprovada, preço aprovado ou contratação inexistente. Comunicação pública real não é liberada por estes textos.
+A [hierarquia](AUTHORITY-MODEL.md) foi recuperada em SOURCE-03 §§6/7; não está mais pendente de transferência. Liderança aprova produto/escopo/recursos; CTO tem autoridade técnica; Planner propõe e avalia aderência funcional sem autoaprovar produto ou técnica. A referência extensa histórica não amplia mandatos vigentes.
 
-A tarefa corrente é NI-01–05 documental restrito, autorizada pelo [mandato NI](sources/normative-integration-mandate-01.md). Não repetir KF-01–05 ou CLOSURE-01–06. NI-G01 bloqueia a conclusão da reconciliação/1.1 sem fontes integrais; priorizar transferência direta. Preservar o VAL e as evidências históricas e atribuir ao CTO sua recuperação remota no checkpoint aceito. Construção do diretório, criação do app, commit, push, merge, contratação e deploy: não autorizados. Gate final desta execução: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Consulte [classificação](../operations/INFORMATION-CLASSIFICATION.md) e [estado](../status/CURRENT-STATUS.md).
+Marketing não deve anunciar certificação espiritual, hierarquia religiosa, promessas, lançamento, escala ou condições comerciais sem fundamento e autorização. CLIENT_PROJECT é classificação administrativa preliminar, DEC-16 é framework; não presumir titularidade, orçamento, monetização, publicidade, tokenização ou comercialização de dados. Não introduzir dados pessoais, credenciais, endereços protegidos ou registros privados nesta documentação pública.
 
+## Tarefa atual
 
-O [manifesto](SOURCE-MANIFEST.md) distingue fonte localizada, recebida e inspecionada. As instruções operacionais aqui consolidadas não substituem o SOURCE-03 integral ainda pendente. Preservar direção T01 aprovada e DEC-01–16; CLIENT_PROJECT é administrativo preliminar, sem decisão jurídica/econômica específica. Não aprovar ou declarar vigente uma Rev. 1.1 não apresentada e ratificada.
+Continuação da REQ-NORMATIVE-INTEGRATION-01 a partir da transferência recebida, sem nova REQ, novo planejamento ou repetição integral de KF/CLOSURE. Seis arquivos do Planner recebidos e inspecionados; SOURCE-05 existente reutilizada. Solicitação ao Planner encerrada. SOURCE-06/07/09 são pendência do CTO e impedem concluir NI-G01/NI-02/NI-03 e produzir a revisão 1.1.
+
+Qualificar critérios por fonte: MVP:AC-*, CONSTRUCTION:AC-* e CONSOLIDATED:AC-*. Os 26 critérios de construção continuam propostos, sem aprovação presumida. Preservar tanto os fluxos legítimos positivos quanto controles negativos/segurança dos 18 critérios originais. As constatações preliminares do CTO não substituem a comparação com o consolidado integral.
+
+Parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Commit/push/merge, app/KF-06, aplicativo, contratação, infraestrutura, deploy e declaração unilateral de vigência 1.1/fundação aceita não autorizados. Preservar fontes e VALs/JSONs anteriores; produzir [aditivo de validação](../validation/VAL-NI-SOURCE-TRANSFER-01.md) com autoria correta. [Manifesto](SOURCE-MANIFEST.md) e [estado](../status/CURRENT-STATUS.md).

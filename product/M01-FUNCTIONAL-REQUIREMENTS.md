@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS
 title: "Requisitos funcionais e dependências"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -14,9 +14,11 @@ references:
   - "../validation/M01-ACCEPTANCE-CRITERIA.md"
   - "../governance/sources/normative-integration-mandate-01.md"
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../governance/sources/m01-mvp-original-mandate-01.md"
+  - "../governance/sources/m01-directory-construction-mandate-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:product/M01-FUNCTIONAL-REQUIREMENTS.md@0.1"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:product/M01-FUNCTIONAL-REQUIREMENTS.md@0.2"
 ---
 
 # Requisitos funcionais consolidados
@@ -44,3 +46,10 @@ Metas p95 de busca <1 s, disponibilidade 99,5%, RPO 24 h e RTO 8 h eram proposta
 
 
 Preparação COR-03/04 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md), sem declarar equivalência dos números AC acima com critérios originais ou reemitidos ainda não recebidos. T01 NORMATIVE_DIRECTION_APPROVED; contratos NOT_FROZEN. C10 permanece aberta e NI-G01 impede concluir a comparação ou criar a revisão 1.1. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md). Os demais requisitos e decisões foram preservados; não foi acrescido módulo futuro ou compromisso comercial.
+
+
+## Origem integral e testes positivos
+
+O [original MVP recebido](../governance/sources/m01-mvp-original-mandate-01.md) é a fonte direta de fluxos, especialmente §§5–6/11/13–14/18/27. R01/R08 preservam localização, raio, religião, lista/perfil e rota externa autorizada; R02/R03 preservam criar conta, cadastrar e administrar instituição e enviar/validar email; R06 preserva indicação funcional completa e privada; R09 preserva consulta de orientações declaradas; R07 preserva solicitar N2, emitir código/card, receber URL e decisão; R05 preserva solicitar retirada, não só efeito negativo de revogação. O [plano futuro](../validation/M01-ACCEPTANCE-CRITERIA.md) detalha positivos/negativos para os 18 MVP:AC-* sem testes executados.
+
+Os 26 CONSTRUCTION:AC-* da [fonte distinta](../governance/sources/m01-directory-construction-mandate-01.md) continuam propostos. Reutilização de números não estabelece correspondência; [matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) tem 18 origens pendentes do destino consolidado. Faltam somente SOURCE-06/07/09 do CTO, não nova transferência do Planner. Não se alteraram DEC-01–16 ou status da 1.1.

@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-M01-PRODUCT-BASELINE
 title: "Baseline funcional M01"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -12,20 +12,24 @@ references:
   - "../planejamento/m01/planejamento-tecnico-rev-0.2.md"
   - "../governance/sources/cto-technical-review-02.md"
   - "../governance/sources/wp01-product-decision-record-1.1.md"
+  - "../governance/sources/m01-mvp-original-mandate-01.md"
   - "M01-FUNCTIONAL-REQUIREMENTS.md"
   - "../decisions/DECISION-REGISTER.md"
   - "../status/RISK-REGISTER.md"
   - "../governance/sources/normative-integration-mandate-01.md"
   - "../governance/SOURCE-MANIFEST.md"
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../validation/M01-ACCEPTANCE-CRITERIA.md"
+  - "../governance/sources/m01-directory-construction-mandate-01.md"
+  - "../governance/reviews/planner-m01-normative-review-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:product/M01-PRODUCT-BASELINE.md@0.1"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:product/M01-PRODUCT-BASELINE.md@0.2"
 ---
 
 # Baseline funcional do diretório M01
 
-Consolidação derivada do [mandato técnico](../governance/sources/technical-planning-mandate-01.md), [planejamento 0.2](../planejamento/m01/planejamento-tecnico-rev-0.2.md), [review CTO 02](../governance/sources/cto-technical-review-02.md) e [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md). Não substitui o mandato superior original ausente.
+Consolidação derivada do [mandato técnico](../governance/sources/technical-planning-mandate-01.md), [planejamento 0.2](../planejamento/m01/planejamento-tecnico-rev-0.2.md), [review CTO 02](../governance/sources/cto-technical-review-02.md) e [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md). Não substitui o [mandato superior original agora recebido](../governance/sources/m01-mvp-original-mandate-01.md).
 
 Os onze domínios DIR-01–11 são necessários ao MVP: identidade; instituições e perfis; taxonomia; geolocalização; descoberta; visitação e atividades; indicação/onboarding; verificação/representação; moderação/publicação; mídias/integrações; segurança/privacidade/auditoria. Domínios não equivalem a microsserviços.
 
@@ -47,3 +51,8 @@ O [mandato NI](../governance/sources/normative-integration-mandate-01.md) requer
 Descoberta deve contemplar localização atual autorizada e busca manual por cidade, bairro, endereço ou CEP; raio configurável; religião, tradição e vertente; proximidade/distância aproximada autorizadas; lista e mapa; rotas por serviço externo. Preservar integralmente DEC-11: pontos privados não alimentam resultados nem inferência. CLIENT_PROJECT é classificação administrativa preliminar, sem titularidade ou modelo comercial presumidos.
 
 Estas são preparações de documentos dependentes sob NI-04, não prova de comparação dos originais ou incorporação em uma revisão 1.1. NI-G01 permanece bloqueado; [manifesto](../governance/SOURCE-MANIFEST.md) e [rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md).
+
+
+## Fundamentação original recebida
+
+SOURCE-01 §§3/5/6/8/11/13/14/27 confirma descoberta por localização/raio/religião, rota externa, criação de conta/cadastro/administração, envio e validação de email, indicação efetiva privada, orientações de visitação, N2 completo (solicitação, código/card, URL e decisão) e solicitação de retirada com tratamento e suspensão pública. O [plano de aceitação MVP](../validation/M01-ACCEPTANCE-CRITERIA.md) preserva operação legítima e controles negativos sem declarar execução. O [mandato distinto de construção](../governance/sources/m01-directory-construction-mandate-01.md) contém 26 critérios propostos e não aprova implementação. Critérios MVP:AC-*, CONSTRUCTION:AC-* e futuro CONSOLIDATED:AC-* são conjuntos distintos. O [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md) requer reconciliação e ratificação, que continuam dependentes do complemento CTO. Nenhum módulo ou compromisso novo foi incluído.

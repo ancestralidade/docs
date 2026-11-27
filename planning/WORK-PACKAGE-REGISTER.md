@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-WORK-PACKAGE-REGISTER
 title: "Registro de pacotes e gates"
-version: "0.3"
+version: "0.4"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -19,9 +19,10 @@ references:
   - "../validation/VAL-KF-CLOSURE-01.md"
   - "../governance/SOURCE-MANIFEST.md"
   - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
+  - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:planning/WORK-PACKAGE-REGISTER.md@0.2"
+previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:planning/WORK-PACKAGE-REGISTER.md@0.3"
 ---
 
 # Pacotes e gates
@@ -46,6 +47,11 @@ O modelo de operação aprovado elimina a necessidade de decidir novamente centr
 A [revisão CTO registrada](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md) eleva AC-KF-11/13 a PASS; não libera WP-02–04, T01–T04, contratos ou aplicativo. O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md) autoriza CLOSURE-01–06 como intervenção restrita. Gate da intervenção de encerramento: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Matriz vigente](../validation/VAL-KF-CLOSURE-01.md).
 
 
-## Pacote corrente — NI
+## Histórico — NI antes do recebimento do ZIP
 
 NI-01 intake parcial e [manifesto](../governance/SOURCE-MANIFEST.md) preparados; NI-G01 BLOCKED; NI-02/03 bloqueados para conclusão; NI-04 parcialmente preparado; NI-05 verificações documentais aplicáveis. T01 NORMATIVE_DIRECTION_APPROVED não implica fonte recebida, contrato congelado ou T02 resolvido. AC-KF-03-R1 BLOCKED por condições não cumpridas. Nenhuma alteração no escopo ou nos gates de WP-02/03/04. Gate de parada corrente: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. [VAL](../validation/VAL-NORMATIVE-INTEGRATION-01.md).
+
+
+## Retomada NI corrente
+
+SOURCE-01/02/03/04/08 recebidas do Planner e SOURCE-05 já existente; SOURCE-03A extra histórica. NI-G01 PARTIALLY_SATISFIED, complementação 06/07/09 do CTO. Planner não tem transferência adicional pendente. NI-02 em preparação comparativa com namespaces; conclusão integral NI-02/03 e 1.1 ainda pendentes. NI-04/05 prosseguem no escopo independente, sem nova REQ ou planejamento conceitual. [VAL da retomada](../validation/VAL-NI-SOURCE-TRANSFER-01.md). WP-02/03/04, T02–T04, R1 e gates de implementação não foram liberados. Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW.
