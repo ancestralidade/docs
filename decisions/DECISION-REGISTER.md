@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-DECISION-REGISTER
 title: "Registro consolidado de decisões"
-version: "0.3"
-status: DERIVED_REVIEW_REQUIRED
+version: "0.4"
+status: PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -19,14 +19,21 @@ references:
   - "../governance/reviews/cto-source-transfer-01.md"
   - "../governance/reviews/planner-m01-normative-review-01.md"
   - "../governance/sources/product-planner-mandate.md"
+  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
+  - "../governance/reviews/cto-execution-continuation-02.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.1.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:decisions/DECISION-REGISTER.md@0.2"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:decisions/DECISION-REGISTER.md@0.3"
 ---
 
 # Registro de decisões
 
-Este registro é derivado de fontes; não concede aprovações. DEC-01–09 são identificadas como aprovadas pelo [mandato técnico](../governance/sources/technical-planning-mandate-01.md), e o [mandato superior integral](../governance/sources/m01-mvp-original-mandate-01.md) agora está recebido para reconciliação; o consolidado 1.0 ainda falta. DEC-10–16 são deliberações expressas registradas no [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md), que substitui a revisão 1.0 não disponibilizada. Não reconstruir a versão ausente.
+Este registro é derivado de fontes; não concede aprovações. DEC-01–09 são identificadas como aprovadas pelo [mandato técnico](../governance/sources/technical-planning-mandate-01.md), e o [mandato superior integral](../governance/sources/m01-mvp-original-mandate-01.md) agora está recebido para reconciliação; o consolidado 1.0 foi recebido e confrontado com a deliberação A–G da SOURCE-07 e a revisão CTO SOURCE-09. DEC-10–16 são deliberações expressas registradas no [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md), que substitui a revisão 1.0 não disponibilizada. Não reconstruir a versão ausente.
 
 | ID | Decisão | Estado e limites |
 |---|---|---|
@@ -68,13 +75,20 @@ Aceitação de direção não libera commit nem criação do app. [ADRs técnico
 
 ## Direções presidenciais reportadas no mandato NI
 
-O [mandato NI 1.0](../governance/sources/normative-integration-mandate-01.md) informa ratificação presidencial de DEC-01–09 e preservação de DEC-10–16: DEC-10–15 continuam APPROVED e DEC-16 APPROVED_FRAMEWORK. Nenhuma decisão foi reaberta ou alterada pelo agente. A deliberação A–G integral, o consolidado 1.0 e os pareceres ainda aguardam transferência, conforme [manifesto](../governance/SOURCE-MANIFEST.md). Não se declara comparação concluída ou aprovação definitiva da revisão 1.1.
+O [mandato NI 1.0](../governance/sources/normative-integration-mandate-01.md) informa ratificação presidencial de DEC-01–09 e preservação de DEC-10–16: DEC-10–15 continuam APPROVED e DEC-16 APPROVED_FRAMEWORK. Nenhuma decisão foi reaberta ou alterada pelo agente. A deliberação A–G, o consolidado 1.0 e os pareceres foram recebidos e inspecionados, conforme [manifesto](../governance/SOURCE-MANIFEST.md). A comparação documental está preparada na matriz; a revisão 1.1 permanece sem aprovação definitiva.
 
 T01: NORMATIVE_DIRECTION_APPROVED. PUBLICATION_ELIGIBLE e PUBLIC_EXPOSURE_ALLOWED distintos; disputa admitida bloqueia publicação inicial/republicação; denúncia ou admissão não suspende automaticamente perfil existente; restrição exige autoridade humana e fundamento aplicável; retirada de consentimento interrompe exposição controlada. Contrato NOT_FROZEN; T02–T04 continuam abertos.
 
-AC-KF-03-R1 é critério prospectivo aprovado conforme a fonte NI; não possui PASS enquanto faltarem fontes, reconciliação, aprovação final 1.1, integração, validação, recuperação independente e aceite CTO. Os estados históricos e respectivas fontes permanecem preservados.
+AC-KF-03-R1 é critério prospectivo aprovado conforme a fonte NI; não possui PASS enquanto faltarem aprovação final 1.1, integração autorizada, recuperação independente e aceite CTO; fontes e reconciliação documental estão preparadas. Os estados históricos e respectivas fontes permanecem preservados.
 
 
 ## Recebimento comprovado — sem nova deliberação de produto
 
-O [pacote aceito pelo CTO](../governance/reviews/cto-source-transfer-01.md) entrega o original MVP, instruções e [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md). O parecer é FAVORABLE_WITH_SOURCE_RECONCILIATION e não substitui deliberação da liderança; o [mandato do Planner](../governance/sources/product-planner-mandate.md) veda autoaprovação de produto/técnica. Os 26 critérios de CONSTRUCTION:AC-* da proposta de construção não são decisões aprovadas por simples recuperação. DEC-01–16 permanecem preservadas e DEC-16 APPROVED_FRAMEWORK. T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN. Falta SOURCE-06/07/09 do CTO para comparação integral; não houve reabertura das decisões ou aceite 1.1.
+O [pacote aceito pelo CTO](../governance/reviews/cto-source-transfer-01.md) entrega o original MVP, instruções e [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md). O parecer é FAVORABLE_WITH_SOURCE_RECONCILIATION e não substitui deliberação da liderança; o [mandato do Planner](../governance/sources/product-planner-mandate.md) veda autoaprovação de produto/técnica. Os 26 critérios de CONSTRUCTION:AC-* da proposta de construção não são decisões aprovadas por simples recuperação. DEC-01–16 permanecem preservadas e DEC-16 APPROVED_FRAMEWORK. T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN. O complemento CTO foi recebido e comparado; não houve reabertura das decisões ou aceite definitivo 1.1.
+
+
+## Estado sincronizado — integração normativa preparada
+
+Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+
+DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.

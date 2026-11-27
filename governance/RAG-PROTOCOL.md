@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.4"
-status: DERIVED_REVIEW_REQUIRED
+version: "0.5"
+status: PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -23,9 +23,17 @@ references:
   - "sources/m01-mvp-original-mandate-01.md"
   - "sources/m01-directory-construction-mandate-01.md"
   - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
+  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
+  - "../governance/reviews/cto-execution-continuation-02.md"
+  - "../governance/SOURCE-MANIFEST.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.1.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:governance/RAG-PROTOCOL.md@0.3"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:governance/RAG-PROTOCOL.md@0.4"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -61,3 +69,10 @@ No intake NI, recuperar apenas fontes efetivamente transferidas e identificar o 
 [Manifesto](SOURCE-MANIFEST.md) → [SOURCE-03 vigente](sources/project-instructions-authoritative.md) e [mandato do Planner](sources/product-planner-mandate.md) para autoridade; [MVP original](sources/m01-mvp-original-mandate-01.md) e [construção proposta](sources/m01-directory-construction-mandate-01.md) para critérios qualificados. SOURCE-03A extensa é histórica, não preferência sobre a vigente. As cópias foram inspecionadas localmente; ainda não se atribui recuperação remota dessas novas cópias ao agente ou ao CTO.
 
 Planner concluiu sua transferência; não lhe solicitar novamente os textos. Somente SOURCE-06/07/09 dependem do CTO. Ler namespace e estado da fonte antes de tratar um AC como aprovado ou equivalente; CONSOLIDATED só recebe conteúdo após transferência efetiva. Preservar autoria dos testes anteriores e evidências antigas. [VAL corrente](../validation/VAL-NI-SOURCE-TRANSFER-01.md); gate CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW, sem commit/publicação autorizados.
+
+
+## Estado sincronizado — integração normativa preparada
+
+Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+
+DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.

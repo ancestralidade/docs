@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-M01-PRODUCT-BASELINE
 title: "Baseline funcional M01"
-version: "0.3"
-status: DERIVED_REVIEW_REQUIRED
+version: "0.4"
+status: PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -22,9 +22,16 @@ references:
   - "../validation/M01-ACCEPTANCE-CRITERIA.md"
   - "../governance/sources/m01-directory-construction-mandate-01.md"
   - "../governance/reviews/planner-m01-normative-review-01.md"
+  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
+  - "../governance/reviews/cto-execution-continuation-02.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.1.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "../status/CURRENT-STATUS.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:product/M01-PRODUCT-BASELINE.md@0.2"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:product/M01-PRODUCT-BASELINE.md@0.3"
 ---
 
 # Baseline funcional do diretório M01
@@ -44,15 +51,22 @@ Denúncia isolada não suspende nem transfere autoridade. Moderação é humana 
 Atividades têm abertura ao público, modalidade, agendamento e condição econômica distintos; filtros combinados precisam ser satisfeitos pela mesma atividade. Taxonomia admite múltiplas classificações e aliases sem hierarquia religiosa. Catálogo, termos, periodicidade de selo e SLAs ainda precisam de parâmetros. Veja [requisitos](M01-FUNCTIONAL-REQUIREMENTS.md), [decisões](../decisions/DECISION-REGISTER.md) e [riscos](../status/RISK-REGISTER.md).
 
 
-## Preparação dependente — COR-03/04/06
+## Histórico anterior a este complemento — Preparação dependente — COR-03/04/06
 
 O [mandato NI](../governance/sources/normative-integration-mandate-01.md) requer confirmação de email por código ou link temporário; permitir endereço pessoal do responsável ou institucional distinto e confirmar o institucional declarado independentemente quando forem distintos. Confirmação não comprova representação; expiração, consumo único e mecanismos de segurança dependem de contrato técnico.
 
 Descoberta deve contemplar localização atual autorizada e busca manual por cidade, bairro, endereço ou CEP; raio configurável; religião, tradição e vertente; proximidade/distância aproximada autorizadas; lista e mapa; rotas por serviço externo. Preservar integralmente DEC-11: pontos privados não alimentam resultados nem inferência. CLIENT_PROJECT é classificação administrativa preliminar, sem titularidade ou modelo comercial presumidos.
 
-Estas são preparações de documentos dependentes sob NI-04, não prova de comparação dos originais ou incorporação em uma revisão 1.1. NI-G01 permanece bloqueado; [manifesto](../governance/SOURCE-MANIFEST.md) e [rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md).
+Estas preparações foram confrontadas com as fontes integrais e incorporadas à minuta 1.1 sob NI-04. NI-G01 PASS para completude documental; [manifesto](../governance/SOURCE-MANIFEST.md) e [rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md).
 
 
 ## Fundamentação original recebida
 
-SOURCE-01 §§3/5/6/8/11/13/14/27 confirma descoberta por localização/raio/religião, rota externa, criação de conta/cadastro/administração, envio e validação de email, indicação efetiva privada, orientações de visitação, N2 completo (solicitação, código/card, URL e decisão) e solicitação de retirada com tratamento e suspensão pública. O [plano de aceitação MVP](../validation/M01-ACCEPTANCE-CRITERIA.md) preserva operação legítima e controles negativos sem declarar execução. O [mandato distinto de construção](../governance/sources/m01-directory-construction-mandate-01.md) contém 26 critérios propostos e não aprova implementação. Critérios MVP:AC-*, CONSTRUCTION:AC-* e futuro CONSOLIDATED:AC-* são conjuntos distintos. O [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md) requer reconciliação e ratificação, que continuam dependentes do complemento CTO. Nenhum módulo ou compromisso novo foi incluído.
+SOURCE-01 §§3/5/6/8/11/13/14/27 confirma descoberta por localização/raio/religião, rota externa, criação de conta/cadastro/administração, envio e validação de email, indicação efetiva privada, orientações de visitação, N2 completo (solicitação, código/card, URL e decisão) e solicitação de retirada com tratamento e suspensão pública. O [plano de aceitação MVP](../validation/M01-ACCEPTANCE-CRITERIA.md) preserva operação legítima e controles negativos sem declarar execução. O [mandato distinto de construção](../governance/sources/m01-directory-construction-mandate-01.md) contém 26 critérios propostos e não aprova implementação. Critérios MVP:AC-*, CONSTRUCTION:AC-* e CONSOLIDATED:AC-* da minuta 1.1 são conjuntos distintos. O [parecer Planner](../governance/reviews/planner-m01-normative-review-01.md) requer reconciliação e ratificação, com minuta preparada e ratificação presidencial pendente. Nenhum módulo ou compromisso novo foi incluído.
+
+
+## Estado sincronizado — integração normativa preparada
+
+Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+
+DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.

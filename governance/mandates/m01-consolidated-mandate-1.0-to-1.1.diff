@@ -1,0 +1,740 @@
+diff --git a/governance/mandates/m01-consolidated-mandate-1.0.md b/governance/mandates/m01-consolidated-mandate-1.1.md
+index 03ab22b..78fd24c 100644
+--- a/governance/mandates/m01-consolidated-mandate-1.0.md
++++ b/governance/mandates/m01-consolidated-mandate-1.1.md
+@@ -3,37 +3,32 @@
+ # EXECUTIVE CONSOLIDATED M01 PRODUCT MANDATE
+ 
+ **Mandate ID:** ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01\
+-**Version:** 1.0\
++**Version:** 1.1\
+ **Date:** 2026-11-27\
+-**Issuing Authority:** Presidência — mediante aprovação\
++**Issuing Authority:** Presidência — ratificação da Rev. 1.1 pendente\
+ **Prepared by:** CTO — Architecture & Engineering\
+ **Business Unit:** Axodus Business\
+ **Classification:** CLIENT_PROJECT\
++**Classification Status:** PRELIMINARY\
+ **Project:** Ancestralidade.org\
+ **Module:** M01 — Diretório Religioso Nacional\
+ **Priority:** P0\
+-**Status:** PROPOSED_FOR_PRESIDENTIAL_APPROVAL\
+-**Effective Date:** Data da aprovação expressa pela Presidência
++**Status:** PREPARED_FOR_CTO_REVIEW_AND_PRESIDENTIAL_RATIFICATION\
++**Effective Date:** NÃO DEFINIDA — depende de ratificação presidencial expressa desta Rev. 1.1
+ 
+ ---
+ 
+ ## 1. FINALIDADE E AUTORIDADE NORMATIVA
+ 
+-O presente mandato estabelece a baseline normativa consolidada do M01 — Diretório Religioso Nacional do Ancestralidade.org.
++O presente rascunho estabelece a proposta de baseline normativa consolidada prospectiva do M01 — Diretório Religioso Nacional do Ancestralidade.org, preparada a partir da revisão 1.0 integral e das correções COR-01–06 acolhidas pelo CTO como condições da deliberação presidencial A–G.
+ 
+-Sua elaboração decorre da impossibilidade, até o momento, de recuperar integralmente o instrumento histórico:
++O instrumento histórico AXODUS-BUSINESS-MANDATE-ANCESTRALIDADE-M01-MVP-01, versão 1.0, foi localizado, transferido e inspecionado. Sua cópia recebida, com 32 seções e 18 critérios, integra a cadeia de proveniência. Foi recebido também o instrumento distinto ANCESTRALIDADE-M01-MANDATE-DIRECTORY-CONSTRUCTION-01, versão 1.0, de 28 seções e 26 critérios, no estado original PROPOSED_FOR_EXECUTIVE_AUTHORIZATION.
+ 
+-AXODUS-BUSINESS-MANDATE-ANCESTRALIDADE-M01-MVP-01.
++Esta consolidação não reconstrói os originais nem afirma equivalência textual global com seus registros históricos. A matriz confronta conteúdo e efeito, identifica restaurações de cobertura e distingue os namespaces MVP:AC-*, CONSTRUCTION:AC-* e CONSOLIDATED:AC-*. Hashes identificam os bytes transferidos, não comprovam identidade binária com mensagens ou arquivos da biblioteca de origem.
+ 
+-O presente documento não constitui reprodução ou reconstrução desse instrumento.
++SOURCE-07 registra aprovação da direção A–G com condições; SOURCE-09 acolhe as seis correções e exige ratificação do texto 1.1. Essa aprovação anterior não torna esta revisão automaticamente APPROVED ou EFFECTIVE. Após ratificação presidencial expressa da revisão 1.1 e integração autorizada, o instrumento exercerá efeito prospectivo nos limites aprovados, preservadas as fontes originais e as decisões posteriores legítimas.
+ 
+-Após aprovação expressa pela Presidência, passará a constituir sua referência normativa substitutiva para as atividades futuras de produto, arquitetura, planejamento, engenharia, validação e operação do M01.
+-
+-A ausência do instrumento original permanecerá registrada como lacuna histórica.
+-
+-Não será declarada equivalência textual, recuperação ou conformidade retrospectiva com um documento não inspecionado.
+-
+-A substituição possui efeito prospectivo e preserva as decisões posteriores legitimamente aprovadas.
++O histórico SOURCE_MISSING das buscas anteriores permanece como evidência temporal, sem ser perpetuado como estado atual das fontes recebidas. Não se reescrevem fontes para corrigir proveniência. Dependências técnicas, jurídicas, econômicas e operacionais continuam nos seus gates.
+ 
+ ## 2. IDENTIDADE E PROPÓSITO
+ 
+@@ -106,19 +101,22 @@ Não integram o escopo autorizado do M01:
+ 
+ - Marketplace.
+ - Academia e cursos.
+-- Biblioteca digital como módulo independente.
++- Biblioteca e diretório bibliográfico como módulos independentes.
+ - Serviços profissionais transacionais.
+ - Pagamentos e assinaturas.
++- Serviços financeiros e gestão financeira institucional.
+ - Rede social própria.
+ - Chat entre usuários.
+ - Gestão integral de membros religiosos.
+ - Reservas transacionais.
+ - Aplicativos nativos independentes.
+ - Tokenização e blockchain.
+-- KYC automatizado obrigatório.
++- KYC automatizado.
+ - Biometria obrigatória.
+ - Inteligência artificial obrigatória.
+ - Avaliação ou ranking espiritual.
++- Avaliações públicas por estrelas.
++- Inteligência artificial de recomendação espiritual.
+ 
+ Módulos futuros dependem de decisão e autorização específicas.
+ 
+@@ -163,6 +161,8 @@ INSTITUTION_IDENTITY ≠ USER_IDENTITY
+ 
+ Uma instituição possuirá identidade persistente, independentemente da conta pessoal utilizada para cadastrá-la.
+ 
++O responsável deverá poder criar e confirmar sua conta, cadastrar uma instituição e administrar suas informações mediante vínculo e autorização válidos. O cadastro legítimo e sua manutenção são capacidades funcionais, não apenas regras de persistência ou bloqueio.
++
+ O sistema deverá suportar:
+ 
+ - Múltiplos representantes.
+@@ -209,6 +209,8 @@ Fluxo de referência:
+ 7. Cadastro oficial é iniciado.
+ 8. Representação, consentimento e triagem são avaliados.
+ 
++A indicação registrará identificação do solicitante, nome da instituição, município/estado, canal institucional, localização quando disponível, responsável quando conhecido, relação do solicitante quando pertinente e informações complementares. Deve ser possível enviar e registrar a indicação para análise/convite autorizado; ausência de resposta não constitui consentimento.
++
+ Invariantes:
+ 
+ REFERRAL ≠ INSTITUTION_REGISTRATION
+@@ -227,18 +229,16 @@ O modelo deverá possuir dois níveis.
+ 
+ ### 8.1. Nível 1 — Obrigatório para publicação
+ 
+-Contempla:
++Contempla criação/confirmação da conta pessoal, confirmação do canal institucional aplicável, declaração/validação proporcional da representação, consentimento, triagem e elegibilidade para publicação.
++
++A confirmação de e-mail utilizará código ou link temporário, vinculado ao endereço e contexto correspondentes. O sistema enviará e validará a confirmação vinculada à instituição; a mensagem identificará instituição, solicitante e finalidade.
+ 
+-- Confirmação da conta pessoal.
+-- Confirmação dos canais institucionais aplicáveis.
+-- Declaração e validação proporcional da representação.
+-- Consentimento institucional.
+-- Triagem administrativa.
+-- Elegibilidade para publicação.
++A instituição poderá usar o endereço pessoal do representante ou um institucional distinto. Quando distintos, a confirmação pessoal não substituirá a confirmação do endereço institucional declarado.
+ 
+-O protocolo deverá admitir utilização de e-mail pessoal ou institucional conforme a realidade da instituição e os critérios aprovados.
++Confirmação de qualquer endereço não comprova, isoladamente, autoridade de representação. Evidência insuficiente exigirá avaliação complementar antes da publicação. Expiração, consumo único, limitação de tentativas, reenvio e auditoria serão definidos nos contratos técnicos, sem valores congelados aqui.
+ 
+-O nível obrigatório não implica certificação religiosa.
++O nível obrigatório não implica certificação religiosa nem selo complementar automático.
++Os contextos de email pessoal e email institucional deverão ser identificáveis e poderão usar o mesmo endereço, sem impor dois endereços distintos. A confirmação de cada contexto aplicável e sua associação à instituição devem ser preservadas; o modelo técnico permanece sujeito a contrato futuro (SOURCE-01 §13.1).
+ 
+ ### 8.2. Nível 2 — Complementar e opcional
+ 
+@@ -268,6 +268,10 @@ O método social deverá permitir:
+ 8. Registro fundamentado da decisão.
+ 9. Concessão do selo quando aprovada.
+ 
++O card contemplará identidade visual do Ancestralidade.org, nome institucional, logotipo disponível, mensagem compatível com o estado real e endereço oficial do website. A legenda incluirá o código na descrição; não exibir selo antes da concessão. A geração será proporcional, sem dependência obrigatória de IA generativa.
++
++Demonstrar o fluxo completo — solicitação, código/card, URL, avaliação e decisão registrada — além da segurança do desafio.
++
+ O desafio deverá ser aleatório, temporário, vinculado ao solicitante, à instituição e ao canal, de uso único, invalidável e auditável.
+ 
+ O código do desafio não poderá funcionar como credencial de autenticação ou recuperação de conta.
+@@ -327,7 +331,7 @@ O congelamento das máquinas de estados, eventos, concorrência, permissões e t
+ 
+ ## 10. RESOLUÇÃO NORMATIVA T01
+ 
+-### Cláusula submetida à aprovação expressa da Presidência
++### Direção aprovada na SOURCE-07, cláusula C; contrato técnico não congelado
+ 
+ Fica estabelecida a distinção normativa entre elegibilidade para publicação e continuidade da exposição pública.
+ 
+@@ -428,35 +432,25 @@ Não prometer remoção de cópias já obtidas por terceiros.
+ 
+ ## 13. PESQUISA E EXPERIÊNCIA DO VISITANTE
+ 
+-A pesquisa pública não exigirá autenticação.
+-
+-O visitante deverá poder descobrir instituições por meio de busca textual, filtros, resultados em lista e representação geográfica autorizada.
+-
+-O produto deverá contemplar filtros por:
+-
+-- Tradição religiosa.
+-- Município e localização autorizada.
+-- Proximidade, quando aplicável.
+-- Visitação.
+-- Atividades.
+-- Dias e horários.
+-- Agendamento.
+-- Condição econômica.
+-- Acessibilidade, quando informada.
+-
+-Os resultados públicos deverão excluir instituições não autorizadas para exposição.
++A descoberta é funcionalidade central do M01. A pesquisa pública não exigirá autenticação ou declaração religiosa do visitante.
+ 
+-A experiência deverá preservar:
++O visitante deverá pesquisar e consultar resultados e perfis usando:
+ 
+-MOBILE FIRST.
++- Busca textual por nome e informações pertinentes.
++- Localização atual, mediante autorização, com alternativa manual.
++- Cidade, estado, bairro, endereço ou CEP informados manualmente.
++- Raio geográfico configurável.
++- Filtros por religião, tradição e vertente, autodeclaradas.
++- Ordenação por proximidade ou correspondência objetiva, quando autorizada.
++- Resultados em lista e mapa.
++- Distância geográfica aproximada em linha reta quando autorizada, distinta da distância por trajeto.
++- Abertura de rotas em serviços externos quando a divulgação necessária estiver autorizada.
+ 
+-SEARCH FIRST.
++Preservar integralmente DEC-11 e seção 12. Instituições aproximadas/reservadas continuarão pesquisáveis regionalmente sem coordenadas privadas para determinar proximidade, distância individual ou correspondência por raio. Representação regional sem distância não será apresentada como localização individual confirmada dentro do raio.
+ 
+-INFORMATION FIRST.
++Contemplar também filtros por visitação, atividades, dias/horários, agendamento, condição econômica e acessibilidade quando informada. Limites de raio, paginação, agrupamentos e desempenho serão qualificados pelo CTO, sem compromissos arbitrários.
+ 
+-PROGRESSIVE DISCLOSURE.
+-
+-Não desenvolver ranking religioso ou avaliação de superioridade espiritual.
++Excluir instituições sem autorização de exposição. Preservar MOBILE FIRST, SEARCH FIRST, INFORMATION FIRST e PROGRESSIVE DISCLOSURE. Não desenvolver ranking religioso, avaliação espiritual ou recomendação doutrinária automatizada.
+ 
+ ## 14. PERFIS INSTITUCIONAIS
+ 
+@@ -475,20 +469,21 @@ Deverá apresentar, conforme disponibilidade e autorização:
+ - Atividades e condições relevantes.
+ - Selo, quando concedido.
+ - Acesso ao perfil completo.
++- Contato preferencial autorizado, agendamento, condições econômicas, principais horários, orientações essenciais e rota externa quando autorizada.
+ 
+ ### 14.2. Perfil completo
+ 
+ Deverá permitir apresentação de:
+ 
+ - Identidade institucional.
+-- Descrição e história.
++- Descrição e história, ano de fundação e identificação pública de dirigentes somente quando informados e autorizados.
+ - Tradições declaradas.
+ - Orientações de visitação.
+ - Atividades e programação.
+ - Condições econômicas.
+ - Agendamento.
+ - Orientações de vestimenta e acessibilidade.
+-- Contatos autorizados.
++- Contatos autorizados e canal preferencial: telefone, WhatsApp, e-mail, website, Instagram, Facebook, Threads, TikTok, YouTube, X/Twitter, Telegram e demais canais suportados, conforme disponibilidade.
+ - Localização autorizada.
+ - Galeria e mídias.
+ - Redes sociais.
+@@ -496,7 +491,7 @@ Deverá permitir apresentação de:
+ 
+ Campos desconhecidos não poderão ser preenchidos por presunção.
+ 
+-Ausência de mídia deverá receber tratamento apropriado, sem inventar informações ou exigir conteúdo não aprovado.
++Ausência de capa/logotipo terá apresentação neutra; campos opcionais ausentes não produzirão elementos vazios. Não inventar informações ou exigir conteúdo não aprovado.
+ 
+ ## 15. VISITAÇÃO, HORÁRIOS E ATIVIDADES
+ 
+@@ -532,6 +527,8 @@ O catálogo inicial, os critérios de revisão e a participação de representan
+ 
+ A engenharia será responsável pelo modelo técnico, não pela determinação de legitimidade religiosa.
+ 
++Deverá representar relações entre religião, tradição e vertente, com múltiplas associações quando pertinentes. O catálogo não será um enum rígido gravado no código; sua evolução deverá preservar identidade e referências, conforme SOURCE-01 §7.
++
+ ## 17. MODERAÇÃO E OPERAÇÃO ADMINISTRATIVA
+ 
+ A operação será inicialmente centralizada, conforme DEC-13.
+@@ -571,12 +568,14 @@ Integrações com redes sociais deverão utilizar mecanismos autorizados pelos p
+ 
+ Não introduzir scraping não autorizado.
+ 
+-Links externos constituem fallback funcional.
++O responsável informará URLs, sem HTML ou JavaScript. Validar provedor/URL, restringir código arbitrário e carregar sob demanda quando apropriado. Hospedagem direta de vídeo não é requisito inicial. Links externos são fallback funcional.
+ 
+ Incorporações de terceiros dependem de qualificação técnica e jurídica, escolha informada e mecanismos de privacidade adequados.
+ 
+ Nenhuma API social deverá constituir dependência obrigatória para publicação ou concessão manual do selo.
+ 
++Qualificar Instagram, Facebook, Threads, TikTok, YouTube e X individualmente, distinguindo link, incorporação, autoria/texto, autenticação, conta, permissões, revisão, limites, custos, licença, região e validação de desafio. Conteúdo público não implica autorização de coleta ou API funcional. A automação social integral não é condição de lançamento; a avaliação manual equivalente permanecerá funcional.
++
+ ## 19. SEGURANÇA, PRIVACIDADE E AUDITORIA
+ 
+ A segurança e a privacidade constituem requisitos desde a fundação.
+@@ -604,26 +603,24 @@ Consentimento institucional de publicação não representa automaticamente base
+ 
+ ## 20. REQUISITOS FUNCIONAIS CONSOLIDADOS
+ 
+-| ID  | Requisito vinculante                                                |
+-| --- | ------------------------------------------------------------------- |
+-| R01 | Busca e acesso público sem autenticação.                            |
+-| R02 | Identidade institucional independente da conta pessoal.             |
+-| R03 | Confirmação de canais e autorização contextual.                     |
+-| R04 | Publicação condicionada, sem espera mínima, conforme T01.           |
+-| R05 | Interrupção da exposição controlada após retirada de consentimento. |
+-| R06 | Indicação comunitária privada e adesão voluntária.                  |
+-| R07 | Selo opcional e equivalência entre métodos social e manual.         |
+-| R08 | Descoberta baseada exclusivamente em localização autorizada.        |
+-| R09 | Card, perfil, visitação, programação e atividades.                  |
+-| R10 | Taxonomia extensível e autodeclarada.                               |
+-| R11 | Operação centralizada e decisões humanas fundamentadas.             |
+-| R12 | Segurança, isolamento, auditoria, mídia e recuperação.              |
+-| R13 | Independência do Axodus Core, experiência móvel e acessibilidade.   |
+-| R14 | Minimização, separação e proteção de dados.                         |
+-
+-Os contratos derivados deverão identificar origem, dependências, regras, critérios, estados e evidências.
+-
+-O detalhamento técnico não poderá alterar unilateralmente a direção de produto.
++| ID | Requisito na proposta reconciliada |
++|---|---|
++| R01 | Pesquisa pública por localização, raio e religião, resultados e perfis sem autenticação. |
++| R02 | Criar conta, cadastrar e administrar instituição com identidade persistente independente da conta pessoal. |
++| R03 | Enviar/validar email por código/link temporário; confirmar institucional distinto separadamente; autorização contextual sem confundir canal e representação. |
++| R04 | Publicação condicionada, sem espera mínima, conforme predicados distintos e T01. |
++| R05 | Solicitar retirada de participação, registrar tratamento administrativo e interromper exposição controlada após revogação. |
++| R06 | Indicação efetiva por usuário identificado, caso privado, análise/convite e adesão voluntária sem publicação automática. |
++| R07 | Solicitar N2, emitir código/card, receber URL e decisão; selo opcional e equivalência social/manual. |
++| R08 | Localização atual autorizada ou manual, raio, religião/tradição/vertente, lista/mapa, distância autorizada e rota externa; nunca usar ponto privado no resultado público. |
++| R09 | Card, perfil, consulta de orientações declaradas, visitação, programação e semântica de atividades. |
++| R10 | Taxonomia extensível e autodeclarada. |
++| R11 | Operação centralizada, decisões humanas fundamentadas, contestáveis e rastreáveis. |
++| R12 | Segurança, isolamento, auditoria, mídia e recuperação segura. |
++| R13 | Independência do Axodus Core/módulos futuros, experiência móvel e acessibilidade. |
++| R14 | Minimização, separação e proteção de dados. |
++
++Contratos derivados identificarão origem, dependências, regras, critérios, estados e evidências. O detalhamento técnico não alterará unilateralmente a direção de produto. A matriz relaciona requisitos às seções originais, decisões, critérios e cobertura complementar sem presumir equivalência pelo identificador.
+ 
+ ## 21. DIREÇÃO ARQUITETURAL
+ 
+@@ -687,168 +684,157 @@ Não introduzir publicidade, monetização, tokenização ou comercialização d
+ 
+ Estimativas existentes de esforço, infraestrutura e capacidade constituem premissas de planejamento, não orçamento, contrato ou compromisso financeiro.
+ 
+-## 24. CRITÉRIOS NORMATIVOS DE ACEITAÇÃO M01
+-
+-Os critérios abaixo são reemitidos a partir das fontes recuperadas e das decisões preservadas.
+ 
+-Após aprovação deste mandato, constituirão os critérios normativos vigentes.
++CLIENT_PROJECT é classificação administrativa PRELIMINARY; independência arquitetural REQUIRED; legal_ownership e economic_model NOT_ESTABLISHED sob DEC-16. Não determina propriedade intelectual, titularidade de dados ou responsabilidade contratual.
+ 
+-Os identificadores AC-01–18 são mantidos para rastreabilidade.
++WP-04 preservará a análise original §25 de desenvolvimento, infraestrutura, mapas/geocodificação, email, objetos/transferência, APIs, operação/moderação e custos por instituição cadastrada/verificada. Cenários indicativos de 100, 1.000, 10.000 e 100.000 instituições são dimensionamento, não previsão de adesão ou escala comprovada. Estimativas dependem de CFO/autoridade executiva; não há orçamento aprovado.
+ 
+-Não se afirma equivalência textual com o mandato histórico ausente.
++## 24. CRITÉRIOS NORMATIVOS DE ACEITAÇÃO M01
+ 
++Os critérios qualificados CONSOLIDATED:AC-01–18 são a proposta reconciliada 1.1. A direção de reemissão foi aprovada na SOURCE-07 com reconciliação obrigatória; o texto revisado depende de ratificação presidencial. Não são equivalências presumidas por número ou evidências de testes executados. A matriz compara o conteúdo de cada MVP:AC-* e separa os 26 CONSTRUCTION:AC-* propostos.
+ ### AC-01 — Descoberta pública
+ 
+-O visitante deverá pesquisar e consultar instituições autorizadas sem criar conta.
++Visitante sem conta deverá pesquisar por localização, raio e religião, consultar resultados e acessar perfis públicos autorizados.
+ 
+-**Verificação mínima:** pesquisa anônima bem-sucedida; rascunhos, instituições suspensas e perfis sem autorização de exposição ausentes dos resultados.
++**Verificação mínima:** Executar fluxo legítimo por localização autorizada ou manual, raio/filtros e abertura de perfil; excluir rascunhos, suspensos e perfis sem exposição autorizada, sem exigir login ou religião pessoal.
+ 
+-**Rastreabilidade:** R01.
++**Rastreabilidade:** MVP:AC-01; R01, R08, R10; §§12/13/16; DEC-01/11/14.
+ 
+ ### AC-02 — Localização e navegação autorizadas
+ 
+-Distância individual, endereço e rota somente poderão ser disponibilizados quando autorizados pela instituição.
++Visitante deverá consultar endereço autorizado, distância geográfica aproximada e abrir rota em serviço externo quando a divulgação necessária estiver autorizada.
+ 
+-**Verificação mínima:** comparar instituições PUBLIC, APPROXIMATE e RESERVED; confirmar ausência de ponto individual ou distância em níveis protegidos.
++**Verificação mínima:** Fluxo positivo completo PUBLIC com rota externa correta; contrastar APPROXIMATE/RESERVED sem ponto, endereço, distância individual ou rota precisa protegidos.
+ 
+-**Rastreabilidade:** R08, DEC-11.
++**Rastreabilidade:** MVP:AC-02; R08; §§12/13; DEC-11.
+ 
+-### AC-03 — Identidade institucional
++### AC-03 — Cadastro e identidade institucional
+ 
+-A instituição deverá possuir identidade persistente e independente da conta pessoal.
++Responsável deverá criar conta, cadastrar instituição e administrar informações quando autorizado, preservando identidade persistente independente da conta pessoal.
+ 
+-**Verificação mínima:** substituição ou revogação de representante não elimina automaticamente a instituição.
++**Verificação mínima:** Demonstrar criação/cadastro/edição legítimos; substituição/revogação do representante não elimina a instituição; negar administração sem vínculo válido.
+ 
+-**Rastreabilidade:** R02, DEC-10.
++**Rastreabilidade:** MVP:AC-03; R02, R03; §6; DEC-10.
+ 
+-### AC-04 — Confirmação e representação
++### AC-04 — Confirmação de email e representação
+ 
+-Os canais exigidos deverão ser confirmados, sem confundir controle de e-mail com autoridade institucional.
++Enviar e validar confirmação por código ou link temporário vinculada à instituição e ao endereço/contexto. Email institucional distinto será confirmado independentemente do pessoal; controle de email não comprova representação.
+ 
+-**Verificação mínima:** confirmação de e-mail isolada não concede publicação ou representação validada.
++**Verificação mínima:** Comprovar envio e confirmação válidos com endereços iguais/distintos; rejeitar código/link inválido, expirado ou consumido; confirmação isolada não concede representação ou publicação.
+ 
+-**Rastreabilidade:** R03, DEC-07, DEC-10.
++**Rastreabilidade:** MVP:AC-04; R03; §8.1; DEC-07/10.
+ 
+ ### AC-05 — Publicação autorizada
+ 
+-A publicação inicial e a republicação exigem todas as condições obrigatórias definidas neste mandato.
++Publicação inicial/republicação exige representação validada, consentimento expresso vigente, triagem aprovada, confirmações aplicáveis e ausência de disputa admitida pendente, conforme §§9/10.
+ 
+-**Verificação mínima:** retirar individualmente cada condição e comprovar bloqueio da publicação; validar elegibilidade quando todas estiverem satisfeitas.
++**Verificação mínima:** Permitir publicação legítima com todas as condições; retirar cada condição e comprovar bloqueio, inclusive concorrência; não exigir selo.
+ 
+-**Rastreabilidade:** R04, DEC-05, T01.
++**Rastreabilidade:** MVP:AC-05; R04; DEC-05; T01.
+ 
+ ### AC-06 — Ausência de espera mínima
+ 
+-O sistema não deverá impor carência obrigatória após satisfação das condições de publicação.
++Instituição elegível poderá publicar sem carência obrigatória após atender às condições de publicação.
+ 
+-**Verificação mínima:** última condição aprovada permite publicação sem temporizador mínimo obrigatório.
++**Verificação mínima:** Última condição aprovada permite publicação sem temporizador mínimo; meta operacional de 24–48 horas não vira carência.
+ 
+-**Rastreabilidade:** R04, DEC-06.
++**Rastreabilidade:** MVP:AC-06; R04; DEC-06.
+ 
+-### AC-07 — Indicação comunitária privada
++### AC-07 — Indicação comunitária funcional e privada
+ 
+-Indicações não constituem cadastro institucional oficial ou autorização de publicação.
++Usuário identificado poderá enviar indicação, gerando registro privado para análise/convite autorizado, sem publicação automática ou representação.
+ 
+-**Verificação mínima:** indicação permanece privada e não gera vínculo administrativo; eventual cadastro depende de participação voluntária.
++**Verificação mínima:** Demonstrar envio/registro/análise/convite e adesão voluntária conforme §7; verificar privacidade, ausência de vínculo automático, recusa, falta de resposta e abuso.
+ 
+-**Rastreabilidade:** R06, DEC-04.
++**Rastreabilidade:** MVP:AC-07; R06; DEC-04.
+ 
+ ### AC-08 — Card e perfil institucional
+ 
+-As duas superfícies deverão apresentar informações autorizadas e tratamento adequado de campos ausentes.
++Instituição publicada terá card nos resultados e página individual com informações detalhadas autorizadas, contatos e tratamento dos campos opcionais/mídia ausentes.
+ 
+-**Verificação mínima:** validar perfis completos, incompletos, protegidos e sem autorização de exposição.
++**Verificação mínima:** Abrir resultado/perfil completo; verificar perfis completos/incompletos, apresentação neutra e localização protegida; não entregar conteúdo sem autorização.
+ 
+-**Rastreabilidade:** R09, DEC-03.
++**Rastreabilidade:** MVP:AC-08; R09; §14; DEC-03.
+ 
+-### AC-09 — Visitação e atividades
++### AC-09 — Visitação, orientações e atividades
+ 
+-As informações de visitação, horários, modalidade, agendamento e condição econômica deverão preservar sua semântica.
++Visitante poderá consultar acesso, horários, agendamento, gratuidade/contribuição/pagamento e orientações declaradas, preservando modalidade e condições por atividade.
+ 
+-**Verificação mínima:** filtros combinados devem corresponder à mesma atividade; informações desconhecidas não satisfazem indevidamente filtros positivos.
++**Verificação mínima:** Consultar orientações efetivas e ausência de informação sem inferência; filtros combinados satisfeitos pela mesma atividade, sem misturar eventos.
+ 
+-**Rastreabilidade:** R09.
++**Rastreabilidade:** MVP:AC-09; R09; §§14/15.
+ 
+-### AC-10 — Verificação complementar social
++### AC-10 — Verificação complementar social completa
+ 
+-O método social deverá utilizar desafio vinculado, temporário, individual e auditável.
++Instituição publicada poderá solicitar N2, selecionar canal, gerar código/card/legenda, informar URL e obter decisão fundamentada registrada e selo quando aprovada.
+ 
+-**Verificação mínima:** aceitar evidência válida; rejeitar desafio expirado, reutilizado, incorreto ou vinculado a outra instituição.
++**Verificação mínima:** Executar todo o fluxo da §8.3 com código na descrição e correspondência instituição/solicitante/canal/publicação; aceitar evidência válida e rejeitar expiração, reuso, erro ou outra instituição; não usar código como credencial nem exibir selo antecipado.
+ 
+-**Rastreabilidade:** R07, DEC-08, DEC-15.
++**Rastreabilidade:** MVP:AC-10; R07; DEC-08/15.
+ 
+ ### AC-11 — Verificação manual equivalente
+ 
+-Instituições sem redes sociais deverão possuir caminho funcional equivalente.
++Instituição sem rede social, sem desejo de divulgação ou com restrição digital terá procedimento administrativo funcional equivalente para obter o mesmo selo.
+ 
+-**Verificação mínima:** concessão manual válida resulta no mesmo selo público, sem distinção hierárquica.
++**Verificação mínima:** Executar solicitação/análise/decisão manual válida registrando método, evidências, operador, fundamento, resultado/data; mesmo selo, sem distinção depreciativa.
+ 
+-**Rastreabilidade:** R07, DEC-09.
++**Rastreabilidade:** MVP:AC-11; R07; §8.4; DEC-09.
+ 
+ ### AC-12 — Independência de estados
+ 
+-Representação, consentimento, publicação e selo deverão possuir ciclos de vida independentes.
++Instituição poderá permanecer publicada sem selo; ausência, expiração ou revogação isolada não exclui perfil ou revoga representação quando os requisitos de exposição/publicação permanecem válidos.
+ 
+-**Verificação mínima:** ausência, expiração ou revogação isolada do selo não elimina o perfil nem revoga automaticamente a representação.
++**Verificação mínima:** Publicação sem selo e revogação do selo preservam perfil e representação válidos; retirada de consentimento e restrições mantêm efetividade.
+ 
+-**Rastreabilidade:** R04, R07, DEC-15.
++**Rastreabilidade:** MVP:AC-12; R04, R07; DEC-15.
+ 
+-### AC-13 — Moderação e disputas
++### AC-13 — Contestação, moderação e disputas
+ 
+-Denúncias, disputas admitidas e restrições deverão produzir efeitos distintos.
++Contestação legítima poderá ser registrada/analisada sem transferência automática de autoridade; denúncia, disputa admitida e restrição terão efeitos distintos conforme T01.
+ 
+-**Verificação mínima:**
++**Verificação mínima:** Registrar/analisar caso e decisão rastreável; denúncia/admissão não suspende automaticamente perfil existente; admissão bloqueia publicação inicial/republicação; restrição exige autoridade/fundamento; consentimento revogado permanece efetivo.
+ 
+-- Denúncia isolada não despublica.
+-- Disputa admitida bloqueia nova publicação ou republicação.
+-- Perfil existente não sofre suspensão exclusivamente pela admissão.
+-- Restrição decorre de decisão autorizada e fundamentada.
+-- Disputa não transfere autoridade automaticamente.
+-- Revogação de consentimento permanece efetiva.
++**Rastreabilidade:** MVP:AC-13; R02, R04, R11; §§10/17; DEC-10/12; T01.
+ 
+-**Rastreabilidade:** R04, R11, DEC-12, T01.
++### AC-14 — Solicitação de retirada e efeitos da revogação
+ 
+-### AC-14 — Revogação de consentimento
++Instituição poderá solicitar retirada de participação por representante autorizado, gerando tratamento administrativo registrado e interrupção da exposição controlada após revogação, inclusive suspensão pública correspondente.
+ 
+-A retirada de consentimento deverá interromper exposição nas superfícies controladas.
++**Verificação mínima:** Demonstrar solicitação legítima e efeitos em API, páginas, pesquisa, mapas, SEO, mídia, caches e restore, incluindo falhas relevantes; negar solicitação sem autoridade; não prometer remover cópias de terceiros.
+ 
+-**Verificação mínima:** validar API, páginas, pesquisa, mapas, SEO, mídia, caches e recuperação de backup, incluindo falhas relevantes.
++**Rastreabilidade:** MVP:AC-14; R05, R11, R12; T03/T04.
+ 
+-Não declarar remoção garantida de cópias mantidas por terceiros.
++### AC-15 — Autorização e isolamento institucional
+ 
+-**Rastreabilidade:** R05, R12, T03, T04.
++Representante autorizado poderá administrar recursos no escopo concedido; nenhuma conta administrará/acessará recurso institucional sem autorização correspondente.
+ 
+-### AC-15 — Isolamento institucional
++**Verificação mínima:** Acesso legítimo e negação de acesso cruzado, vínculo revogado, papel/ação fora de escopo e transição indevida, sem impedir acesso público autorizado.
+ 
+-Nenhuma conta poderá acessar ou administrar recursos institucionais sem autorização correspondente.
+-
+-**Verificação mínima:** negar acessos cruzados, vínculos revogados, ações fora de escopo e transições indevidas.
+-
+-**Rastreabilidade:** R02, R03, R12.
++**Rastreabilidade:** MVP:AC-15; R02, R03, R12.
+ 
+ ### AC-16 — Auditoria e responsabilidade
+ 
+-Ações críticas deverão registrar informações suficientes para revisão e contestação.
++Decisões relevantes de publicação, representação, consentimento e verificação possuirão registros rastreáveis suficientes para revisão e contestação.
+ 
+-**Verificação mínima:** recuperar ator, ação, fundamento, data e resultado sem exposição indevida de segredos ou dados pessoais.
++**Verificação mínima:** Recuperar ator, ação, fundamento, data e resultado; impedir exposição indevida de segredos, dados pessoais ou evidência administrativa privada.
+ 
+-**Rastreabilidade:** R11, R12.
++**Rastreabilidade:** MVP:AC-16; R11, R12.
+ 
+-### AC-17 — Privacidade geográfica
++### AC-17 — Integridade geográfica e privacidade
+ 
+-Localizações protegidas não poderão ser inferidas por superfícies públicas controladas.
++Pesquisa e demais superfícies públicas respeitarão visibilidade autorizada e não permitirão expor/inferir ponto ou endereço protegido.
+ 
+-**Verificação mínima:** testes diferenciais sobre buscas, resultados, contagens, distâncias, mapas, APIs, metadados e caches.
++**Verificação mínima:** Cenários legítimos dos três níveis e testes diferenciais em busca, contagem, paginação, ordenação, mapa, API, metadados/caches, sem usar ponto privado como entrada pública.
+ 
+-**Rastreabilidade:** R08, DEC-11.
++**Rastreabilidade:** MVP:AC-17; R08, R14; §12; DEC-11.
+ 
+-### AC-18 — Independência arquitetural
++### AC-18 — Independência arquitetural e dos módulos futuros
+ 
+-O aplicativo deverá operar sem dependência obrigatória do Axodus Core, ACS, blockchain ou $Neurons.
++O diretório operará sem dependência obrigatória do Axodus Core, ACS, blockchain, $Neurons ou módulos futuros.
+ 
+-**Verificação mínima:** inspeção de dependências e demonstração de operação em ambiente independente.
++**Verificação mínima:** Inspeção de dependências e futura demonstração do fluxo em ambiente independente, sem módulos fora do M01.
+ 
+-**Rastreabilidade:** R13.
++**Rastreabilidade:** MVP:AC-18; R13; §§4/21/31.
+ 
+ ## 25. COBERTURA COMPLEMENTAR DE VALIDAÇÃO
+ 
+@@ -869,6 +855,11 @@ Metas de desempenho, disponibilidade, RPO, RTO e capacidade deverão ser qualifi
+ 
+ Nenhum teste futuro recebe PASS por aprovação deste mandato.
+ 
++
++A cobertura preservará também contatos autorizados/canal preferencial, campos e fallbacks de perfis, mídias/URLs sem código arbitrário, links alternativos e evidências administrativas proporcionais. Os 17 entregáveis CTO-DEL-01–17 do original §28 permanecem rastreáveis, podendo ser consolidados em pacotes proporcionais sem exigir 17 arquivos separados.
++
++Os 26 CONSTRUCTION:AC-* do instrumento distinto serão comparados em namespace próprio: cobertura de conteúdo não aprova sua proposta ou cria requisito sem origem aprovada. A matriz separa os 18 MVP:AC-* e os 18 CONSOLIDATED:AC-* desta minuta. Testes legítimos positivos complementam negativos, concorrentes e falhas; nenhum recebe PASS por aprovação normativa.
++
+ ## 26. GOVERNANÇA E AUTORIDADES
+ 
+ ### Presidência
+@@ -960,76 +951,43 @@ Informações privadas não deverão ser publicadas em repositório público.
+ 
+ ## 28. RESOLUÇÃO DA DEPENDÊNCIA NORMATIVA KF
+ 
+-### Cláusula submetida à aprovação expressa da Presidência
+-
+-Considerando a ausência do mandato histórico original e a emissão deste instrumento substitutivo, fica proposta a revisão do critério AC-KF-03.
++A cláusula D da SOURCE-07 aprovou a definição prospectiva AC-KF-03-R1. O original recuperado fortalece a proveniência; não elimina a necessidade de baseline vigente integral, reconciliação e aceite. A revisão 1.1 depende de ratificação.
+ 
+-### Critério anterior
++### Critério anterior e preservação histórica
+ 
+-AC-KF-03: mandato original M01 disponível e rastreável.
++AC-KF-03: mandato original M01 disponível e rastreável. Os resultados BLOCKED e SOURCE_MISSING antigos permanecem nas evidências da época; não descrevem o estado atual do original recebido/inspecionado.
+ 
+-### Critério revisado
++### Critério revisado aprovado como direção
+ 
+ AC-KF-03-R1: mandato normativo vigente do M01 disponível, integral, formalmente aprovado pela Presidência, versionado, rastreável e reconciliado com as decisões e requisitos aplicáveis.
+ 
+-O critério revisado admite mandato original recuperado ou instrumento substitutivo legitimamente aprovado.
+-
+-### Preservação histórica
+-
+-O registro anterior AC-KF-03 BLOCKED deverá permanecer nas evidências históricas.
+-
+-A ausência do documento original deverá permanecer identificada.
+-
+-Não registrar SOURCE_RECOVERED para a fonte não localizada.
+-
+-O estado apropriado após aprovação e incorporação do novo instrumento será:
+-
+-HISTORICAL_SOURCE_MISSING — PROSPECTIVE_REPLACEMENT_APPROVED.
+-
+-O novo critério somente receberá PASS após:
+-
+-1. Aprovação expressa da Presidência.
+-2. Incorporação documental autorizada.
+-3. Reconciliação de DEC-01–16.
+-4. Atualização de requisitos e critérios aplicáveis.
+-5. Validação da consistência documental.
+-6. Recuperação independente da referência publicada.
+-7. Aceitação CTO.
+-
+-## 29. RESOLUÇÃO DE C10
++O critério admite original recuperado ou instrumento prospectivo legitimamente aprovado; nesta execução o mandato NI condiciona sua satisfação à revisão reconciliada 1.1 e aos gates abaixo. As nove fontes estão recebidas/inspecionadas, incluindo a referência canônica da REQ da SOURCE-09. NI-G01 satisfez a completude documental para executar a comparação, sem equivalência binária presumida com registros históricos.
+ 
+-C10 não será encerrada mediante alegação de equivalência com o mandato original.
++AC-KF-03-R1 permanece BLOCKED até comprovar recebimento/inspeção, reconciliação documental, aprovação definitiva da 1.1 pela Presidência, integração autorizada, validação, recuperação independente da referência publicada e aceitação CTO. Preparar minuta, comparar fontes ou comprovar CRC não concede PASS ao critério.
+ 
+-Após aprovação e reconciliação do presente instrumento, poderá receber a classificação:
++Não usar HISTORICAL_SOURCE_MISSING — PROSPECTIVE_REPLACEMENT_APPROVED como situação corrente das fontes recuperadas; preservar apenas o registro histórico legítimo.
+ 
+-RESOLVED_BY_AUTHORIZED_NORMATIVE_REBASELINE.
++## 29. RESOLUÇÃO CONDICIONADA DE C10
+ 
+-A classificação deverá indicar explicitamente:
++C10 permanece OPEN quanto ao aceite, com reconciliação preparada para revisão. Não encerra por localizar fonte, presumir equivalência de números ou preparar minuta.
+ 
+-- Documento histórico não recuperado.
+-- Novo mandato aprovado.
+-- Critérios AC-01–18 reemitidos.
+-- Rastreabilidade R01–R14.
+-- Resolução normativa T01.
+-- Dependências técnicas e operacionais preservadas.
++Após revisão/aceite da reconciliação, ratificação presidencial da 1.1, integração autorizada e evidências dos gates pertinentes, poderá receber a classificação pretendida:
+ 
+-Nenhum contrato técnico será automaticamente congelado.
++RESOLVED_BY_SOURCE_RECONCILIATION_AND_AUTHORIZED_NORMATIVE_REBASELINE.
+ 
+-## 30. RELAÇÃO COM O MANDATO DE CONSTRUÇÃO
++A classificação não é aplicada antecipadamente. Registrar fonte original integral preservada, instrumentos/pareceres recebidos, deliberação com condições, matriz bidirecional por conteúdo/efeito, critérios com fluxos positivos/negativos, R01–R14, DEC-01–16, T01 e dependências remanescentes.
+ 
+-Este instrumento estabelece a baseline normativa do produto.
++Nenhum contrato é automaticamente congelado; T02–T04, WP-02–04 e qualificação operacional/jurídica/econômica mantêm gates próprios.
+ 
+-Não constitui autorização de execução da REQ:
++## 30. RELAÇÃO COM O MANDATO DISTINTO DE CONSTRUÇÃO
+ 
+-ANCESTRALIDADE-M01-REQ-DIRECTORY-CONSTRUCTION-01.
++ANCESTRALIDADE-M01-MANDATE-DIRECTORY-CONSTRUCTION-01, versão 1.0, foi recebido integralmente com 28 seções e 26 critérios. Preservar PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, emissor declarado Liderança/Product Authority e elaboração Planner; recebimento, integridade ou correspondência não aprovam execução.
+ 
+-Caso seja localizado instrumento anterior de construção, ele deverá ser reconciliado com o presente mandato e com as autorizações vigentes.
++Este consolidado propõe a baseline do produto; não autoriza ANCESTRALIDADE-M01-REQ-DIRECTORY-CONSTRUCTION-01, KF-06, app ou implementação.
+ 
+-Caso não exista instrumento distinto, o CTO deverá elaborar ou consolidar a REQ executiva de construção quando os gates de prontidão forem satisfeitos.
++A matriz separa CONSTRUCTION:AC-01–26 de MVP:AC-01–18 e CONSOLIDATED:AC-01–18. Conteúdos podem corresponder a números diferentes ou múltiplas seções; não aprovar os 26 por simples recuperação. Conteúdo já aprovado tem sua autoridade nas fontes/decisões correspondentes, não na proposta por si só.
+ 
+-A ausência de instrumento distinto não autoriza iniciar desenvolvimento.
+-
+-Nenhuma autorização anterior de planejamento deverá ser interpretada como liberação de implementação.
++Especificação/execução futuras dependem de prontidão, autorização executiva e identificação expressa de REQ/pacotes. Planejamento anterior não equivale a liberação de código.
+ 
+ ## 31. ROADMAP E DEPENDÊNCIAS
+ 
+@@ -1113,67 +1071,47 @@ Preservar a distinção entre:
+ 
+ PROPOSED / APPROVED / DESIGNED / IMPLEMENTED / TESTED / VALIDATED / ACCEPTED / MERGED / DEPLOYED.
+ 
+-## 34. FONTES DE CONSOLIDAÇÃO
+-
+-Repositório: [https://github.com/ancestralidade/docs](https://github.com/ancestralidade/docs)
+-
+-Checkpoint aceito:
+-
+-5c425c13ede4f72e4ba01f24def21dfb40a6740d
+-
+-Documentos de referência:
+-
+-- README.md.
+-- decisions/DECISION-REGISTER.md.
+-- product/M01-PRODUCT-BASELINE.md.
+-- product/M01-FUNCTIONAL-REQUIREMENTS.md.
+-- validation/M01-ACCEPTANCE-CRITERIA.md.
+-- governance/sources/technical-planning-mandate-01.md.
+-- governance/sources/wp01-product-decision-record-1.1.md.
+-- architecture/ARCHITECTURE-BASELINE.md.
+-- architecture/ADR-REGISTER.md.
+-- planejamento/m01/planejamento-tecnico-rev-0.2.md.
+-- status/CURRENT-STATUS.md.
+-- validation/VAL-KF-CLOSURE-01.md.
+-- status/KF-CLOSURE-HANDOFF.md.
++## 34. FONTES DE CONSOLIDAÇÃO E RASTREABILIDADE
+ 
+-Referências complementares:
++Repositório ancestralidade/docs, raiz /. Checkpoint inicial desta integração: f103f129da7ee2eaffc747d07b96b99b9db74226. Checkpoints anteriores são históricos; esta revisão 1.1 está no workspace sem SHA próprio/publicação.
+ 
+-- CTO-ANCESTRALIDADE-M01-TP-REVIEW-01.
+-- CTO-ANCESTRALIDADE-M01-TP-REVIEW-02.
+-- CTO-ANCESTRALIDADE-KF-DELIVERY-REVIEW-01.
+-- CTO-ANCESTRALIDADE-KF-FINAL-REVIEW-01.
+-- Instruções globais vigentes do projeto Ancestralidade.org.
++Fontes integrais, conforme [manifesto](../SOURCE-MANIFEST.md):
+ 
+-O novo mandato, quando aprovado, prevalecerá prospectivamente em matérias normativas por ele expressamente reguladas.
++1. [SOURCE-01 — MVP original 1.0](../sources/m01-mvp-original-mandate-01.md), 32 seções/18 critérios.
++2. [SOURCE-02 — construção 1.0 proposta](../sources/m01-directory-construction-mandate-01.md), 28 seções/26 critérios.
++3. [SOURCE-03 — instruções vigentes](../sources/project-instructions-authoritative.md); [SOURCE-03A extensa](../sources/project-instructions-extended-historical.md) é histórica.
++4. [SOURCE-04 — mandato Planner](../sources/product-planner-mandate.md).
++5. [SOURCE-05 — mandato KF existente](../sources/knowledge-foundation-mandate-01.md), sem duplicação.
++6. [SOURCE-06 — consolidado 1.0](m01-consolidated-mandate-1.0.md), preservando seu estado de origem submetido à Presidência.
++7. [SOURCE-07 — deliberação A–G e condições integrais](../sources/m01-presidential-deliberation-01.md).
++8. [SOURCE-08 — parecer Planner](../reviews/planner-m01-normative-review-01.md).
++9. [SOURCE-09 — parecer CTO](../reviews/cto-m01-normative-review-02.md), cuja §5 incorpora a [REQ canônica](../sources/normative-integration-mandate-01.md) verificada no checkpoint.
+ 
+-Os demais documentos permanecerão aplicáveis nos limites de sua autoridade, versão e compatibilidade.
++O [manifesto entregue](../sources/cto-source-transfer-02-manifest.md) declara extração textual de SOURCE-06 e normalizações de SOURCE-07/09. Hashes das entradas não são hashes de mensagens/arquivos originais da biblioteca; cópias com frontmatter têm hashes próprios. Não afirmar equivalência histórica binária não comprovada.
+ 
+-## 35. PRESIDENTIAL APPROVAL
++[Matriz bidirecional](../../validation/M01-NORMATIVE-TRACEABILITY.md), [redline](m01-consolidated-mandate-1.0-to-1.1-redline.md), [VAL final](../../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), decisões, requisitos e arquitetura documentam a proposta. Referências históricas da 1.0 a parecer KF final autônomo não recebido não são usadas para inventar aceite adicional.
+ 
+-A aprovação deverá deliberar expressamente sobre:
++Após ratificação e integração, o mandato terá efeito prospectivo no escopo aprovado. Demais documentos seguem sua autoridade/versão/compatibilidade; fontes históricas não são reescritas para refletir estados posteriores.
+ 
+-A. Emissão do mandato consolidado como substitutivo normativo prospectivo.
++## 35. DELIBERAÇÃO PRESIDENTIAL E RATIFICAÇÃO DA REVISÃO
+ 
+-B. Ratificação de DEC-01–09 e preservação de DEC-10–16.
++SOURCE-07 registra aprovação expressa A–G sobre a revisão 1.0 com o parecer/condições adicionais do Planner integrais. SOURCE-09 reconhece a aprovação e acolhe COR-01–06; não reabre DEC-01–16, mas exige apresentar o texto revisado para ratificação.
+ 
+-C. Resolução normativa T01 conforme seção 10.
++| Cláusula | Objeto | Estado anterior evidenciado / limite |
++|---|---|---|
++| A | consolidado prospectivo | APPROVED com proveniência e reconciliação corrigidas |
++| B | ratificação DEC-01–09 e preservação DEC-10–16 | APPROVED; DEC-16 APPROVED_FRAMEWORK |
++| C | direção T01 da seção 10 | APPROVED; contrato NOT_FROZEN |
++| D | definição AC-KF-03-R1 | APPROVED; resultado do critério BLOCKED |
++| E | reemissão de critérios | APPROVED com reconciliação e cobertura preservada |
++| F | dependências/gates técnicos, jurídicos, econômicos e operacionais | preservados |
++| G | limites de execução | código e operações não liberados |
+ 
+-D. Revisão de AC-KF-03 para AC-KF-03-R1.
++COR-01–06 estão preparadas nesta proposta e detalhadas na matriz/redline. A aprovação não se separa das condições. Estados PENDING no parecer Planner embutido são observações históricas daquele parecer, não revogação da deliberação no início da SOURCE-07; a cronologia é explicitada pela SOURCE-09.
+ 
+-E. Adoção dos critérios reemitidos AC-01–18 como baseline normativa vigente.
++**Ratificação presidencial definitiva da revisão 1.1: PENDING.** Autoridade: Presidência. Data da deliberação A–G não informada na transcrição; data de ratificação e vigência da 1.1 NÃO INFORMADAS/NÃO DEFINIDAS. Não presumir assinatura, aprovação definitiva, EFFECTIVE, aceite integral ou novo commit autorizado.
+ 
+-F. Preservação das dependências e dos gates técnicos, jurídicos, econômicos e operacionais.
+-
+-G. Preservação do bloqueio de implementação até autorização executiva específica.
+-
+-Estado da deliberação: PENDING_PRESIDENTIAL_APPROVAL.
+-
+-Autoridade: Presidência.
+-
+-Data de vigência: a registrar.
+-
+-Condições adicionais: a registrar, quando aplicáveis.
++Submeter matriz, redline, conflitos tratados e VAL ao CTO; após revisão, a Presidência ratificará o texto e eventuais diferenças materiais. Commit, publicação, recuperação independente e aceite final mantêm gates próprios.
+ 
+ ## 36. DETERMINAÇÃO FINAL
+ 
+@@ -1194,3 +1132,4 @@ A tecnologia deverá servir às comunidades, nunca estabelecer controle sobre el
+ END OF MANDATE
+ 
+ ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01
++

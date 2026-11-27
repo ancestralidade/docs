@@ -1,0 +1,1852 @@
+{
+    "id":  "ANCESTRALIDADE-NI-RECONCILIATION-01",
+    "date":  "2026-11-27",
+    "source_checkpoint":  "f103f129da7ee2eaffc747d07b96b99b9db74226",
+    "method":  "Comparação textual individual, conteúdo funcional e deliberações; mesmos números não bastam",
+    "forward_ac":  [
+                       {
+                           "source":  "MVP:AC-01",
+                           "target":  "CONSOLIDATED:AC-01",
+                           "source_section":  "27; contexto 5/6/7",
+                           "target_sections":  "12/13/16/24",
+                           "requirement":  "R01/R08/R10",
+                           "decision":  "DEC-01/11/14",
+                           "source_text":  "## AC-01 — Descoberta pública\n\nUm visitante sem conta consegue pesquisar instituições por localização, raio e religião, consultar resultados e acessar perfis públicos.",
+                           "baseline_1_0_text":  "### AC-01 — Descoberta pública\n\nO visitante deverá pesquisar e consultar instituições autorizadas sem criar conta.\n\n**Verificação mínima:** pesquisa anônima bem-sucedida; rascunhos, instituições suspensas e perfis sem autorização de exposição ausentes dos resultados.\n\n**Rastreabilidade:** R01.",
+                           "draft_1_1_text":  "### AC-01 — Descoberta pública\n\nVisitante sem conta deverá pesquisar por localização, raio e religião, consultar resultados e acessar perfis públicos autorizados.\n\n**Verificação mínima:** Executar fluxo legítimo por localização autorizada ou manual, raio/filtros e abertura de perfil; excluir rascunhos, suspensos e perfis sem exposição autorizada, sem exigir login ou religião pessoal.\n\n**Rastreabilidade:** MVP:AC-01; R01, R08, R10; §§12/13/16; DEC-01/11/14.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Pesquisa explícita por localização, raio e religião e acesso legítimo ao perfil; preservar proteção geográfica.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Pesquisa explícita por localização, raio e religião e acesso legítimo ao perfil; preservar proteção geográfica.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-01 1.0 comprova pesquisa anônima, mas não explicita localização/raio/religião. Regras estavam distribuídas em §13."
+                       },
+                       {
+                           "source":  "MVP:AC-02",
+                           "target":  "CONSOLIDATED:AC-02",
+                           "source_section":  "27; contexto 6/8",
+                           "target_sections":  "12/13/24",
+                           "requirement":  "R08",
+                           "decision":  "DEC-11",
+                           "source_text":  "## AC-02 — Localização\n\nO visitante consegue consultar endereço autorizado, distância aproximada e abrir uma rota em serviço externo.",
+                           "baseline_1_0_text":  "### AC-02 — Localização e navegação autorizadas\n\nDistância individual, endereço e rota somente poderão ser disponibilizados quando autorizados pela instituição.\n\n**Verificação mínima:** comparar instituições PUBLIC, APPROXIMATE e RESERVED; confirmar ausência de ponto individual ou distância em níveis protegidos.\n\n**Rastreabilidade:** R08, DEC-11.",
+                           "draft_1_1_text":  "### AC-02 — Localização e navegação autorizadas\n\nVisitante deverá consultar endereço autorizado, distância geográfica aproximada e abrir rota em serviço externo quando a divulgação necessária estiver autorizada.\n\n**Verificação mínima:** Fluxo positivo completo PUBLIC com rota externa correta; contrastar APPROXIMATE/RESERVED sem ponto, endereço, distância individual ou rota precisa protegidos.\n\n**Rastreabilidade:** MVP:AC-02; R08; §§12/13; DEC-11.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar teste positivo de abertura de rota externa e endereço autorizado.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar teste positivo de abertura de rota externa e endereço autorizado.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-02 1.0 condiciona divulgação e testa proteção; não demonstra positivamente abertura de rota externa."
+                       },
+                       {
+                           "source":  "MVP:AC-03",
+                           "target":  "CONSOLIDATED:AC-03",
+                           "source_section":  "27; contexto 10",
+                           "target_sections":  "6/24",
+                           "requirement":  "R02/R03",
+                           "decision":  "DEC-10",
+                           "source_text":  "## AC-03 — Cadastro institucional\n\nUm responsável consegue criar sua conta, cadastrar uma instituição e administrar suas informações.",
+                           "baseline_1_0_text":  "### AC-03 — Identidade institucional\n\nA instituição deverá possuir identidade persistente e independente da conta pessoal.\n\n**Verificação mínima:** substituição ou revogação de representante não elimina automaticamente a instituição.\n\n**Rastreabilidade:** R02, DEC-10.",
+                           "draft_1_1_text":  "### AC-03 — Cadastro e identidade institucional\n\nResponsável deverá criar conta, cadastrar instituição e administrar informações quando autorizado, preservando identidade persistente independente da conta pessoal.\n\n**Verificação mínima:** Demonstrar criação/cadastro/edição legítimos; substituição/revogação do representante não elimina a instituição; negar administração sem vínculo válido.\n\n**Rastreabilidade:** MVP:AC-03; R02, R03; §6; DEC-10.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar criar conta, cadastrar e administrar; manter identidade persistente e autorização.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar criar conta, cadastrar e administrar; manter identidade persistente e autorização.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-03 1.0 protege persistência, mas não cobre explicitamente criar conta, cadastrar e administrar."
+                       },
+                       {
+                           "source":  "MVP:AC-04",
+                           "target":  "CONSOLIDATED:AC-04",
+                           "source_section":  "27; contexto 13",
+                           "target_sections":  "8.1/24",
+                           "requirement":  "R03",
+                           "decision":  "DEC-07/10",
+                           "source_text":  "## AC-04 — Confirmação institucional\n\nO sistema consegue enviar e validar uma confirmação de e-mail vinculada à instituição.",
+                           "baseline_1_0_text":  "### AC-04 — Confirmação e representação\n\nOs canais exigidos deverão ser confirmados, sem confundir controle de e-mail com autoridade institucional.\n\n**Verificação mínima:** confirmação de e-mail isolada não concede publicação ou representação validada.\n\n**Rastreabilidade:** R03, DEC-07, DEC-10.",
+                           "draft_1_1_text":  "### AC-04 — Confirmação de email e representação\n\nEnviar e validar confirmação por código ou link temporário vinculada à instituição e ao endereço/contexto. Email institucional distinto será confirmado independentemente do pessoal; controle de email não comprova representação.\n\n**Verificação mínima:** Comprovar envio e confirmação válidos com endereços iguais/distintos; rejeitar código/link inválido, expirado ou consumido; confirmação isolada não concede representação ou publicação.\n\n**Rastreabilidade:** MVP:AC-04; R03; §8.1; DEC-07/10.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar envio e confirmação válidos; contextos pessoal/institucional e testes de código/link.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar envio e confirmação válidos; contextos pessoal/institucional e testes de código/link.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-04 1.0 testa que email não concede autoridade; não demonstra envio e validação legítimos."
+                       },
+                       {
+                           "source":  "MVP:AC-05",
+                           "target":  "CONSOLIDATED:AC-05",
+                           "source_section":  "27; contexto 12/17",
+                           "target_sections":  "9/10/24",
+                           "requirement":  "R04",
+                           "decision":  "DEC-05",
+                           "source_text":  "## AC-05 — Publicação autorizada\n\nNenhuma instituição é publicada sem representação validada, consentimento expresso e triagem administrativa aprovada.",
+                           "baseline_1_0_text":  "### AC-05 — Publicação autorizada\n\nA publicação inicial e a republicação exigem todas as condições obrigatórias definidas neste mandato.\n\n**Verificação mínima:** retirar individualmente cada condição e comprovar bloqueio da publicação; validar elegibilidade quando todas estiverem satisfeitas.\n\n**Rastreabilidade:** R04, DEC-05, T01.",
+                           "draft_1_1_text":  "### AC-05 — Publicação autorizada\n\nPublicação inicial/republicação exige representação validada, consentimento expresso vigente, triagem aprovada, confirmações aplicáveis e ausência de disputa admitida pendente, conforme §§9/10.\n\n**Verificação mínima:** Permitir publicação legítima com todas as condições; retirar cada condição e comprovar bloqueio, inclusive concorrência; não exigir selo.\n\n**Rastreabilidade:** MVP:AC-05; R04; DEC-05; T01.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Todas as condições de publicação e cenário positivo; T01 distingue início e continuidade.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Todas as condições de publicação e cenário positivo; T01 distingue início e continuidade.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-05 1.0 preserva condições e teste positivo/negativo; amplia tratamento de republicação e T01."
+                       },
+                       {
+                           "source":  "MVP:AC-06",
+                           "target":  "CONSOLIDATED:AC-06",
+                           "source_section":  "27; contexto 12",
+                           "target_sections":  "9/24",
+                           "requirement":  "R04",
+                           "decision":  "DEC-06",
+                           "source_text":  "## AC-06 — Publicação imediata\n\nUma instituição elegível pode ser publicada sem período mínimo obrigatório de espera.",
+                           "baseline_1_0_text":  "### AC-06 — Ausência de espera mínima\n\nO sistema não deverá impor carência obrigatória após satisfação das condições de publicação.\n\n**Verificação mínima:** última condição aprovada permite publicação sem temporizador mínimo obrigatório.\n\n**Rastreabilidade:** R04, DEC-06.",
+                           "draft_1_1_text":  "### AC-06 — Ausência de espera mínima\n\nInstituição elegível poderá publicar sem carência obrigatória após atender às condições de publicação.\n\n**Verificação mínima:** Última condição aprovada permite publicação sem temporizador mínimo; meta operacional de 24–48 horas não vira carência.\n\n**Rastreabilidade:** MVP:AC-06; R04; DEC-06.",
+                           "classification":  "PRESERVED",
+                           "impact":  "Carência inexistente preservada; prazo operacional não vira temporizador mínimo.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Carência inexistente preservada; prazo operacional não vira temporizador mínimo.",
+                           "baseline_classification":  "PRESERVED",
+                           "baseline_difference":  "Carência obrigatória ausente no original e na 1.0; preservado o fluxo imediato."
+                       },
+                       {
+                           "source":  "MVP:AC-07",
+                           "target":  "CONSOLIDATED:AC-07",
+                           "source_section":  "27; contexto 11",
+                           "target_sections":  "7/24",
+                           "requirement":  "R06",
+                           "decision":  "DEC-04",
+                           "source_text":  "## AC-07 — Indicação comunitária\n\nUm usuário identificado consegue indicar uma instituição, sem gerar publicação pública automática.",
+                           "baseline_1_0_text":  "### AC-07 — Indicação comunitária privada\n\nIndicações não constituem cadastro institucional oficial ou autorização de publicação.\n\n**Verificação mínima:** indicação permanece privada e não gera vínculo administrativo; eventual cadastro depende de participação voluntária.\n\n**Rastreabilidade:** R06, DEC-04.",
+                           "draft_1_1_text":  "### AC-07 — Indicação comunitária funcional e privada\n\nUsuário identificado poderá enviar indicação, gerando registro privado para análise/convite autorizado, sem publicação automática ou representação.\n\n**Verificação mínima:** Demonstrar envio/registro/análise/convite e adesão voluntária conforme §7; verificar privacidade, ausência de vínculo automático, recusa, falta de resposta e abuso.\n\n**Rastreabilidade:** MVP:AC-07; R06; DEC-04.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar envio, registro, análise e convite; indicação continua privada e voluntária.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar envio, registro, análise e convite; indicação continua privada e voluntária.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-07 1.0 testa privacidade e ausência de vínculo, sem comprovar envio/registro da indicação. Fluxo está em §7."
+                       },
+                       {
+                           "source":  "MVP:AC-08",
+                           "target":  "CONSOLIDATED:AC-08",
+                           "source_section":  "27; contexto 8",
+                           "target_sections":  "14/24",
+                           "requirement":  "R09",
+                           "decision":  "DEC-03",
+                           "source_text":  "## AC-08 — Perfil resumido e completo\n\nA instituição possui apresentação resumida nos resultados e página pública individual com suas informações detalhadas.",
+                           "baseline_1_0_text":  "### AC-08 — Card e perfil institucional\n\nAs duas superfícies deverão apresentar informações autorizadas e tratamento adequado de campos ausentes.\n\n**Verificação mínima:** validar perfis completos, incompletos, protegidos e sem autorização de exposição.\n\n**Rastreabilidade:** R09, DEC-03.",
+                           "draft_1_1_text":  "### AC-08 — Card e perfil institucional\n\nInstituição publicada terá card nos resultados e página individual com informações detalhadas autorizadas, contatos e tratamento dos campos opcionais/mídia ausentes.\n\n**Verificação mínima:** Abrir resultado/perfil completo; verificar perfis completos/incompletos, apresentação neutra e localização protegida; não entregar conteúdo sem autorização.\n\n**Rastreabilidade:** MVP:AC-08; R09; §14; DEC-03.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Card/perfil e campos opcionais preservados, com proteção dos dados não públicos.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Card/perfil e campos opcionais preservados, com proteção dos dados não públicos.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-08 1.0 mantém card/perfil e amplia proteção e campos ausentes."
+                       },
+                       {
+                           "source":  "MVP:AC-09",
+                           "target":  "CONSOLIDATED:AC-09",
+                           "source_section":  "27; contexto 9",
+                           "target_sections":  "14/15/24",
+                           "requirement":  "R09/R10",
+                           "decision":  "DEC-01",
+                           "source_text":  "## AC-09 — Orientação de visitação\n\nO visitante consegue consultar condições de acesso, horários, agendamento, gratuidade e orientações declaradas pela casa.",
+                           "baseline_1_0_text":  "### AC-09 — Visitação e atividades\n\nAs informações de visitação, horários, modalidade, agendamento e condição econômica deverão preservar sua semântica.\n\n**Verificação mínima:** filtros combinados devem corresponder à mesma atividade; informações desconhecidas não satisfazem indevidamente filtros positivos.\n\n**Rastreabilidade:** R09.",
+                           "draft_1_1_text":  "### AC-09 — Visitação, orientações e atividades\n\nVisitante poderá consultar acesso, horários, agendamento, gratuidade/contribuição/pagamento e orientações declaradas, preservando modalidade e condições por atividade.\n\n**Verificação mínima:** Consultar orientações efetivas e ausência de informação sem inferência; filtros combinados satisfeitos pela mesma atividade, sem misturar eventos.\n\n**Rastreabilidade:** MVP:AC-09; R09; §§14/15.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Orientações declaradas e condição por atividade explícitas; filtros não misturam atividades.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Orientações declaradas e condição por atividade explícitas; filtros não misturam atividades.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-09 1.0 preserva semântica e controles de filtros, sem consulta explícita das orientações declaradas."
+                       },
+                       {
+                           "source":  "MVP:AC-10",
+                           "target":  "CONSOLIDATED:AC-10",
+                           "source_section":  "27; contexto 14",
+                           "target_sections":  "8.2/8.3/24",
+                           "requirement":  "R07",
+                           "decision":  "DEC-08/15",
+                           "source_text":  "## AC-10 — Verificação complementar\n\nUma instituição publicada consegue solicitar o Nível 2, gerar código e card, informar a URL da publicação e receber uma decisão registrada.",
+                           "baseline_1_0_text":  "### AC-10 — Verificação complementar social\n\nO método social deverá utilizar desafio vinculado, temporário, individual e auditável.\n\n**Verificação mínima:** aceitar evidência válida; rejeitar desafio expirado, reutilizado, incorreto ou vinculado a outra instituição.\n\n**Rastreabilidade:** R07, DEC-08, DEC-15.",
+                           "draft_1_1_text":  "### AC-10 — Verificação complementar social completa\n\nInstituição publicada poderá solicitar N2, selecionar canal, gerar código/card/legenda, informar URL e obter decisão fundamentada registrada e selo quando aprovada.\n\n**Verificação mínima:** Executar todo o fluxo da §8.3 com código na descrição e correspondência instituição/solicitante/canal/publicação; aceitar evidência válida e rejeitar expiração, reuso, erro ou outra instituição; não usar código como credencial nem exibir selo antecipado.\n\n**Rastreabilidade:** MVP:AC-10; R07; DEC-08/15.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar solicitação, código, card, legenda, URL e decisão; controles não substituem o fluxo.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar solicitação, código, card, legenda, URL e decisão; controles não substituem o fluxo.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-10 1.0 aceita/rejeita evidência, mas não demonstra solicitação, geração de código/card, URL e decisão como fluxo completo. §8.3 contém parte dessas regras."
+                       },
+                       {
+                           "source":  "MVP:AC-11",
+                           "target":  "CONSOLIDATED:AC-11",
+                           "source_section":  "27; contexto 15",
+                           "target_sections":  "8.4/24",
+                           "requirement":  "R07",
+                           "decision":  "DEC-09",
+                           "source_text":  "## AC-11 — Verificação manual\n\nUma instituição sem redes sociais consegue obter o mesmo selo mediante procedimento administrativo equivalente.",
+                           "baseline_1_0_text":  "### AC-11 — Verificação manual equivalente\n\nInstituições sem redes sociais deverão possuir caminho funcional equivalente.\n\n**Verificação mínima:** concessão manual válida resulta no mesmo selo público, sem distinção hierárquica.\n\n**Rastreabilidade:** R07, DEC-09.",
+                           "draft_1_1_text":  "### AC-11 — Verificação manual equivalente\n\nInstituição sem rede social, sem desejo de divulgação ou com restrição digital terá procedimento administrativo funcional equivalente para obter o mesmo selo.\n\n**Verificação mínima:** Executar solicitação/análise/decisão manual válida registrando método, evidências, operador, fundamento, resultado/data; mesmo selo, sem distinção depreciativa.\n\n**Rastreabilidade:** MVP:AC-11; R07; §8.4; DEC-09.",
+                           "classification":  "PRESERVED",
+                           "impact":  "Alternativa manual e equivalência do selo preservadas, incluindo execução legítima.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Alternativa manual e equivalência do selo preservadas, incluindo execução legítima.",
+                           "baseline_classification":  "PRESERVED",
+                           "baseline_difference":  "AC-11 1.0 preserva caminho funcional manual e mesmo selo."
+                       },
+                       {
+                           "source":  "MVP:AC-12",
+                           "target":  "CONSOLIDATED:AC-12",
+                           "source_section":  "27; contexto 16/17",
+                           "target_sections":  "8/9/24",
+                           "requirement":  "R04/R07",
+                           "decision":  "DEC-15",
+                           "source_text":  "## AC-12 — Separação de estados\n\nUma instituição pode estar publicada sem selo, e o selo pode ser revogado sem exclusão automática do perfil, quando os requisitos de publicação permanecem válidos.",
+                           "baseline_1_0_text":  "### AC-12 — Independência de estados\n\nRepresentação, consentimento, publicação e selo deverão possuir ciclos de vida independentes.\n\n**Verificação mínima:** ausência, expiração ou revogação isolada do selo não elimina o perfil nem revoga automaticamente a representação.\n\n**Rastreabilidade:** R04, R07, DEC-15.",
+                           "draft_1_1_text":  "### AC-12 — Independência de estados\n\nInstituição poderá permanecer publicada sem selo; ausência, expiração ou revogação isolada não exclui perfil ou revoga representação quando os requisitos de exposição/publicação permanecem válidos.\n\n**Verificação mínima:** Publicação sem selo e revogação do selo preservam perfil e representação válidos; retirada de consentimento e restrições mantêm efetividade.\n\n**Rastreabilidade:** MVP:AC-12; R04, R07; DEC-15.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Selo opcional preservado e independência de estados reforçada.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Selo opcional preservado e independência de estados reforçada.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-12 1.0 preserva independência e amplia o conjunto dos ciclos de vida."
+                       },
+                       {
+                           "source":  "MVP:AC-13",
+                           "target":  "CONSOLIDATED:AC-13",
+                           "source_section":  "27; contexto 18",
+                           "target_sections":  "10/17/24",
+                           "requirement":  "R02/R04/R11",
+                           "decision":  "DEC-10/12",
+                           "source_text":  "## AC-13 — Disputa de representação\n\nUma contestação legítima pode ser registrada e analisada sem transferência automática de autoridade.",
+                           "baseline_1_0_text":  "### AC-13 — Moderação e disputas\n\nDenúncias, disputas admitidas e restrições deverão produzir efeitos distintos.\n\n**Verificação mínima:**\n\n- Denúncia isolada não despublica.\n- Disputa admitida bloqueia nova publicação ou republicação.\n- Perfil existente não sofre suspensão exclusivamente pela admissão.\n- Restrição decorre de decisão autorizada e fundamentada.\n- Disputa não transfere autoridade automaticamente.\n- Revogação de consentimento permanece efetiva.\n\n**Rastreabilidade:** R04, R11, DEC-12, T01.",
+                           "draft_1_1_text":  "### AC-13 — Contestação, moderação e disputas\n\nContestação legítima poderá ser registrada/analisada sem transferência automática de autoridade; denúncia, disputa admitida e restrição terão efeitos distintos conforme T01.\n\n**Verificação mínima:** Registrar/analisar caso e decisão rastreável; denúncia/admissão não suspende automaticamente perfil existente; admissão bloqueia publicação inicial/republicação; restrição exige autoridade/fundamento; consentimento revogado permanece efetivo.\n\n**Rastreabilidade:** MVP:AC-13; R02, R04, R11; §§10/17; DEC-10/12; T01.",
+                           "classification":  "EXPANDED",
+                           "impact":  "T01 aprovado governa efeitos de disputa; denúncia não transfere autoridade nem suspende automaticamente.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "T01 aprovado governa efeitos de disputa; denúncia não transfere autoridade nem suspende automaticamente.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-13 1.0 distingue denúncia, disputa e restrição conforme T01 aprovado; origem também exige registrar e analisar contestação."
+                       },
+                       {
+                           "source":  "MVP:AC-14",
+                           "target":  "CONSOLIDATED:AC-14",
+                           "source_section":  "27; contexto 12/18",
+                           "target_sections":  "9/17/19/24",
+                           "requirement":  "R05/R11/R12",
+                           "decision":  "DEC-05/12",
+                           "source_text":  "## AC-14 — Revogação de consentimento\n\nUma instituição consegue solicitar retirada de participação, produzindo o tratamento administrativo e a suspensão pública correspondentes.",
+                           "baseline_1_0_text":  "### AC-14 — Revogação de consentimento\n\nA retirada de consentimento deverá interromper exposição nas superfícies controladas.\n\n**Verificação mínima:** validar API, páginas, pesquisa, mapas, SEO, mídia, caches e recuperação de backup, incluindo falhas relevantes.\n\nNão declarar remoção garantida de cópias mantidas por terceiros.\n\n**Rastreabilidade:** R05, R12, T03, T04.",
+                           "draft_1_1_text":  "### AC-14 — Solicitação de retirada e efeitos da revogação\n\nInstituição poderá solicitar retirada de participação por representante autorizado, gerando tratamento administrativo registrado e interrupção da exposição controlada após revogação, inclusive suspensão pública correspondente.\n\n**Verificação mínima:** Demonstrar solicitação legítima e efeitos em API, páginas, pesquisa, mapas, SEO, mídia, caches e restore, incluindo falhas relevantes; negar solicitação sem autoridade; não prometer remover cópias de terceiros.\n\n**Rastreabilidade:** MVP:AC-14; R05, R11, R12; T03/T04.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Restaurar mecanismo de solicitação legítima e efeitos da revogação nas superfícies controladas.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Restaurar mecanismo de solicitação legítima e efeitos da revogação nas superfícies controladas.",
+                           "baseline_classification":  "GAP",
+                           "baseline_difference":  "AC-14 1.0 exige efeitos técnicos da revogação, mas não demonstra capacidade de solicitar retirada e tratamento administrativo."
+                       },
+                       {
+                           "source":  "MVP:AC-15",
+                           "target":  "CONSOLIDATED:AC-15",
+                           "source_section":  "27; contexto 10/20/22",
+                           "target_sections":  "6/19/24",
+                           "requirement":  "R02/R03/R12",
+                           "decision":  "DEC-10",
+                           "source_text":  "## AC-15 — Isolamento e segurança\n\nNenhum usuário consegue administrar outra instituição sem autorização.",
+                           "baseline_1_0_text":  "### AC-15 — Isolamento institucional\n\nNenhuma conta poderá acessar ou administrar recursos institucionais sem autorização correspondente.\n\n**Verificação mínima:** negar acessos cruzados, vínculos revogados, ações fora de escopo e transições indevidas.\n\n**Rastreabilidade:** R02, R03, R12.",
+                           "draft_1_1_text":  "### AC-15 — Autorização e isolamento institucional\n\nRepresentante autorizado poderá administrar recursos no escopo concedido; nenhuma conta administrará/acessará recurso institucional sem autorização correspondente.\n\n**Verificação mínima:** Acesso legítimo e negação de acesso cruzado, vínculo revogado, papel/ação fora de escopo e transição indevida, sem impedir acesso público autorizado.\n\n**Rastreabilidade:** MVP:AC-15; R02, R03, R12.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Autorizações positivas e negativas, escopo institucional e revogação.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Autorizações positivas e negativas, escopo institucional e revogação.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-15 1.0 amplia isolamento para acessar/administrar recursos e transições; cenário legítimo deve complementar negativas."
+                       },
+                       {
+                           "source":  "MVP:AC-16",
+                           "target":  "CONSOLIDATED:AC-16",
+                           "source_section":  "27; contexto 20/22",
+                           "target_sections":  "17/19/24",
+                           "requirement":  "R11/R12",
+                           "decision":  "DEC-12/13",
+                           "source_text":  "## AC-16 — Auditoria\n\nDecisões relevantes de publicação, representação, consentimento e verificação possuem registros rastreáveis.",
+                           "baseline_1_0_text":  "### AC-16 — Auditoria e responsabilidade\n\nAções críticas deverão registrar informações suficientes para revisão e contestação.\n\n**Verificação mínima:** recuperar ator, ação, fundamento, data e resultado sem exposição indevida de segredos ou dados pessoais.\n\n**Rastreabilidade:** R11, R12.",
+                           "draft_1_1_text":  "### AC-16 — Auditoria e responsabilidade\n\nDecisões relevantes de publicação, representação, consentimento e verificação possuirão registros rastreáveis suficientes para revisão e contestação.\n\n**Verificação mínima:** Recuperar ator, ação, fundamento, data e resultado; impedir exposição indevida de segredos, dados pessoais ou evidência administrativa privada.\n\n**Rastreabilidade:** MVP:AC-16; R11, R12.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Auditoria preservada e minimização de evidências administrativas reforçada.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Auditoria preservada e minimização de evidências administrativas reforçada.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-16 1.0 amplia atributos da auditoria e privacidade; explicitar os quatro domínios decisórios originais."
+                       },
+                       {
+                           "source":  "MVP:AC-17",
+                           "target":  "CONSOLIDATED:AC-17",
+                           "source_section":  "27; contexto 6/22",
+                           "target_sections":  "12/19/24",
+                           "requirement":  "R08/R14",
+                           "decision":  "DEC-11",
+                           "source_text":  "## AC-17 — Integridade geográfica e privacidade\n\nA pesquisa respeita as políticas de visibilidade e não expõe coordenadas ou endereços cuja divulgação não tenha sido autorizada.",
+                           "baseline_1_0_text":  "### AC-17 — Privacidade geográfica\n\nLocalizações protegidas não poderão ser inferidas por superfícies públicas controladas.\n\n**Verificação mínima:** testes diferenciais sobre buscas, resultados, contagens, distâncias, mapas, APIs, metadados e caches.\n\n**Rastreabilidade:** R08, DEC-11.",
+                           "draft_1_1_text":  "### AC-17 — Integridade geográfica e privacidade\n\nPesquisa e demais superfícies públicas respeitarão visibilidade autorizada e não permitirão expor/inferir ponto ou endereço protegido.\n\n**Verificação mínima:** Cenários legítimos dos três níveis e testes diferenciais em busca, contagem, paginação, ordenação, mapa, API, metadados/caches, sem usar ponto privado como entrada pública.\n\n**Rastreabilidade:** MVP:AC-17; R08, R14; §12; DEC-11.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Três níveis geográficos e inferência indireta nas superfícies públicas.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Três níveis geográficos e inferência indireta nas superfícies públicas.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-17 1.0 amplia privacidade para inferência indireta e diversas superfícies."
+                       },
+                       {
+                           "source":  "MVP:AC-18",
+                           "target":  "CONSOLIDATED:AC-18",
+                           "source_section":  "27; contexto 21/23/24",
+                           "target_sections":  "4/21/24",
+                           "requirement":  "R13",
+                           "decision":  "DEC-01/02",
+                           "source_text":  "## AC-18 — Independência arquitetural\n\nO diretório funciona sem dependência obrigatória do Axodus Core ou dos módulos futuros.\n\nA aceitação definitiva deverá depender de testes funcionais, testes de segurança, validação de produto e readiness operacional.\n\n---",
+                           "baseline_1_0_text":  "### AC-18 — Independência arquitetural\n\nO aplicativo deverá operar sem dependência obrigatória do Axodus Core, ACS, blockchain ou $Neurons.\n\n**Verificação mínima:** inspeção de dependências e demonstração de operação em ambiente independente.\n\n**Rastreabilidade:** R13.",
+                           "draft_1_1_text":  "### AC-18 — Independência arquitetural e dos módulos futuros\n\nO diretório operará sem dependência obrigatória do Axodus Core, ACS, blockchain, $Neurons ou módulos futuros.\n\n**Verificação mínima:** Inspeção de dependências e futura demonstração do fluxo em ambiente independente, sem módulos fora do M01.\n\n**Rastreabilidade:** MVP:AC-18; R13; §§4/21/31.",
+                           "classification":  "EXPANDED",
+                           "impact":  "Independência do Core e exclusões do MVP mantidas.",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING",
+                           "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                           "difference":  "Independência do Core e exclusões do MVP mantidas.",
+                           "baseline_classification":  "EXPANDED",
+                           "baseline_difference":  "AC-18 1.0 explicita ACS/blockchain/Neurons e ambiente independente; exclusões dos módulos futuros também estão em §4."
+                       }
+                   ],
+    "reverse_ac":  [
+                       {
+                           "source":  "CONSOLIDATED:AC-01",
+                           "target":  "MVP:AC-01",
+                           "source_context":  "27; contexto 5/6/7",
+                           "target_sections":  "12/13/16/24",
+                           "decision":  "DEC-01/11/14",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-02",
+                           "target":  "MVP:AC-02",
+                           "source_context":  "27; contexto 6/8",
+                           "target_sections":  "12/13/24",
+                           "decision":  "DEC-11",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-03",
+                           "target":  "MVP:AC-03",
+                           "source_context":  "27; contexto 10",
+                           "target_sections":  "6/24",
+                           "decision":  "DEC-10",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-04",
+                           "target":  "MVP:AC-04",
+                           "source_context":  "27; contexto 13",
+                           "target_sections":  "8.1/24",
+                           "decision":  "DEC-07/10",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-05",
+                           "target":  "MVP:AC-05",
+                           "source_context":  "27; contexto 12/17",
+                           "target_sections":  "9/10/24",
+                           "decision":  "DEC-05",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-06",
+                           "target":  "MVP:AC-06",
+                           "source_context":  "27; contexto 12",
+                           "target_sections":  "9/24",
+                           "decision":  "DEC-06",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-07",
+                           "target":  "MVP:AC-07",
+                           "source_context":  "27; contexto 11",
+                           "target_sections":  "7/24",
+                           "decision":  "DEC-04",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-08",
+                           "target":  "MVP:AC-08",
+                           "source_context":  "27; contexto 8",
+                           "target_sections":  "14/24",
+                           "decision":  "DEC-03",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-09",
+                           "target":  "MVP:AC-09",
+                           "source_context":  "27; contexto 9",
+                           "target_sections":  "14/15/24",
+                           "decision":  "DEC-01",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-10",
+                           "target":  "MVP:AC-10",
+                           "source_context":  "27; contexto 14",
+                           "target_sections":  "8.2/8.3/24",
+                           "decision":  "DEC-08/15",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-11",
+                           "target":  "MVP:AC-11",
+                           "source_context":  "27; contexto 15",
+                           "target_sections":  "8.4/24",
+                           "decision":  "DEC-09",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-12",
+                           "target":  "MVP:AC-12",
+                           "source_context":  "27; contexto 16/17",
+                           "target_sections":  "8/9/24",
+                           "decision":  "DEC-15",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-13",
+                           "target":  "MVP:AC-13",
+                           "source_context":  "27; contexto 18",
+                           "target_sections":  "10/17/24",
+                           "decision":  "DEC-10/12",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-14",
+                           "target":  "MVP:AC-14",
+                           "source_context":  "27; contexto 12/18",
+                           "target_sections":  "9/17/19/24",
+                           "decision":  "DEC-05/12",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-15",
+                           "target":  "MVP:AC-15",
+                           "source_context":  "27; contexto 10/20/22",
+                           "target_sections":  "6/19/24",
+                           "decision":  "DEC-10",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-16",
+                           "target":  "MVP:AC-16",
+                           "source_context":  "27; contexto 20/22",
+                           "target_sections":  "17/19/24",
+                           "decision":  "DEC-12/13",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-17",
+                           "target":  "MVP:AC-17",
+                           "source_context":  "27; contexto 6/22",
+                           "target_sections":  "12/19/24",
+                           "decision":  "DEC-11",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       },
+                       {
+                           "source":  "CONSOLIDATED:AC-18",
+                           "target":  "MVP:AC-18",
+                           "source_context":  "27; contexto 21/23/24",
+                           "target_sections":  "4/21/24",
+                           "decision":  "DEC-01/02",
+                           "authority":  "SOURCE-07 A/B/C/E + condições COR-01–06; SOURCE-09; ratificação 1.1 PENDING"
+                       }
+                   ],
+    "construction_ac":  [
+                            {
+                                "source":  "CONSTRUCTION:AC-01",
+                                "source_text":  "Visitante pesquisa o diretório sem autenticação obrigatória.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-01"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "13/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-02",
+                                "source_text":  "Pesquisa geográfica respeita localização e raio selecionados.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-01",
+                                                      "CONSOLIDATED:AC-02"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "12/13/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-03",
+                                "source_text":  "Filtros religiosos refletem classificações autodeclaradas.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-01",
+                                                      "CONSOLIDATED:AC-17"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "16/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-04",
+                                "source_text":  "Resultados são disponibilizados em lista e mapa.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-01",
+                                                      "CONSOLIDATED:AC-08"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "13/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-05",
+                                "source_text":  "Instituição possui card resumido e perfil completo.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-08"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "14/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-06",
+                                "source_text":  "Visitante consulta condições de visitação e atendimento.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-09"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "14/15/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-07",
+                                "source_text":  "Canais de contato autorizados são acessíveis.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-08"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "14/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-08",
+                                "source_text":  "Representante consegue cadastrar uma instituição.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-03"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "6/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-09",
+                                "source_text":  "Confirmação institucional por e-mail é funcional.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-04"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8.1/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-10",
+                                "source_text":  "Publicação exige representação, consentimento e triagem.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-05"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "9/10/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-11",
+                                "source_text":  "Publicação elegível não exige espera mínima.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-06"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "9/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-12",
+                                "source_text":  "Indicação comunitária permanece privada.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-07"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "7/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-13",
+                                "source_text":  "Instituição publicada pode permanecer sem selo.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-12"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8/9/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-14",
+                                "source_text":  "Sistema gera desafio e card de verificação.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-10"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8.3/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-15",
+                                "source_text":  "Operador consegue validar uma evidência complementar.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-10",
+                                                      "CONSOLIDATED:AC-16"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8.3/17/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-16",
+                                "source_text":  "Verificação manual equivalente está disponível.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-11"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8.4/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-17",
+                                "source_text":  "Selo pode ser concedido e revogado conforme política.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-12"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "8/17/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-18",
+                                "source_text":  "Disputas não transferem automaticamente autoridade.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-13"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "10/17/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-19",
+                                "source_text":  "Dados geográficos protegidos não são expostos direta ou indiretamente.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-02",
+                                                      "CONSOLIDATED:AC-17"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "12/19/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-20",
+                                "source_text":  "Usuários não administram instituições sem autorização.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-15"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "6/19/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-21",
+                                "source_text":  "Retirada de consentimento interrompe a exposição pública.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-14"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "9/10/19/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-22",
+                                "source_text":  "Decisões administrativas possuem trilha de auditoria.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-16"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "17/19/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-23",
+                                "source_text":  "Conteúdos externos possuem tratamento seguro e alternativa por link.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-08",
+                                                      "CONSOLIDATED:AC-10"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "18/25"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-24",
+                                "source_text":  "Aplicação funciona adequadamente em dispositivos móveis.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-01",
+                                                      "CONSOLIDATED:AC-08"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "13/21/25"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-25",
+                                "source_text":  "Diretório funciona sem dependência obrigatória do Axodus Core.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-18"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "21/24"
+                            },
+                            {
+                                "source":  "CONSTRUCTION:AC-26",
+                                "source_text":  "Módulos futuros não foram implementados indevidamente.",
+                                "draft_targets":  [
+                                                      "CONSOLIDATED:AC-18"
+                                                  ],
+                                "status":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
+                                "relationship":  "COVERAGE_REFERENCE_ONLY_NOT_APPROVAL_OR_EQUIVALENCE",
+                                "target_sections":  "4/31/33"
+                            }
+                        ],
+    "original_sections":  [
+                              {
+                                  "source_section":  1,
+                                  "source_title":  "# 1. MANDATO",
+                                  "draft_sections":  [
+                                                         1,
+                                                         2,
+                                                         26,
+                                                         33,
+                                                         36
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; governança",
+                                  "decisions":  "DEC-01/02",
+                                  "difference":  "Direção de planejamento prospectivo e limites preservados; proveniência da 1.0 corrigida por COR-01."
+                              },
+                              {
+                                  "source_section":  2,
+                                  "source_title":  "# 2. VISÃO DO PRODUTO",
+                                  "draft_sections":  [
+                                                         2,
+                                                         3
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01/R13",
+                                  "decisions":  "DEC-01/02",
+                                  "difference":  "Identidade/propósito preservados na 1.0 e minuta; independência do Core."
+                              },
+                              {
+                                  "source_section":  3,
+                                  "source_title":  "# 3. OBJETIVO EXCLUSIVO DO MVP",
+                                  "draft_sections":  [
+                                                         4,
+                                                         13,
+                                                         14
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01/R09",
+                                  "decisions":  "DEC-01/03",
+                                  "difference":  "Escopo funcional distribuído entre descoberta, perfis e requisitos, sem módulos novos."
+                              },
+                              {
+                                  "source_section":  4,
+                                  "source_title":  "# 4. ARQUITETURA FUNCIONAL DO M01",
+                                  "draft_sections":  [
+                                                         3,
+                                                         20
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01–R14; princípios",
+                                  "decisions":  "DEC-01–16",
+                                  "difference":  "Princípios redistribuídos; salvaguardas e inclusão preservadas."
+                              },
+                              {
+                                  "source_section":  5,
+                                  "source_title":  "# 5. EXPERIÊNCIA DO USUÁRIO",
+                                  "draft_sections":  [
+                                                         13,
+                                                         14
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01/R08/R09",
+                                  "decisions":  "DEC-01/03/11",
+                                  "difference":  "Descoberta preservada em regra geral; COR-04 explicita entradas e navegação."
+                              },
+                              {
+                                  "source_section":  6,
+                                  "source_title":  "# 6. MOTOR DE PESQUISA E DESCOBERTA",
+                                  "draft_sections":  [
+                                                         12,
+                                                         13,
+                                                         15,
+                                                         16
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01/R08/R10",
+                                  "decisions":  "DEC-11/14",
+                                  "difference":  "Filtros geográficos/religiosos/práticos distribuídos; privacidade DEC-11 e condições por atividade ampliadas."
+                              },
+                              {
+                                  "source_section":  7,
+                                  "source_title":  "# 7. TAXONOMIA RELIGIOSA",
+                                  "draft_sections":  [
+                                                         16
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R10",
+                                  "decisions":  "DEC-14",
+                                  "difference":  "Relações e catálogo não rígido explicitados na minuta §16."
+                              },
+                              {
+                                  "source_section":  8,
+                                  "source_title":  "# 8. PERFIL INSTITUCIONAL PÚBLICO",
+                                  "draft_sections":  [
+                                                         14
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R09",
+                                  "decisions":  "DEC-03",
+                                  "difference":  "Card/perfil/contatos/campos opcionais e fallbacks explicitados em §14."
+                              },
+                              {
+                                  "source_section":  9,
+                                  "source_title":  "# 9. VISITAÇÃO, ATENDIMENTO E PROGRAMAÇÃO REGULAR",
+                                  "draft_sections":  [
+                                                         14,
+                                                         15
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R09/R10",
+                                  "decisions":  "DEC-03",
+                                  "difference":  "Visitação preservada; sem agendamento transacional. Semântica de atividades/filtros ampliada."
+                              },
+                              {
+                                  "source_section":  10,
+                                  "source_title":  "# 10. IDENTIDADE E REPRESENTAÇÃO INSTITUCIONAL",
+                                  "draft_sections":  [
+                                                         6
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R02/R03",
+                                  "decisions":  "DEC-10",
+                                  "difference":  "Representação proporcional, identidade persistente e delegação ampliadas por DEC-10."
+                              },
+                              {
+                                  "source_section":  11,
+                                  "source_title":  "# 11. INDICAÇÃO COMUNITÁRIA",
+                                  "draft_sections":  [
+                                                         7
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R06",
+                                  "decisions":  "DEC-04",
+                                  "difference":  "Indicação privada e fluxo voluntário preservados; campos/envio e verificação positiva explicitados."
+                              },
+                              {
+                                  "source_section":  12,
+                                  "source_title":  "# 12. POLÍTICA DE PUBLICAÇÃO INSTITUCIONAL",
+                                  "draft_sections":  [
+                                                         9,
+                                                         10,
+                                                         17
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R04/R05",
+                                  "decisions":  "DEC-05/06",
+                                  "difference":  "Publicação e consentimento preservados; direção T01 qualifica início versus continuidade."
+                              },
+                              {
+                                  "source_section":  13,
+                                  "source_title":  "# 13. PROTOCOLO DE VERIFICAÇÃO EM DOIS NÍVEIS",
+                                  "draft_sections":  [
+                                                         8
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R03/R07",
+                                  "decisions":  "DEC-07/10",
+                                  "difference":  "Código/link e contextos de email restaurados explicitamente, sem comprovação automática de representação."
+                              },
+                              {
+                                  "source_section":  14,
+                                  "source_title":  "# 14. VERIFICAÇÃO POR PUBLICAÇÃO EM REDE SOCIAL",
+                                  "draft_sections":  [
+                                                         8,
+                                                         8
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R07",
+                                  "decisions":  "DEC-08/15",
+                                  "difference":  "Fluxo N2 preservado em §8.3; card/legenda e critérios positivos explícitos."
+                              },
+                              {
+                                  "source_section":  15,
+                                  "source_title":  "# 15. VERIFICAÇÃO MANUAL ALTERNATIVA",
+                                  "draft_sections":  [
+                                                         8
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R07",
+                                  "decisions":  "DEC-09",
+                                  "difference":  "Alternativa manual e mesmo selo preservados."
+                              },
+                              {
+                                  "source_section":  16,
+                                  "source_title":  "# 16. SELO INSTITUCIONAL",
+                                  "draft_sections":  [
+                                                         8,
+                                                         9
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R04/R07",
+                                  "decisions":  "DEC-15",
+                                  "difference":  "Selo opcional e revogável preservado; estados independentes ampliados."
+                              },
+                              {
+                                  "source_section":  17,
+                                  "source_title":  "# 17. ESTADOS INDEPENDENTES E CONTRATOS DE PUBLICAÇÃO",
+                                  "draft_sections":  [
+                                                         6,
+                                                         9,
+                                                         10,
+                                                         17
+                                                     ],
+                                  "classification":  "SUPERSEDED_BY_APPROVED_DECISION",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R02/R04/R05/R07",
+                                  "decisions":  "DEC-05/07/10/15",
+                                  "difference":  "Apenas ambiguidade do predicado único superada pela direção T01 aprovada, preservadas as demais regras."
+                              },
+                              {
+                                  "source_section":  18,
+                                  "source_title":  "# 18. DUPLICIDADES E DISPUTAS DE REPRESENTAÇÃO",
+                                  "draft_sections":  [
+                                                         6,
+                                                         10,
+                                                         11,
+                                                         17
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R02/R05/R11",
+                                  "decisions":  "DEC-10/12",
+                                  "difference":  "Contestação, recuperação e retirada distribuídas; T02 continua dependente de política específica."
+                              },
+                              {
+                                  "source_section":  19,
+                                  "source_title":  "# 19. MÍDIAS E INTEGRAÇÕES EXTERNAS",
+                                  "draft_sections":  [
+                                                         14,
+                                                         18
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R09/R12",
+                                  "decisions":  "DEC-03",
+                                  "difference":  "Mídias e links seguros preservados; conteúdo arbitrário e hospedagem própria de vídeo explicitamente vedados."
+                              },
+                              {
+                                  "source_section":  20,
+                                  "source_title":  "# 20. BACKOFFICE ADMINISTRATIVO",
+                                  "draft_sections":  [
+                                                         17,
+                                                         19
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R11/R12",
+                                  "decisions":  "DEC-12/13",
+                                  "difference":  "Operação/backoffice centralizados e auditoria preservados; requisitos complementares continuam futuros."
+                              },
+                              {
+                                  "source_section":  21,
+                                  "source_title":  "# 21. DIRETRIZES DE ARQUITETURA",
+                                  "draft_sections":  [
+                                                         21
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13",
+                                  "decisions":  "DEC-02",
+                                  "difference":  "Direção arquitetural preservada; stack/provedores sem congelamento ou contratação."
+                              },
+                              {
+                                  "source_section":  22,
+                                  "source_title":  "# 22. SEGURANÇA, PRIVACIDADE E PROTEÇÃO INSTITUCIONAL",
+                                  "draft_sections":  [
+                                                         12,
+                                                         19
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R12/R14",
+                                  "decisions":  "DEC-11/12",
+                                  "difference":  "Minimização e segurança ampliadas; adequação jurídica permanece gate WP-03."
+                              },
+                              {
+                                  "source_section":  23,
+                                  "source_title":  "# 23. ESCOPO EXPLICITAMENTE EXCLUÍDO",
+                                  "draft_sections":  [
+                                                         4
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; escopo",
+                                  "decisions":  "DEC-01",
+                                  "difference":  "Exclusões originais restauradas explicitamente em §4.2; não autoriza versões parciais."
+                              },
+                              {
+                                  "source_section":  24,
+                                  "source_title":  "# 24. MODULARIDADE E EVOLUÇÃO FUTURA",
+                                  "draft_sections":  [
+                                                         4,
+                                                         31
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; evolução",
+                                  "decisions":  "DEC-01/02",
+                                  "difference":  "Evolução futura tratada como visão, sem autorização de novos módulos."
+                              },
+                              {
+                                  "source_section":  25,
+                                  "source_title":  "# 25. ESTUDO DE VIABILIDADE OBRIGATÓRIO",
+                                  "draft_sections":  [
+                                                         23
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; economia/viabilidade",
+                                  "decisions":  "DEC-16",
+                                  "difference":  "Dimensões de viabilidade e cenários indicativos explicitados, sem orçamento ou titularidade concretos."
+                              },
+                              {
+                                  "source_section":  26,
+                                  "source_title":  "# 26. ROADMAP PRELIMINAR",
+                                  "draft_sections":  [
+                                                         31
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; entrega",
+                                  "decisions":  "DEC-02",
+                                  "difference":  "Sequenciamento original admitia proposta CTO; roteiro consolidado preservado e gates mantidos."
+                              },
+                              {
+                                  "source_section":  27,
+                                  "source_title":  "# 27. CRITÉRIOS DE ACEITAÇÃO DO MVP",
+                                  "draft_sections":  [
+                                                         24
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01–R14",
+                                  "decisions":  "DEC-01–16",
+                                  "difference":  "18 critérios comparados individualmente com 1.0 e 1.1; oito lacunas de explicitação positiva tratadas."
+                              },
+                              {
+                                  "source_section":  28,
+                                  "source_title":  "# 28. ENTREGÁVEIS SOLICITADOS AO CTO",
+                                  "draft_sections":  [
+                                                         25
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01–R14; entregáveis",
+                                  "decisions":  "DEC-01–16",
+                                  "difference":  "17 CTO-DEL mantidos por referência explícita, sem exigir 17 arquivos; escopo de entrega futura preservado."
+                              },
+                              {
+                                  "source_section":  29,
+                                  "source_title":  "# 29. DECISÕES ABERTAS À ANÁLISE TÉCNICA",
+                                  "draft_sections":  [
+                                                         22,
+                                                         26,
+                                                         32
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R01–R14; parâmetros",
+                                  "decisions":  "DEC-01–16",
+                                  "difference":  "Questões parametrizáveis permanecem sob autoridades/gates; nenhum contrato congelado."
+                              },
+                              {
+                                  "source_section":  30,
+                                  "source_title":  "# 30. AUTORIDADE E GOVERNANÇA DO DESENVOLVIMENTO",
+                                  "draft_sections":  [
+                                                         26,
+                                                         32,
+                                                         33
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; governança",
+                                  "decisions":  "DEC-16",
+                                  "difference":  "Autoridades e limites de execução preservados; instruções vigentes e NI restringem intervenção atual."
+                              },
+                              {
+                                  "source_section":  31,
+                                  "source_title":  "# 31. CLASSIFICAÇÃO FINAL DO MANDATO",
+                                  "draft_sections":  [
+                                                         1,
+                                                         23,
+                                                         33
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; autorização",
+                                  "decisions":  "DEC-01/16",
+                                  "difference":  "Classificação administrativa preliminar explicitada por COR-06; autorização continua documental."
+                              },
+                              {
+                                  "source_section":  32,
+                                  "source_title":  "# 32. EXECUTIVE DIRECTIVE",
+                                  "draft_sections":  [
+                                                         36
+                                                     ],
+                                  "classification":  "REDISTRIBUTED",
+                                  "basis":  "SOURCE-01; SOURCE-07 A–G/COR-05; SOURCE-06; SOURCE-09",
+                                  "limit":  "Correspondência de conteúdo, não identidade literal; redação 1.1 sujeita a ratificação",
+                                  "impact":  "Obrigação original preservada nos destinos; direções aprovadas e controles complementares explicitados",
+                                  "disposition":  "MAPPED_IN_DRAFT_PENDING_RATIFICATION",
+                                  "requirements":  "R13; governança",
+                                  "decisions":  "DEC-01/02",
+                                  "difference":  "Determinação final preservada, com etapas e autorizações condicionais."
+                              }
+                          ],
+    "consolidated_sections":  [
+                                  {
+                                      "draft_section":  1,
+                                      "title":  "## 1. FINALIDADE E AUTORIDADE NORMATIVA",
+                                      "mvp_source_sections":  [
+                                                                  1,
+                                                                  31
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  2,
+                                      "title":  "## 2. IDENTIDADE E PROPÓSITO",
+                                      "mvp_source_sections":  [
+                                                                  1,
+                                                                  2
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  3,
+                                      "title":  "## 3. PRINCÍPIOS VINCULANTES",
+                                      "mvp_source_sections":  [
+                                                                  2,
+                                                                  4
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  4,
+                                      "title":  "## 4. ESCOPO ESTRATÉGICO",
+                                      "mvp_source_sections":  [
+                                                                  3,
+                                                                  23,
+                                                                  24
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  5,
+                                      "title":  "## 5. PRODUCT DECISION REGISTER",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-07 B; DEC-01–16",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  6,
+                                      "title":  "## 6. MODELO DE IDENTIDADE INSTITUCIONAL",
+                                      "mvp_source_sections":  [
+                                                                  10,
+                                                                  17,
+                                                                  18
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  7,
+                                      "title":  "## 7. INDICAÇÃO COMUNITÁRIA",
+                                      "mvp_source_sections":  [
+                                                                  11
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  8,
+                                      "title":  "## 8. VERIFICAÇÃO INSTITUCIONAL",
+                                      "mvp_source_sections":  [
+                                                                  13,
+                                                                  14,
+                                                                  15,
+                                                                  16
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  9,
+                                      "title":  "## 9. PUBLICAÇÃO INSTITUCIONAL",
+                                      "mvp_source_sections":  [
+                                                                  12,
+                                                                  16,
+                                                                  17
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  10,
+                                      "title":  "## 10. RESOLUÇÃO NORMATIVA T01",
+                                      "mvp_source_sections":  [
+                                                                  12,
+                                                                  17,
+                                                                  18
+                                                              ],
+                                      "additional_basis":  "SOURCE-07 C: T01",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  11,
+                                      "title":  "## 11. CONTINUIDADE DA REPRESENTAÇÃO — T02",
+                                      "mvp_source_sections":  [
+                                                                  18
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  12,
+                                      "title":  "## 12. PRIVACIDADE GEOGRÁFICA",
+                                      "mvp_source_sections":  [
+                                                                  6,
+                                                                  22
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  13,
+                                      "title":  "## 13. PESQUISA E EXPERIÊNCIA DO VISITANTE",
+                                      "mvp_source_sections":  [
+                                                                  3,
+                                                                  5,
+                                                                  6
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  14,
+                                      "title":  "## 14. PERFIS INSTITUCIONAIS",
+                                      "mvp_source_sections":  [
+                                                                  3,
+                                                                  5,
+                                                                  8,
+                                                                  9,
+                                                                  19
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  15,
+                                      "title":  "## 15. VISITAÇÃO, HORÁRIOS E ATIVIDADES",
+                                      "mvp_source_sections":  [
+                                                                  6,
+                                                                  9
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  16,
+                                      "title":  "## 16. TAXONOMIA RELIGIOSA",
+                                      "mvp_source_sections":  [
+                                                                  6,
+                                                                  7
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  17,
+                                      "title":  "## 17. MODERAÇÃO E OPERAÇÃO ADMINISTRATIVA",
+                                      "mvp_source_sections":  [
+                                                                  12,
+                                                                  17,
+                                                                  18,
+                                                                  20
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  18,
+                                      "title":  "## 18. MÍDIAS E INTEGRAÇÕES EXTERNAS",
+                                      "mvp_source_sections":  [
+                                                                  19
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  19,
+                                      "title":  "## 19. SEGURANÇA, PRIVACIDADE E AUDITORIA",
+                                      "mvp_source_sections":  [
+                                                                  20,
+                                                                  22
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  20,
+                                      "title":  "## 20. REQUISITOS FUNCIONAIS CONSOLIDADOS",
+                                      "mvp_source_sections":  [
+                                                                  4
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  21,
+                                      "title":  "## 21. DIREÇÃO ARQUITETURAL",
+                                      "mvp_source_sections":  [
+                                                                  21
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  22,
+                                      "title":  "## 22. RESIDUAIS TÉCNICOS",
+                                      "mvp_source_sections":  [
+                                                                  29
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  23,
+                                      "title":  "## 23. ECONOMIA, TITULARIDADE E RESPONSABILIDADES",
+                                      "mvp_source_sections":  [
+                                                                  25,
+                                                                  31
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  24,
+                                      "title":  "## 24. CRITÉRIOS NORMATIVOS DE ACEITAÇÃO M01",
+                                      "mvp_source_sections":  [
+                                                                  27
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  25,
+                                      "title":  "## 25. COBERTURA COMPLEMENTAR DE VALIDAÇÃO",
+                                      "mvp_source_sections":  [
+                                                                  28
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  26,
+                                      "title":  "## 26. GOVERNANÇA E AUTORIDADES",
+                                      "mvp_source_sections":  [
+                                                                  1,
+                                                                  29,
+                                                                  30
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  27,
+                                      "title":  "## 27. REPOSITÓRIOS E CONHECIMENTO CANÔNICO",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-05 KF; SOURCE-03; SOURCE-07 F/G",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  28,
+                                      "title":  "## 28. RESOLUÇÃO DA DEPENDÊNCIA NORMATIVA KF",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-07 D: AC-KF-03-R1",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  29,
+                                      "title":  "## 29. RESOLUÇÃO CONDICIONADA DE C10",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-07 E/F; SOURCE-09; mandato NI",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  30,
+                                      "title":  "## 30. RELAÇÃO COM O MANDATO DISTINTO DE CONSTRUÇÃO",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-02 proposta, não execução",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  31,
+                                      "title":  "## 31. ROADMAP E DEPENDÊNCIAS",
+                                      "mvp_source_sections":  [
+                                                                  24,
+                                                                  26
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  32,
+                                      "title":  "## 32. GATES DE EXECUÇÃO",
+                                      "mvp_source_sections":  [
+                                                                  29,
+                                                                  30
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  33,
+                                      "title":  "## 33. AUTORIZAÇÕES E RESTRIÇÕES",
+                                      "mvp_source_sections":  [
+                                                                  1,
+                                                                  30,
+                                                                  31
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  34,
+                                      "title":  "## 34. FONTES DE CONSOLIDAÇÃO E RASTREABILIDADE",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-01–09; manifesto; mandato NI",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  35,
+                                      "title":  "## 35. DELIBERAÇÃO PRESIDENTIAL E RATIFICAÇÃO DA REVISÃO",
+                                      "mvp_source_sections":  [
+
+                                                              ],
+                                      "additional_basis":  "SOURCE-07 A–G e COR-01–06",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  },
+                                  {
+                                      "draft_section":  36,
+                                      "title":  "## 36. DETERMINAÇÃO FINAL",
+                                      "mvp_source_sections":  [
+                                                                  1,
+                                                                  32
+                                                              ],
+                                      "additional_basis":  "SOURCE-06; SOURCE-07 A/E/F/G; SOURCE-03",
+                                      "status":  "DRAFT_PENDING_RATIFICATION"
+                                  }
+                              ],
+    "changed_sections":  [
+                             1,
+                             4,
+                             6,
+                             7,
+                             8,
+                             10,
+                             13,
+                             14,
+                             16,
+                             18,
+                             20,
+                             23,
+                             24,
+                             25,
+                             28,
+                             29,
+                             30,
+                             34,
+                             35
+                         ],
+    "unchanged_sections":  [
+                               2,
+                               3,
+                               5,
+                               9,
+                               11,
+                               12,
+                               15,
+                               17,
+                               19,
+                               21,
+                               22,
+                               26,
+                               27,
+                               31,
+                               32,
+                               33,
+                               36
+                           ],
+    "source_counts":  {
+                          "construction_proposed":  26,
+                          "mvp":  18,
+                          "consolidated_1_1_draft":  18,
+                          "consolidated_1_0":  18
+                      },
+    "unmapped_ac":  0,
+    "unmapped_original_sections":  0,
+    "unmapped_consolidated_sections":  0,
+    "unratified_text":  true,
+    "runtime_tests":  "NOT_EXECUTED",
+    "decisions":  [
+                      {
+                          "id":  "DEC-01",
+                          "meaning":  "Diretório nacional exclusivo",
+                          "mvp_sections":  "3/23",
+                          "consolidated_sections":  "5; 4",
+                          "requirements":  "R01/R13",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-02",
+                          "meaning":  "Construção modular incremental",
+                          "mvp_sections":  "21/26",
+                          "consolidated_sections":  "5; 21/31",
+                          "requirements":  "R13",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-03",
+                          "meaning":  "Card e perfil completo",
+                          "mvp_sections":  "8",
+                          "consolidated_sections":  "5; 14",
+                          "requirements":  "R09",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-04",
+                          "meaning":  "Indicação comunitária privada",
+                          "mvp_sections":  "11",
+                          "consolidated_sections":  "5; 7",
+                          "requirements":  "R06",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-05",
+                          "meaning":  "Representação/consentimento/triagem para publicar",
+                          "mvp_sections":  "12",
+                          "consolidated_sections":  "5; 9",
+                          "requirements":  "R04/R05",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-06",
+                          "meaning":  "Sem espera mínima",
+                          "mvp_sections":  "12",
+                          "consolidated_sections":  "5; 9",
+                          "requirements":  "R04",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-07",
+                          "meaning":  "Dois níveis de verificação",
+                          "mvp_sections":  "13",
+                          "consolidated_sections":  "5; 8",
+                          "requirements":  "R03/R07",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-08",
+                          "meaning":  "Desafio público social",
+                          "mvp_sections":  "14",
+                          "consolidated_sections":  "5; 8.3",
+                          "requirements":  "R07",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-09",
+                          "meaning":  "Manual equivalente",
+                          "mvp_sections":  "15",
+                          "consolidated_sections":  "5; 8.4",
+                          "requirements":  "R07",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "SOURCE-07 B: ratificação DEC-01–09",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-10",
+                          "meaning":  "Representação proporcional/múltipla/delegada",
+                          "mvp_sections":  "10/18",
+                          "consolidated_sections":  "5; 6/11",
+                          "requirements":  "R02/R03",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-11",
+                          "meaning":  "PUBLIC/APPROXIMATE/RESERVED",
+                          "mvp_sections":  "6/22",
+                          "consolidated_sections":  "5; 12",
+                          "requirements":  "R08/R14",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-12",
+                          "meaning":  "Moderação humana proporcional contestável",
+                          "mvp_sections":  "18/20",
+                          "consolidated_sections":  "5; 10/17",
+                          "requirements":  "R11/R12",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-13",
+                          "meaning":  "Operação centralizada simplificada",
+                          "mvp_sections":  "20",
+                          "consolidated_sections":  "5; 17",
+                          "requirements":  "R11",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-14",
+                          "meaning":  "Taxonomia extensível autodeclarada",
+                          "mvp_sections":  "7",
+                          "consolidated_sections":  "5; 16",
+                          "requirements":  "R10",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-15",
+                          "meaning":  "Selo opcional revalidável/revogável",
+                          "mvp_sections":  "16",
+                          "consolidated_sections":  "5; 8",
+                          "requirements":  "R07",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: preservação das aprovadas",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      },
+                      {
+                          "id":  "DEC-16",
+                          "meaning":  "Framework contratual, sem negócio concreto aprovado",
+                          "mvp_sections":  "25/29/30",
+                          "consolidated_sections":  "5; 23/26/32",
+                          "requirements":  "R13; governança econômica",
+                          "classification":  "PRESERVED",
+                          "difference":  "Direção recebida e mantida; texto da tabela §5 1.0 preservado na 1.1; parâmetros técnicos não congelados",
+                          "authority":  "PDR 1.1; SOURCE-07 B: APPROVED_FRAMEWORK",
+                          "disposition":  "PRESERVE_APPROVED_DECISION_NO_REOPENING"
+                      }
+                  ]
+}

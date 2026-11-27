@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-NI-SOURCE-MANIFEST
 title: "Manifesto de proveniência e intake normativo"
-version: "1.1"
-status: PARTIALLY_SATISFIED_SOURCE_INTAKE
+version: "1.2"
+status: SOURCE_INTAKE_COMPLETE_RECONCILIATION_PREPARED
 authority: AGENT_CODER_RECORDING_RECEIVED_SOURCES
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -19,24 +19,31 @@ references:
   - "reviews/planner-m01-normative-review-01.md"
   - "sources/knowledge-foundation-mandate-01.md"
   - "SOURCE-RECONCILIATION.md"
+  - "reviews/cto-execution-continuation-02.md"
+  - "sources/cto-source-transfer-02-manifest.md"
+  - "../validation/evidence/ni-complement-intake.json"
+  - "mandates/m01-consolidated-mandate-1.0.md"
+  - "sources/m01-presidential-deliberation-01.md"
+  - "reviews/cto-m01-normative-review-02.md"
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
-  - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
+  - "mandates/m01-consolidated-mandate-1.1.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:governance/SOURCE-MANIFEST.md@1.0"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:governance/SOURCE-MANIFEST.md@1.1"
 ---
 
 # Manifesto corrente — fontes efetivamente transferidas
 
 Retomada sob a mesma REQ-NORMATIVE-INTEGRATION-01, com [aceitação CTO do pacote](reviews/cto-source-transfer-01.md) e [mandato NI](sources/normative-integration-mandate-01.md). Data de inspeção pelo Agent Coder: 27/11/2026. Não foi emitida nova REQ, reaberto planejamento conceitual ou feita nova solicitação ao Planner.
 
-**Disponibilidade: 6 de 9 fontes requeridas** (01, 02, 03, 04, 05 e 08). SOURCE-03A é complemento histórico fora desse denominador. **NI-G01 PARTIALLY_SATISFIED:** quatro das sete fontes essenciais (01/02/03/08) recebidas; SOURCE-06/07/09 ainda pendentes de transferência pelo CTO. O gate não foi aprovado para concluir NI-02/03.
+**Disponibilidade: 9 de 9 fontes requeridas. SOURCE-03A é histórica adicional. NI-G01 PASS:** sete de sete essenciais recebidas/inspecionadas; reconciliação documental autorizada e preparada. Ratificação 1.1 e aceite final permanecem pendentes.
 
 ## Pacote e verificação independente
 
 Arquivo ANCESTRALIDADE-CTO-SOURCE-TRANSFER-01.zip: 37.943 bytes, SHA-256 `6e5166dcc854e4a6b1dd98f383b547b9976a23f7f593c2521ecf7f582a3a431f`. Agent Coder abriu o ZIP em leitura, conferiu nomes permitidos, CRC-32 contra o diretório central, UTF-8 estrito e SHA-256 de cada entrada. Seis entradas, zero divergências CRC, codificação válida. Tamanhos/linhas coincidem com o relato CTO. A evidência do agente é [intake JSON](../validation/evidence/ni-source-transfer-intake.json), distinta da validação anterior relatada pelo CTO. O ZIP original e os anexos read-only não foram alterados nem copiados para o repositório público como binários.
 
-Essas verificações comprovam integridade dos bytes recebidos, não equivalência com registros históricos inacessíveis, assinatura, aprovação presidencial de conteúdo novo ou reconciliação com o consolidado ausente.
+Essas verificações comprovam integridade dos bytes recebidos, não equivalência com registros históricos inacessíveis, assinatura, aprovação presidencial de conteúdo novo ou aprovação final do consolidado.
 
 ## Fontes recebidas e suas identidades
 | Fonte | Arquivo recebido / caminho canônico preparado | Versão de origem | Estado de origem/adoção | Intake |
@@ -65,7 +72,7 @@ Essas verificações comprovam integridade dos bytes recebidos, não equivalênc
 | SOURCE-04 | 5314 | 115 | `e72c084adc91bebc6a07248f325414fc910319476ca22c2c2ecbea07e196752b` | `a0fddd3c6fef93e4d019f5d622a8ee5fd992df22a97d32e851248606104c29ce` |
 | SOURCE-08 | 3099 | 77 | `b50985f66c776ac65511ad1df4d92f7a6b5e6ab046eceb2b775f31f64f264d0e` | `176640dcb615efa70ba57c8e76f53086d3c3d001f742b8baa4c10ab57e3c6a57` |
 
-Conteúdo integral das seis entradas preservado nas cópias locais; só foram acrescentados metadados e aviso externo ao texto de origem. Datas/assinaturas não fornecidas não foram inferidas. Classification das cópias preparadas: PUBLIC, após leitura e verificação de padrões sem dados reais indevidos identificados; não é controle de acesso ou autorização de push. Caminhos pessoais do ambiente não integram os registros públicos. Estado de integração: cópias canônicas PREPARADAS_LOCALMENTE, ainda sem commit/publicação/aceite de integração e sem reconciliação normativa integral.
+Conteúdo integral das seis entradas preservado nas cópias locais; só foram acrescentados metadados e aviso externo ao texto de origem. Datas/assinaturas não fornecidas não foram inferidas. Classification das cópias preparadas: PUBLIC, após leitura e verificação de padrões sem dados reais indevidos identificados; não é controle de acesso ou autorização de push. Caminhos pessoais do ambiente não integram os registros públicos. Estado de integração: cópias canônicas PREPARADAS_LOCALMENTE, ainda sem commit/publicação/aceite de integração e com reconciliação normativa preparada para revisão, sem ratificação definitiva.
 
 ## SOURCE-05 existente e fonte NI
 
@@ -73,18 +80,27 @@ Conteúdo integral das seis entradas preservado nas cópias locais; só foram ac
 
 [Mandato NI 1.0](sources/normative-integration-mandate-01.md) é o instrumento vigente de execução restrita, CTO/superior Presidência, de 27/11/2026, recebido no anexo Pasted text #1.txt, snapshot 24d4fe76-0f21-4546-8419-262989a4dc12. Hash do anexo `14c279a06cefef59b1e1ac9d53d2e04beb7519196477610279a7b72e0aa7db24`; cópia canônica `c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7`. Ambos permanecem preservados, sem assinatura/data/estado inventados.
 
-## Complemento sob responsabilidade exclusiva do CTO
+## Complemento CTO efetivamente recebido e inspecionado
 
-| Fonte | Identidade | Versão/autoridade reportadas | Estado na origem reportado | Estado atual e impacto |
-|---|---|---|---|---|
-| SOURCE-06 | ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01 | 1.0; Presidência, base de 36 seções | versão submetida e aprovações A–G reportadas | SOURCE_TRANSFER_PENDING; bloqueia comparação textual, redline e 1.1 |
-| SOURCE-07 | deliberação presidencial A–G com condições | ID/versão/data próprios não fornecidos; Presidência | aprovação expressa com condições reportada | SOURCE_TRANSFER_PENDING; não registrar resumo como deliberação integral |
-| SOURCE-09 | CTO-ANCESTRALIDADE-M01-NORMATIVE-REVIEW-02 | versão/data não informadas; CTO | APPROVED_WITH_SOURCE_RECONCILIATION_CONDITIONS | SOURCE_TRANSFER_PENDING; o aceite do ZIP não é este parecer |
+[Continuação executiva](reviews/cto-execution-continuation-02.md), mesma REQ. ZIP ANCESTRALIDADE-CTO-SOURCE-TRANSFER-02.zip: 27.574 bytes, SHA-256 `b847db3d390273fd9cf004440fc9a550be483500edea17fc78af13ef5ba05b93`. Quatro entradas: CRC-32 e UTF-8 estrito PASS; os três hashes/tamanhos/linhas de fontes conferem com o [manifesto recebido](sources/cto-source-transfer-02-manifest.md). [Intake do agente](../validation/evidence/ni-complement-intake.json).
 
-Os conteúdos são informados pelo CTO como existentes em sua sessão, ainda não materializados para transferência. Nenhum hash é calculável sem bytes recebidos; classificação de conteúdo ainda desconhecida. Destinos continuam reservados, não criados como supostas fontes: governance/mandates/m01-consolidated-mandate-1.0.md e governance/reviews/cto-m01-normative-review-02.md; o destino da deliberação depende do intake. Não houve fonte substitutiva criada para suprir o complemento.
+| Fonte | Cópia canônica | Versão / estado de origem | Recepção |
+|---|---|---|---|
+| SOURCE-06 | [Consolidado 1.0](mandates/m01-consolidated-mandate-1.0.md) | 1.0; PROPOSED_FOR_PRESIDENTIAL_APPROVAL no texto, posteriormente deliberação condicional SOURCE-07 | SOURCE_RECEIVED / SOURCE_INSPECTED; 36 seções, 18 critérios |
+| SOURCE-07 | [Deliberação A–G e condições](sources/m01-presidential-deliberation-01.md) | versão/data/ID autônomos não especificados; A–G APPROVED com condições do Planner | SOURCE_RECEIVED / SOURCE_INSPECTED |
+| SOURCE-09 | [Revisão normativa CTO](reviews/cto-m01-normative-review-02.md) | CTO-ANCESTRALIDADE-M01-NORMATIVE-REVIEW-02; versão não especificada; APPROVED_WITH_SOURCE_RECONCILIATION_CONDITIONS | SOURCE_RECEIVED / SOURCE_INSPECTED; §5 por referência resolvida |
 
-## Continuidade e relações históricas
+| Entrada | Bytes / linhas | SHA-256 dos bytes recebidos | SHA-256 da cópia canônica |
+|---|---|---|---|
+| SOURCE-06-CONSOLIDATED-MANDATE-1.0.md | 46097 / 1196 | `5f7a6e13340d2905dbc1316d485c27e97a49a80ef03eef94f12dcb5b1c648952` | `0a9a0a1ca268b5f8fa32ec63943426fd7bab54579982b7021598fd3ca412f958` |
+| SOURCE-07-PRESIDENTIAL-DELIBERATION.md | 14475 / 320 | `5835ab78d9d9bf0dc5f8851f2260a3e9fe342a97f0304f7dee31e0c34e2c268f` | `6ff6009b79fea0d9631575775dec16e4f15a15cdcde1d9fa0e37bd0931c6da23` |
+| SOURCE-09-CTO-NORMATIVE-REVIEW-02.md | 12990 / 229 | `3108c6d296f108b507aa0f6452ec31f73f5e0952e5e8f74c5d4c3f134b43c5b5` | `5dca631ce5be69147572be92f0a6b9c0f2b7ef83500bf1b8da7273e73a192bef` |
+| SOURCE-MANIFEST.md | 3385 / 44 | `7a19b4c91f586f37f69d468d0534aed245110a19fe8604e1f2de1ef02c448231` | `b823b2b87f033ae6e0842223d80ec7dccc9a11d99a4285191378b4db40b0ac4b` |
 
-Solicitação ao Planner ENCERRADA: entregou SOURCE-01/02/03/03A/04/08. Não pedir novamente essas fontes. O complemento SOURCE-06/07/09 foi solicitado somente ao CTO nesta tarefa. O histórico SOURCE_MISSING e SOURCE_TRANSFER_PENDING das buscas e VALs anteriores não foi apagado: o novo recebimento altera o estado corrente sem reescrever a evidência passada.
+SOURCE-06 é extração textual da biblioteca, não arquivo binário original; SOURCE-07 é transcrição da mensagem presidencial e condições, com normalização de entidades/espaços/tabelas; SOURCE-09 transpõe blocos textuais e incorpora a REQ por referência. Nenhuma assinatura, data ausente, hash da mensagem histórica ou equivalência binária foi inventada. Hashes comprovam a identidade dos bytes recebidos. Textos foram integralmente preservados nas cópias, com frontmatter e aviso de recepção externos. Não se aplica prevalência de SOURCE-03A sobre SOURCE-03.
 
-A matriz deve qualificar identificadores por origem: MVP:AC-01–18, CONSTRUCTION:AC-01–26 e CONSOLIDATED:AC-* somente quando o texto consolidado chegar. Preparação comparativa autorizada; equivalência textual, integração final, aprovação dos 26 critérios propostos e revisão 1.1 não demonstradas. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md), [VAL desta retomada](../validation/VAL-NI-SOURCE-TRANSFER-01.md). C10 OPEN, AC-KF-03-R1 BLOCKED; T01 direção normativa aprovada, contrato NOT_FROZEN. Sem novo ciclo de planejamento, commit, aplicativo ou contratação.
+## Referência canônica da REQ e NI-G01
+
+SOURCE-09 §5 referencia [mandato NI no checkpoint aceito](https://github.com/ancestralidade/docs/blob/f103f129da7ee2eaffc747d07b96b99b9db74226/governance/sources/normative-integration-mandate-01.md). Leitura remota pelo Agent Coder e objeto Git local: blob `baabca1eb90b4baed5542481af28fb489e3f047d`, mesmo conteúdo e IDs REQ/mandato. SHA-256 da cópia local: `c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7`. O §5 é remissão expressa resolvida, não texto integral repetido, nem nova REQ.
+
+NI-G01 PASS para completude: 01/02/03/06/07/08/09 essenciais 7/7; com 04/05, requeridas 9/9. Planner e CTO concluíram as transferências requeridas. Estados ausentes em evidências antigas permanecem históricos. [Matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) e [minuta 1.1](mandates/m01-consolidated-mandate-1.1.md) preparadas; não se presume equivalência histórica integral, aprovação definitiva da 1.1 ou dos 26 critérios propostos de construção. C10 OPEN, R1 BLOCKED, T01 aprovado como direção, contrato NOT_FROZEN. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md). Sem autorização de commit/push/merge ou aplicativo.

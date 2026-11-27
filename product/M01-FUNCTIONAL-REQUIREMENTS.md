@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS
 title: "Requisitos funcionais e dependências"
-version: "0.3"
-status: DERIVED_REVIEW_REQUIRED
+version: "0.4"
+status: PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -16,9 +16,17 @@ references:
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
   - "../governance/sources/m01-mvp-original-mandate-01.md"
   - "../governance/sources/m01-directory-construction-mandate-01.md"
+  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
+  - "../governance/reviews/cto-execution-continuation-02.md"
+  - "../governance/SOURCE-MANIFEST.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.1.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "../status/CURRENT-STATUS.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:product/M01-FUNCTIONAL-REQUIREMENTS.md@0.2"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:product/M01-FUNCTIONAL-REQUIREMENTS.md@0.3"
 ---
 
 # Requisitos funcionais consolidados
@@ -45,11 +53,18 @@ Origem de R01–R14: [mandato técnico](../governance/sources/technical-planning
 Metas p95 de busca <1 s, disponibilidade 99,5%, RPO 24 h e RTO 8 h eram propostas do planejamento; não são compromissos ou resultados medidos. Os contratos C01–C09 e a fatia vertical permanecem referências de desenho no planejamento; a matriz não os promove a implementação autorizada. C10 impede declarar equivalência integral aos ACs do mandato original.
 
 
-Preparação COR-03/04 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md), sem declarar equivalência dos números AC acima com critérios originais ou reemitidos ainda não recebidos. T01 NORMATIVE_DIRECTION_APPROVED; contratos NOT_FROZEN. C10 permanece aberta e NI-G01 impede concluir a comparação ou criar a revisão 1.1. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md). Os demais requisitos e decisões foram preservados; não foi acrescido módulo futuro ou compromisso comercial.
+Preparação COR-03/04 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md), sem declarar equivalência dos números AC acima com critérios originais/reemitidos: relações por conteúdo constam na matriz. T01 NORMATIVE_DIRECTION_APPROVED; contratos NOT_FROZEN. C10 permanece aberta e NI-G01 PASS permitiu concluir a comparação e preparar a minuta 1.1, sujeita à ratificação. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md). Os demais requisitos e decisões foram preservados; não foi acrescido módulo futuro ou compromisso comercial.
 
 
 ## Origem integral e testes positivos
 
 O [original MVP recebido](../governance/sources/m01-mvp-original-mandate-01.md) é a fonte direta de fluxos, especialmente §§5–6/11/13–14/18/27. R01/R08 preservam localização, raio, religião, lista/perfil e rota externa autorizada; R02/R03 preservam criar conta, cadastrar e administrar instituição e enviar/validar email; R06 preserva indicação funcional completa e privada; R09 preserva consulta de orientações declaradas; R07 preserva solicitar N2, emitir código/card, receber URL e decisão; R05 preserva solicitar retirada, não só efeito negativo de revogação. O [plano futuro](../validation/M01-ACCEPTANCE-CRITERIA.md) detalha positivos/negativos para os 18 MVP:AC-* sem testes executados.
 
-Os 26 CONSTRUCTION:AC-* da [fonte distinta](../governance/sources/m01-directory-construction-mandate-01.md) continuam propostos. Reutilização de números não estabelece correspondência; [matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) tem 18 origens pendentes do destino consolidado. Faltam somente SOURCE-06/07/09 do CTO, não nova transferência do Planner. Não se alteraram DEC-01–16 ou status da 1.1.
+Os 26 CONSTRUCTION:AC-* da [fonte distinta](../governance/sources/m01-directory-construction-mandate-01.md) continuam propostos. Reutilização de números não estabelece correspondência; [matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) contém os 18 pares originais/consolidados e o conjunto proposto de construção, comparados por conteúdo. Todas as nove fontes foram recebidas; DEC-01–16 foram preservadas e a minuta 1.1 foi preparada.
+
+
+## Estado sincronizado — integração normativa preparada
+
+Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+
+DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.

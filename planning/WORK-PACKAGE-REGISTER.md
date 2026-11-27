@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-WORK-PACKAGE-REGISTER
 title: "Registro de pacotes e gates"
-version: "0.4"
-status: DERIVED_REVIEW_REQUIRED
+version: "0.5"
+status: PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -20,9 +20,17 @@ references:
   - "../governance/SOURCE-MANIFEST.md"
   - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
   - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
+  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
+  - "../governance/reviews/cto-execution-continuation-02.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.1.md"
+  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "../status/CURRENT-STATUS.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dc51d86a6b3968f7c4d5489b44fcf73f34428a01:planning/WORK-PACKAGE-REGISTER.md@0.3"
+previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:planning/WORK-PACKAGE-REGISTER.md@0.4"
 ---
 
 # Pacotes e gates
@@ -52,6 +60,13 @@ A [revisão CTO registrada](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md) 
 NI-01 intake parcial e [manifesto](../governance/SOURCE-MANIFEST.md) preparados; NI-G01 BLOCKED; NI-02/03 bloqueados para conclusão; NI-04 parcialmente preparado; NI-05 verificações documentais aplicáveis. T01 NORMATIVE_DIRECTION_APPROVED não implica fonte recebida, contrato congelado ou T02 resolvido. AC-KF-03-R1 BLOCKED por condições não cumpridas. Nenhuma alteração no escopo ou nos gates de WP-02/03/04. Gate de parada corrente: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. [VAL](../validation/VAL-NORMATIVE-INTEGRATION-01.md).
 
 
-## Retomada NI corrente
+## Histórico anterior a este complemento — Retomada NI corrente
 
 SOURCE-01/02/03/04/08 recebidas do Planner e SOURCE-05 já existente; SOURCE-03A extra histórica. NI-G01 PARTIALLY_SATISFIED, complementação 06/07/09 do CTO. Planner não tem transferência adicional pendente. NI-02 em preparação comparativa com namespaces; conclusão integral NI-02/03 e 1.1 ainda pendentes. NI-04/05 prosseguem no escopo independente, sem nova REQ ou planejamento conceitual. [VAL da retomada](../validation/VAL-NI-SOURCE-TRANSFER-01.md). WP-02/03/04, T02–T04, R1 e gates de implementação não foram liberados. Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW.
+
+
+## Estado sincronizado — integração normativa preparada
+
+Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+
+DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.
