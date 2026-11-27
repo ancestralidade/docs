@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-DECISION-REGISTER
 title: "Registro consolidado de decisões"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -13,8 +13,11 @@ references:
   - "../governance/sources/knowledge-foundation-mandate-01.md"
   - "../architecture/ADR-REGISTER.md"
   - "../status/CURRENT-STATUS.md"
+  - "../governance/sources/normative-integration-mandate-01.md"
+  - "../governance/SOURCE-MANIFEST.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:decisions/DECISION-REGISTER.md@0.1"
 ---
 
 # Registro de decisões
@@ -57,3 +60,12 @@ Todas as nove decisões abaixo constam como aprovadas pelo CTO no [mandato KF](.
 | CTO-KF-DEC-09 | bootstrap de app depende de aceitação documental |
 
 Aceitação de direção não libera commit nem criação do app. [ADRs técnicos](../architecture/ADR-REGISTER.md) têm estados próprios. [CURRENT-STATUS](../status/CURRENT-STATUS.md) concentra a autorização corrente. Parâmetros não resolvidos não retornam a direção de produto a PENDING, mas impedem congelar contratos específicos.
+
+
+## Direções presidenciais reportadas no mandato NI
+
+O [mandato NI 1.0](../governance/sources/normative-integration-mandate-01.md) informa ratificação presidencial de DEC-01–09 e preservação de DEC-10–16: DEC-10–15 continuam APPROVED e DEC-16 APPROVED_FRAMEWORK. Nenhuma decisão foi reaberta ou alterada pelo agente. A deliberação A–G integral, o consolidado 1.0 e os pareceres ainda aguardam transferência, conforme [manifesto](../governance/SOURCE-MANIFEST.md). Não se declara comparação concluída ou aprovação definitiva da revisão 1.1.
+
+T01: NORMATIVE_DIRECTION_APPROVED. PUBLICATION_ELIGIBLE e PUBLIC_EXPOSURE_ALLOWED distintos; disputa admitida bloqueia publicação inicial/republicação; denúncia ou admissão não suspende automaticamente perfil existente; restrição exige autoridade humana e fundamento aplicável; retirada de consentimento interrompe exposição controlada. Contrato NOT_FROZEN; T02–T04 continuam abertos.
+
+AC-KF-03-R1 é critério prospectivo aprovado conforme a fonte NI; não possui PASS enquanto faltarem fontes, reconciliação, aprovação final 1.1, integração, validação, recuperação independente e aceite CTO. Os estados históricos e respectivas fontes permanecem preservados.

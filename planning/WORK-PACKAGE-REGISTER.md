@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-WORK-PACKAGE-REGISTER
 title: "Registro de pacotes e gates"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -17,9 +17,11 @@ references:
   - "../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md"
   - "../governance/sources/knowledge-foundation-closure-mandate-01.md"
   - "../validation/VAL-KF-CLOSURE-01.md"
+  - "../governance/SOURCE-MANIFEST.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:planning/WORK-PACKAGE-REGISTER.md@0.1"
+previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:planning/WORK-PACKAGE-REGISTER.md@0.2"
 ---
 
 # Pacotes e gates
@@ -41,4 +43,9 @@ Fontes: [PDR 1.1](../governance/sources/wp01-product-decision-record-1.1.md), [r
 O modelo de operação aprovado elimina a necessidade de decidir novamente centralização administrativa; não elimina o gate de qualificação operacional. Encerramento da Phase 00 e EXECUTIVE_IMPLEMENTATION_AUTHORIZATION são gates separados. [Critérios KF](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md), [pesquisa](../research/RESEARCH-REGISTER.md) e [riscos](../status/RISK-REGISTER.md) dão suporte ao encaminhamento.
 
 
-A [revisão CTO registrada](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md) eleva AC-KF-11/13 a PASS; não libera WP-02–04, T01–T04, contratos ou aplicativo. O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md) autoriza CLOSURE-01–06 como intervenção restrita. Gate de parada: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Matriz vigente](../validation/VAL-KF-CLOSURE-01.md).
+A [revisão CTO registrada](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md) eleva AC-KF-11/13 a PASS; não libera WP-02–04, T01–T04, contratos ou aplicativo. O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md) autoriza CLOSURE-01–06 como intervenção restrita. Gate da intervenção de encerramento: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Matriz vigente](../validation/VAL-KF-CLOSURE-01.md).
+
+
+## Pacote corrente — NI
+
+NI-01 intake parcial e [manifesto](../governance/SOURCE-MANIFEST.md) preparados; NI-G01 BLOCKED; NI-02/03 bloqueados para conclusão; NI-04 parcialmente preparado; NI-05 verificações documentais aplicáveis. T01 NORMATIVE_DIRECTION_APPROVED não implica fonte recebida, contrato congelado ou T02 resolvido. AC-KF-03-R1 BLOCKED por condições não cumpridas. Nenhuma alteração no escopo ou nos gates de WP-02/03/04. Gate de parada corrente: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. [VAL](../validation/VAL-NORMATIVE-INTEGRATION-01.md).

@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS
 title: "Requisitos funcionais e dependências"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -12,8 +12,11 @@ references:
   - "../planejamento/m01/planejamento-tecnico-rev-0.2.md"
   - "../governance/sources/wp01-product-decision-record-1.1.md"
   - "../validation/M01-ACCEPTANCE-CRITERIA.md"
+  - "../governance/sources/normative-integration-mandate-01.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:product/M01-FUNCTIONAL-REQUIREMENTS.md@0.1"
 ---
 
 # Requisitos funcionais consolidados
@@ -24,12 +27,12 @@ Origem de R01–R14: [mandato técnico](../governance/sources/technical-planning
 |---|---|---|---|
 | R01 | funcional: busca e perfil sem login | publicação e projeção segura | só dados elegíveis; AC-01 |
 | R02 | negócio: identidade institucional independente | DEC-10/T02 | revogar usuário não destrói instituição; AC-03/15 |
-| R03 | segurança: confirmação de canais e autorização contextual | representação e IAM | email isolado não prova autoridade; negar acesso cruzado; AC-04/15 |
+| R03 | segurança: confirmar email por código/link temporário; se endereço institucional declarado for distinto do pessoal, confirmar independentemente | representação e IAM; contrato de expiração/uso único pendente | confirmação não prova representação; acesso cruzado negado; AC-04/15 derivados |
 | R04 | negócio: publicação condicionada sem espera mínima | consentimento/triagem/representação; T01 | condição ausente bloqueia nova publicação; AC-05/06/13 |
 | R05 | privacidade: retirada de consentimento interrompe exposição controlada | T03/T04 | API/HTML/mídia/cache não entregam conteúdo revogado; AC-14 |
 | R06 | funcional: indicação privada e adesão voluntária | fila e convites | não gera perfil público ou vínculo; AC-07 |
 | R07 | funcional: selo opcional social/manual equivalente | DEC-15 e parâmetros | desafio expirado rejeitado; selo ausente não despublica; AC-10/11 |
-| R08 | privacidade: descoberta usa somente localização autorizada | DEC-11, regiões e testes | dados privados não afetam resultado público; AC-02/17 |
+| R08 | privacidade/funcional: localização atual autorizada, cidade/bairro/endereço/CEP manual, raio, religião/tradição/vertente, lista/mapa, distância autorizada e rota externa | DEC-11; regiões e testes | ponto privado não afeta resultados nem permite inferência; AC-02/17 derivados |
 | R09 | funcional: card/perfil, visitação e atividades | contratos C01/C03 do planejamento | mesmo evento satisfaz filtros combinados; AC-08/09 |
 | R10 | funcional: taxonomia extensível e autodeclarada | catálogo e governança | termos múltiplos e aliases; sem ranking |
 | R11 | operacional: fila simples centralizada e decisões humanas | DEC-12/13 e parâmetros | denúncia não suspende automaticamente; motivo registrado; AC-13/16 |
@@ -38,3 +41,6 @@ Origem de R01–R14: [mandato técnico](../governance/sources/technical-planning
 | R14 | privacidade: minimização e separação de dados | avaliação jurídica WP-03 | não exigir religião do visitante, nem endereço preciso desnecessário |
 
 Metas p95 de busca <1 s, disponibilidade 99,5%, RPO 24 h e RTO 8 h eram propostas do planejamento; não são compromissos ou resultados medidos. Os contratos C01–C09 e a fatia vertical permanecem referências de desenho no planejamento; a matriz não os promove a implementação autorizada. C10 impede declarar equivalência integral aos ACs do mandato original.
+
+
+Preparação COR-03/04 conforme [mandato NI](../governance/sources/normative-integration-mandate-01.md), sem declarar equivalência dos números AC acima com critérios originais ou reemitidos ainda não recebidos. T01 NORMATIVE_DIRECTION_APPROVED; contratos NOT_FROZEN. C10 permanece aberta e NI-G01 impede concluir a comparação ou criar a revisão 1.1. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md). Os demais requisitos e decisões foram preservados; não foi acrescido módulo futuro ou compromisso comercial.

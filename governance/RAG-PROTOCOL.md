@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -17,9 +17,10 @@ references:
   - "reviews/CTO-KF-DELIVERY-REVIEW-01.md"
   - "sources/knowledge-foundation-closure-mandate-01.md"
   - "../validation/VAL-KF-CLOSURE-01.md"
+  - "SOURCE-MANIFEST.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:governance/RAG-PROTOCOL.md@0.1"
+previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:governance/RAG-PROTOCOL.md@0.2"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -44,4 +45,7 @@ Evidências locais originais: [RAG-T01–06](../validation/RAG-SCENARIOS.md), pr
 
 Não manter a recuperação do checkpoint aceito como NOT_EXECUTED. Esse estado ainda se aplica às alterações de encerramento não publicadas e às atividades futuras não realizadas. Preservar a referência de commit e o executor ao consumir resultados; a validação não se estende automaticamente a uma nova revisão. AC-KF-03 permanece BLOCKED, portanto recuperação remota validada não equivale a fundação integralmente aceita, fonte original recuperada ou Engineering Readiness.
 
-Gate de parada corrente: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; nenhum commit/push/merge autorizado para a intervenção. Consulte [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) e [estado](../status/CURRENT-STATUS.md).
+Gate anterior: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Gate de parada corrente: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge autorizado para a intervenção. Consulte [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) e [estado](../status/CURRENT-STATUS.md).
+
+
+No intake NI, recuperar apenas fontes efetivamente transferidas e identificar o [manifesto](SOURCE-MANIFEST.md). O relato de localização de um arquivo na biblioteca ou em outra sessão não significa que seu texto esteja acessível ao agente. Não substituir a fonte por resumo, inferir 1.1 ou atribuir ao agente testes do CTO/Planner. A aprovação de direções A–G reportada no mandato NI e T01 NORMATIVE_DIRECTION_APPROVED não demonstra completude de fonte ou cumprimento de AC-KF-03-R1. As novas alterações NI ainda são locais, sem commit ou validação remota própria.

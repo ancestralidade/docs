@@ -1,13 +1,14 @@
 ---
 id: ANCESTRALIDADE-SOURCE-RECONCILIATION
 title: "Matriz de reconciliação de fontes"
-version: "0.2"
+version: "0.3"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "SOURCE-MANIFEST.md"
   - "sources/technical-planning-mandate-01.md"
   - "sources/cto-planning-review.md"
   - "sources/product-planning-review.md"
@@ -27,12 +28,17 @@ references:
   - "../validation/evidence/kf-closure-source-recovery.json"
   - "../validation/VAL-KNOWLEDGE-FOUNDATION-01.md"
   - "../validation/VAL-KF-CLOSURE-01.md"
+  - "sources/normative-integration-mandate-01.md"
+  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../validation/VAL-NORMATIVE-INTEGRATION-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:governance/SOURCE-RECONCILIATION.md@0.1"
+previous_revision: "5c425c13ede4f72e4ba01f24def21dfb40a6740d:governance/SOURCE-RECONCILIATION.md@0.2"
 ---
 
 # Reconciliação de fontes
+
+> As seções KF e CLOSURE abaixo preservam a história da recepção e das buscas. O estado corrente de NI está no [manifesto](SOURCE-MANIFEST.md) e no aditivo ao final: original localizado por relato, textos integrais pendentes de transferência; T01 com direção normativa aprovada.
 
 Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de proveniência, não caminho pessoal. SHA-256 identifica os bytes do snapshot original, mantido intacto fora do repositório. As cópias Markdown receberam metadados e aviso de fonte; resíduos de CSS e texto de diagrama achatado na mesma linha foram removidos quando presentes, sem reconstruir diagrama. Datas e estados internos pertencem à época da fonte.
 
@@ -55,7 +61,7 @@ Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de pr
 - [Planejamento 0.2](../planejamento/m01/planejamento-tecnico-rev-0.2.md) e [disposição antiga](../planejamento/m01/disposicao-e-proximos-passos.md) foram recuperados do Git inicial e preservados. A [pesquisa WP-02](../research/WP02-DOCUMENTARY-QUALIFICATION.md) foi recuperada do artefato temporário desta conversa e continua estudo do agente, não seleção CTO.
 - WP-01 brief anterior disponível na conversa é proposta antecedente ao PDR; não foi duplicado como norma. WP-03 e WP-04 não têm pareceres finais disponíveis. A correção de tarifa da simulação para R$300/h foi expressa pelo usuário e já estava registrada na primeira entrega; não é contrato.
 
-## Fontes ausentes e dependências
+## Histórico — fontes ausentes e dependências
 
 | ID | Documento ausente | Impacto | Ação requerida |
 |---|---|---|---|
@@ -68,7 +74,7 @@ Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de pr
 
 Não foram produzidos documentos oficiais substitutos das fontes ausentes. [Autoridade](AUTHORITY-MODEL.md), [riscos](../status/RISK-REGISTER.md) e [estado](../status/CURRENT-STATUS.md) preservam as lacunas. Identificadores de fontes podem citar o mesmo instrumento de negócio dentro do corpo; os IDs de frontmatter identificam exclusivamente cada arquivo documental.
 
-## Aditivo de recuperação — KF-CLOSURE-01
+## Histórico — recuperação KF-CLOSURE-01
 
 Fonte nova efetivamente recebida: [mandato de encerramento ANCESTRALIDADE-CTO-MANDATE-KF-CLOSURE-01](sources/knowledge-foundation-closure-mandate-01.md), mensagem integral do usuário, sem data ou versão próprias informadas; frontmatter 1.0 identifica apenas a transcrição. Contém as disposições da revisão CTO-ANCESTRALIDADE-KF-DELIVERY-REVIEW-01, registradas em [registro de revisão](reviews/CTO-KF-DELIVERY-REVIEW-01.md). Não foi fornecido outro documento integral independente desse parecer nem logs granulares da sessão CTO; a deliberação e os resultados são atribuídos ao CTO por essa fonte expressa.
 
@@ -79,3 +85,10 @@ Escopos de busca executados em 27/11/2026: arquivos atuais, nomes de arquivos em
 Reconciliação possível: preservadas as fontes e classificações de DEC-01–09 via mandato técnico e DEC-10–16 via PDR 1.1, inclusive limite APPROVED_FRAMEWORK de DEC-16; registrado o novo aceite de checkpoint e a recuperação CTO, sem alterar regras de produto. **Reconciliação impossível no momento:** confrontar DEC-01–16 e os textos integrais AC-01–18 com o original ausente, resolver divergências normativas de origem, concluir C10 ou retirar a condição normativa de T01. C10 permanece BLOCKED_BY_SOURCE_MANDATE e T01 NORMATIVE_RECONCILIATION_PENDING. Nenhum resumo foi promovido a documento oficial para eliminar esse bloqueio.
 
 O [VAL original](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md) e JSONs da execução inicial permanecem inalterados. A [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) registra 12 PASS, 0 FAIL, 1 BLOCKED e 2 NOT_EXECUTED; os novos PASS de AC-KF-11/13 são evidências CTO, não novos testes do agente. A confirmação local do HEAD e a leitura remota do README são evidências distintas, limitadas à verificação do checkpoint.
+
+
+## Intake corrente — NI-01
+
+O [mandato NI 1.0](sources/normative-integration-mandate-01.md) foi recebido integralmente com hash de anexo e cópia no [manifesto](SOURCE-MANIFEST.md). Ele informa a localização do original (Texto colado(1).txt, 1.328 linhas na biblioteca do CTO) e a existência do instrumento distinto ANCESTRALIDADE-M01-MANDATE-DIRECTORY-CONSTRUCTION-01 no estado PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, conforme Planner. Esses textos não foram transferidos ao agente. As instruções globais, mandato do Planner, consolidado 1.0, deliberação A–G e pareceres também não chegaram integralmente. SOURCE-05 KF é fonte existente reutilizada, sem duplicação. Não repetir buscas extensivas; transferência direta solicitada nesta tarefa.
+
+NI-G01 BLOCKED. Não foi feita comparação definitiva original↔consolidado nem criada Rev. 1.1/redline. A ratificação de DEC-01–09, preservação de DEC-10–16, T01 e AC-KF-03-R1 são direções expressas reportadas no mandato NI; não equivalem ao texto integral da deliberação ou a comprovação de sua execução. T01 passa a NORMATIVE_DIRECTION_APPROVED e mantém contrato NOT_FROZEN. C10 permanece OPEN_SOURCE_RECONCILIATION_PENDING, sem classificação antecipada de resolução. AC-KF-03-R1 BLOCKED até todos os gates; o AC-KF-03 BLOCKED anterior e SOURCE_MISSING permanecem históricos. [Rastreabilidade](../validation/M01-NORMATIVE-TRACEABILITY.md) e [VAL-NI](../validation/VAL-NORMATIVE-INTEGRATION-01.md).
