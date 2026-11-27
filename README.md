@@ -1,15 +1,15 @@
 ---
 id: ANCESTRALIDADE-CANONICAL-INDEX
 title: "Índice canônico do projeto Ancestralidade"
-version: "0.5"
-status: READY_FOR_CTO_REVIEW_AND_PRESIDENTIAL_RATIFICATION
+version: "0.6"
+status: READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
   - "governance/sources/knowledge-foundation-closure-mandate-01.md"
-  - "governance/sources/normative-integration-mandate-01.md"
+  - "governance/sources/knowledge-foundation-finalization-mandate-01.md"
   - "status/CURRENT-STATUS.md"
   - "governance/AUTHORITY-MODEL.md"
   - "governance/PROJECT-INSTRUCTIONS.md"
@@ -25,7 +25,7 @@ references:
   - "architecture/ARCHITECTURE-BASELINE.md"
   - "architecture/ADR-REGISTER.md"
   - "status/RISK-REGISTER.md"
-  - "validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "validation/VAL-KF-FINALIZATION-01.md"
   - "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md"
   - "engineering/IMP-KNOWLEDGE-FOUNDATION-01.md"
   - "engineering/APP-BOOTSTRAP-SPECIFICATION.md"
@@ -39,7 +39,7 @@ references:
   - "operations/INFORMATION-CLASSIFICATION.md"
   - "validation/KNOWLEDGE-READINESS.md"
   - "validation/RAG-SCENARIOS.md"
-  - "status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "status/KF-FINALIZATION-HANDOFF.md"
   - "planejamento/m01/README.md"
   - "AGENTS.md"
   - "governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md"
@@ -60,14 +60,19 @@ references:
   - "governance/sources/m01-mvp-original-mandate-01.md"
   - "governance/mandates/m01-consolidated-mandate-1.1.md"
   - "governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
+  - "validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
+  - "status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "governance/decisions/m01-presidential-ratification-01.md"
+  - "governance/mandates/m01-normative-effectiveness-01.md"
+  - "validation/AC-KF-FINAL-PROPOSED.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:README.md@0.4"
+previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:README.md@0.5"
 ---
 
 # Ancestralidade.org — documentação canônica
 
-Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 — Diretório Religioso Nacional, produto de cliente da Axodus Business independente do Axodus Core. O checkpoint documental aaa4d4bb55f691f63734e949cb0288536de1c03e foi aceito pelo CTO e os seis cenários remotos foram validados por ele, conforme o [mandato de encerramento](governance/sources/knowledge-foundation-closure-mandate-01.md). A fundação continua aberta por dependência normativa; a intervenção corrente é a integração normativa restrita sob o [mandato NI](governance/sources/normative-integration-mandate-01.md), com NI-G01 PASS por recebimento das nove fontes e reconciliação 1.1 preparada para revisão. O aplicativo continua bloqueado e CLIENT_PROJECT é classificação administrativa preliminar, sem titularidade ou modelo comercial determinados.
+Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 — Diretório Religioso Nacional, produto de cliente da Axodus Business independente do Axodus Core. O checkpoint documental aaa4d4bb55f691f63734e949cb0288536de1c03e foi aceito pelo CTO e os seis cenários remotos foram validados por ele, conforme o [mandato de encerramento](governance/sources/knowledge-foundation-closure-mandate-01.md). A Rev. 1.1 foi ratificada e a integração normativa NI aceita; a fundação aguarda revisão final, integração definitiva autorizada e recuperação remota independente. O [mandato de finalização](governance/sources/knowledge-foundation-finalization-mandate-01.md) delimita a tarefa corrente. O aplicativo continua bloqueado e CLIENT_PROJECT é classificação administrativa preliminar, sem titularidade ou modelo comercial determinados.
 
 ## Comece pela autorização
 
@@ -84,7 +89,7 @@ Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 
 | Papel | Rota mínima além do estado corrente |
 |---|---|
 | Planner | [visão](product/PRODUCT-VISION.md) → [baseline M01](product/M01-PRODUCT-BASELINE.md) → [roadmap](planning/M01-ROADMAP.md) → [pacotes](planning/WORK-PACKAGE-REGISTER.md) |
-| CTO | [arquitetura](architecture/ARCHITECTURE-BASELINE.md) → [ADRs](architecture/ADR-REGISTER.md) → [riscos](status/RISK-REGISTER.md) → [VAL documental corrente](validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md) |
+| CTO | [arquitetura](architecture/ARCHITECTURE-BASELINE.md) → [ADRs](architecture/ADR-REGISTER.md) → [riscos](status/RISK-REGISTER.md) → [VAL documental corrente](validation/VAL-KF-FINALIZATION-01.md) |
 | Engenharia | [REQ-KF](engineering/REQ-KNOWLEDGE-FOUNDATION-01.md) → [IMP-KF](engineering/IMP-KNOWLEDGE-FOUNDATION-01.md) → [critérios](validation/M01-ACCEPTANCE-CRITERIA.md) → [separação do app](engineering/APP-BOOTSTRAP-SPECIFICATION.md) |
 | Business | [premissas econômicas](planning/ECONOMIC-ASSUMPTIONS.md) → [decisões](decisions/DECISION-REGISTER.md) → [operação](operations/INSTITUTIONAL-OPERATIONS.md) |
 | Marketing | [contexto](context/PROJECT-CONTEXT.md) → [visão](product/PRODUCT-VISION.md) → [limites de comunicação](governance/PROJECT-INSTRUCTIONS.md) |
@@ -97,7 +102,7 @@ Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 
 - [Produto](product/M01-PRODUCT-BASELINE.md), [decisões](decisions/DECISION-REGISTER.md) e [arquitetura](architecture/ARCHITECTURE-BASELINE.md).
 - [Roadmap](planning/M01-ROADMAP.md), [work packages](planning/WORK-PACKAGE-REGISTER.md) e [pesquisas](research/RESEARCH-REGISTER.md).
 - [Operações](operations/INSTITUTIONAL-OPERATIONS.md) e [classificação de informação](operations/INFORMATION-CLASSIFICATION.md).
-- [Prontidão do conhecimento](validation/KNOWLEDGE-READINESS.md), [cenários de recuperação](validation/RAG-SCENARIOS.md) e [handoff atual](status/NI-FINAL-DELIVERY-HANDOFF.md).
+- [Prontidão do conhecimento](validation/KNOWLEDGE-READINESS.md), [cenários de recuperação](validation/RAG-SCENARIOS.md) e [handoff atual](status/KF-FINALIZATION-HANDOFF.md).
 
 A [primeira entrega](planejamento/m01/README.md) é referência histórica preservada; seus estados antigos não substituem o estado corrente. O [AGENTS.md](AGENTS.md) contém o protocolo operacional para agentes. Consulte o [RAG protocol](governance/RAG-PROTOCOL.md) para recuperação de Markdown por referência Git. Não existe banco vetorial, sincronização automática ou aplicativo nesta entrega.
 
@@ -119,6 +124,11 @@ A [primeira entrega](planejamento/m01/README.md) é referência histórica prese
 Solicitação ao Planner encerrada; faltam somente SOURCE-06/07/09 a serem transferidas pelo CTO. Preparação comparativa autorizada sob a mesma REQ, sem nova rodada conceitual. NI-G01 PARTIALLY_SATISFIED, Rev. 1.1 NOT_PREPARED, C10 OPEN e AC-KF-03-R1 BLOCKED. T01 direção normativa aprovada, contrato NOT_FROZEN. Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum novo commit, push, app ou implementação autorizado.
 
 
-## Retomada corrente — complemento CTO e proposta 1.1
+## Histórico — complemento CTO e proposta 1.1
 
 [Estado vigente](status/CURRENT-STATUS.md) → [fontes 9/9 e NI-G01 PASS](governance/SOURCE-MANIFEST.md) → [rastreabilidade bidirecional](validation/M01-NORMATIVE-TRACEABILITY.md) → [minuta 1.1](governance/mandates/m01-consolidated-mandate-1.1.md) → [redline real](governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) → [VAL final](validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md) → [handoff CTO](status/NI-FINAL-DELIVERY-HANDOFF.md). Ratificação presidencial PENDING; C10 OPEN, R1 BLOCKED, Engineering Readiness NOT_ESTABLISHED. Mesma REQ, checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Estados nos blocos históricos acima descrevem entregas passadas. Nenhuma autorização de commit, publicação ou aplicativo.
+
+
+## Vigente — ratificação e preparação do aceite final KF
+
+[Deliberação presidencial](governance/decisions/m01-presidential-ratification-01.md) → [aditivo de vigência](governance/mandates/m01-normative-effectiveness-01.md) → [mandato integral preservado](governance/mandates/m01-consolidated-mandate-1.1.md) → [matriz AC-KF final proposta](validation/AC-KF-FINAL-PROPOSED.md) → [VAL corrente](validation/VAL-KF-FINALIZATION-01.md) → [handoff CTO](status/KF-FINALIZATION-HANDOFF.md). Ratificação APPROVED, baseline RATIFIED e EFFECTIVE desde 2026-11-27, conforme o ato recebido. Checkpoint fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. O objeto aprovado e os registros anteriores não foram reescritos. Prontidão READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE; R1 BLOCKED e C10 aguardando aceite definitivo. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; nenhuma autorização de commit ou implementação.

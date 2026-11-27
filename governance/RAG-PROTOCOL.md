@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.5"
-status: PREPARED_FOR_CTO_REVIEW
+version: "0.6"
+status: RATIFIED_BASELINE_REFERENCED_FINAL_ACCEPTANCE_PENDING
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -31,9 +31,13 @@ references:
   - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
   - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
   - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "mandates/m01-consolidated-mandate-1.1.md"
+  - "decisions/m01-presidential-ratification-01.md"
+  - "mandates/m01-normative-effectiveness-01.md"
+  - "../validation/VAL-KF-FINALIZATION-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:governance/RAG-PROTOCOL.md@0.4"
+previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:governance/RAG-PROTOCOL.md@0.5"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -76,3 +80,10 @@ Planner concluiu sua transferência; não lhe solicitar novamente os textos. Som
 Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
 
 DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.
+
+
+## Vigência ratificada e limite da recuperação corrente
+
+Para o M01, recuperar o [mandato preservado](mandates/m01-consolidated-mandate-1.1.md), commit fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733, com o [registro presidencial](decisions/m01-presidential-ratification-01.md) e [aditivo de vigência](mandates/m01-normative-effectiveness-01.md). A versão submetida permanece com seus estados históricos; o ato posterior determina ratificação APPROVED e vigência 2026-11-27. Não duplicar ou reescrever o conteúdo normativo.
+
+Nesta finalização o agente confirmou objetos e conteúdo localmente. Não reexecutou recuperação remota independente ou cenários RAG; os seis cenários históricos continuam atribuídos ao CTO e ao respectivo checkpoint. A nova finalização é local: publicação, autorização Git, recuperação independente do checkpoint definitivo e aceite CTO faltam para AC-KF-03-R1 PASS. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Estado](../status/CURRENT-STATUS.md), [VAL atual](../validation/VAL-KF-FINALIZATION-01.md).

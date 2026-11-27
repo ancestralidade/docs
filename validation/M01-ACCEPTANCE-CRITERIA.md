@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-M01-ACCEPTANCE-CRITERIA
 title: "Critérios M01 e reconciliação proposta"
-version: "0.4"
-status: PREPARED_FOR_CTO_REVIEW
+version: "0.5"
+status: RATIFIED_BASELINE_REFERENCED_FINAL_ACCEPTANCE_PENDING
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -13,25 +13,24 @@ references:
   - "M01-NORMATIVE-TRACEABILITY.md"
   - "../governance/reviews/cto-source-transfer-01.md"
   - "VAL-NI-SOURCE-TRANSFER-01.md"
-  - "../engineering/REQ-NORMATIVE-INTEGRATION-01.md"
-  - "../governance/reviews/cto-execution-continuation-02.md"
-  - "../governance/SOURCE-MANIFEST.md"
-  - "../validation/M01-NORMATIVE-TRACEABILITY.md"
+  - "../governance/decisions/m01-presidential-ratification-01.md"
+  - "../governance/reviews/cto-ni-final-review-01.md"
+  - "../governance/sources/knowledge-foundation-finalization-mandate-01.md"
   - "../governance/mandates/m01-consolidated-mandate-1.1.md"
-  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
-  - "../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
-  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
-  - "../status/CURRENT-STATUS.md"
+  - "../governance/mandates/m01-normative-effectiveness-01.md"
+  - "../validation/AC-KF-FINAL-PROPOSED.md"
+  - "../validation/VAL-KF-FINALIZATION-01.md"
+  - "../status/KF-FINALIZATION-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:validation/M01-ACCEPTANCE-CRITERIA.md@0.3"
+previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:validation/M01-ACCEPTANCE-CRITERIA.md@0.4"
 ---
 
 # Critérios MVP originais e plano de verificação futura
 
 **Fonte integral recebida:** [SOURCE-01 original, versão 1.0, §27](../governance/sources/m01-mvp-original-mandate-01.md), TECHNICAL PLANNING AUTHORIZED. Os textos abaixo são os 18 critérios originais, qualificados **MVP:AC-***. Positivos e negativos são desenho de testes pelo agente para preservar cobertura funcional, não reemissão presidencial dos critérios ou testes executados. As demais regras originais de email, descoberta, indicação e desafio estão em §§5–6/11/13–15/18.
 
-**Fonte distinta:** [SOURCE-02 §20](../governance/sources/m01-directory-construction-mandate-01.md) tem 26 CONSTRUCTION:AC-* propostos, listados separadamente na [rastreabilidade](M01-NORMATIVE-TRACEABILITY.md). Não confundir com os 18 originais ou com os 18 critérios CONSOLIDATED da minuta 1.1 recebidos/reconciliados. Um identificador numérico igual não estabelece equivalência. A [disposição CTO](../governance/reviews/cto-source-transfer-01.md) exige preservar fluxos legítimos completos, além de bloquear operações indevidas.
+**Fonte distinta:** [SOURCE-02 §20](../governance/sources/m01-directory-construction-mandate-01.md) tem 26 CONSTRUCTION:AC-* propostos, listados separadamente na [rastreabilidade](M01-NORMATIVE-TRACEABILITY.md). Não confundir com os 18 originais ou com os 18 critérios CONSOLIDATED da Rev. 1.1 ratificada. Um identificador numérico igual não estabelece equivalência. A [disposição CTO](../governance/reviews/cto-source-transfer-01.md) exige preservar fluxos legítimos completos, além de bloquear operações indevidas.
 | Origem qualificada | Texto original | Teste positivo futuro proposto | Teste negativo/segurança futuro proposto |
 |---|---|---|---|
 | MVP:AC-01 | Um visitante sem conta consegue pesquisar instituições por localização, raio e religião, consultar resultados e acessar perfis públicos. | Visitante sem conta escolhe localização, raio e religião, consulta resultados e abre perfil elegível. | Rascunhos/suspensos ficam ausentes; não exigir login/religião do visitante; ponto privado não influencia resultados. |
@@ -57,13 +56,18 @@ previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:validation/M01-ACCE
 
 Todos os testes de aplicativo acima estão **NOT_EXECUTED**, sujeitos à autorização de implementação/validação e dados sintéticos. São fluxos de projeto; não enviar emails, convites ou dados reais nesta tarefa. O planejamento de teste não comprova aprovação de infraestrutura, fornecedores ou mecanismos de restore/mídia.
 
-C10 continua OPEN até revisão/ratificação/integração. A comparação das fontes integrais foi preparada pelo agente na matriz bidirecional, incluindo os oito pontos funcionais destacados pelo CTO. As relações são por conteúdo e efeito, sem equivalência literal global. A qualificação T01 não resolve T02 nem congela contratos.
+A dependência normativa substantiva de C10 está resolvida; a classificação final aguarda integração definitiva e aceite CTO. A comparação das fontes integrais foi preparada pelo agente na matriz bidirecional, incluindo os oito pontos funcionais destacados pelo CTO. As relações são por conteúdo e efeito, sem equivalência literal global. A qualificação T01 não resolve T02 nem congela contratos.
 
-AC-KF-03-R1 continua BLOCKED por gates de ratificação definitiva 1.1, integração autorizada, recuperação independente e aceite CTO; reconciliação/validação documental local preparadas, não mais por simples falta de transferência do original. As matrizes e testes documentais anteriores permanecem históricos, sem sobrescrita. [VAL de transferência](VAL-NI-SOURCE-TRANSFER-01.md).
+AC-KF-03-R1 continua BLOCKED por gates de integração definitiva autorizada, recuperação independente e aceite CTO; ratificação e reconciliação concluídas, não mais por simples falta de transferência do original. As matrizes e testes documentais anteriores permanecem históricos, sem sobrescrita. [VAL de transferência](VAL-NI-SOURCE-TRANSFER-01.md).
 
+## Vigência normativa e preparação do aceite final KF
 
-## Estado sincronizado — integração normativa preparada
+A [deliberação presidencial](../governance/decisions/m01-presidential-ratification-01.md) ratificou integralmente a Rev. 1.1, sem condições adicionais, em 2026-11-27. A [revisão CTO NI](../governance/reviews/cto-ni-final-review-01.md) aceitou NI-01–05 com 16 PASS. São eventos distintos, registrados conforme o [mandato de finalização](../governance/sources/knowledge-foundation-finalization-mandate-01.md), sem reiniciar planejamento ou reconciliação.
 
-Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação CTO](../governance/reviews/cto-execution-continuation-02.md), checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Fontes 9/9 e essenciais 7/7 recebidas/inspecionadas: **NI-G01 PASS** para completude documental. [Manifesto](../governance/SOURCE-MANIFEST.md). [Matriz bidirecional](../validation/M01-NORMATIVE-TRACEABILITY.md), [minuta 1.1 de 36 seções](../governance/mandates/m01-consolidated-mandate-1.1.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados. COR-01–06 incorporadas à minuta; ratificação presidencial **PENDING**, sem vigência definida. A–G aprovados com condições na SOURCE-07, confirmados em SOURCE-09, não são ratificação do novo texto 1.1.
+**PRESIDENTIAL_RATIFICATION APPROVED; NORMATIVE_BASELINE RATIFIED; EFFECTIVE_DATE 2026-11-27; EFFECTIVE TRUE.** Ler o [mandato integral preservado](../governance/mandates/m01-consolidated-mandate-1.1.md) com o [aditivo de vigência](../governance/mandates/m01-normative-effectiveness-01.md). Objeto aprovado: fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. O arquivo aprovado não mudou; seus estados de submissão são históricos e a vigência decorre dos registros posteriores. Fontes 9/9 e essenciais 7/7; NI-G01 PASS; matriz e COR-01–06 aceitas pelo CTO.
 
-DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.
+A dependência normativa substantiva de C10 está resolvida; classificação definitiva **PENDING_FINAL_CTO_ACCEPTANCE**. AC-KF-03-R1 **BLOCKED** para PASS definitivo até integração definitiva publicada sob autorização específica, recuperação remota independente e aceite CTO. [Matriz AC-KF final proposta](../validation/AC-KF-FINAL-PROPOSED.md), [VAL finalização](../validation/VAL-KF-FINALIZATION-01.md) e [handoff](../status/KF-FINALIZATION-HANDOFF.md).
+
+DEC-01–16 e COR-01–06 preservadas; DEC-16 APPROVED_FRAMEWORK. T01 NORMATIVE_DIRECTION_APPROVED, contrato técnico NOT_FROZEN; T02–T04 OPEN, WP-02–04 com seus gates. Engineering Readiness NOT_ESTABLISHED; contratos de domínio NOT_FROZEN. Construção continua PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, sem aprovação automática dos 26 CONSTRUCTION:AC-*; namespaces MVP/CONSTRUCTION/CONSOLIDATED mantidos. Testes de aplicativo NOT_EXECUTED.
+
+Gate corrente: **CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW**. Prontidão para revisão não é aceite integral concedido. Commit/push/merge, KF-06, app/implementação, fornecedores, compromissos financeiros, infraestrutura e deploy NOT_AUTHORIZED. Evidências históricas permanecem nos respectivos checkpoints e arquivos; o estado corrente deve ser lido por este aditivo e pelo registro de ratificação.

@@ -1,13 +1,16 @@
 ---
 id: ANCESTRALIDADE-M01-NORMATIVE-TRACEABILITY
 title: "Rastreabilidade normativa — gate de fontes pendente"
-version: "1.2"
-status: RECONCILED_DRAFT_PENDING_RATIFICATION
+version: "1.3"
+status: TRACEABILITY_ACCEPTED_FOR_RATIFIED_BASELINE
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "../governance/decisions/m01-presidential-ratification-01.md"
+  - "../governance/reviews/cto-ni-final-review-01.md"
+  - "../governance/mandates/m01-normative-effectiveness-01.md"
   - "../governance/sources/m01-mvp-original-mandate-01.md"
   - "../governance/sources/m01-directory-construction-mandate-01.md"
   - "../governance/mandates/m01-consolidated-mandate-1.0.md"
@@ -19,10 +22,18 @@ references:
   - "../status/NORMATIVE-CONFLICT-REGISTER.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:validation/M01-NORMATIVE-TRACEABILITY.md@1.1"
+previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:validation/M01-NORMATIVE-TRACEABILITY.md@1.2"
 ---
 
-# Rastreabilidade normativa bidirecional — proposta 1.1
+# Rastreabilidade normativa — baseline 1.1 ratificada
+
+## Leitura vigente
+
+A análise NI abaixo foi aceita pelo CTO e o texto 1.1 foi ratificado integralmente sem condições adicionais. [Registro presidencial](../governance/decisions/m01-presidential-ratification-01.md), [revisão CTO](../governance/reviews/cto-ni-final-review-01.md) e [aditivo vigente](../governance/mandates/m01-normative-effectiveness-01.md). A matriz de correspondências, seus textos e classificações permanecem inalterados. Expressões DRAFT/PENDING/RATIFICATION abaixo registram o estado na elaboração NI, não o estado normativo atual. O JSON de reconciliação e o redline histórico foram preservados; não se reexecutou a comparação conceitual.
+
+Baseline RATIFIED/EFFECTIVE em 2026-11-27; objeto fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. 18 MVP/18 CONSOLIDATED mapeados em ambos os sentidos; 26 CONSTRUCTION propostos, sem autorização automática. C10 substantiva resolvida, classificação final pendente CTO; R1 BLOCKED, contratos NOT_FROZEN e testes de aplicativo NOT_EXECUTED. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW.
+
+## Análise NI aceita — conteúdo e estados históricos da preparação
 
 Base textual efetivamente inspecionada: [MVP original, 32 seções](../governance/sources/m01-mvp-original-mandate-01.md), [construção proposta, 28 seções](../governance/sources/m01-directory-construction-mandate-01.md), [consolidado 1.0, 36 seções](../governance/mandates/m01-consolidated-mandate-1.0.md), [deliberação presidencial](../governance/sources/m01-presidential-deliberation-01.md) e [parecer CTO](../governance/reviews/cto-m01-normative-review-02.md). Destino: [minuta 1.1 integral](../governance/mandates/m01-consolidated-mandate-1.1.md), ainda sem ratificação. [Dados completos, com os três textos de cada critério](evidence/ni-reconciliation.json); [redline real](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md).
 

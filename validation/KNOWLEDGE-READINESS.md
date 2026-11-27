@@ -1,32 +1,37 @@
 ---
 id: ANCESTRALIDADE-KNOWLEDGE-READINESS
 title: "Prontidão da fundação de conhecimento"
-version: "0.5"
-status: READY_FOR_CTO_REVIEW_NOT_ENGINEERING_READY
+version: "0.6"
+status: READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
-  - "../governance/SOURCE-MANIFEST.md"
-  - "evidence/ni-complement-intake.json"
+  - "../governance/reviews/cto-ni-final-review-01.md"
+  - "../governance/decisions/m01-presidential-ratification-01.md"
+  - "../governance/mandates/m01-normative-effectiveness-01.md"
   - "../governance/mandates/m01-consolidated-mandate-1.1.md"
-  - "M01-NORMATIVE-TRACEABILITY.md"
-  - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
-  - "VAL-KF-CLOSURE-01.md"
-  - "VAL-NORMATIVE-INTEGRATION-FINAL-01.md"
-  - "../status/NI-FINAL-DELIVERY-HANDOFF.md"
+  - "../governance/SOURCE-MANIFEST.md"
+  - "AC-KF-FINAL-PROPOSED.md"
+  - "VAL-KF-FINALIZATION-01.md"
+  - "evidence/kf-finalization-validation.json"
+  - "../status/KF-FINALIZATION-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "f103f129da7ee2eaffc747d07b96b99b9db74226:validation/KNOWLEDGE-READINESS.md@0.4"
+previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:validation/KNOWLEDGE-READINESS.md@0.5"
 ---
 
-# Prontidão do conhecimento — reconciliação preparada
+# Prontidão para revisão final da fundação
 
-Fontes requeridas **9/9** e essenciais **7/7** disponíveis/inspecionadas. **NI-G01 PASS** no escopo de completude documental. SOURCE-03 vigente prevalece sobre SOURCE-03A histórica. [Manifesto](../governance/SOURCE-MANIFEST.md) e [intake complementar](evidence/ni-complement-intake.json). Integridade do ZIP é demonstrada por CRC/UTF-8/SHA-256, não por equivalência binária com registros históricos inacessíveis.
+**READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE**: prontidão documental para revisão, não aceite integral concedido. A [revisão CTO NI](../governance/reviews/cto-ni-final-review-01.md) aceitou NI-01–05 com 16 PASS; a [Presidência ratificou](../governance/decisions/m01-presidential-ratification-01.md) integralmente a Rev. 1.1, sem condições adicionais. [Aditivo](../governance/mandates/m01-normative-effectiveness-01.md): baseline RATIFIED, EFFECTIVE TRUE, data 2026-11-27.
 
-[Minuta 1.1 integral](../governance/mandates/m01-consolidated-mandate-1.1.md), [matriz bidirecional](M01-NORMATIVE-TRACEABILITY.md) e [redline](../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) preparados sob a REQ existente. **C10 OPEN; AC-KF-03-R1 BLOCKED** até ratificação presidencial definitiva, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness **NOT_ESTABLISHED**. Minuta não é versão normativa efetiva.
+O [mandato integral](../governance/mandates/m01-consolidated-mandate-1.1.md) permanece sem alteração, commit fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. Os estados de submissão daquele objeto são históricos; a vigência posterior é registrada fora do texto aprovado. Fontes 9/9 e essenciais 7/7, NI-G01 PASS e reconciliação aceita; [manifesto](../governance/SOURCE-MANIFEST.md).
 
-As evidências remotas RAG-T01–06 no checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e pertencem ao CTO, conforme [aditivo KF histórico](VAL-KF-CLOSURE-01.md): 12 PASS, 0 FAIL, 1 BLOCKED, 2 NOT_EXECUTED. Nesta continuação, o Agent Coder verificou remotamente o README e a referência canônica NI da SOURCE-09 no checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Isso não valida remotamente a nova minuta local. VALs e JSONs anteriores permanecem inalterados; [VAL corrente](VAL-NORMATIVE-INTEGRATION-FINAL-01.md).
+A dependência normativa substantiva de C10 foi resolvida; classificação final PENDING_FINAL_CTO_ACCEPTANCE. **AC-KF-03-R1 BLOCKED** para PASS definitivo até integração definitiva autorizada, recuperação remota independente e aceite CTO. [Matriz final proposta](AC-KF-FINAL-PROPOSED.md), [VAL próprio](VAL-KF-FINALIZATION-01.md), [resultado local](evidence/kf-finalization-validation.json) e [handoff](../status/KF-FINALIZATION-HANDOFF.md).
 
-T01 direção normativa aprovada, contrato NOT_FROZEN; T02–T04/WP-02–04 continuam abertos. Todos os testes de aplicativo NOT_EXECUTED. Commit/push/merge, KF-06 e implementação NOT_AUTHORIZED. Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. [Handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md).
+As evidências RAG-T01–06 remotas anteriores pertencem ao CTO e ao checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e; não foram reexecutadas pelo agente nem estendidas automaticamente ao futuro checkpoint definitivo. VALs, JSONs, fontes e redlines históricos preservados. Matriz proposta: 12 PASS, 0 FAIL, 1 BLOCKED (R1), 2 NOT_EXECUTED fora do escopo (KF-06/app).
+
+DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04 OPEN; WP-02–04 com seus gates; Engineering Readiness NOT_ESTABLISHED; contratos de domínio NOT_FROZEN. Construção PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, sem aprovação automática dos 26 critérios. Todos os testes de aplicativo NOT_EXECUTED.
+
+Gate de parada CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Commit/push/merge, KF-06, criação/app/implementação, contratação, compromissos financeiros, infraestrutura, deploy e políticas/visibilidade NOT_AUTHORIZED.
