@@ -1,0 +1,55 @@
+{
+    "id":  "ANCESTRALIDADE-KF-CLOSURE-SOURCE-RECOVERY",
+    "date":  "2026-11-27",
+    "scope":  [
+                  "CURRENT_REPOSITORY_CONTENT",
+                  "LOCAL_GIT_HISTORY_FILENAMES_ALL_AVAILABLE_REFS",
+                  "EIGHT_USER_SUPPLIED_ATTACHMENT_SNAPSHOTS",
+                  "CONNECTED_GITHUB_CODE_SEARCH"
+              ],
+    "checkpoint":  "aaa4d4bb55f691f63734e949cb0288536de1c03e",
+    "github_queries":  [
+                           {
+                               "query":  "org:ancestralidade \"AXODUS-BUSINESS-MANDATE-ANCESTRALIDADE-M01-MVP-01\"",
+                               "results":  0
+                           },
+                           {
+                               "query":  "org:ancestralidade \"instruções globais\"",
+                               "results":  0
+                           },
+                           {
+                               "query":  "org:ancestralidade \"mandato\" \"diretório\"",
+                               "results":  0
+                           }
+                       ],
+    "recovered":  [
+                      "ANCESTRALIDADE-CTO-MANDATE-KF-CLOSURE-01_FROM_USER_MESSAGE"
+                  ],
+    "missing":  [
+                    {
+                        "result":  "References found; integral normative text not recovered",
+                        "id":  "SRC-MISSING-MVP-MANDATE",
+                        "state":  "SOURCE_MISSING"
+                    },
+                    {
+                        "result":  "AGENTS and derived instructions available; separate integral authority hierarchy not recovered",
+                        "id":  "SRC-MISSING-GLOBAL-INSTRUCTIONS",
+                        "state":  "SOURCE_MISSING"
+                    },
+                    {
+                        "result":  "Existence as distinct instrument not confirmed",
+                        "id":  "SRC-MISSING-DIRECTORY-MANDATE",
+                        "state":  "SOURCE_MISSING"
+                    }
+                ],
+    "request_to_authority":  "CANONICAL_LOCATIONS_AND_DISTINCT_MANDATE_IDENTIFICATION_REQUESTED_IN_CURRENT_TASK",
+    "replacement_mandate_received":  false,
+    "limitations":  [
+                        "Empty code-search results do not establish nonexistence or complete GitHub indexing",
+                        "No broader personal filesystem search or access to undisclosed sources",
+                        "No normative text reconstructed from summaries"
+                    ],
+    "normative_reconciliation":  "BLOCKED_BY_SOURCE_MISSING",
+    "C10":  "BLOCKED_BY_SOURCE_MANDATE",
+    "T01":  "NORMATIVE_RECONCILIATION_PENDING"
+}

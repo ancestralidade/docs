@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-AUTHORITY-MODEL
 title: "Autoridades e limites de execução"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -11,10 +11,13 @@ references:
   - "sources/knowledge-foundation-mandate-01.md"
   - "sources/wp01-product-decision-record-1.1.md"
   - "sources/cto-technical-review-02.md"
+  - "reviews/CTO-KF-DELIVERY-REVIEW-01.md"
+  - "sources/knowledge-foundation-closure-mandate-01.md"
   - "../status/CURRENT-STATUS.md"
   - "SOURCE-RECONCILIATION.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:governance/AUTHORITY-MODEL.md@0.1"
 ---
 
 # Autoridades e limites
@@ -32,4 +35,4 @@ Este mapa consolida competências expressamente informadas pelas fontes; não su
 
 Aplicar a instrução explícita vigente do usuário e registrar sua origem. Um registro posterior só substitui o escopo que declara substituir: o PDR 1.1 supera a situação antiga das decisões, mas não fecha gates técnicos; KF-01 libera escrita documental e não aplicativo, commit, push ou merge. Diante de conflito não reconciliado, registrar ambos e escalar à autoridade competente, como em T01.
 
-Próximo gate imediato: **CTO_KNOWLEDGE_FOUNDATION_DELIVERY_REVIEW**. A referência histórica de commit não constitui autorização para criar outro. Veja [estado](../status/CURRENT-STATUS.md) e [fontes ausentes](SOURCE-RECONCILIATION.md).
+A [revisão CTO da fundação](reviews/CTO-KF-DELIVERY-REVIEW-01.md), registrada no [mandato de encerramento](sources/knowledge-foundation-closure-mandate-01.md), aceita o checkpoint aaa4d4b com critérios abertos e autoriza somente CLOSURE-01–06 nesta intervenção. Próximo gate imediato: **CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW**. Aceitar o commit anterior e a recuperação remota do CTO não autoriza criar outro commit nem construir o aplicativo. Veja [estado](../status/CURRENT-STATUS.md) e [fontes ausentes](SOURCE-RECONCILIATION.md).

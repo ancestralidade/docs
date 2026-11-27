@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-REQUIREMENT-REGISTER
 title: "Rastreabilidade REQ, IMP e VAL"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -14,8 +14,12 @@ references:
   - "APP-BOOTSTRAP-SPECIFICATION.md"
   - "../product/M01-FUNCTIONAL-REQUIREMENTS.md"
   - "../planejamento/m01/planejamento-tecnico-rev-0.2.md"
+  - "../governance/sources/knowledge-foundation-closure-mandate-01.md"
+  - "../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md"
+  - "../validation/VAL-KF-CLOSURE-01.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:engineering/REQUIREMENT-REGISTER.md@0.1"
 ---
 
 # Registro de engenharia
@@ -24,7 +28,7 @@ last_updated: "2026-11-27"
 |---|---|---|
 | [REQ-KF](REQ-KNOWLEDGE-FOUNDATION-01.md) | mandato KF-01, documento autorizado | AUTHORIZED_FOR_EXECUTION |
 | [IMP-KF](IMP-KNOWLEDGE-FOUNDATION-01.md) | fundação documental KF-01–05 | EXECUTED_WITH_BLOCKERS |
-| [VAL-KF](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md) | critérios e recuperação | resultados registrados; não aceite CTO |
+| [VAL-KF original](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md) | critérios e recuperação locais da entrega anterior | histórico preservado, não matriz corrente |
 | KF-06 / app | [especificação mínima](APP-BOOTSTRAP-SPECIFICATION.md) | NOT_AUTHORIZED |
 | R01–R14 M01 | [requisitos funcionais](../product/M01-FUNCTIONAL-REQUIREMENTS.md) | consolidados de fontes parciais; contratos NOT_FROZEN |
 
@@ -42,3 +46,8 @@ Mantêm a decomposição do [planejamento 0.2](../planejamento/m01/planejamento-
 | 06 | piloto e evidências integradas | pacotes anteriores, jurídico, operação e economia; AC-01–18 |
 
 Cada IMP futuro: NOT_AUTHORIZED. Gate de requisitos/contratos deve preceder liberação executiva e definição de responsável. Aceitação dos critérios originais ainda bloqueada por C10. Autorizações e versões canônicas devem ser referenciadas por ID e commit aceito quando existir.
+
+
+## Intervenção de encerramento
+
+ANCESTRALIDADE-IMP-KF-CLOSURE-01 executa o [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md), sem nova rodada integral de KF-01–05. [Revisão CTO](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md): checkpoint aaa4d4b aceito, recuperação remota RAG-T01–06 pelo CTO, matriz atual 12 PASS/0 FAIL/1 BLOCKED/2 NOT_EXECUTED no [aditivo VAL](../validation/VAL-KF-CLOSURE-01.md). AC-KF-03/C10 e reconciliação T01 continuam bloqueados por fonte; KF-06 e qualquer IMP de aplicativo permanecem NOT_AUTHORIZED. Parar em CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW.

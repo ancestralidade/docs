@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-SOURCE-RECONCILIATION
 title: "Matriz de reconciliação de fontes"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -22,8 +22,14 @@ references:
   - "AUTHORITY-MODEL.md"
   - "../status/RISK-REGISTER.md"
   - "../status/CURRENT-STATUS.md"
+  - "sources/knowledge-foundation-closure-mandate-01.md"
+  - "reviews/CTO-KF-DELIVERY-REVIEW-01.md"
+  - "../validation/evidence/kf-closure-source-recovery.json"
+  - "../validation/VAL-KNOWLEDGE-FOUNDATION-01.md"
+  - "../validation/VAL-KF-CLOSURE-01.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:governance/SOURCE-RECONCILIATION.md@0.1"
 ---
 
 # Reconciliação de fontes
@@ -45,7 +51,7 @@ Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de pr
 - Mandato técnico é fonte disponível de escopo e DEC-01–09; não é o mandato superior original. Reviews iniciais e Planner são contexto/propostas, sem aprovação unilateral das decisões então abertas.
 - Review CTO 01 solicita C01–C10; review CTO 02 aceita direção e C01–C09 com gates abertos e define T01–T04. Aceite de desenho não é teste ou congelamento.
 - PDR 1.1 aprova DEC-10–15 e framework DEC-16. Os estados PENDING nos snapshots anteriores são históricos; o registro não elimina parâmetros, C10 ou T01–T04. Fonte oficial anterior 1.0 não foi recebida.
-- Mandato KF-01 é a autorização corrente para escrita e validação documental KF-01–05 e decisões CTO-KF-01–09. Supera a proibição anterior de alteração documental somente nesse escopo; mantém commit, app e deploy bloqueados.
+- Mandato KF-01 foi a autorização de execução documental inicial. O mandato de encerramento, recebido posteriormente, reconhece o checkpoint e a validação CTO e autoriza a intervenção restrita CLOSURE-01–06; não libera novo commit, app ou deploy.
 - [Planejamento 0.2](../planejamento/m01/planejamento-tecnico-rev-0.2.md) e [disposição antiga](../planejamento/m01/disposicao-e-proximos-passos.md) foram recuperados do Git inicial e preservados. A [pesquisa WP-02](../research/WP02-DOCUMENTARY-QUALIFICATION.md) foi recuperada do artefato temporário desta conversa e continua estudo do agente, não seleção CTO.
 - WP-01 brief anterior disponível na conversa é proposta antecedente ao PDR; não foi duplicado como norma. WP-03 e WP-04 não têm pareceres finais disponíveis. A correção de tarifa da simulação para R$300/h foi expressa pelo usuário e já estava registrada na primeira entrega; não é contrato.
 
@@ -61,3 +67,15 @@ Fontes abaixo foram efetivamente recuperadas. O ID de anexo é referência de pr
 | SRC-MISSING-WP04 | baseline financeira/comercial validada | custos, titularidade e operação não estabelecidos | CFO/Executivo/Cliente deliberar |
 
 Não foram produzidos documentos oficiais substitutos das fontes ausentes. [Autoridade](AUTHORITY-MODEL.md), [riscos](../status/RISK-REGISTER.md) e [estado](../status/CURRENT-STATUS.md) preservam as lacunas. Identificadores de fontes podem citar o mesmo instrumento de negócio dentro do corpo; os IDs de frontmatter identificam exclusivamente cada arquivo documental.
+
+## Aditivo de recuperação — KF-CLOSURE-01
+
+Fonte nova efetivamente recebida: [mandato de encerramento ANCESTRALIDADE-CTO-MANDATE-KF-CLOSURE-01](sources/knowledge-foundation-closure-mandate-01.md), mensagem integral do usuário, sem data ou versão próprias informadas; frontmatter 1.0 identifica apenas a transcrição. Contém as disposições da revisão CTO-ANCESTRALIDADE-KF-DELIVERY-REVIEW-01, registradas em [registro de revisão](reviews/CTO-KF-DELIVERY-REVIEW-01.md). Não foi fornecido outro documento integral independente desse parecer nem logs granulares da sessão CTO; a deliberação e os resultados são atribuídos ao CTO por essa fonte expressa.
+
+Escopos de busca executados em 27/11/2026: arquivos atuais, nomes de arquivos em todo o histórico Git disponível, os oito anexos desta conversa e três consultas no conector GitHub sob org:ancestralidade. As consultas de identificador do original, instruções globais e mandato de diretório retornaram zero resultados; referências ao original foram localizadas nas fontes derivadas atuais, mas não seu conteúdo integral. Resultado vazio não prova inexistência ou cobertura completa de indexação. [Evidência de busca](../validation/evidence/kf-closure-source-recovery.json).
+
+**Fontes normativas continuam SOURCE_MISSING:** mandato original M01, instruções globais integrais de autoridade e identificação de eventual mandato de construção distinto. O usuário foi solicitado a informar suas localizações canônicas e a existência do instrumento distinto. Não foi recebido mandato substitutivo da Presidência nesta intervenção. O próprio KF-CLOSURE-01 não substitui o mandato MVP ausente.
+
+Reconciliação possível: preservadas as fontes e classificações de DEC-01–09 via mandato técnico e DEC-10–16 via PDR 1.1, inclusive limite APPROVED_FRAMEWORK de DEC-16; registrado o novo aceite de checkpoint e a recuperação CTO, sem alterar regras de produto. **Reconciliação impossível no momento:** confrontar DEC-01–16 e os textos integrais AC-01–18 com o original ausente, resolver divergências normativas de origem, concluir C10 ou retirar a condição normativa de T01. C10 permanece BLOCKED_BY_SOURCE_MANDATE e T01 NORMATIVE_RECONCILIATION_PENDING. Nenhum resumo foi promovido a documento oficial para eliminar esse bloqueio.
+
+O [VAL original](../validation/VAL-KNOWLEDGE-FOUNDATION-01.md) e JSONs da execução inicial permanecem inalterados. A [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) registra 12 PASS, 0 FAIL, 1 BLOCKED e 2 NOT_EXECUTED; os novos PASS de AC-KF-11/13 são evidências CTO, não novos testes do agente. A confirmação local do HEAD e a leitura remota do README são evidências distintas, limitadas à verificação do checkpoint.

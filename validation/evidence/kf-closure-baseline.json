@@ -1,0 +1,249 @@
+{
+    "id":  "ANCESTRALIDADE-KF-CLOSURE-BASELINE",
+    "date":  "2026-11-27",
+    "branch":  "dev",
+    "head":  "aaa4d4bb55f691f63734e949cb0288536de1c03e",
+    "checkpoint_relation":  "HEAD_EQUALS_ACCEPTED_CHECKPOINT",
+    "initial_working_tree":  "CLEAN",
+    "preexisting_changes":  [
+
+                            ],
+    "remote_readme_blob":  "64f4573f199dc20fcdb08591be0cea20877f142b",
+    "files":  [
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "59d282911dfb06eeca13ee75118d76c90856747452888558e567cf700e19b113",
+                      "git_blob":  "fcf0620848fe320757fe444454f564d9350adae6"
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "41b09512d8e1c8d12ce981eec96a1743d6a70a5bd421747f84e24d15b2782ba7",
+                      "git_blob":  "64f4573f199dc20fcdb08591be0cea20877f142b"
+                  },
+                  {
+                      "path":  "architecture/ADR-REGISTER.md",
+                      "sha256":  "403526629dcb04becc5d2d93eff042c113b67774b42e8ce31ac8474aa206167a",
+                      "git_blob":  "bfa0224e183b8675e2a334038a5266b47feda786"
+                  },
+                  {
+                      "path":  "architecture/ARCHITECTURE-BASELINE.md",
+                      "sha256":  "d9c9d39a6fb8b70a9f18b8357f99b9b2a6dc65f0e163ccad8bceb906c9ca1db4",
+                      "git_blob":  "c25648f9f4e71dbd6e60517e873ba65b0c6806b4"
+                  },
+                  {
+                      "path":  "context/PROJECT-CONTEXT.md",
+                      "sha256":  "3e23ba0e57e01d3920477c253835cfc548f49c797738b7f01042232cc7c7a7f3",
+                      "git_blob":  "485ae6774c00eef8a8fcaf9adaa5e364579cc0e4"
+                  },
+                  {
+                      "path":  "decisions/DECISION-REGISTER.md",
+                      "sha256":  "347c8ebd853d72c4d06cece5745421678315ad98babdd88e6d7f614db52d2aeb",
+                      "git_blob":  "f487b4f766dfd566ffb7c19e8e964480f0b60b73"
+                  },
+                  {
+                      "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                      "sha256":  "6480a501494f140bdf6274ad527d53d2a3853e0d9324b1c741be1487e00f9d67",
+                      "git_blob":  "8800171358546eb5dda12d7f40f23d1b86d70b74"
+                  },
+                  {
+                      "path":  "engineering/IMP-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "ffa753cb43d9a7da1ce5c2f049be03f56fa6cbfd146a60a41395151970e79c5c",
+                      "git_blob":  "df5825c5682321348f714394aea80afdc8351f09"
+                  },
+                  {
+                      "path":  "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "e8d7198a342a71610071ebb7b8ca862b06ab4c480a52771196886bbeb065b6e7",
+                      "git_blob":  "9eefc97d5cba2b22a893729365a33230dcfb557f"
+                  },
+                  {
+                      "path":  "engineering/REQUIREMENT-REGISTER.md",
+                      "sha256":  "d9757dd661b7d4ab0d8bcc356c7f81358384e769efd94d3467c2ca6c01dd4515",
+                      "git_blob":  "ce53a3cafa862e7e04a3daa53c76d2c2a5545d34"
+                  },
+                  {
+                      "path":  "governance/AUTHORITY-MODEL.md",
+                      "sha256":  "2d5a7ef2690594c83df858edd8295f034f73b623a4768266599126ca93892a2c",
+                      "git_blob":  "f646dc476bc6579d009e87a97b117eb7a83b5750"
+                  },
+                  {
+                      "path":  "governance/DOCUMENTATION-PROTOCOL.md",
+                      "sha256":  "13d59794b020d464ccb9c4aed2409b4e6d51936c355d110ccf569c7041beba98",
+                      "git_blob":  "dbd72f72794d80dfcedc30bd111aedeb1fa58c35"
+                  },
+                  {
+                      "path":  "governance/PROJECT-INSTRUCTIONS.md",
+                      "sha256":  "c626e6e06f921d0251651e90667dface77c8aac9b0a2dd1fc59f1d0ca51ec96e",
+                      "git_blob":  "fa318d2a056327117638fb9ab728405324ae8804"
+                  },
+                  {
+                      "path":  "governance/RAG-PROTOCOL.md",
+                      "sha256":  "6c7de4f23bd321b6fe9f7f10164993f94094a55f62005777e9cd5e0a9575b851",
+                      "git_blob":  "13a4c11c903a0b0452a1fed3d1bead6ff8d9bb14"
+                  },
+                  {
+                      "path":  "governance/REPOSITORY-INVENTORY.md",
+                      "sha256":  "dbd031395685126716f5b0ea9d063107373804e8b2a7f4db58f739ebe7e4584c",
+                      "git_blob":  "450657914d8a8699337ceab58a643626dc9828d0"
+                  },
+                  {
+                      "path":  "governance/SOURCE-RECONCILIATION.md",
+                      "sha256":  "969c1fc035c587fa25b241affc2919cc5c8bc7c8a4cd30234dd9ea6811bebfc0",
+                      "git_blob":  "b8777cfc377909cc474a6a191ae3adb7b8866dac"
+                  },
+                  {
+                      "path":  "governance/sources/cto-planning-review.md",
+                      "sha256":  "5650fc07e3241640df4b967cc8b58630e848c1590cc879d894544e86396d0fc5",
+                      "git_blob":  "39d2ccd23fbd5c1d8f55342179eb450ed4401426"
+                  },
+                  {
+                      "path":  "governance/sources/cto-product-alignment-review.md",
+                      "sha256":  "c634015cff9bd7be0d8dc5414e19764cce3932f852b1430818d01ab2864d5914",
+                      "git_blob":  "14417699eedc6bc94f359133a1c881c8b12965fc"
+                  },
+                  {
+                      "path":  "governance/sources/cto-technical-review-01.md",
+                      "sha256":  "31f599fa582516666f1d35b85657b6a142b50f1b879c5b258c67b6ad7b148085",
+                      "git_blob":  "feedff38dabce1f34e2ddb3a150cbde5cb1d5c84"
+                  },
+                  {
+                      "path":  "governance/sources/cto-technical-review-02.md",
+                      "sha256":  "7390b776840e1e082416d669356accba61656a6ec51863c9084bc5ff20f74ee3",
+                      "git_blob":  "cf0550a027de5b572e3d21785d3b61c244dd3119"
+                  },
+                  {
+                      "path":  "governance/sources/knowledge-foundation-mandate-01.md",
+                      "sha256":  "b7a9bcad8ed1ac5a9747bcccb354394379e59718cb79f69678a4f27fde02f3f9",
+                      "git_blob":  "6503901b45c42ec0efd55a7f10ff5cf03f58c4e8"
+                  },
+                  {
+                      "path":  "governance/sources/product-planning-review.md",
+                      "sha256":  "8fc40f6c2f3a711068d33d8aa4059cef95f83d38477730fadaa5082f947d78db",
+                      "git_blob":  "bd63ea05dcb605dbfff6ec589701711612f48040"
+                  },
+                  {
+                      "path":  "governance/sources/technical-planning-mandate-01.md",
+                      "sha256":  "0dac508167ec1750436fa43b4782fc07399264c184ae8e94bbe5fdb13a5da06e",
+                      "git_blob":  "51e32ca78420e0639ed3bc281a3ec449f5aa55f9"
+                  },
+                  {
+                      "path":  "governance/sources/wp01-product-decision-record-1.1.md",
+                      "sha256":  "971f83d3664708dd55b80c662048bff4e76b9cc25b94f0757d67b742d26eb939",
+                      "git_blob":  "e0cd8b04b2d177e0960370fd8ca2059e0785ce06"
+                  },
+                  {
+                      "path":  "operations/INFORMATION-CLASSIFICATION.md",
+                      "sha256":  "4841fb98d4a5e3038f8f62cc7753e174e645c7bd23b0eaf38e45fec2b260fc87",
+                      "git_blob":  "bbf4ed1e619fd74c0eacc42b702f9edeb6c5b39d"
+                  },
+                  {
+                      "path":  "operations/INSTITUTIONAL-OPERATIONS.md",
+                      "sha256":  "58f2f2a50851086ecc0700a2c1cad8e539dfba37bc51230aa2bd8e030b6779f8",
+                      "git_blob":  "c15260246f33a4c7dc334c7854635b391831de29"
+                  },
+                  {
+                      "path":  "planejamento/m01/README.md",
+                      "sha256":  "1f600017456fb3b6bca584453e15a9628ab9355338b63b7b0c4c271a0d9b9920",
+                      "git_blob":  "10ce3964031c83c8b036367e4e87b0aacaf93373"
+                  },
+                  {
+                      "path":  "planejamento/m01/disposicao-e-proximos-passos.md",
+                      "sha256":  "e86f6c19b027e2778d4c210541022a272baa05d8249bbc00a25ed92bf90ce920",
+                      "git_blob":  "2b2a63eea9f066eacc5200ee50d7b8f75b499ca6"
+                  },
+                  {
+                      "path":  "planejamento/m01/planejamento-tecnico-rev-0.2.md",
+                      "sha256":  "9a777421af6df7928e99c72bb5a2510ac3ef072988ed4aeff1097c783c95d84e",
+                      "git_blob":  "9fe074004d4e16fac3d31961acd706996746e036"
+                  },
+                  {
+                      "path":  "planning/ECONOMIC-ASSUMPTIONS.md",
+                      "sha256":  "0b6c965ba10cd2998f088d46b3bb10909b51ee0dbcea34cc5336e714414fb622",
+                      "git_blob":  "40daffc616433ca86f29af9ab6a2128940a64aee"
+                  },
+                  {
+                      "path":  "planning/M01-ROADMAP.md",
+                      "sha256":  "bb58235528fc9f5ee5e70285dec4963ae4353b804938bd7046b7dd26d63c7f14",
+                      "git_blob":  "b0896157c9b1e4ca42f305dac9eff1e9fa244b4f"
+                  },
+                  {
+                      "path":  "planning/WORK-PACKAGE-REGISTER.md",
+                      "sha256":  "b106791367b45e2a80982832c806dba520efa557d6b58cc3f87d2efba455423e",
+                      "git_blob":  "dc2c02ae9540def467d94c4952b551bc328c202f"
+                  },
+                  {
+                      "path":  "product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                      "sha256":  "ab5f12815254a4192e021dccbeef4f3ebea5a7c4116115b3a0bcb38bcedba03e",
+                      "git_blob":  "183cc269eccb18d4b950c7a805c6b8052b51936d"
+                  },
+                  {
+                      "path":  "product/M01-PRODUCT-BASELINE.md",
+                      "sha256":  "f4d42613ca9a70f625c2ff3c527135730237ad6868beb6b211d1b9ed250bd0d6",
+                      "git_blob":  "c39ff97b9e9661ce9a04c9211d0fd39b4feccb76"
+                  },
+                  {
+                      "path":  "product/PRODUCT-VISION.md",
+                      "sha256":  "a488a187761320f958b3324ffc6557ab718bb0d493b69eea2f70cc7b1233e0f9",
+                      "git_blob":  "7fb52b7c6a006f71be56dcaac748c6912d87654f"
+                  },
+                  {
+                      "path":  "research/RESEARCH-REGISTER.md",
+                      "sha256":  "c44c5f8d7315262e449a371d7e80100e612e8b5c92b2b67edd315995b3da7748",
+                      "git_blob":  "f5a457250e5ad64f6cad8a5ab49eb76af9e631ea"
+                  },
+                  {
+                      "path":  "research/WP02-DOCUMENTARY-QUALIFICATION.md",
+                      "sha256":  "907311aaab2172c2d9eeaf36e9f474062fef0db9c9d33fa77a6b425806486e08",
+                      "git_blob":  "09b42f163cd75a23314141da8de17f79b3cad901"
+                  },
+                  {
+                      "path":  "status/CTO-DELIVERY-HANDOFF.md",
+                      "sha256":  "5fb5e7ca58147da02755fe767a4463e2ec03eda0deecd682de7f507bf4ad577e",
+                      "git_blob":  "3d4400b11737206ce64eaabc889411f7d143d97e"
+                  },
+                  {
+                      "path":  "status/CURRENT-STATUS.md",
+                      "sha256":  "9de51419972f926331d35c0a8dcee267d2277a09a9c340b6c7d3db6b101285e7",
+                      "git_blob":  "0a893a6f6f10d9d100a4b9cd8432dbbbdcd0e733"
+                  },
+                  {
+                      "path":  "status/RISK-REGISTER.md",
+                      "sha256":  "bacb270ddd316844532f4a12b7c2e7d8a9b7aa90c8d73c759a4fde74002638b1",
+                      "git_blob":  "cdf8e1c86f94b787e545114654cbff8a36a903ef"
+                  },
+                  {
+                      "path":  "validation/KNOWLEDGE-READINESS.md",
+                      "sha256":  "af4bbac2ca00ce84efdf3286f71b47e188c94181ad0212b87fb1c80848c1477f",
+                      "git_blob":  "d5e21b465c4afc98dfcec9062dd60e9e08523acd"
+                  },
+                  {
+                      "path":  "validation/M01-ACCEPTANCE-CRITERIA.md",
+                      "sha256":  "00b60b273a5480b34a2afdc45a552ded8666e2f8929b7dce21f9e5413ed2827c",
+                      "git_blob":  "deeca302b6f121dc0f25644cd64ac96a8d5f9e0b"
+                  },
+                  {
+                      "path":  "validation/RAG-SCENARIOS.md",
+                      "sha256":  "d1074c73d5ede2afd6ab246424affdd43b789d411032293d0b82c91d592a495a",
+                      "git_blob":  "6b098c8834b70c224d8670a0dd1be7bb187eabde"
+                  },
+                  {
+                      "path":  "validation/VAL-KNOWLEDGE-FOUNDATION-01.md",
+                      "sha256":  "8f5c9fc599986857712e0b1f0aa43bd4877907902bb2f37dcc92d5ee780e89d2",
+                      "git_blob":  "93b19917e514e3499d67dd20bfafac42677136f2"
+                  },
+                  {
+                      "path":  "validation/evidence/document-validation.json",
+                      "sha256":  "7ef70cf6250395e980a86ba34b7e2b86e73408a13c817c76e651628af7649609",
+                      "git_blob":  "217c9ee0c47785516cf603e55d27e9e533bdab3a"
+                  },
+                  {
+                      "path":  "validation/evidence/rag-local-results.json",
+                      "sha256":  "7f9aae1b83bf5fccc53f0d6a0cb4272543081b3286d3987abc6d8db7f4366177",
+                      "git_blob":  "92fc73e13d331dc91803abc1eef388331e522335"
+                  },
+                  {
+                      "path":  "validation/validate-documentation.ps1",
+                      "sha256":  "21c1b5b23636fe51cf4bf7f59a954d68b39bf6f40583c45d5162791d42763005",
+                      "git_blob":  "ee1fd1156c0d32ac4933d963185b12f076b0b5cb"
+                  }
+              ]
+}

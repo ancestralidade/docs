@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-RISK-REGISTER
 title: "Riscos, bloqueadores e conflitos"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -12,8 +12,12 @@ references:
   - "../governance/sources/wp01-product-decision-record-1.1.md"
   - "../governance/SOURCE-RECONCILIATION.md"
   - "CURRENT-STATUS.md"
+  - "../governance/sources/knowledge-foundation-closure-mandate-01.md"
+  - "../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md"
+  - "../validation/VAL-KF-CLOSURE-01.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:status/RISK-REGISTER.md@0.1"
 ---
 
 # Registro de riscos e bloqueadores
@@ -22,7 +26,7 @@ Consolidação do [mandato KF](../governance/sources/knowledge-foundation-mandat
 
 | ID | Risco/pendência | Severidade / estado | Mitigação, dependência e responsável | Gate |
 |---|---|---|---|---|
-| B01/C10 | mandato MVP original ausente | alta / SOURCE_MISSING | obter original, reconciliar AC-01–18; Produto/CTO | domínio/KF-03 |
+| B01/C10 | mandato MVP original ausente | alta / SOURCE_MISSING | AC-KF-03 BLOCKED; buscas sem fonte integral e fornecimento solicitado; Produto/CTO | aceite final / domínio |
 | B02 | hierarquia global ausente | alta / SOURCE_MISSING | recuperar instruções, não inferir precedência; CTO | governança |
 | T01 | disputa admitida e exposição de perfil já publicado | alta / NORMATIVE_RECONCILIATION_PENDING | predicados distintos e mandato original; Produto/Jurídico/CTO | contratos |
 | T02 | perda do último representante | alta / POLICY_SPECIFICATION_REQUIRED | recuperação humana e política de exposição; Produto | contratos/operação |
@@ -33,9 +37,14 @@ Consolidação do [mandato KF](../governance/sources/knowledge-foundation-mandat
 | B05 | orçamento e titularidade concretos indefinidos | alta / OPEN | WP-04 e negociação DEC-16; CFO/Cliente/Executivo | WP04 |
 | B06 | capacidade/SLA/operadores não definidos | alta / OPEN | medir fluxos no piloto autorizado; Operação | operacional |
 | B07 | histórico registra remoções amplas anteriores | média / INTENT_NOT_ESTABLISHED | informar e manter histórico, sem restaurar ou apagar autonomamente; CTO | revisão KF |
-| B08 | novos documentos não publicados | média / GATE_DEPENDENCY | commit/push e recuperação independente após autorização; CTO | RAG remoto/KF |
+| B08 | checkpoint aaa4d4b aceito e recuperação remota validada pelo CTO | resolvido para o checkpoint / RESOLVED_BY_CTO | AC-KF-11/13 PASS; fonte no mandato de encerramento, não em novo teste do agente | revisão CTO concluída |
 | R01 | fraude, apropriação de conta e acesso cruzado | alta / OPEN | autorização institucional, MFA e testes futuros; engenharia | segurança |
 | R02 | intolerância, abuso de denúncia e inferência de endereço | alta / OPEN | moderação humana, projeção pública e testes; Produto/Segurança | privacidade |
 | R03 | informação pública desatualizada e baixa adesão | média / OPEN | piloto voluntário e manutenção institucional; Produto | piloto |
 
 Não se declarou resolução de conflitos normativos: T01 está tratado como bloqueador, não regra congelada. O PDR 1.1 supera apenas a pendência de direção DEC-10–16; não elimina estes riscos. Não há autorização de construir app, contratar, operar piloto real ou fechar Phase 00. [Estado corrente](CURRENT-STATUS.md).
+
+
+## Atualização de encerramento
+
+O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md) resolve B08 somente para o checkpoint aceito. A fundação continua aberta exclusivamente quanto aos critérios e dependências normativas não atendidos; os demais riscos do M01 seguem seus gates de projeto e não foram declarados resolvidos. As alterações de encerramento ainda são locais, sem autorização de commit/push. O [registro CTO](../governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md) e a [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) registram 12 PASS/1 BLOCKED/2 NOT_EXECUTED, sem FAIL. Nenhum bloqueio de app, contrato, T01–T04, WP-02–04, capacidade ou economia foi eliminado por esse resultado. Próximo gate: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW.

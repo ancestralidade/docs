@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-AGENT-INSTRUCTIONS
 title: "Orientações para agentes"
-version: "1.1"
+version: "1.2"
 status: ACTIVE_USER_INSTRUCTIONS
 authority: USER_AND_CTO_KF_MANDATE
 maintainer: CTO_DOCUMENTATION
@@ -13,8 +13,11 @@ references:
   - "governance/AUTHORITY-MODEL.md"
   - "decisions/DECISION-REGISTER.md"
   - "governance/RAG-PROTOCOL.md"
+  - "governance/sources/knowledge-foundation-closure-mandate-01.md"
+  - "validation/VAL-KF-CLOSURE-01.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:AGENTS.md@1.1"
 ---
 
 # Orientações para agentes
@@ -46,6 +49,8 @@ Planner, CTO, Marketing, Business e agentes de engenharia devem começar pelo [R
 
 A ausência do mandato superior M01 e das instruções globais completas deve permanecer SOURCE_MISSING. Não preencher lacunas com memórias ou resumos apresentados como fontes oficiais. Aprovação de direção de produto não é congelamento de contratos, aceite de fornecedor ou autorização de aplicativo. DEC-16 é aprovação de framework contratual.
 
-Nesta tarefa, KF-01–05 autoriza inspeção, escrita e validação documental local. Parar em CTO_KNOWLEDGE_FOUNDATION_DELIVERY_REVIEW. Commit, push, merge, criação de ancestralidade/app, aplicativo, contratação, provisionamento e deploy não estão autorizados. Não modificar acesso, visibilidade ou branch protection. Não introduzir credenciais, dados pessoais, evidências reais ou localizações protegidas. Em caso de conflito, registrar e encaminhar; permissões técnicas não substituem autorização.
+Nesta tarefa, o [mandato de encerramento KF](governance/sources/knowledge-foundation-closure-mandate-01.md) autoriza apenas CLOSURE-01–06: inspeção, registro da revisão, busca de fontes, reconciliação no limite disponível, sincronização e validação documental. Não repetir integralmente KF-01–05. Parar em CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Commit, push, merge, criação de ancestralidade/app, aplicativo, contratação, provisionamento e deploy não estão autorizados. Não modificar acesso, visibilidade ou branch protection. Não introduzir credenciais, dados pessoais, evidências reais ou localizações protegidas. Em caso de conflito, registrar e encaminhar; permissões técnicas não substituem autorização.
 
 Distinguir demonstração de recuperação local de recuperação independente dos documentos publicados. Registrar fontes, resultados, validações, pendências e alterações reais. Não declarar ACCEPTED em nome do CTO. A futura documentação normativa do app deverá referenciar IDs, versões e commits do repositório canônico, sem criar cópia normativa independente.
+
+O checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e foi aceito pelo CTO; a recuperação remota RAG-T01–06 foi realizada por ele conforme o mandato recebido. O agente deve registrar essa autoria separadamente de seus testes locais. Preservar o VAL original e os JSONs históricos; usar o [aditivo vigente](validation/VAL-KF-CLOSURE-01.md) para a matriz 12 PASS, 0 FAIL, 1 BLOCKED e 2 NOT_EXECUTED. O aceite do checkpoint não autoriza um novo commit nem significa aceite integral da fundação.

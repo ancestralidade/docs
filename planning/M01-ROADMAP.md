@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-M01-ROADMAP
 title: "Roadmap do M01 e gates"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -11,9 +11,11 @@ references:
   - "../governance/sources/cto-technical-review-02.md"
   - "../governance/sources/knowledge-foundation-mandate-01.md"
   - "ECONOMIC-ASSUMPTIONS.md"
+  - "../governance/sources/knowledge-foundation-closure-mandate-01.md"
   - "WORK-PACKAGE-REGISTER.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:planning/M01-ROADMAP.md@0.1"
 ---
 
 # Roadmap vigente de planejamento
@@ -32,4 +34,4 @@ A sequência incremental foi aceita em princípio no [review CTO 02](../governan
 
 Não confundir priorização funcional do diretório sintético com autorização para expor instituições reais antes dos controles obrigatórios. [WBS/valores](ECONOMIC-ASSUMPTIONS.md) são hipóteses, não cronograma comercial.
 
-Gate imediato: CTO_KNOWLEDGE_FOUNDATION_DELIVERY_REVIEW. Depois, decisões próprias para commit, push, validação independente e aceite; não há autorização automática entre esses passos. Encerramento da Phase 00 exige gates de provedores, jurídico, economia, operação e contratos conforme [pacotes](WORK-PACKAGE-REGISTER.md). Não há prazo ou data de lançamento aprovados.
+O [mandato de encerramento](../governance/sources/knowledge-foundation-closure-mandate-01.md) registra aceitação do checkpoint aaa4d4b e recuperação remota dos seis cenários pelo CTO. A intervenção corrente limita-se a CLOSURE-01–06, sem repetir a fundação. Gate imediato: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Novos commit/push/merge ainda dependem de autorização própria; o aceite integral continua bloqueado por AC-KF-03. Encerramento da Phase 00 exige gates de provedores, jurídico, economia, operação e contratos conforme [pacotes](WORK-PACKAGE-REGISTER.md). Não há prazo ou data de lançamento aprovados.

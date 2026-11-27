@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.1"
+version: "0.2"
 status: DERIVED_REVIEW_REQUIRED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
@@ -14,8 +14,12 @@ references:
   - "AUTHORITY-MODEL.md"
   - "PROJECT-INSTRUCTIONS.md"
   - "../validation/RAG-SCENARIOS.md"
+  - "reviews/CTO-KF-DELIVERY-REVIEW-01.md"
+  - "sources/knowledge-foundation-closure-mandate-01.md"
+  - "../validation/VAL-KF-CLOSURE-01.md"
 supersedes: null
 last_updated: "2026-11-27"
+previous_revision: "aaa4d4bb55f691f63734e949cb0288536de1c03e:governance/RAG-PROTOCOL.md@0.1"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -36,4 +40,8 @@ Na recuperação remota, usar ancestralidade/docs com referência Git explícita
 
 Em SOURCE_MISSING, conflito de autoridade ou fonte parcial: registrar a limitação e prosseguir apenas com trabalho que não depende da lacuna. Uma conversa ou resumo não vira mandato superior integral. Conteúdo histórico pode ajudar a explicar uma decisão, mas não substituir estado vigente.
 
-Evidências: [RAG-T01–06](../validation/RAG-SCENARIOS.md). Nesta entrega, a demonstração dos documentos novos é local; o conector recuperou apenas AGENTS do checkpoint histórico. Validação independente da nova fundação via GitHub está NOT_EXECUTED, bloqueada por gates de commit/push/publicação. Não afirmar RAG plenamente validado.
+Evidências locais originais: [RAG-T01–06](../validation/RAG-SCENARIOS.md), preservadas sem reexecução nesta intervenção. O [registro CTO](reviews/CTO-KF-DELIVERY-REVIEW-01.md), com fonte no [mandato de encerramento](sources/knowledge-foundation-closure-mandate-01.md), informa recuperação remota independente dos seis cenários pelo CTO no checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e; AC-KF-11 está PASS por essa evidência. Os testes do CTO não são testes do Agent Coder. Nesta intervenção o agente confirmou apenas o checkpoint local e a leitura remota do README nesse SHA.
+
+Não manter a recuperação do checkpoint aceito como NOT_EXECUTED. Esse estado ainda se aplica às alterações de encerramento não publicadas e às atividades futuras não realizadas. Preservar a referência de commit e o executor ao consumir resultados; a validação não se estende automaticamente a uma nova revisão. AC-KF-03 permanece BLOCKED, portanto recuperação remota validada não equivale a fundação integralmente aceita, fonte original recuperada ou Engineering Readiness.
+
+Gate de parada corrente: CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; nenhum commit/push/merge autorizado para a intervenção. Consulte [matriz vigente](../validation/VAL-KF-CLOSURE-01.md) e [estado](../status/CURRENT-STATUS.md).
