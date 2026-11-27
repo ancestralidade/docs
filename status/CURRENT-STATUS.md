@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-CURRENT-STATUS
 title: "Estado corrente e autorização"
-version: "0.7"
-status: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE
+version: "0.8"
+status: PUBLIC_DEV_VISIBILITY_CONFIRMED_INTEGRATION_GATES_PENDING
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -11,17 +11,20 @@ references:
   - "../governance/reviews/cto-kf-final-acceptance-01.md"
   - "../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
   - "../validation/AC-KF-ACCEPTED-01.md"
-  - "../validation/evidence/app-bootstrap-baseline.json"
+  - "../validation/evidence/kf06-visibility-02-baseline.json"
   - "../governance/mandates/m01-normative-effectiveness-01.md"
   - "../engineering/REQ-APP-BOOTSTRAP-01.md"
   - "../engineering/IMP-APP-BOOTSTRAP-01.md"
-  - "../validation/evidence/app-bootstrap-repository-inspection.json"
-  - "../validation/evidence/app-bootstrap-private-verification.json"
-  - "../validation/VAL-APP-BOOTSTRAP-01.md"
-  - "APP-BOOTSTRAP-HANDOFF.md"
+  - "../validation/evidence/kf06-visibility-02-security.json"
+  - "../validation/evidence/kf06-visibility-02-remote.json"
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "../validation/evidence/kf06-visibility-02-published.json"
+  - "../research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "../validation/VAL-KF06-VISIBILITY-02.md"
+  - "KF06-VISIBILITY-02-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/CURRENT-STATUS.md@0.6"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:status/CURRENT-STATUS.md@0.7"
 ---
 
 # Estado corrente — fundação aceita, Phase 00C bootstrap do App
@@ -30,7 +33,7 @@ previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/CURRENT-STAT
 
 ## Checkpoints e preservação
 
-ancestralidade/docs, dev, HEAD inicial/checkpoint aceito **dad48511595f1d0fa3d06590da222cc0fabaef0a**, árvore inicial limpa, sem alterações preexistentes. [Baseline de 105 arquivos](../validation/evidence/app-bootstrap-baseline.json). Mandato M01 1.1 ratificado em fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob **22ce8ac5087cfb1c633f3b266f35776965c09733**, preservado sem alteração. [Vigência](../governance/mandates/m01-normative-effectiveness-01.md) RATIFIED — EFFECTIVE desde 2026-11-27.
+ancestralidade/docs, dev, HEAD inicial desta emenda **7c95863ab62baeb9d6ef1d5140b172fb04a06d74**, árvore inicial limpa, 119 arquivos e nenhuma alteração preexistente. App HEAD inicial **0ec73788d4c0fc3ea1ddaa7e1b161917870941bc**, cinco arquivos e árvore limpa. [Baseline da emenda](../validation/evidence/kf06-visibility-02-baseline.json). O checkpoint documental aceito dad48511595f1d0fa3d06590da222cc0fabaef0a permanece rastreável; HEAD observado não equivale a novo aceite CTO. Mandato M01 1.1 ratificado em fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob **22ce8ac5087cfb1c633f3b266f35776965c09733**, preservado sem alteração. [Vigência](../governance/mandates/m01-normative-effectiveness-01.md) RATIFIED — EFFECTIVE desde 2026-11-27.
 
 O CTO confirmou remotamente checkpoint, relação entre commits, mandato, ratificação, vigência e evidências. As métricas da finalização anterior são do Agent Coder aceitas pelo CTO, que declara não ter reexecutado seus scripts/hashes. O aceite publicado não autoriza retroativamente operações Git nem libera novas operações. Fontes, VALs, evidências e redlines históricos permanecem intactos.
 
@@ -38,12 +41,18 @@ O CTO confirmou remotamente checkpoint, relação entre commits, mandato, ratifi
 
 Phase 00C / ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01 / ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01, mandato ANCESTRALIDADE-CTO-MANDATE-KF06-01 **AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP**. Registro deste aceite e bootstrap preparados juntos, sem outra intervenção exclusiva de encerramento. [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md), [IMP](../engineering/IMP-APP-BOOTSTRAP-01.md).
 
-ancestralidade/app existe, repository ID 1474775051, organização ancestralidade, **PRIVATE**, branch padrão **main**, remoto vazio confirmado. Foi criado pelo usuário; visibilidade inicialmente pública foi corrigida por ele e confirmada por leitura autenticada. Clone local separado, sem HEAD de commit e sem conteúdo de trabalho preexistente. Cinco arquivos mínimos preparados; nenhum commit/push/merge. [Inspeção](../validation/evidence/app-bootstrap-repository-inspection.json), [confirmação privada](../validation/evidence/app-bootstrap-private-verification.json).
+ancestralidade/app, ID 1474775051, **PUBLIC**, default branch main; leitura autenticada e anônima confirmaram o estado. O remoto já estava público antes da operação desta emenda, portanto nenhum PATCH foi necessário. Bootstrap publicado em 0ec73788d4c0fc3ea1ddaa7e1b161917870941bc, disponível em duas branches remotas; cinco arquivos locais atualizados, sem novo commit/push/merge nesta execução. [Inspeção de segurança](../validation/evidence/kf06-visibility-02-security.json), [confirmação remota](../validation/evidence/kf06-visibility-02-remote.json).
 
-14 documentos canônicos recuperados no SHA aceito, com blobs registrados. Manifesto do app aponta a docs sem copiar autoridade normativa. Novos registros de bootstrap ainda locais não têm SHA publicado. Entrega: **APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE**. AC-KF-14/15 permanecem **NOT_EXECUTED para aceite definitivo**, dependentes de integração autorizada, recuperação independente e aceite CTO. [VAL](../validation/VAL-APP-BOOTSTRAP-01.md), [handoff](APP-BOOTSTRAP-HANDOFF.md).
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md) aprova OPEN_DEVELOPMENT em DEV e torna PRIVATE anterior **SUPERSEDED quanto à visibilidade**. Fonte e evidência privada antigas preservadas. Open Source license, Legal ownership e Production hosting **NOT_ESTABLISHED**. Dados apenas sintéticos; segredos, credenciais, dados pessoais reais, informação institucional protegida e evidência privada proibidos no repositório público.
+
+Manifesto App mantém os 14 documentos recuperados no SHA aceito e acrescenta decisão/visibilidade/gates. REQ/IMP/VAL e fonte KF06-01 anteriores foram recuperados no SHA observado 7c95863ab62baeb9d6ef1d5140b172fb04a06d74; [prova de publicação](../validation/evidence/kf06-visibility-02-published.json). A emenda e os relatórios desta execução ainda não têm SHA publicado. AC-KF-14/15 sem PASS definitivo até integração autorizada, recuperação independente e aceite CTO.
+
+Vercel Hobby **PREFERRED_DEV_CANDIDATE**, com [qualificação inicial WP-02](../research/WP02-VERCEL-HOBBY-DEV-01.md) e gates abertos: elegibilidade não comercial, divergência de documentação para integração GitHub org, ambientes, limites, variáveis e custo/portabilidade. Sem seleção definitiva, conta, integração de provedor ou deploy. [VAL da emenda](../validation/VAL-KF06-VISIBILITY-02.md) e [handoff](KF06-VISIBILITY-02-HANDOFF.md).
+
+Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 **REFERENCED_NOT_RECEIVED**: íntegra não encontrada nos registros locais consultados e solicitada ao usuário. A decisão atual autoriza expressamente visibilidade e ajustes documentais, mas não permite inferir condições de commit/push/merge ausentes. Esses gates permanecem preservados, sem operações de integração pelo agente.
 
 ## Dependências e limites
 
 Engineering Readiness **NOT_ESTABLISHED**; contratos de domínio e T01 **NOT_FROZEN**; T01 NORMATIVE_DIRECTION_APPROVED; T02–T04 OPEN; WP-02–04 com gates preservados; DEC-16 APPROVED_FRAMEWORK. Construção PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, 26 critérios sem aprovação automática. Phase 01/M01 implementation NOT_AUTHORIZED.
 
-Gate de parada: **CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW**. Sem commit manual/automático, push ou merge autorizados. Sem frameworks/dependências, stack definitiva, banco/autenticação/endpoints, infraestrutura, contratação, finanças, políticas organizacionais ou deploy. Nenhum teste de aplicativo executado. A fundação documental aceita não equivale a engenharia pronta ou implementação autorizada.
+Gate de parada: **CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW**. Sem commit manual/automático, push ou merge autorizados. Sem frameworks/dependências, stack definitiva, banco/autenticação/endpoints, infraestrutura, contratação, finanças, políticas organizacionais ou deploy. Nenhum teste de aplicativo executado. A fundação documental aceita não equivale a engenharia pronta ou implementação autorizada.

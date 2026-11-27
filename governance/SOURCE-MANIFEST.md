@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-NI-SOURCE-MANIFEST
 title: "Manifesto de proveniência e intake normativo"
-version: "1.4"
-status: SOURCES_COMPLETE_KF_ACCEPTED_BOOTSTRAP_AUTHORITY_RECEIVED
+version: "1.5"
+status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_RECORDING_RECEIVED_SOURCES
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -38,9 +38,17 @@ references:
   - "../validation/evidence/app-bootstrap-repository-inspection.json"
   - "../validation/evidence/app-bootstrap-private-verification.json"
   - "../validation/VAL-APP-BOOTSTRAP-01.md"
+  - "decisions/kf06-visibility-amendment-02.md"
+  - "../validation/evidence/kf06-visibility-02-security.json"
+  - "../validation/evidence/kf06-visibility-02-remote.json"
+  - "../validation/evidence/kf06-visibility-02-published.json"
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "../research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "../validation/VAL-KF06-VISIBILITY-02.md"
+  - "../status/KF06-VISIBILITY-02-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:governance/SOURCE-MANIFEST.md@1.3"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:governance/SOURCE-MANIFEST.md@1.4"
 ---
 
 # Manifesto corrente — fontes efetivamente transferidas
@@ -132,3 +140,19 @@ Ratificação APPROVED sem condições, baseline RATIFIED, EFFECTIVE TRUE desde 
 [Aceite CTO registrado](reviews/cto-kf-final-acceptance-01.md): Phase 00A/00B CLOSED, KF-01–05 COMPLETE, C10 RESOLVED, R1 PASS, 13 PASS e 2 NOT_EXECUTED antes de KF-06. O CTO confirmou recuperação remota do checkpoint dad48511595f1d0fa3d06590da222cc0fabaef0a e não reexecutou os scripts/hashes anteriores. A fonte posterior não altera o denominador de nove fontes reconciliadas; não renumera SOURCE-01–09 nem modifica os textos históricos.
 
 KF-06 AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP, Phase 00C. [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md), [inspeção dos repositórios](../validation/evidence/app-bootstrap-repository-inspection.json) e [PRIVATE confirmado](../validation/evidence/app-bootstrap-private-verification.json). Novos registros de execução ainda locais não estão no SHA aceito e deverão receber referência após integração autorizada. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; sem implementação M01/Phase 01, commit/push/merge ou infraestrutura. [VAL corrente](../validation/VAL-APP-BOOTSTRAP-01.md).
+
+
+## Decisão posterior de visibilidade DEV
+
+[ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02](decisions/kf06-visibility-amendment-02.md) recebida como mensagem do usuário, autoridade Presidência/CTO e estado APPROVED — AUTHORIZED FOR EXECUTION. Data/versão próprias não especificadas; versão 1.0 do registro identifica a transcrição. Não há hash de um arquivo original ou assinatura alegados. A íntegra é preservada no registro canônico. A fonte KF06-01 e a prova PRIVATE anteriores permanecem inalteradas: somente a condição de visibilidade PRIVATE é SUPERSEDED, não o mandato inteiro ou seus demais limites.
+
+Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 referenciada, íntegra não recebida nem encontrada na consulta local. Solicitação de texto/referência apresentada ao usuário, sem criar documento substitutivo ou inferir autorização Git. A decisão atual sustenta expressamente PUBLIC e atualização restrita do bootstrap. [Segurança](../validation/evidence/kf06-visibility-02-security.json) e [confirmação remota](../validation/evidence/kf06-visibility-02-remote.json): PUBLIC já observado antes da operação, sem PATCH. [Publicação dos registros anteriores](../validation/evidence/kf06-visibility-02-published.json) confirmada em 7c95863ab62baeb9d6ef1d5140b172fb04a06d74, sem promovê-lo automaticamente a novo checkpoint aceito.
+
+
+## Emenda corrente PUBLIC / OPEN_DEVELOPMENT
+
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md), Presidência/CTO, substitui somente a exigência PRIVATE por PUBLIC em ancestralidade/app; condição anterior SUPERSEDED, fontes e evidências preservadas. Repository ID 1474775051 e PUBLIC confirmados após inspeção de conteúdo/histórico; o remoto já público não exigiu PATCH. Open Source license, Legal ownership e Production hosting NOT_ESTABLISHED. Dados somente sintéticos em DEV; nenhum segredo, credencial, dado pessoal real, dado institucional protegido ou evidência privada no repositório público.
+
+Vercel Hobby PREFERRED_DEV_CANDIDATE; [WP-02](../research/WP02-VERCEL-HOBBY-DEV-01.md) registra elegibilidade e integração org não estabelecidas e divergência entre páginas oficiais. Preferência não seleciona plano/fornecedor, não contrata e não autoriza deploy. Gates de commit/push, recuperação independente e aceite CTO preservados. Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 REFERENCED_NOT_RECEIVED; não inferir condições de integração ausentes.
+
+Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Sem M01/Phase 01, dependências, infraestrutura ou deploy. C10 RESOLVED e R1 PASS preservados pelo aceite KF anterior; AC-KF-14/15 sem PASS definitivo. Engineering Readiness NOT_ESTABLISHED e contratos/T01 NOT_FROZEN; T02–T04 e WP-02–04 mantêm gates. [VAL novo](../validation/VAL-KF06-VISIBILITY-02.md), [handoff](../status/KF06-VISIBILITY-02-HANDOFF.md).

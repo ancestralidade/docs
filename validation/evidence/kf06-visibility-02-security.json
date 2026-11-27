@@ -1,0 +1,106 @@
+{
+    "id":  "ANCESTRALIDADE-KF06-VISIBILITY-02-SECURITY",
+    "recorded_on":  "2026-11-27",
+    "executor":  "AGENT_CODER",
+    "decision":  "ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02",
+    "repository":  "ancestralidade/app",
+    "repository_id":  1474775051,
+    "visibility_before":  "public",
+    "default_branch":  "main",
+    "permissions_admin":  true,
+    "remote_refs":  [
+                        {
+                            "type":  "branch",
+                            "name":  "dev",
+                            "sha":  "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc"
+                        },
+                        {
+                            "type":  "branch",
+                            "name":  "main",
+                            "sha":  "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc"
+                        }
+                    ],
+    "remote_reachable_commits":  [
+                                     "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc"
+                                 ],
+    "local_reachable_commit_count":  4,
+    "history_blobs":  [
+                          {
+                              "blob":  "603613983d3206157104069521b5994a7629d5d8",
+                              "path":  ".gitignore",
+                              "characters":  134
+                          },
+                          {
+                              "blob":  "d6fcaaac35ef047be5c16011d3fa30621f803c89",
+                              "path":  "AGENTS.md",
+                              "characters":  2438
+                          },
+                          {
+                              "blob":  "ea9d7597864689ae948323fa64536529a85a6f11",
+                              "path":  "README.md",
+                              "characters":  3429
+                          },
+                          {
+                              "blob":  "4631ef21ea0f2759c02642d30d43ce5b40b391b0",
+                              "path":  "governance/NORMATIVE-TRACEABILITY.json",
+                              "characters":  16524
+                          },
+                          {
+                              "blob":  "da1952928878a636656baf829eea6be4eaaab0f4",
+                              "path":  "status/INITIAL-STATE.md",
+                              "characters":  2533
+                          }
+                      ],
+    "worktree_files":  [
+                           {
+                               "path":  ".gitignore",
+                               "bytes":  135,
+                               "sha256":  "9511b844534caefe367947f5679c7596199097eb48e1dfd4207ec0f79aa85155"
+                           },
+                           {
+                               "path":  "AGENTS.md",
+                               "bytes":  2530,
+                               "sha256":  "6a4ada0849c32ce7e967e282effe9eb77e25c6d154848601c0ce027ed63256ac"
+                           },
+                           {
+                               "path":  "README.md",
+                               "bytes":  3522,
+                               "sha256":  "0435404969a195d519966b052587ddf9352c57de1c3e2b5a2d262f89e3f1b9cc"
+                           },
+                           {
+                               "path":  "governance/NORMATIVE-TRACEABILITY.json",
+                               "bytes":  16782,
+                               "sha256":  "364371718e0d9b61b9ec9e5c2934e989e7e34c6ce2b48376171e991a03bad49c"
+                           },
+                           {
+                               "path":  "status/INITIAL-STATE.md",
+                               "bytes":  2596,
+                               "sha256":  "7b93f96d31e48bfe90309880464da6cf9a1bb6a16eee61c295c2fd812f120b9e"
+                           }
+                       ],
+    "patterns_checked":  [
+                             "github_token",
+                             "private_key",
+                             "aws_access_key",
+                             "assigned_secret",
+                             "personal_email",
+                             "cpf",
+                             "personal_path",
+                             "classification"
+                         ],
+    "findings":  [
+
+                 ],
+    "result":  "PASS",
+    "manual_content_review":  "Five operational bootstrap files reviewed; no real institutional/personal datasets, private evidence or credentials identified",
+    "scope":  "All current app files; all locally reachable blobs and commit messages; all remote branch/tag tips available locally before visibility change",
+    "git_authorship_metadata":  "Normal Git authorship remains; no author identities copied into report",
+    "limits":  [
+                   "Pattern scan and scoped human review are not an exhaustive guarantee",
+                   "Hidden/unadvertised server refs and external copies are outside this inspection",
+                   "No history rewriting or content deletion performed"
+               ],
+    "mutation_authorization":  "APP_VISIBILITY_ONLY_AFTER_PASS",
+    "no_git_commit_push_merge":  true,
+    "no_credentials_saved":  true
+}

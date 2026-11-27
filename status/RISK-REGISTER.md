@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RISK-REGISTER
 title: "Riscos, bloqueadores e conflitos"
-version: "0.7"
-status: KF_ACCEPTED_BOOTSTRAP_DEPENDENCIES_PRESERVED
+version: "0.8"
+status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -23,9 +23,13 @@ references:
   - "../governance/reviews/cto-kf-final-acceptance-01.md"
   - "../engineering/REQ-APP-BOOTSTRAP-01.md"
   - "../validation/VAL-APP-BOOTSTRAP-01.md"
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "../research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "../validation/VAL-KF06-VISIBILITY-02.md"
+  - "../status/KF06-VISIBILITY-02-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/RISK-REGISTER.md@0.6"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:status/RISK-REGISTER.md@0.7"
 ---
 
 # Registro de riscos e bloqueadores
@@ -69,6 +73,17 @@ O [pacote do Planner](../governance/reviews/cto-source-transfer-01.md) foi receb
 
 ## Estado corrente — KF aceita, risco de escopo do bootstrap controlado
 
-[Aceite final CTO](../governance/reviews/cto-kf-final-acceptance-01.md): Phase 00A/00B encerradas, C10 RESOLVED, R1 PASS. KF-06 / Phase 00C autorizado de forma restrita; [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md). App PRIVATE confirmado após correção do usuário, clone vazio com estrutura mínima local. AC-KF-14/15 ainda dependem de integração autorizada, recuperação independente e aceite CTO, sem comprometer o aceite anterior KF-01–05.
+[Aceite final CTO](../governance/reviews/cto-kf-final-acceptance-01.md): Phase 00A/00B encerradas, C10 RESOLVED, R1 PASS. KF-06 / Phase 00C autorizado de forma restrita; [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md). App PUBLIC confirmado sob VISIBILITY-02, bootstrap observado em commit 0ec73788d4c0fc3ea1ddaa7e1b161917870941bc. AC-KF-14/15 ainda dependem de integração autorizada, recuperação independente e aceite CTO, sem comprometer o aceite anterior KF-01–05.
 
 Provedores, privacidade, economia, operação, contratos e T02–T04 continuam com seus gates; Engineering Readiness NOT_ESTABLISHED. Evitar tratar bootstrap, permissão técnica admin ou aceite de documentação como autorização de M01/Phase 01, dependências, stack ou infraestrutura. [VAL corrente](../validation/VAL-APP-BOOTSTRAP-01.md), gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Sem commit/push/merge autorizado.
+
+
+## Emenda corrente PUBLIC / OPEN_DEVELOPMENT
+
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md), Presidência/CTO, substitui somente a exigência PRIVATE por PUBLIC em ancestralidade/app; condição anterior SUPERSEDED, fontes e evidências preservadas. Repository ID 1474775051 e PUBLIC confirmados após inspeção de conteúdo/histórico; o remoto já público não exigiu PATCH. Open Source license, Legal ownership e Production hosting NOT_ESTABLISHED. Dados somente sintéticos em DEV; nenhum segredo, credencial, dado pessoal real, dado institucional protegido ou evidência privada no repositório público.
+
+Vercel Hobby PREFERRED_DEV_CANDIDATE; [WP-02](../research/WP02-VERCEL-HOBBY-DEV-01.md) registra elegibilidade e integração org não estabelecidas e divergência entre páginas oficiais. Preferência não seleciona plano/fornecedor, não contrata e não autoriza deploy. Gates de commit/push, recuperação independente e aceite CTO preservados. Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 REFERENCED_NOT_RECEIVED; não inferir condições de integração ausentes.
+
+Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Sem M01/Phase 01, dependências, infraestrutura ou deploy. C10 RESOLVED e R1 PASS preservados pelo aceite KF anterior; AC-KF-14/15 sem PASS definitivo. Engineering Readiness NOT_ESTABLISHED e contratos/T01 NOT_FROZEN; T02–T04 e WP-02–04 mantêm gates. [VAL novo](../validation/VAL-KF06-VISIBILITY-02.md), [handoff](../status/KF06-VISIBILITY-02-HANDOFF.md).
+
+Risco de divulgação: inspecionar os próximos diffs e todo novo histórico antes de publicação autorizada; excluir dados reais, evidências privadas, credenciais e arquivos locais, não apenas o diretório de trabalho atual. Risco de custo/elegibilidade: repositório público não demonstra que Hobby atende finalidade/organização; WP-02 e WP-03/04 devem resolver os pontos documentados. Não foi criada infraestrutura ou assumido compromisso financeiro.

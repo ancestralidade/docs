@@ -1,0 +1,22 @@
+{
+    "id":  "ANCESTRALIDADE-KF06-VISIBILITY-02-REMOTE",
+    "recorded_on":  "2026-11-27",
+    "decision":  "ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02",
+    "repository":  "ancestralidade/app",
+    "repository_id":  1474775051,
+    "visibility_before":  "public",
+    "visibility_after":  "public",
+    "private_after":  false,
+    "default_branch":  "main",
+    "security_gate":  "PASS",
+    "security_evidence":  "validation/evidence/kf06-visibility-02-security.json",
+    "patch_performed":  false,
+    "operation":  "ALREADY_PUBLIC_CONFIRMED_NO_PATCH",
+    "anonymous_public_read":  "PASS",
+    "organization_policies_changed":  false,
+    "license_changed":  false,
+    "memberships_changed":  false,
+    "commit_push_merge_performed":  false,
+    "deployment_performed":  false,
+    "result":  "PASS"
+}

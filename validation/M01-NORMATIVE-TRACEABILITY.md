@@ -1,13 +1,15 @@
 ---
 id: ANCESTRALIDADE-M01-NORMATIVE-TRACEABILITY
 title: "Rastreabilidade normativa — gate de fontes pendente"
-version: "1.4"
-status: TRACEABILITY_ACCEPTED_KF_CLOSED
+version: "1.5"
+status: TRACEABILITY_PRESERVED_PUBLIC_DEV_AMENDMENT
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "VAL-KF06-VISIBILITY-02.md"
   - "../governance/reviews/cto-kf-final-acceptance-01.md"
   - "../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
   - "../governance/decisions/m01-presidential-ratification-01.md"
@@ -24,10 +26,15 @@ references:
   - "../status/NORMATIVE-CONFLICT-REGISTER.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:validation/M01-NORMATIVE-TRACEABILITY.md@1.3"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:validation/M01-NORMATIVE-TRACEABILITY.md@1.4"
 ---
 
 # Rastreabilidade normativa — baseline 1.1 ratificada
+
+## Emenda operacional posterior de visibilidade
+
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md) altera apenas PRIVATE para PUBLIC / OPEN_DEVELOPMENT no bootstrap DEV. Nenhuma correspondência, critério, requisito, DEC-01–16 ou cláusula ratificada desta matriz foi alterada; os estados e gates de preparação abaixo são históricos. Gate atual CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW; sem implementação M01 ou deploy. [VAL corrente](VAL-KF06-VISIBILITY-02.md).
+
 
 ## Aceite posterior vigente
 

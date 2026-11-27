@@ -1,0 +1,933 @@
+{
+    "id":  "ANCESTRALIDADE-VAL-KF06-VISIBILITY-02-LOCAL",
+    "recorded_on":  "2026-11-27",
+    "executor":  "AGENT_CODER",
+    "decision":  "ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02",
+    "docs_head":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
+    "app_head":  "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc",
+    "docs_modified":  [
+                          "AGENTS.md",
+                          "README.md",
+                          "architecture/ARCHITECTURE-BASELINE.md",
+                          "context/PROJECT-CONTEXT.md",
+                          "decisions/DECISION-REGISTER.md",
+                          "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                          "engineering/REQ-APP-BOOTSTRAP-01.md",
+                          "engineering/REQUIREMENT-REGISTER.md",
+                          "governance/AUTHORITY-MODEL.md",
+                          "governance/PROJECT-INSTRUCTIONS.md",
+                          "governance/RAG-PROTOCOL.md",
+                          "governance/SOURCE-MANIFEST.md",
+                          "governance/SOURCE-RECONCILIATION.md",
+                          "planning/M01-ROADMAP.md",
+                          "planning/WORK-PACKAGE-REGISTER.md",
+                          "product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                          "product/M01-PRODUCT-BASELINE.md",
+                          "research/RESEARCH-REGISTER.md",
+                          "status/CURRENT-STATUS.md",
+                          "status/NORMATIVE-CONFLICT-REGISTER.md",
+                          "status/RISK-REGISTER.md",
+                          "validation/KNOWLEDGE-READINESS.md",
+                          "validation/M01-ACCEPTANCE-CRITERIA.md",
+                          "validation/M01-NORMATIVE-TRACEABILITY.md"
+                      ],
+    "docs_new":  [
+                     "governance/decisions/kf06-visibility-amendment-02.md",
+                     "research/WP02-VERCEL-HOBBY-DEV-01.md",
+                     "status/KF06-VISIBILITY-02-HANDOFF.md",
+                     "validation/VAL-KF06-VISIBILITY-02.md",
+                     "validation/evidence/kf06-visibility-02-app.diff",
+                     "validation/evidence/kf06-visibility-02-baseline.json",
+                     "validation/evidence/kf06-visibility-02-docs.diff",
+                     "validation/evidence/kf06-visibility-02-published.json",
+                     "validation/evidence/kf06-visibility-02-remote.json",
+                     "validation/evidence/kf06-visibility-02-security.json",
+                     "validation/evidence/kf06-visibility-02-validation.json",
+                     "validation/validate-kf06-visibility-02.ps1"
+                 ],
+    "docs_preserved":  95,
+    "preservation":  [
+                         {
+                             "path":  "architecture/ADR-REGISTER.md",
+                             "before":  "403526629dcb04becc5d2d93eff042c113b67774b42e8ce31ac8474aa206167a",
+                             "after":  "403526629dcb04becc5d2d93eff042c113b67774b42e8ce31ac8474aa206167a",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "engineering/IMP-APP-BOOTSTRAP-01.md",
+                             "before":  "6d1dba202debec85ffe7e7c9f237c07e774e7ed2769d8915a2593980148c659e",
+                             "after":  "6d1dba202debec85ffe7e7c9f237c07e774e7ed2769d8915a2593980148c659e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "engineering/IMP-KNOWLEDGE-FOUNDATION-01.md",
+                             "before":  "ffa753cb43d9a7da1ce5c2f049be03f56fa6cbfd146a60a41395151970e79c5c",
+                             "after":  "ffa753cb43d9a7da1ce5c2f049be03f56fa6cbfd146a60a41395151970e79c5c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "engineering/IMP-NORMATIVE-INTEGRATION-01.md",
+                             "before":  "a4ce74eb8839be20a8d67e5e22b8231c6bd47afa4baefed24a829488df714141",
+                             "after":  "a4ce74eb8839be20a8d67e5e22b8231c6bd47afa4baefed24a829488df714141",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md",
+                             "before":  "e8d7198a342a71610071ebb7b8ca862b06ab4c480a52771196886bbeb065b6e7",
+                             "after":  "e8d7198a342a71610071ebb7b8ca862b06ab4c480a52771196886bbeb065b6e7",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "engineering/REQ-NORMATIVE-INTEGRATION-01.md",
+                             "before":  "b9c73c1a48c934eb2e821925ee3a2f13058213485f8e56cf2c63141bf88bf4b5",
+                             "after":  "b9c73c1a48c934eb2e821925ee3a2f13058213485f8e56cf2c63141bf88bf4b5",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/DOCUMENTATION-PROTOCOL.md",
+                             "before":  "13d59794b020d464ccb9c4aed2409b4e6d51936c355d110ccf569c7041beba98",
+                             "after":  "13d59794b020d464ccb9c4aed2409b4e6d51936c355d110ccf569c7041beba98",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/REPOSITORY-INVENTORY.md",
+                             "before":  "dbd031395685126716f5b0ea9d063107373804e8b2a7f4db58f739ebe7e4584c",
+                             "after":  "dbd031395685126716f5b0ea9d063107373804e8b2a7f4db58f739ebe7e4584c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/decisions/m01-presidential-ratification-01.md",
+                             "before":  "fc0704c12e24d545f8cfe7701d74a08236a4019cdb15a48bc24caecd44a023a8",
+                             "after":  "fc0704c12e24d545f8cfe7701d74a08236a4019cdb15a48bc24caecd44a023a8",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md",
+                             "before":  "176563dbb7c0a7a335ee066f54684ed020000fe39f417cc51f9a60fb50edc10d",
+                             "after":  "176563dbb7c0a7a335ee066f54684ed020000fe39f417cc51f9a60fb50edc10d",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/mandates/m01-consolidated-mandate-1.0-to-1.1.diff",
+                             "before":  "0b5a607a8775bd643d2b30a6c8cc00c92f0cd8a0d11e22f174b32333077f1fe8",
+                             "after":  "0b5a607a8775bd643d2b30a6c8cc00c92f0cd8a0d11e22f174b32333077f1fe8",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/mandates/m01-consolidated-mandate-1.0.md",
+                             "before":  "0a9a0a1ca268b5f8fa32ec63943426fd7bab54579982b7021598fd3ca412f958",
+                             "after":  "0a9a0a1ca268b5f8fa32ec63943426fd7bab54579982b7021598fd3ca412f958",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/mandates/m01-consolidated-mandate-1.1.md",
+                             "before":  "0ebafce584ae45bbd76d1a688f16d397e8aa8b7b426aef7ce784861040acbfef",
+                             "after":  "0ebafce584ae45bbd76d1a688f16d397e8aa8b7b426aef7ce784861040acbfef",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/mandates/m01-normative-effectiveness-01.md",
+                             "before":  "18f3213c962b208172974934b103a63cbdaf6862dd7f6ef48236db99a0c2d595",
+                             "after":  "18f3213c962b208172974934b103a63cbdaf6862dd7f6ef48236db99a0c2d595",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md",
+                             "before":  "59be535e83f0854f7e83c17c38b458d00e04397211a92bc805066b098169f9f5",
+                             "after":  "59be535e83f0854f7e83c17c38b458d00e04397211a92bc805066b098169f9f5",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/cto-execution-continuation-02.md",
+                             "before":  "f8d9b91064a19d070976f11524c1434829f7a21f1e51523351f271ad8864fd6b",
+                             "after":  "f8d9b91064a19d070976f11524c1434829f7a21f1e51523351f271ad8864fd6b",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/cto-kf-final-acceptance-01.md",
+                             "before":  "bb5a61be77309fc962193e5ed5eb2097d0166c9a5ed0c52e8a17862e7c150270",
+                             "after":  "bb5a61be77309fc962193e5ed5eb2097d0166c9a5ed0c52e8a17862e7c150270",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/cto-m01-normative-review-02.md",
+                             "before":  "5dca631ce5be69147572be92f0a6b9c0f2b7ef83500bf1b8da7273e73a192bef",
+                             "after":  "5dca631ce5be69147572be92f0a6b9c0f2b7ef83500bf1b8da7273e73a192bef",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/cto-ni-final-review-01.md",
+                             "before":  "1ead8b223d5ad6d0d7e636173e6286ddd8c9b9de444c159ebdcbb5b3c159fe3c",
+                             "after":  "1ead8b223d5ad6d0d7e636173e6286ddd8c9b9de444c159ebdcbb5b3c159fe3c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/cto-source-transfer-01.md",
+                             "before":  "872bd6443b53c8def35892e69e144ca3a9f8de7237d10b25a152db0bb9ec29e0",
+                             "after":  "872bd6443b53c8def35892e69e144ca3a9f8de7237d10b25a152db0bb9ec29e0",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/reviews/planner-m01-normative-review-01.md",
+                             "before":  "176640dcb615efa70ba57c8e76f53086d3c3d001f742b8baa4c10ab57e3c6a57",
+                             "after":  "176640dcb615efa70ba57c8e76f53086d3c3d001f742b8baa4c10ab57e3c6a57",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/cto-planning-review.md",
+                             "before":  "5650fc07e3241640df4b967cc8b58630e848c1590cc879d894544e86396d0fc5",
+                             "after":  "5650fc07e3241640df4b967cc8b58630e848c1590cc879d894544e86396d0fc5",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/cto-product-alignment-review.md",
+                             "before":  "c634015cff9bd7be0d8dc5414e19764cce3932f852b1430818d01ab2864d5914",
+                             "after":  "c634015cff9bd7be0d8dc5414e19764cce3932f852b1430818d01ab2864d5914",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/cto-source-transfer-02-manifest.md",
+                             "before":  "b823b2b87f033ae6e0842223d80ec7dccc9a11d99a4285191378b4db40b0ac4b",
+                             "after":  "b823b2b87f033ae6e0842223d80ec7dccc9a11d99a4285191378b4db40b0ac4b",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/cto-technical-review-01.md",
+                             "before":  "31f599fa582516666f1d35b85657b6a142b50f1b879c5b258c67b6ad7b148085",
+                             "after":  "31f599fa582516666f1d35b85657b6a142b50f1b879c5b258c67b6ad7b148085",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/cto-technical-review-02.md",
+                             "before":  "7390b776840e1e082416d669356accba61656a6ec51863c9084bc5ff20f74ee3",
+                             "after":  "7390b776840e1e082416d669356accba61656a6ec51863c9084bc5ff20f74ee3",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/kf-final-acceptance-and-app-bootstrap-01.md",
+                             "before":  "e1c90135cce015c867f9b2f9a74331cd524e133701bc4d34685702a34789fa2f",
+                             "after":  "e1c90135cce015c867f9b2f9a74331cd524e133701bc4d34685702a34789fa2f",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/knowledge-foundation-closure-mandate-01.md",
+                             "before":  "aa1571bb68fa16226623299aaa8ddd13e90d4d1fed2315757b5ccdf038c84d8c",
+                             "after":  "aa1571bb68fa16226623299aaa8ddd13e90d4d1fed2315757b5ccdf038c84d8c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/knowledge-foundation-finalization-mandate-01.md",
+                             "before":  "7a0ab46ead7f2842a6d7d830e92a4e250e93881ffda407e9acebc80eb2d173ef",
+                             "after":  "7a0ab46ead7f2842a6d7d830e92a4e250e93881ffda407e9acebc80eb2d173ef",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/knowledge-foundation-mandate-01.md",
+                             "before":  "b7a9bcad8ed1ac5a9747bcccb354394379e59718cb79f69678a4f27fde02f3f9",
+                             "after":  "b7a9bcad8ed1ac5a9747bcccb354394379e59718cb79f69678a4f27fde02f3f9",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/m01-directory-construction-mandate-01.md",
+                             "before":  "3351303626b7ef7e5280ccc89826ca54b16817a597afe5bdd9b8ee7093d4ea30",
+                             "after":  "3351303626b7ef7e5280ccc89826ca54b16817a597afe5bdd9b8ee7093d4ea30",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/m01-mvp-original-mandate-01.md",
+                             "before":  "ebab9c4a0cd7fb9f8d74e20f419357662125ae3cff2b892488666acecac3d0d6",
+                             "after":  "ebab9c4a0cd7fb9f8d74e20f419357662125ae3cff2b892488666acecac3d0d6",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/m01-presidential-deliberation-01.md",
+                             "before":  "6ff6009b79fea0d9631575775dec16e4f15a15cdcde1d9fa0e37bd0931c6da23",
+                             "after":  "6ff6009b79fea0d9631575775dec16e4f15a15cdcde1d9fa0e37bd0931c6da23",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/normative-integration-mandate-01.md",
+                             "before":  "c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7",
+                             "after":  "c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/product-planner-mandate.md",
+                             "before":  "a0fddd3c6fef93e4d019f5d622a8ee5fd992df22a97d32e851248606104c29ce",
+                             "after":  "a0fddd3c6fef93e4d019f5d622a8ee5fd992df22a97d32e851248606104c29ce",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/product-planning-review.md",
+                             "before":  "8fc40f6c2f3a711068d33d8aa4059cef95f83d38477730fadaa5082f947d78db",
+                             "after":  "8fc40f6c2f3a711068d33d8aa4059cef95f83d38477730fadaa5082f947d78db",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/project-instructions-authoritative.md",
+                             "before":  "c2f68d571f7d27059f69bf6711cb1c5c28393bdacd4da8be70564bf924f5a855",
+                             "after":  "c2f68d571f7d27059f69bf6711cb1c5c28393bdacd4da8be70564bf924f5a855",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/project-instructions-extended-historical.md",
+                             "before":  "454a9447d1a166896df32cc70f66073eafaceb307cd4a6939d822e24ed88932c",
+                             "after":  "454a9447d1a166896df32cc70f66073eafaceb307cd4a6939d822e24ed88932c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/technical-planning-mandate-01.md",
+                             "before":  "0dac508167ec1750436fa43b4782fc07399264c184ae8e94bbe5fdb13a5da06e",
+                             "after":  "0dac508167ec1750436fa43b4782fc07399264c184ae8e94bbe5fdb13a5da06e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "governance/sources/wp01-product-decision-record-1.1.md",
+                             "before":  "971f83d3664708dd55b80c662048bff4e76b9cc25b94f0757d67b742d26eb939",
+                             "after":  "971f83d3664708dd55b80c662048bff4e76b9cc25b94f0757d67b742d26eb939",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "operations/INFORMATION-CLASSIFICATION.md",
+                             "before":  "4841fb98d4a5e3038f8f62cc7753e174e645c7bd23b0eaf38e45fec2b260fc87",
+                             "after":  "4841fb98d4a5e3038f8f62cc7753e174e645c7bd23b0eaf38e45fec2b260fc87",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "operations/INSTITUTIONAL-OPERATIONS.md",
+                             "before":  "58f2f2a50851086ecc0700a2c1cad8e539dfba37bc51230aa2bd8e030b6779f8",
+                             "after":  "58f2f2a50851086ecc0700a2c1cad8e539dfba37bc51230aa2bd8e030b6779f8",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "planejamento/m01/README.md",
+                             "before":  "1f600017456fb3b6bca584453e15a9628ab9355338b63b7b0c4c271a0d9b9920",
+                             "after":  "1f600017456fb3b6bca584453e15a9628ab9355338b63b7b0c4c271a0d9b9920",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "planejamento/m01/disposicao-e-proximos-passos.md",
+                             "before":  "e86f6c19b027e2778d4c210541022a272baa05d8249bbc00a25ed92bf90ce920",
+                             "after":  "e86f6c19b027e2778d4c210541022a272baa05d8249bbc00a25ed92bf90ce920",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "planejamento/m01/planejamento-tecnico-rev-0.2.md",
+                             "before":  "9a777421af6df7928e99c72bb5a2510ac3ef072988ed4aeff1097c783c95d84e",
+                             "after":  "9a777421af6df7928e99c72bb5a2510ac3ef072988ed4aeff1097c783c95d84e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "planning/ECONOMIC-ASSUMPTIONS.md",
+                             "before":  "0b6c965ba10cd2998f088d46b3bb10909b51ee0dbcea34cc5336e714414fb622",
+                             "after":  "0b6c965ba10cd2998f088d46b3bb10909b51ee0dbcea34cc5336e714414fb622",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "product/PRODUCT-VISION.md",
+                             "before":  "a488a187761320f958b3324ffc6557ab718bb0d493b69eea2f70cc7b1233e0f9",
+                             "after":  "a488a187761320f958b3324ffc6557ab718bb0d493b69eea2f70cc7b1233e0f9",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "research/WP02-DOCUMENTARY-QUALIFICATION.md",
+                             "before":  "907311aaab2172c2d9eeaf36e9f474062fef0db9c9d33fa77a6b425806486e08",
+                             "after":  "907311aaab2172c2d9eeaf36e9f474062fef0db9c9d33fa77a6b425806486e08",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/APP-BOOTSTRAP-HANDOFF.md",
+                             "before":  "c257969dbcc2b6fc1696c6a36eaa268a934a49a08901780bd0278342a53d218c",
+                             "after":  "c257969dbcc2b6fc1696c6a36eaa268a934a49a08901780bd0278342a53d218c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/CTO-DELIVERY-HANDOFF.md",
+                             "before":  "5fb5e7ca58147da02755fe767a4463e2ec03eda0deecd682de7f507bf4ad577e",
+                             "after":  "5fb5e7ca58147da02755fe767a4463e2ec03eda0deecd682de7f507bf4ad577e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/KF-CLOSURE-HANDOFF.md",
+                             "before":  "d6f9adac3c54aec7baea821b58a63b5cce8c72ba5833ceb4edb555d28a7bf831",
+                             "after":  "d6f9adac3c54aec7baea821b58a63b5cce8c72ba5833ceb4edb555d28a7bf831",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/KF-FINALIZATION-HANDOFF.md",
+                             "before":  "5443704e9ce819aa8f38f70dd49ab0299922b4d0905fe63ae08abab0ffc07bff",
+                             "after":  "5443704e9ce819aa8f38f70dd49ab0299922b4d0905fe63ae08abab0ffc07bff",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/NI-DELIVERY-HANDOFF.md",
+                             "before":  "ae3756fc13cfa928984a1898d89b8e645f5f4a1dcfdfe4c12fb27bba1cb89f87",
+                             "after":  "ae3756fc13cfa928984a1898d89b8e645f5f4a1dcfdfe4c12fb27bba1cb89f87",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/NI-FINAL-DELIVERY-HANDOFF.md",
+                             "before":  "f9f87f978cdc50b0bee3b0ed398fa182d01c4769e7ec0b7fc50cd1c276c16eed",
+                             "after":  "f9f87f978cdc50b0bee3b0ed398fa182d01c4769e7ec0b7fc50cd1c276c16eed",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "status/NI-SOURCE-TRANSFER-HANDOFF.md",
+                             "before":  "497f7fedb27cca59e3de02c261f28e12bbec65f053f1aadee090521ce37bd0c1",
+                             "after":  "497f7fedb27cca59e3de02c261f28e12bbec65f053f1aadee090521ce37bd0c1",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/AC-KF-ACCEPTED-01.md",
+                             "before":  "f711c9f4f131699ec98d4227722f5a418005ed0b34033a2e555f7ac6aa33eb90",
+                             "after":  "f711c9f4f131699ec98d4227722f5a418005ed0b34033a2e555f7ac6aa33eb90",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/AC-KF-FINAL-PROPOSED.md",
+                             "before":  "5d55eab3bd0c42ec7535cec20ad2b347ce49cd6f7a138e2935b01af1ab805111",
+                             "after":  "5d55eab3bd0c42ec7535cec20ad2b347ce49cd6f7a138e2935b01af1ab805111",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/RAG-SCENARIOS.md",
+                             "before":  "d1074c73d5ede2afd6ab246424affdd43b789d411032293d0b82c91d592a495a",
+                             "after":  "d1074c73d5ede2afd6ab246424affdd43b789d411032293d0b82c91d592a495a",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-APP-BOOTSTRAP-01.md",
+                             "before":  "a933e6e253ce007050b32130803723ff6c5ce67efa1b52527b07f9c180211b21",
+                             "after":  "a933e6e253ce007050b32130803723ff6c5ce67efa1b52527b07f9c180211b21",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-KF-CLOSURE-01.md",
+                             "before":  "ea1a81307b84f8822243d49f97ca7598163f260fbc6273659e02163abadb3b38",
+                             "after":  "ea1a81307b84f8822243d49f97ca7598163f260fbc6273659e02163abadb3b38",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-KF-FINALIZATION-01.md",
+                             "before":  "626a59d63b7511f3684cfba24768d3ab7a75463a79910579a985ec398f3f331c",
+                             "after":  "626a59d63b7511f3684cfba24768d3ab7a75463a79910579a985ec398f3f331c",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-KNOWLEDGE-FOUNDATION-01.md",
+                             "before":  "8f5c9fc599986857712e0b1f0aa43bd4877907902bb2f37dcc92d5ee780e89d2",
+                             "after":  "8f5c9fc599986857712e0b1f0aa43bd4877907902bb2f37dcc92d5ee780e89d2",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-NI-SOURCE-TRANSFER-01.md",
+                             "before":  "11ce4a3e22f19f6b2d744be82a9a2fcd9b59f2ca7effc9771431b0df06fcb0b6",
+                             "after":  "11ce4a3e22f19f6b2d744be82a9a2fcd9b59f2ca7effc9771431b0df06fcb0b6",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-NORMATIVE-INTEGRATION-01.md",
+                             "before":  "1ed6196b94ba6337ade7aabdc90625cff3d34db3f7269b5569d428f55b0d7d3d",
+                             "after":  "1ed6196b94ba6337ade7aabdc90625cff3d34db3f7269b5569d428f55b0d7d3d",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md",
+                             "before":  "76b5a5c979adcdb7f29bea720f065b87022298c3f4f1ba096a795b8c2db986f0",
+                             "after":  "76b5a5c979adcdb7f29bea720f065b87022298c3f4f1ba096a795b8c2db986f0",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-app.diff",
+                             "before":  "62173a2e16cdb6e0a48cc0f4ce331f8b46a9eab40e7922bc77d9ade9a2dc20bc",
+                             "after":  "62173a2e16cdb6e0a48cc0f4ce331f8b46a9eab40e7922bc77d9ade9a2dc20bc",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-baseline.json",
+                             "before":  "0c8525ca9c9e70cb39c009bdea667bf8f8d06c42bfee2c24c9580b8c056ff3c5",
+                             "after":  "0c8525ca9c9e70cb39c009bdea667bf8f8d06c42bfee2c24c9580b8c056ff3c5",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-docs.diff",
+                             "before":  "101ec56c830720b0bb811fce94ae3edac9df71ca65b4f4baa98c3929aeb2b13f",
+                             "after":  "101ec56c830720b0bb811fce94ae3edac9df71ca65b4f4baa98c3929aeb2b13f",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-private-verification.json",
+                             "before":  "23ea2078aaf1effd8de71449052586da5e531aaf346e0bb2695757da8725f38b",
+                             "after":  "23ea2078aaf1effd8de71449052586da5e531aaf346e0bb2695757da8725f38b",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-repository-inspection.json",
+                             "before":  "461c3d73f03a55ec85ee79f33c7861451e1821de8e4f58119881a7e404b4440e",
+                             "after":  "461c3d73f03a55ec85ee79f33c7861451e1821de8e4f58119881a7e404b4440e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/app-bootstrap-validation.json",
+                             "before":  "4938f002d6b22cd33dcb600d51ec6e78422c6688282eef5222d37ce9763b2b7a",
+                             "after":  "4938f002d6b22cd33dcb600d51ec6e78422c6688282eef5222d37ce9763b2b7a",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/document-validation.json",
+                             "before":  "7ef70cf6250395e980a86ba34b7e2b86e73408a13c817c76e651628af7649609",
+                             "after":  "7ef70cf6250395e980a86ba34b7e2b86e73408a13c817c76e651628af7649609",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-closure-baseline.json",
+                             "before":  "5a87ea43e1beef68ccd0b79669f3f2b8c516a5080ad1331ef71c704384d64218",
+                             "after":  "5a87ea43e1beef68ccd0b79669f3f2b8c516a5080ad1331ef71c704384d64218",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-closure-source-recovery.json",
+                             "before":  "6a013441cd0debc5eb715a2aef0936af8aee0d1e3d0e6663e4c82a243cc5424a",
+                             "after":  "6a013441cd0debc5eb715a2aef0936af8aee0d1e3d0e6663e4c82a243cc5424a",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-closure-validation.json",
+                             "before":  "d67915eb4d89558dca91967af31c82ce3171fdb340fbf8ac6120f0a78842d023",
+                             "after":  "d67915eb4d89558dca91967af31c82ce3171fdb340fbf8ac6120f0a78842d023",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-finalization-baseline.json",
+                             "before":  "2d4fc6cdc62434c444275a065493f7c1b8476d6457b549454e245f8a574eb0a2",
+                             "after":  "2d4fc6cdc62434c444275a065493f7c1b8476d6457b549454e245f8a574eb0a2",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-finalization-validation.json",
+                             "before":  "e289a5cbdc0bdec3c502d5d34fb0a7e7c7fd1ce2f7da6bb0c86f1180ab47e4c0",
+                             "after":  "e289a5cbdc0bdec3c502d5d34fb0a7e7c7fd1ce2f7da6bb0c86f1180ab47e4c0",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/kf-finalization.diff",
+                             "before":  "9d401778dadb3bfc3b9e0002a02cc1723c825bb1c0b37a0a9653b4b812d5ec42",
+                             "after":  "9d401778dadb3bfc3b9e0002a02cc1723c825bb1c0b37a0a9653b4b812d5ec42",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-baseline.json",
+                             "before":  "cb67973eeea52c1b8920dd173835ff7802b4ad08dea79b0a4ba05323b1e31c41",
+                             "after":  "cb67973eeea52c1b8920dd173835ff7802b4ad08dea79b0a4ba05323b1e31c41",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-complement-intake.json",
+                             "before":  "36a2e7501e795a44ec57db0fcb10b5dbdbaec9e745a8a3714d2fa0618edd289d",
+                             "after":  "36a2e7501e795a44ec57db0fcb10b5dbdbaec9e745a8a3714d2fa0618edd289d",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-final-baseline.json",
+                             "before":  "00674abb042b6cb38aa871610681aa26945fdf359e174874564682628f43bf85",
+                             "after":  "00674abb042b6cb38aa871610681aa26945fdf359e174874564682628f43bf85",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-final-validation.json",
+                             "before":  "484a7bc587d6fff05fe39c938eadba4d49b36076e6004300274ac15bdab06761",
+                             "after":  "484a7bc587d6fff05fe39c938eadba4d49b36076e6004300274ac15bdab06761",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-reconciliation.json",
+                             "before":  "9932df59e630a903b6ae6c8924ecff5155e063eb7211ae4dcf8638977daa9cdc",
+                             "after":  "9932df59e630a903b6ae6c8924ecff5155e063eb7211ae4dcf8638977daa9cdc",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-source-transfer-baseline.json",
+                             "before":  "4a2fc48c7b4690dfc9f15ec59cbbc3697c89d71a6a2ee2bf269f24fb7ad61911",
+                             "after":  "4a2fc48c7b4690dfc9f15ec59cbbc3697c89d71a6a2ee2bf269f24fb7ad61911",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-source-transfer-intake.json",
+                             "before":  "564c8250ec8928e552810047fa8a6cc73da3d4a5f103c200b3d0bab3492c5dd7",
+                             "after":  "564c8250ec8928e552810047fa8a6cc73da3d4a5f103c200b3d0bab3492c5dd7",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-source-transfer-validation.json",
+                             "before":  "a9c640545de4c5aac2913593c64c4b8c854c29eb2c618515304a4bf996e0f8b9",
+                             "after":  "a9c640545de4c5aac2913593c64c4b8c854c29eb2c618515304a4bf996e0f8b9",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/ni-validation.json",
+                             "before":  "264a0c97b75cec8953c5d51fa388978c7b4bce1df0e37937cd0267970d46a495",
+                             "after":  "264a0c97b75cec8953c5d51fa388978c7b4bce1df0e37937cd0267970d46a495",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/evidence/rag-local-results.json",
+                             "before":  "7f9aae1b83bf5fccc53f0d6a0cb4272543081b3286d3987abc6d8db7f4366177",
+                             "after":  "7f9aae1b83bf5fccc53f0d6a0cb4272543081b3286d3987abc6d8db7f4366177",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-app-bootstrap.ps1",
+                             "before":  "c8880d347c8530f55d65b6ba8113d2f4003247883b22b4a70df55c6e7f92059e",
+                             "after":  "c8880d347c8530f55d65b6ba8113d2f4003247883b22b4a70df55c6e7f92059e",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-documentation.ps1",
+                             "before":  "21c1b5b23636fe51cf4bf7f59a954d68b39bf6f40583c45d5162791d42763005",
+                             "after":  "21c1b5b23636fe51cf4bf7f59a954d68b39bf6f40583c45d5162791d42763005",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-kf-closure.ps1",
+                             "before":  "a3ac27bcd08ce9982ad94650f2c4da19170d96b30095ae02a36c6bcb7fedccf1",
+                             "after":  "a3ac27bcd08ce9982ad94650f2c4da19170d96b30095ae02a36c6bcb7fedccf1",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-kf-finalization.ps1",
+                             "before":  "98822ca7d0043e17973cd050b1c05241fc9223bb7ae76eccb7ef722fcc324dda",
+                             "after":  "98822ca7d0043e17973cd050b1c05241fc9223bb7ae76eccb7ef722fcc324dda",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-ni-source-transfer.ps1",
+                             "before":  "8dbf36c9b1855ac6e8b7d1a0266c2038989d11deb7639d05aa425bfca9615f67",
+                             "after":  "8dbf36c9b1855ac6e8b7d1a0266c2038989d11deb7639d05aa425bfca9615f67",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-normative-integration-final.ps1",
+                             "before":  "0f3812b4ec1b9a7d5d14afd6882fdc877eda11bd007591a55e09dad387fc3262",
+                             "after":  "0f3812b4ec1b9a7d5d14afd6882fdc877eda11bd007591a55e09dad387fc3262",
+                             "unchanged":  true
+                         },
+                         {
+                             "path":  "validation/validate-normative-integration.ps1",
+                             "before":  "86e0d0c98be337313ee594d57e49d57c41729ccb58e7b74c0f86acc502e14205",
+                             "after":  "86e0d0c98be337313ee594d57e49d57c41729ccb58e7b74c0f86acc502e14205",
+                             "unchanged":  true
+                         }
+                     ],
+    "app_changed":  [
+                        {
+                            "path":  ".gitignore",
+                            "before":  "9511b844534caefe367947f5679c7596199097eb48e1dfd4207ec0f79aa85155",
+                            "after":  "b228cb948a4ddededbd717bef0a8c0f77160286ec050f22b6c7e085394a61abd",
+                            "changed":  true
+                        },
+                        {
+                            "path":  "AGENTS.md",
+                            "before":  "6a4ada0849c32ce7e967e282effe9eb77e25c6d154848601c0ce027ed63256ac",
+                            "after":  "c0c1101bcc266c1fa5a831b2b367d7d88d11087ef17d79bf72812fbdf3ba6a0e",
+                            "changed":  true
+                        },
+                        {
+                            "path":  "README.md",
+                            "before":  "0435404969a195d519966b052587ddf9352c57de1c3e2b5a2d262f89e3f1b9cc",
+                            "after":  "dfa0c308bc8b6dc93d056b1fe22919f6d6d7a64c8de2f3ae6acb59be4ff19e6b",
+                            "changed":  true
+                        },
+                        {
+                            "path":  "governance/NORMATIVE-TRACEABILITY.json",
+                            "before":  "364371718e0d9b61b9ec9e5c2934e989e7e34c6ce2b48376171e991a03bad49c",
+                            "after":  "2ecb944de261438117d83f400d377a139d51bf8349f6193a19006e1e7befeffb",
+                            "changed":  true
+                        },
+                        {
+                            "path":  "status/INITIAL-STATE.md",
+                            "before":  "7b93f96d31e48bfe90309880464da6cf9a1bb6a16eee61c295c2fd812f120b9e",
+                            "after":  "9e1a8122bef40bd447be4b375feb73c7ad633ec6a574973b6f4461ee38a4e589",
+                            "changed":  true
+                        }
+                    ],
+    "app_visibility":  "public",
+    "remote_operation":  "ALREADY_PUBLIC_CONFIRMED_NO_PATCH",
+    "remote_patch_performed":  false,
+    "remote_public_anonymous_read":  "PASS",
+    "pre_change_security":  "PASS",
+    "security_scope":  "All current app files; all locally reachable blobs and commit messages; all remote branch/tag tips available locally before visibility change",
+    "remote_history_commits":  1,
+    "local_history_commits":  4,
+    "history_blobs":  5,
+    "post_change_patterns":  "PASS_IF_NO_ERRORS",
+    "markdown_docs":  92,
+    "markdown_app":  3,
+    "unique_ids":  95,
+    "references_checked":  2245,
+    "metadata":  [
+                     {
+                         "repository":  "docs",
+                         "path":  "AGENTS.md",
+                         "id":  "ANCESTRALIDADE-AGENT-INSTRUCTIONS",
+                         "version":  "1.8",
+                         "status":  "ACTIVE_USER_INSTRUCTIONS"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "README.md",
+                         "id":  "ANCESTRALIDADE-CANONICAL-INDEX",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "architecture/ARCHITECTURE-BASELINE.md",
+                         "id":  "ANCESTRALIDADE-ARCHITECTURE-BASELINE",
+                         "version":  "0.6",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "context/PROJECT-CONTEXT.md",
+                         "id":  "ANCESTRALIDADE-PROJECT-CONTEXT",
+                         "version":  "0.7",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "decisions/DECISION-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-DECISION-REGISTER",
+                         "version":  "0.7",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                         "id":  "ANCESTRALIDADE-APP-BOOTSTRAP-SPEC",
+                         "version":  "0.3",
+                         "status":  "AUTHORIZED_PUBLIC_DEV_BOOTSTRAP_AMENDMENT"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "engineering/REQ-APP-BOOTSTRAP-01.md",
+                         "id":  "ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01",
+                         "version":  "1.1",
+                         "status":  "AUTHORIZED_RESTRICTED_BOOTSTRAP_PUBLIC_VISIBILITY"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "engineering/REQUIREMENT-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-REQUIREMENT-REGISTER",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/AUTHORITY-MODEL.md",
+                         "id":  "ANCESTRALIDADE-AUTHORITY-MODEL",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/PROJECT-INSTRUCTIONS.md",
+                         "id":  "ANCESTRALIDADE-PROJECT-INSTRUCTIONS",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/RAG-PROTOCOL.md",
+                         "id":  "ANCESTRALIDADE-RAG-PROTOCOL",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/SOURCE-MANIFEST.md",
+                         "id":  "ANCESTRALIDADE-NI-SOURCE-MANIFEST",
+                         "version":  "1.5",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/SOURCE-RECONCILIATION.md",
+                         "id":  "ANCESTRALIDADE-SOURCE-RECONCILIATION",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "governance/decisions/kf06-visibility-amendment-02.md",
+                         "id":  "ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02",
+                         "version":  "1.0",
+                         "status":  "APPROVED_AUTHORIZED_FOR_EXECUTION"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "planning/M01-ROADMAP.md",
+                         "id":  "ANCESTRALIDADE-M01-ROADMAP",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "planning/WORK-PACKAGE-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-WORK-PACKAGE-REGISTER",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                         "id":  "ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS",
+                         "version":  "0.7",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "product/M01-PRODUCT-BASELINE.md",
+                         "id":  "ANCESTRALIDADE-M01-PRODUCT-BASELINE",
+                         "version":  "0.7",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "research/RESEARCH-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-RESEARCH-REGISTER",
+                         "version":  "0.2",
+                         "status":  "DOCUMENTARY_RESEARCH_WITH_OPEN_GATES"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "research/WP02-VERCEL-HOBBY-DEV-01.md",
+                         "id":  "ANCESTRALIDADE-WP02-VERCEL-HOBBY-DEV-01",
+                         "version":  "1.0",
+                         "status":  "PREFERRED_DEV_CANDIDATE_QUALIFICATION_OPEN"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "status/CURRENT-STATUS.md",
+                         "id":  "ANCESTRALIDADE-CURRENT-STATUS",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_VISIBILITY_CONFIRMED_INTEGRATION_GATES_PENDING"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "status/KF06-VISIBILITY-02-HANDOFF.md",
+                         "id":  "ANCESTRALIDADE-KF06-VISIBILITY-02-HANDOFF",
+                         "version":  "1.0",
+                         "status":  "PUBLIC_DEV_AMENDMENT_PREPARED_INTEGRATION_GATES_PENDING"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "status/NORMATIVE-CONFLICT-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-NI-MATERIAL-CONFLICT-REGISTER",
+                         "version":  "1.5",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "status/RISK-REGISTER.md",
+                         "id":  "ANCESTRALIDADE-RISK-REGISTER",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "validation/KNOWLEDGE-READINESS.md",
+                         "id":  "ANCESTRALIDADE-KNOWLEDGE-READINESS",
+                         "version":  "0.8",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "validation/M01-ACCEPTANCE-CRITERIA.md",
+                         "id":  "ANCESTRALIDADE-M01-ACCEPTANCE-CRITERIA",
+                         "version":  "0.7",
+                         "status":  "PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "validation/M01-NORMATIVE-TRACEABILITY.md",
+                         "id":  "ANCESTRALIDADE-M01-NORMATIVE-TRACEABILITY",
+                         "version":  "1.5",
+                         "status":  "TRACEABILITY_PRESERVED_PUBLIC_DEV_AMENDMENT"
+                     },
+                     {
+                         "repository":  "docs",
+                         "path":  "validation/VAL-KF06-VISIBILITY-02.md",
+                         "id":  "ANCESTRALIDADE-VAL-KF06-VISIBILITY-02",
+                         "version":  "1.0",
+                         "status":  "PUBLIC_VISIBILITY_CONFIRMED_INTEGRATION_GATES_PRESERVED"
+                     }
+                 ],
+    "acceptance":  [
+                       {
+                           "id":  "AC-VIS-01",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-02",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-03",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-04",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-05",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-06",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-07",
+                           "result":  "PASS"
+                       },
+                       {
+                           "id":  "AC-VIS-08",
+                           "result":  "PASS"
+                       }
+                   ],
+    "acceptance_counts":  {
+                              "NOT_EXECUTED":  0,
+                              "PASS":  8,
+                              "FAIL":  0,
+                              "BLOCKED":  0
+                          },
+    "previous_private_requirement":  "SUPERSEDED_VISIBILITY_ONLY",
+    "open_source_license":  "NOT_ESTABLISHED",
+    "legal_ownership":  "NOT_ESTABLISHED",
+    "production_hosting":  "NOT_ESTABLISHED",
+    "vercel_hobby":  "PREFERRED_DEV_CANDIDATE_QUALIFICATION_OPEN",
+    "integration_parent_authorization":  "REFERENCED_NOT_RECEIVED",
+    "git_integration":  "NOT_EXECUTED_GATES_PRESERVED",
+    "commit_push_merge_performed":  false,
+    "M01_implementation":  "NOT_AUTHORIZED",
+    "engineering_readiness":  "NOT_ESTABLISHED",
+    "domain_contracts":  "NOT_FROZEN",
+    "historical_evidence_overwritten":  false,
+    "historical_validators_reexecuted":  false,
+    "diff_check":  "PASS",
+    "errors":  [
+
+               ],
+    "result":  "PASS",
+    "docs_patch":  "validation/evidence/kf06-visibility-02-docs.diff",
+    "app_patch":  "validation/evidence/kf06-visibility-02-app.diff",
+    "next_gate":  "CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW",
+    "limits":  [
+                   "Pattern scan and scoped human content/history review are not an exhaustive security guarantee",
+                   "Offline validation checks recorded authenticated/public API proofs; does not repeat remote authentication",
+                   "Vercel qualification is documentary, not eligibility determination, provider validation or deploy approval",
+                   "Full parent integration authorization not received; no Git operation parameters invented",
+                   "Patch files exclude themselves to avoid circular diffs"
+               ]
+}

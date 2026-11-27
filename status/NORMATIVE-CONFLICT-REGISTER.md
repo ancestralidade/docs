@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-NI-MATERIAL-CONFLICT-REGISTER
 title: "Lacunas e conflitos materiais — integração normativa"
-version: "1.4"
-status: C10_RESOLVED_KF_ACCEPTED_BOOTSTRAP_AUTHORIZED
+version: "1.5"
+status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -18,9 +18,13 @@ references:
   - "../governance/reviews/cto-kf-final-acceptance-01.md"
   - "../engineering/REQ-APP-BOOTSTRAP-01.md"
   - "../validation/VAL-APP-BOOTSTRAP-01.md"
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "../research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "../validation/VAL-KF06-VISIBILITY-02.md"
+  - "../status/KF06-VISIBILITY-02-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/NORMATIVE-CONFLICT-REGISTER.md@1.3"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:status/NORMATIVE-CONFLICT-REGISTER.md@1.4"
 ---
 
 # Diferenças materiais — origem, Rev. 1.0 e minuta 1.1
@@ -59,4 +63,15 @@ Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Sem commit/push/merge ou implem
 
 ## Aceite final e gate corrente
 
-[Revisão CTO final](../governance/reviews/cto-kf-final-acceptance-01.md) resolve definitivamente C10, promove R1 a PASS e encerra Phase 00A/00B. Sem novo confronto conceitual ou alteração do instrumento ratificado. A matriz histórica de diferenças permanece como origem das correções ratificadas. KF-06 autorizado apenas para bootstrap. O mandato de construção e seus 26 critérios não viram implementação aprovada. [REQ corrente](../engineering/REQ-APP-BOOTSTRAP-01.md), [VAL](../validation/VAL-APP-BOOTSTRAP-01.md). Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. A divergência inicial PUBLIC/PRIVATE do App foi corrigida pelo usuário e verificada em leitura autenticada; não permanece bloqueador. Contratos, T02–T04 e WP-02–04 mantêm seus gates.
+[Revisão CTO final](../governance/reviews/cto-kf-final-acceptance-01.md) resolve definitivamente C10, promove R1 a PASS e encerra Phase 00A/00B. Sem novo confronto conceitual ou alteração do instrumento ratificado. A matriz histórica de diferenças permanece como origem das correções ratificadas. KF-06 autorizado apenas para bootstrap. O mandato de construção e seus 26 critérios não viram implementação aprovada. [REQ corrente](../engineering/REQ-APP-BOOTSTRAP-01.md), [VAL](../validation/VAL-APP-BOOTSTRAP-01.md). Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. A antiga exigência PRIVATE agora é SUPERSEDED por VISIBILITY-02; PUBLIC foi confirmado e não é conflito com o mandato vigente. Contratos, T02–T04 e WP-02–04 mantêm seus gates.
+
+
+## Emenda corrente PUBLIC / OPEN_DEVELOPMENT
+
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md), Presidência/CTO, substitui somente a exigência PRIVATE por PUBLIC em ancestralidade/app; condição anterior SUPERSEDED, fontes e evidências preservadas. Repository ID 1474775051 e PUBLIC confirmados após inspeção de conteúdo/histórico; o remoto já público não exigiu PATCH. Open Source license, Legal ownership e Production hosting NOT_ESTABLISHED. Dados somente sintéticos em DEV; nenhum segredo, credencial, dado pessoal real, dado institucional protegido ou evidência privada no repositório público.
+
+Vercel Hobby PREFERRED_DEV_CANDIDATE; [WP-02](../research/WP02-VERCEL-HOBBY-DEV-01.md) registra elegibilidade e integração org não estabelecidas e divergência entre páginas oficiais. Preferência não seleciona plano/fornecedor, não contrata e não autoriza deploy. Gates de commit/push, recuperação independente e aceite CTO preservados. Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 REFERENCED_NOT_RECEIVED; não inferir condições de integração ausentes.
+
+Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Sem M01/Phase 01, dependências, infraestrutura ou deploy. C10 RESOLVED e R1 PASS preservados pelo aceite KF anterior; AC-KF-14/15 sem PASS definitivo. Engineering Readiness NOT_ESTABLISHED e contratos/T01 NOT_FROZEN; T02–T04 e WP-02–04 mantêm gates. [VAL novo](../validation/VAL-KF06-VISIBILITY-02.md), [handoff](../status/KF06-VISIBILITY-02-HANDOFF.md).
+
+Pendências materiais desta emenda: obter a íntegra da autorização Parent para aplicar os gates Git com seus parâmetros; qualificar elegibilidade Hobby e a diferença de alcance das páginas oficiais sobre organizações GitHub. Esses pontos não invalidam o ato executivo explícito PUBLIC e não reabrem C10 ou a reconciliação normativa M01.

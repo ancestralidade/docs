@@ -1,0 +1,278 @@
+diff --git a/.gitignore b/.gitignore
+index 6036139..416e3a0 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -9,3 +9,10 @@
+ *.log
+ Thumbs.db
+ .DS_Store
++
++# PUBLIC / OPEN_DEVELOPMENT — VISIBILITY-02; somente dados sintéticos
++# Credenciais, evidência privada e configuração local não são publicáveis.
++secrets/
++private/
++*.har
++.vercel/
+diff --git a/AGENTS.md b/AGENTS.md
+index d6fcaaa..a0dd9b7 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,8 +1,8 @@
+ ---
+ id: ANCESTRALIDADE-APP-AGENT-INSTRUCTIONS
+ title: "Instruções App — recuperação canônica e limites"
+-version: "1.0"
+-status: ACTIVE_FOR_RESTRICTED_BOOTSTRAP
++version: "1.1"
++status: ACTIVE_PUBLIC_DEV_BOOTSTRAP_INSTRUCTIONS
+ authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
+ maintainer: CTO_DOCUMENTATION
+ module: M01
+@@ -11,6 +11,7 @@ references:
+   - "governance/NORMATIVE-TRACEABILITY.json"
+ supersedes: null
+ last_updated: "2026-11-27"
++previous_revision: "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc:AGENTS.md@1.0"
+ ---
+ 
+ # Instruções operacionais do repositório App
+@@ -19,8 +20,15 @@ Antes de qualquer atividade relevante, ler este README e o [manifesto](governanc
+ 
+ Sequência mínima: índice → estado corrente → instruções globais e autoridade → decisões → requisitos R01–R14 → arquitetura/ADRs → critérios de aceitação → contratos/dependências → mandato executivo e REQ/IMP/VAL aplicáveis. Confirmar IDs, versões, blobs, estados históricos e atos posteriores legítimos. O SHA aceito inicial é dad48511595f1d0fa3d06590da222cc0fabaef0a; não substituir a referência por uma branch móvel sem atualizar a rastreabilidade autorizada.
+ 
+-O mandato ratificado 1.1 mantém blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e deve ser lido com seu aditivo de vigência. A revisão final CTO e o mandato KF06-01 recebidos após o checkpoint autorizam apenas a Phase 00C. Seus registros e REQ/IMP/VAL de bootstrap ainda locais não têm SHA de publicação; não inventar links remotos ou tratá-los como recuperados de um commit que não os contém.
++O mandato ratificado 1.1 mantém blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e deve ser lido com seu aditivo de vigência. A revisão final CTO e o mandato KF06-01 recebidos após o checkpoint autorizam apenas a Phase 00C. Seus registros e REQ/IMP/VAL foram recuperados no SHA observado 7c95863ab62baeb9d6ef1d5140b172fb04a06d74. A emenda de visibilidade nova permanece local, sem SHA publicado; não inventar referências.
+ 
+ Preservar arquivos de terceiros, nunca expor segredos e registrar fontes, resultados e diferenças reais. Sem permissão de commit, push, merge, implementação M01 ou Phase 01. Não instalar dependências/frameworks, escolher stack definitiva, configurar banco/autenticação/endpoints, criar pipeline, provisionar ou executar deploy. Não definir licença/titularidade e não conceder privilégios/políticas adicionais.
+ 
+-Engineering Readiness NOT_ESTABLISHED; contratos de domínio e T01 NOT_FROZEN; T02–T04 OPEN; WP-02–04 com seus gates; DEC-16 APPROVED_FRAMEWORK. M01 implementation, Phase 01 e commit/push/merge: NOT_AUTHORIZED. AC-KF-14/15 aguardam integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. A preparação da estrutura não aprova funcionalidades ou operação real.
++Engineering Readiness NOT_ESTABLISHED; contratos de domínio e T01 NOT_FROZEN; T02–T04 OPEN; WP-02–04 com seus gates; DEC-16 APPROVED_FRAMEWORK. M01 implementation, Phase 01 e commit/push/merge: NOT_AUTHORIZED. AC-KF-14/15 aguardam integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. A preparação da estrutura não aprova funcionalidades ou operação real.
++
++
++## PUBLIC / OPEN_DEVELOPMENT em DEV
++
++Aplicar ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02, registrada em docs. PRIVATE anterior SUPERSEDED quanto à visibilidade. Público não define licença Open Source, titularidade ou hospedagem de produção: todos NOT_ESTABLISHED. Nunca versionar segredos, credenciais, dados pessoais reais, dados institucionais protegidos ou evidência privada; usar dados sintéticos. Inspecionar conteúdo e histórico antes de qualquer futura publicação autorizada. Alterar visibilidade não concede autorização de código, dependências, commit ou push.
++
++Vercel Hobby é PREFERRED_DEV_CANDIDATE, não serviço selecionado; WP-02 deve qualificar condições comerciais, org GitHub, recursos, ambientes, segurança e saída. Sem deploy ou conexão automática de provedor. Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01: REFERENCED_NOT_RECEIVED; exigir sua íntegra antes das operações Git dependentes. Preservar os demais gates; não iniciar M01.
+diff --git a/README.md b/README.md
+index ea9d759..ed3c064 100644
+--- a/README.md
++++ b/README.md
+@@ -1,8 +1,8 @@
+ ---
+ id: ANCESTRALIDADE-APP-README
+ title: "Aplicação Ancestralidade — bootstrap restrito"
+-version: "1.0"
+-status: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE
++version: "1.1"
++status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
+ authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
+ maintainer: CTO_DOCUMENTATION
+ module: M01
+@@ -13,13 +13,14 @@ references:
+   - "status/INITIAL-STATE.md"
+ supersedes: null
+ last_updated: "2026-11-27"
++previous_revision: "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc:README.md@1.0"
+ ---
+ 
+ # Ancestralidade.org — repositório de aplicação
+ 
+-Fundação mínima de ancestralidade/app, separada da documentação canônica. Repositório remoto PRIVATE; branch padrão observada main; clone local inicialmente vazio, sem commit. Estado desta preparação: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE, sujeito à revisão CTO e integração autorizada.
++Fundação mínima de ancestralidade/app, separada da documentação canônica. Repositório remoto PUBLIC; desenvolvimento DEV no modelo OPEN_DEVELOPMENT. Branch padrão observada main; a origem do clone vazio é histórica, e o bootstrap já consta no commit 0ec73788d4c0fc3ea1ddaa7e1b161917870941bc. Estado desta preparação: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE, sujeito à revisão CTO e integração autorizada.
+ 
+-Escopo atual: KF-06 / Phase 00C, estrutura documental e rastreabilidade. A fundação documental KF-01–05 foi aceita pelo CTO em CTO-ANCESTRALIDADE-KF-FINAL-ACCEPTANCE-01; Phase 00A/00B encerradas, C10 resolvida e AC-KF-03-R1 PASS. O mandato ANCESTRALIDADE-CTO-MANDATE-KF06-01 autoriza este bootstrap restrito. A revisão/mandato foram recebidos após o checkpoint documental abaixo e seus registros ainda estão em preparação local no repositório canônico.
++Escopo atual: KF-06 / Phase 00C, estrutura documental e rastreabilidade. A fundação documental KF-01–05 foi aceita pelo CTO em CTO-ANCESTRALIDADE-KF-FINAL-ACCEPTANCE-01; Phase 00A/00B encerradas, C10 resolvida e AC-KF-03-R1 PASS. O mandato ANCESTRALIDADE-CTO-MANDATE-KF06-01 autoriza este bootstrap restrito. A revisão/mandato foram recebidos após o checkpoint documental abaixo e seus registros foram recuperados no commit documental observado 7c95863ab62baeb9d6ef1d5140b172fb04a06d74, distinto do checkpoint aceito inicial.
+ 
+ ## Recuperação obrigatória
+ 
+@@ -27,12 +28,21 @@ Começar pelo [índice canônico no SHA aceito](https://github.com/ancestralidad
+ 
+ Mandato M01: ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01 Rev. 1.1, commit ratificado fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. Sua vigência decorre do [aditivo no checkpoint aceito](https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-normative-effectiveness-01.md), EFFECTIVE desde 2026-11-27. Não copiar o texto normativo para este repositório.
+ 
+-Os estados de espera de aceite nos documentos do checkpoint são anteriores à revisão final CTO recebida. O manifesto distingue essa autoridade posterior dos documentos já publicados e não inventa URLs/SHAs para os novos registros. REQ/IMP/VAL de bootstrap são preparados em ancestralidade/docs; suas referências definitivas deverão ser preenchidas após integração autorizada.
++Os estados de espera de aceite nos documentos do checkpoint são anteriores à revisão final CTO recebida. O manifesto distingue essa autoridade posterior dos documentos já publicados e não inventa URLs/SHAs para os novos registros. REQ/IMP/VAL de bootstrap foram recuperados por referência explícita em ancestralidade/docs; seus blobs e SHA publicados constam no manifesto. A nova decisão de visibilidade ainda está preparada localmente, sem SHA de publicação.
+ 
+ ## Limites
+ 
+-Não há aplicativo, stack selecionada, dependências, banco, autenticação, endpoints, pipeline, infraestrutura ou deploy nesta preparação. Não há licença jurídica definitiva; visibilidade privada não determina licenciamento ou titularidade. Sem dependência obrigatória do Axodus Core.
++Não há aplicativo, stack selecionada, dependências, banco, autenticação, endpoints, pipeline, infraestrutura ou deploy nesta preparação. Não há licença jurídica definitiva; visibilidade pública não estabelece licença Open Source ou titularidade. Sem dependência obrigatória do Axodus Core.
+ 
+ Engineering Readiness NOT_ESTABLISHED; contratos NOT_FROZEN; T01 direção aprovada, T02–T04 e WP-02–04 com gates próprios; DEC-16 APPROVED_FRAMEWORK. O mandato de construção continua proposto. AC-KF-14/15 exigem integração autorizada, recuperação independente e aceite CTO para PASS definitivo.
+ 
+-REQ: ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01; IMP: ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01; VAL: ANCESTRALIDADE-VAL-APP-BOOTSTRAP-01. Commit/push/merge e implementação M01 NOT_AUTHORIZED. Gate: CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Não iniciar Phase 01.
++REQ: ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01; IMP: ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01; VAL: ANCESTRALIDADE-VAL-APP-BOOTSTRAP-01. Commit/push/merge e implementação M01 NOT_AUTHORIZED. Gate: CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Não iniciar Phase 01.
++
++
++## Emenda de visibilidade vigente
++
++ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02, Presidência/CTO: PUBLIC e OPEN_DEVELOPMENT durante DEV. A exigência PRIVATE anterior está SUPERSEDED somente quanto à visibilidade; fontes e evidências históricas são preservadas em docs. O remoto já estava PUBLIC na inspeção desta execução e foi confirmado por leitura autenticada e anônima; nenhuma mudança redundante de configuração foi feita. Conteúdo e histórico foram inspecionados antes de concluir a conformidade, sem achados no escopo descrito pelo relatório canônico.
++
++Open Source license NOT_ESTABLISHED; Legal ownership NOT_ESTABLISHED; Production hosting NOT_ESTABLISHED. Usar somente dados sintéticos em DEV. Segredos, credenciais, dados pessoais reais, informações institucionais protegidas e evidências privadas não podem integrar este repositório ou seu histórico público.
++
++Vercel Hobby PREFERRED_DEV_CANDIDATE, sujeito à qualificação WP-02 de elegibilidade não comercial, integração GitHub org, ambientes, limites, variáveis, portabilidade e custos. Sem contratação, seleção definitiva, configuração de integração ou deploy autorizado. A autorização de integração ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 foi referenciada, mas sua íntegra não foi recebida; os gates de commit, push, recuperação independente e aceite CTO permanecem pendentes de comprovação/execução. Não iniciar implementação M01.
+diff --git a/governance/NORMATIVE-TRACEABILITY.json b/governance/NORMATIVE-TRACEABILITY.json
+index 4631ef2..635c7ff 100644
+--- a/governance/NORMATIVE-TRACEABILITY.json
++++ b/governance/NORMATIVE-TRACEABILITY.json
+@@ -1,14 +1,14 @@
+ {
+     "id":  "ANCESTRALIDADE-APP-NORMATIVE-TRACEABILITY-01",
+-    "version":  "1.0",
+-    "status":  "PREPARED_LOCAL_NOT_INTEGRATED",
++    "version":  "1.1",
++    "status":  "PUBLIC_DEV_VISIBILITY_AMENDMENT_PREPARED",
+     "classification":  "PUBLIC",
+     "application_repository":  "https://github.com/ancestralidade/app",
+     "application_repository_id":  "1474775051",
+-    "application_visibility_required":  "private",
+-    "application_visibility_observed":  "private",
+-    "application_branch":  "main",
+-    "application_head":  null,
++    "application_visibility_required":  "public",
++    "application_visibility_observed":  "public",
++    "application_branch":  "dev",
++    "application_head":  "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc",
+     "canonical_documentation_repository":  "https://github.com/ancestralidade/docs",
+     "accepted_documentation_sha":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
+     "normative_mandate":  {
+@@ -203,28 +203,34 @@
+                                  "mandate_version":  "1.0",
+                                  "source_sha256":  "b224ede859f96657635ff476e622e1e183ef21a5d5d7d77b8088746a6501b3df",
+                                  "source_canonical_path":  "governance/sources/kf-final-acceptance-and-app-bootstrap-01.md",
+-                                 "source_ref":  null,
+-                                 "publication_status":  "SUPPLIED_BY_USER_PREPARED_IN_DOCS_NOT_YET_IN_ACCEPTED_SHA",
++                                 "source_ref":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
++                                 "publication_status":  "PUBLISHED_AT_OBSERVED_COMMIT_NOT_NEW_CHECKPOINT_ACCEPTANCE",
+                                  "scope":  "PHASE_00C_RESTRICTED_BOOTSTRAP_ONLY"
+                              },
+     "bootstrap_records":  [
+                               {
+                                   "id":  "ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01",
+                                   "canonical_path":  "engineering/REQ-APP-BOOTSTRAP-01.md",
+-                                  "ref":  null,
+-                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                                  "ref":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
++                                  "status":  "PUBLISHED_AT_OBSERVED_COMMIT_NOT_FINAL_ACCEPTANCE",
++                                  "git_blob":  "eb0d2bad525eba9fa875355b8ecf89d0e048f7fe",
++                                  "url":  "https://github.com/ancestralidade/docs/blob/7c95863ab62baeb9d6ef1d5140b172fb04a06d74/engineering/REQ-APP-BOOTSTRAP-01.md"
+                               },
+                               {
+                                   "id":  "ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01",
+                                   "canonical_path":  "engineering/IMP-APP-BOOTSTRAP-01.md",
+-                                  "ref":  null,
+-                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                                  "ref":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
++                                  "status":  "PUBLISHED_AT_OBSERVED_COMMIT_NOT_FINAL_ACCEPTANCE",
++                                  "git_blob":  "c3f97180c1973e8f6efc678c4b7dba663c0780d1",
++                                  "url":  "https://github.com/ancestralidade/docs/blob/7c95863ab62baeb9d6ef1d5140b172fb04a06d74/engineering/IMP-APP-BOOTSTRAP-01.md"
+                               },
+                               {
+                                   "id":  "ANCESTRALIDADE-VAL-APP-BOOTSTRAP-01",
+                                   "canonical_path":  "validation/VAL-APP-BOOTSTRAP-01.md",
+-                                  "ref":  null,
+-                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                                  "ref":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
++                                  "status":  "PUBLISHED_AT_OBSERVED_COMMIT_NOT_FINAL_ACCEPTANCE",
++                                  "git_blob":  "20ef595c6788a6b8191928853db3ae09273a06ae",
++                                  "url":  "https://github.com/ancestralidade/docs/blob/7c95863ab62baeb9d6ef1d5140b172fb04a06d74/validation/VAL-APP-BOOTSTRAP-01.md"
+                               }
+                           ],
+     "preserved_dependencies":  {
+@@ -255,5 +261,37 @@
+                              ],
+     "AC_KF_14":  "PENDING_AUTHORIZED_INTEGRATION_INDEPENDENT_RECOVERY_CTO_ACCEPTANCE",
+     "AC_KF_15":  "PENDING_AUTHORIZED_INTEGRATION_INDEPENDENT_RECOVERY_CTO_ACCEPTANCE",
+-    "stop_gate":  "CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW"
++    "stop_gate":  "CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW",
++    "development_model":  "OPEN_DEVELOPMENT",
++    "open_source_license":  "NOT_ESTABLISHED",
++    "legal_ownership":  "NOT_ESTABLISHED",
++    "production_hosting":  "NOT_ESTABLISHED",
++    "observed_documentation_sha":  "7c95863ab62baeb9d6ef1d5140b172fb04a06d74",
++    "previous_visibility_requirement":  {
++                                            "value":  "private",
++                                            "status":  "SUPERSEDED",
++                                            "scope":  "VISIBILITY_ONLY",
++                                            "source":  "ANCESTRALIDADE-CTO-MANDATE-KF06-01",
++                                            "evidence":  "validation/evidence/app-bootstrap-private-verification.json"
++                                        },
++    "visibility_amendment":  {
++                                 "id":  "ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02",
++                                 "canonical_path":  "governance/decisions/kf06-visibility-amendment-02.md",
++                                 "ref":  null,
++                                 "status":  "APPROVED_EXECUTION_CONFIRMED_LOCAL_RECORD_NOT_PUBLISHED",
++                                 "parent_authorization":  "ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01",
++                                 "parent_authorization_intake":  "REFERENCED_NOT_RECEIVED",
++                                 "security_review":  "PASS_SCOPED_NOT_EXHAUSTIVE",
++                                 "remote_state":  "PUBLIC_CONFIRMED_ALREADY_PUBLIC_NO_PATCH"
++                             },
++    "preferred_dev_provider":  {
++                                   "provider":  "Vercel Hobby",
++                                   "status":  "PREFERRED_DEV_CANDIDATE",
++                                   "qualification":  "WP02_OPEN_GATES",
++                                   "qualification_path":  "research/WP02-VERCEL-HOBBY-DEV-01.md",
++                                   "ref":  null,
++                                   "deployment_authorized":  false,
++                                   "commercial_eligibility":  "NOT_ESTABLISHED",
++                                   "github_org_integration":  "OFFICIAL_DOCUMENTATION_DISCREPANCY_NOT_VALIDATED"
++                               }
+ }
+\ No newline at end of file
+diff --git a/status/INITIAL-STATE.md b/status/INITIAL-STATE.md
+index da19529..eed6860 100644
+--- a/status/INITIAL-STATE.md
++++ b/status/INITIAL-STATE.md
+@@ -1,8 +1,8 @@
+ ---
+ id: ANCESTRALIDADE-APP-INITIAL-STATE-01
+ title: "Estado inicial do repositório App"
+-version: "1.0"
+-status: LOCAL_BOOTSTRAP_PREPARED_NOT_INTEGRATED
++version: "1.1"
++status: PUBLIC_DEV_VISIBILITY_CONFIRMED_AMENDMENT_LOCAL
+ authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
+ maintainer: CTO_DOCUMENTATION
+ module: M01
+@@ -11,27 +11,35 @@ references:
+   - "../governance/NORMATIVE-TRACEABILITY.json"
+ supersedes: null
+ last_updated: "2026-11-27"
++previous_revision: "0ec73788d4c0fc3ea1ddaa7e1b161917870941bc:status/INITIAL-STATE.md@1.0"
+ ---
+ 
+-# Estado inicial e preparação local do App
++# Estado inicial histórico e baseline pública DEV
+ 
+-| Item | Observação desta execução |
++| Item | Observação histórica do bootstrap anterior |
+ |---|---|
+ | Repositório remoto | ancestralidade/app; criado pelo usuário durante a execução, não pelo agente |
+ | Identidade GitHub | repository ID 1474775051, organização ancestralidade |
+-| Visibilidade atual | PRIVATE, confirmada por leitura autenticada após ajuste pelo usuário |
++| Visibilidade no bootstrap anterior | PRIVATE, então confirmada; requisito agora SUPERSEDED pela decisão VISIBILITY-02 |
+ | Branch padrão | main |
+ | Histórico inicial | remoto vazio, API commits 409; nenhum ref anunciado; clone sem HEAD de commit |
+ | Permissões observadas | pull/push/triage/maintain/admin disponíveis; não ampliam a autorização executiva |
+ | Rulesets observados | lista vazia na inspeção inicial; política organizacional integral não estabelecida nem alterada |
+ | Conteúdo local preexistente | nenhum arquivo de trabalho; clone vazio, sem conteúdo sobrescrito |
+ | Arquivos preparados | README, AGENTS, .gitignore, manifesto e este estado |
+-| Commit/push/merge | não executados pelo agente; arquivos locais não integrados |
++| Commit/push/merge no bootstrap anterior | não executados pelo agente naquela preparação; integração posterior observada em 0ec73788d4c0fc3ea1ddaa7e1b161917870941bc |
+ | Auto-init | nenhum commit de inicialização observado/usado pelo agente |
+ | Stack/dependências/aplicação | ausentes |
+ 
+ A primeira consulta ao conector retornou 404, sem provar inexistência. Após o usuário informar criação, o remoto foi encontrado PUBLIC; o usuário o alterou para PRIVATE. Consulta autenticada nova confirmou o mesmo repository ID privado. Um retorno público em cache e os 404 do conector privado não foram usados como prova do estado final. Nenhuma credencial foi salva ou incluída nos arquivos; nenhuma política/permissão foi alterada pelo agente.
+ 
+-[Manifesto](../governance/NORMATIVE-TRACEABILITY.json): 14 documentos recuperados efetivamente no SHA documental aceito, com blobs conferidos. Novos registros REQ/IMP/VAL e fonte de autorização são preparados em docs e aguardam referência Git após autorização. A validação e o handoff canônicos desta execução ficam em ancestralidade/docs; não são duplicados como fonte normativa no app.
++[Manifesto](../governance/NORMATIVE-TRACEABILITY.json): 14 documentos recuperados efetivamente no SHA documental aceito, com blobs conferidos. Registros REQ/IMP/VAL e fonte KF06-01 estão publicados no SHA observado 7c95863ab62baeb9d6ef1d5140b172fb04a06d74; a emenda nova permanece local, sem publicação. A validação e o handoff canônicos desta execução ficam em ancestralidade/docs; não são duplicados como fonte normativa no app.
+ 
+-Estado: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE. Engineering Readiness NOT_ESTABLISHED; AC-KF-14/15 sem PASS definitivo. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; implementação e Phase 01 NOT_AUTHORIZED.
++Estado: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE. Engineering Readiness NOT_ESTABLISHED; AC-KF-14/15 sem PASS definitivo. Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW; implementação e Phase 01 NOT_AUTHORIZED.
++
++
++## Estado observado nesta emenda
++
++Decisão ANCESTRALIDADE-CTO-DEC-KF06-VISIBILITY-02: PUBLIC, OPEN_DEVELOPMENT. Repository ID 1474775051 preservado. O remoto já estava público antes da operação; leitura autenticada e leitura anônima confirmaram PUBLIC. Nenhum PATCH de visibilidade foi necessário. Conteúdo atual e histórico local alcançável foram inspecionados: cinco arquivos, cinco blobs, quatro commits locais alcançáveis (incluindo referências locais auxiliares) e um commit remoto acessível por duas branches; zero achados nos padrões e revisão de conteúdo realizados. Isso não é garantia exaustiva nem auditoria de refs ocultas.
++
++HEAD local inicial desta emenda: 0ec73788d4c0fc3ea1ddaa7e1b161917870941bc, branch dev; working tree inicial limpo. Alterações desta emenda apenas locais, sem commit/push/merge pelo agente. PRIVATE anterior preservado como evidência histórica e SUPERSEDED quanto à condição normativa. Licença Open Source, titularidade e produção NOT_ESTABLISHED; Vercel Hobby PREFERRED_DEV_CANDIDATE sem autorização de deploy. Dados somente sintéticos em DEV. Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW.

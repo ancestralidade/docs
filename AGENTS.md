@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-AGENT-INSTRUCTIONS
 title: "Orientações para agentes"
-version: "1.7"
+version: "1.8"
 status: ACTIVE_USER_INSTRUCTIONS
 authority: USER_AND_CTO_KF_MANDATE
 maintainer: CTO_DOCUMENTATION
@@ -35,9 +35,12 @@ references:
   - "engineering/IMP-APP-BOOTSTRAP-01.md"
   - "validation/VAL-APP-BOOTSTRAP-01.md"
   - "governance/reviews/cto-kf-final-acceptance-01.md"
+  - "governance/decisions/kf06-visibility-amendment-02.md"
+  - "research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "validation/VAL-KF06-VISIBILITY-02.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:AGENTS.md@1.6"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:AGENTS.md@1.7"
 ---
 
 # Orientações para agentes
@@ -95,6 +98,15 @@ C10 tem dependência normativa substantiva resolvida, classificação final pend
 
 ## Tarefa vigente — KF-06 Application Repository Bootstrap
 
-A [fonte integral CTO](governance/sources/kf-final-acceptance-and-app-bootstrap-01.md) concede KNOWLEDGE_FOUNDATION_ACCEPTED, Phase 00A/00B CLOSED, KF-01–05 COMPLETE, C10 RESOLVED e AC-KF-03-R1 PASS; checkpoint aceito dad48511595f1d0fa3d06590da222cc0fabaef0a. Registrar o ato recebido com autoria CTO, sem repetir encerramento documental. O mandato KF06-01 autoriza apenas Phase 00C: inspeção, repositório ancestralidade/app PRIVATE, estrutura mínima local, rastreabilidade por SHA, validação e handoff. Repositório criado e visibilidade corrigida pelo usuário; não inferir autorização para novos privilégios/políticas. Preservar o objeto ratificado fe105fef/blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e toda a evidência histórica.
+A [fonte integral CTO](governance/sources/kf-final-acceptance-and-app-bootstrap-01.md) concede KNOWLEDGE_FOUNDATION_ACCEPTED, Phase 00A/00B CLOSED, KF-01–05 COMPLETE, C10 RESOLVED e AC-KF-03-R1 PASS; checkpoint aceito dad48511595f1d0fa3d06590da222cc0fabaef0a. Registrar o ato recebido com autoria CTO, sem repetir encerramento documental. O mandato KF06-01 autoriza apenas Phase 00C: inspeção, repositório ancestralidade/app PUBLIC, estrutura mínima local, rastreabilidade por SHA, validação e handoff. Repositório criado pelo usuário; PUBLIC confirmado sob a emenda posterior; não inferir autorização para novos privilégios/políticas. Preservar o objeto ratificado fe105fef/blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e toda a evidência histórica.
 
-Usar [REQ](engineering/REQ-APP-BOOTSTRAP-01.md), [IMP](engineering/IMP-APP-BOOTSTRAP-01.md), [VAL](validation/VAL-APP-BOOTSTRAP-01.md) e [aceite corrente](governance/reviews/cto-kf-final-acceptance-01.md). Não copiar normativos para o app nem inventar SHA/URL dos novos registros locais. Recuperar contexto obrigatório em docs por referência explícita antes de qualquer atividade relevante. AC-KF-14/15 só recebem PASS definitivo após integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Commit manual/automático, push, merge, Phase 01, implementação M01, dependências, stack definitiva, banco, infraestrutura, contratação, finanças, políticas organizacionais e deploy NOT_AUTHORIZED. Engineering Readiness NOT_ESTABLISHED, contratos NOT_FROZEN; T01 e T02–T04/WP-02–04/DEC-16 preservados.
+Usar [REQ](engineering/REQ-APP-BOOTSTRAP-01.md), [IMP](engineering/IMP-APP-BOOTSTRAP-01.md), [VAL](validation/VAL-APP-BOOTSTRAP-01.md) e [aceite corrente](governance/reviews/cto-kf-final-acceptance-01.md). Não copiar normativos para o app nem inventar SHA/URL dos novos registros locais. Recuperar contexto obrigatório em docs por referência explícita antes de qualquer atividade relevante. AC-KF-14/15 só recebem PASS definitivo após integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Commit manual/automático, push, merge, Phase 01, implementação M01, dependências, stack definitiva, banco, infraestrutura, contratação, finanças, políticas organizacionais e deploy NOT_AUTHORIZED. Engineering Readiness NOT_ESTABLISHED, contratos NOT_FROZEN; T01 e T02–T04/WP-02–04/DEC-16 preservados.
+
+
+## Emenda executiva vigente — VISIBILITY-02
+
+A [decisão recebida](governance/decisions/kf06-visibility-amendment-02.md) substitui exclusivamente PRIVATE por PUBLIC, OPEN_DEVELOPMENT em DEV. PRIVATE anterior SUPERSEDED; preservar fontes/evidências antigas e os demais gates. Segurança de conteúdo/histórico verificada; remoto já público confirmado, sem PATCH redundante. Atualizar somente o bootstrap/rastreabilidade e dependentes; nenhuma implementação M01 ou Phase 01.
+
+Open Source license, Legal ownership e Production hosting NOT_ESTABLISHED. Não introduzir segredos, credenciais, dados pessoais reais, dados institucionais protegidos ou evidência privada; usar dados sintéticos. Vercel Hobby PREFERRED_DEV_CANDIDATE sujeito a WP-02; sem deploy, seleção definitiva ou contratação. A [qualificação](research/WP02-VERCEL-HOBBY-DEV-01.md) registra pendências reais de elegibilidade e integração, sem pressupor gratuidade/compatibilidade.
+
+Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 foi referenciada, mas a íntegra não foi fornecida/localizada; não inferir parâmetros de commit/push/merge. Usar [VAL novo](validation/VAL-KF06-VISIBILITY-02.md), sem reexecutar scripts históricos que sobrescrevam evidências ou imponham PRIVATE. Parar em CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. AC-KF-14/15 permanecem dependentes da integração autorizada, recuperação independente e aceite CTO; Engineering Readiness NOT_ESTABLISHED e contratos NOT_FROZEN.

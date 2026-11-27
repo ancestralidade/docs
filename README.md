@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-CANONICAL-INDEX
 title: "Índice canônico do projeto Ancestralidade"
-version: "0.7"
-status: KNOWLEDGE_FOUNDATION_ACCEPTED_KF06_BOOTSTRAP_AUTHORIZED
+version: "0.8"
+status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -25,7 +25,7 @@ references:
   - "architecture/ARCHITECTURE-BASELINE.md"
   - "architecture/ADR-REGISTER.md"
   - "status/RISK-REGISTER.md"
-  - "validation/VAL-APP-BOOTSTRAP-01.md"
+  - "validation/VAL-KF06-VISIBILITY-02.md"
   - "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md"
   - "engineering/IMP-KNOWLEDGE-FOUNDATION-01.md"
   - "engineering/APP-BOOTSTRAP-SPECIFICATION.md"
@@ -39,7 +39,7 @@ references:
   - "operations/INFORMATION-CLASSIFICATION.md"
   - "validation/KNOWLEDGE-READINESS.md"
   - "validation/RAG-SCENARIOS.md"
-  - "status/APP-BOOTSTRAP-HANDOFF.md"
+  - "status/KF06-VISIBILITY-02-HANDOFF.md"
   - "planejamento/m01/README.md"
   - "AGENTS.md"
   - "governance/reviews/CTO-KF-DELIVERY-REVIEW-01.md"
@@ -71,9 +71,15 @@ references:
   - "validation/AC-KF-ACCEPTED-01.md"
   - "engineering/REQ-APP-BOOTSTRAP-01.md"
   - "engineering/IMP-APP-BOOTSTRAP-01.md"
+  - "validation/VAL-APP-BOOTSTRAP-01.md"
+  - "status/APP-BOOTSTRAP-HANDOFF.md"
+  - "governance/decisions/kf06-visibility-amendment-02.md"
+  - "validation/evidence/kf06-visibility-02-security.json"
+  - "validation/evidence/kf06-visibility-02-remote.json"
+  - "research/WP02-VERCEL-HOBBY-DEV-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:README.md@0.6"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:README.md@0.7"
 ---
 
 # Ancestralidade.org — documentação canônica
@@ -95,7 +101,7 @@ Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 
 | Papel | Rota mínima além do estado corrente |
 |---|---|
 | Planner | [visão](product/PRODUCT-VISION.md) → [baseline M01](product/M01-PRODUCT-BASELINE.md) → [roadmap](planning/M01-ROADMAP.md) → [pacotes](planning/WORK-PACKAGE-REGISTER.md) |
-| CTO | [arquitetura](architecture/ARCHITECTURE-BASELINE.md) → [ADRs](architecture/ADR-REGISTER.md) → [riscos](status/RISK-REGISTER.md) → [VAL documental corrente](validation/VAL-APP-BOOTSTRAP-01.md) |
+| CTO | [arquitetura](architecture/ARCHITECTURE-BASELINE.md) → [ADRs](architecture/ADR-REGISTER.md) → [riscos](status/RISK-REGISTER.md) → [VAL documental corrente](validation/VAL-KF06-VISIBILITY-02.md) |
 | Engenharia | [REQ-KF](engineering/REQ-KNOWLEDGE-FOUNDATION-01.md) → [IMP-KF](engineering/IMP-KNOWLEDGE-FOUNDATION-01.md) → [critérios](validation/M01-ACCEPTANCE-CRITERIA.md) → [separação do app](engineering/APP-BOOTSTRAP-SPECIFICATION.md) |
 | Business | [premissas econômicas](planning/ECONOMIC-ASSUMPTIONS.md) → [decisões](decisions/DECISION-REGISTER.md) → [operação](operations/INSTITUTIONAL-OPERATIONS.md) |
 | Marketing | [contexto](context/PROJECT-CONTEXT.md) → [visão](product/PRODUCT-VISION.md) → [limites de comunicação](governance/PROJECT-INSTRUCTIONS.md) |
@@ -108,7 +114,7 @@ Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 
 - [Produto](product/M01-PRODUCT-BASELINE.md), [decisões](decisions/DECISION-REGISTER.md) e [arquitetura](architecture/ARCHITECTURE-BASELINE.md).
 - [Roadmap](planning/M01-ROADMAP.md), [work packages](planning/WORK-PACKAGE-REGISTER.md) e [pesquisas](research/RESEARCH-REGISTER.md).
 - [Operações](operations/INSTITUTIONAL-OPERATIONS.md) e [classificação de informação](operations/INFORMATION-CLASSIFICATION.md).
-- [Prontidão do conhecimento](validation/KNOWLEDGE-READINESS.md), [cenários de recuperação](validation/RAG-SCENARIOS.md) e [handoff atual](status/APP-BOOTSTRAP-HANDOFF.md).
+- [Prontidão do conhecimento](validation/KNOWLEDGE-READINESS.md), [cenários de recuperação](validation/RAG-SCENARIOS.md) e [handoff atual](status/KF06-VISIBILITY-02-HANDOFF.md).
 
 A [primeira entrega](planejamento/m01/README.md) é referência histórica preservada; seus estados antigos não substituem o estado corrente. O [AGENTS.md](AGENTS.md) contém o protocolo operacional para agentes. Consulte o [RAG protocol](governance/RAG-PROTOCOL.md) para recuperação de Markdown por referência Git. Não existe banco vetorial, sincronização automática ou aplicativo nesta entrega.
 
@@ -142,4 +148,9 @@ Solicitação ao Planner encerrada; faltam somente SOURCE-06/07/09 a serem trans
 
 ## Vigente — Knowledge Foundation aceita e KF-06
 
-[Aceite final CTO](governance/reviews/cto-kf-final-acceptance-01.md) → [matriz aceita 13 PASS](validation/AC-KF-ACCEPTED-01.md) → [REQ KF-06](engineering/REQ-APP-BOOTSTRAP-01.md) → [IMP](engineering/IMP-APP-BOOTSTRAP-01.md) → [VAL](validation/VAL-APP-BOOTSTRAP-01.md) → [handoff](status/APP-BOOTSTRAP-HANDOFF.md). Phase 00A/00B CLOSED — ACCEPTED, C10 RESOLVED, R1 PASS; AC-KF-14/15 ainda sem PASS definitivo. Phase 00C AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP; repositório ancestralidade/app PRIVATE, clone vazio com fundação local preparada. Engineering Readiness NOT_ESTABLISHED, contratos NOT_FROZEN; implementação M01 e Phase 01 NOT_AUTHORIZED. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; nenhum commit/push/merge autorizado.
+[Aceite final CTO](governance/reviews/cto-kf-final-acceptance-01.md) → [matriz aceita 13 PASS](validation/AC-KF-ACCEPTED-01.md) → [REQ KF-06](engineering/REQ-APP-BOOTSTRAP-01.md) → [IMP](engineering/IMP-APP-BOOTSTRAP-01.md) → [VAL](validation/VAL-APP-BOOTSTRAP-01.md) → [handoff](status/APP-BOOTSTRAP-HANDOFF.md). Phase 00A/00B CLOSED — ACCEPTED, C10 RESOLVED, R1 PASS; AC-KF-14/15 ainda sem PASS definitivo. Phase 00C AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP; repositório ancestralidade/app PUBLIC / OPEN_DEVELOPMENT em DEV, bootstrap publicado e emenda preparada localmente. Engineering Readiness NOT_ESTABLISHED, contratos NOT_FROZEN; implementação M01 e Phase 01 NOT_AUTHORIZED. Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW; gates Git preservados, autorização de integração integral pendente de fornecimento.
+
+
+## Emenda vigente de visibilidade DEV
+
+[VISIBILITY-02](governance/decisions/kf06-visibility-amendment-02.md): App PUBLIC, PRIVATE anterior SUPERSEDED; licença Open Source, titularidade e hospedagem PROD NOT_ESTABLISHED. Somente dados sintéticos e nenhum conteúdo protegido/credencial. [Segurança](validation/evidence/kf06-visibility-02-security.json), [confirmação pública](validation/evidence/kf06-visibility-02-remote.json), [Vercel Hobby em WP-02](research/WP02-VERCEL-HOBBY-DEV-01.md), [VAL corrente](validation/VAL-KF06-VISIBILITY-02.md) e [handoff](status/KF06-VISIBILITY-02-HANDOFF.md). Vercel PREFERRED_DEV_CANDIDATE, sem contratação ou deploy. Parent AUTH-KF06-INTEGRATION-01 referenciada sem íntegra recebida; sem novo commit/push/merge ou M01. Próximo gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW.

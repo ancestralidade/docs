@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.7"
-status: KNOWLEDGE_FOUNDATION_ACCEPTED_KF06_BOOTSTRAP_AUTHORIZED
+version: "0.8"
+status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -39,9 +39,13 @@ references:
   - "sources/kf-final-acceptance-and-app-bootstrap-01.md"
   - "../validation/evidence/app-bootstrap-repository-inspection.json"
   - "../validation/VAL-APP-BOOTSTRAP-01.md"
+  - "../governance/decisions/kf06-visibility-amendment-02.md"
+  - "../research/WP02-VERCEL-HOBBY-DEV-01.md"
+  - "../validation/VAL-KF06-VISIBILITY-02.md"
+  - "../status/KF06-VISIBILITY-02-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:governance/RAG-PROTOCOL.md@0.6"
+previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:governance/RAG-PROTOCOL.md@0.7"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -93,10 +97,21 @@ Para o M01, recuperar o [mandato preservado](mandates/m01-consolidated-mandate-1
 Nesta finalização o agente confirmou objetos e conteúdo localmente. Não reexecutou recuperação remota independente ou cenários RAG; os seis cenários históricos continuam atribuídos ao CTO e ao respectivo checkpoint. A nova finalização é local: publicação, autorização Git, recuperação independente do checkpoint definitivo e aceite CTO faltam para AC-KF-03-R1 PASS. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Estado](../status/CURRENT-STATUS.md), [VAL atual](../validation/VAL-KF-FINALIZATION-01.md).
 
 
-## Recuperação vigente no KF-06
+## Histórico — recuperação no bootstrap KF-06 anterior
 
 [Aceite final CTO](reviews/cto-kf-final-acceptance-01.md) confirma recuperação independente e integração de dad48511595f1d0fa3d06590da222cc0fabaef0a. C10 RESOLVED, R1 PASS, Phase 00A/00B CLOSED. Os antigos bloqueios das evidências anteriores são históricos. A mesma [fonte](sources/kf-final-acceptance-and-app-bootstrap-01.md) autoriza Phase 00C/KF-06.
 
 O Agent Coder recuperou 14 documentos remotos nesse SHA para o bootstrap e registrou IDs/versões/blobs na [inspeção](../validation/evidence/app-bootstrap-repository-inspection.json). Essa recuperação atual é distinta da verificação independente CTO que concedeu o aceite KF. O App usa manifesto de referências por SHA, sem duplicação de normativos. A fonte posterior e REQ/IMP/VAL novos ainda estão locais: não inventar URL no checkpoint anterior ou declarar publicação antecipada. Atualizar suas referências somente na integração autorizada.
 
 AC-KF-14/15 aguardam integração, recuperação independente e aceite CTO do bootstrap. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; commit/push/merge e implementação NOT_AUTHORIZED. [VAL](../validation/VAL-APP-BOOTSTRAP-01.md).
+
+
+## Emenda corrente PUBLIC / OPEN_DEVELOPMENT
+
+[VISIBILITY-02](../governance/decisions/kf06-visibility-amendment-02.md), Presidência/CTO, substitui somente a exigência PRIVATE por PUBLIC em ancestralidade/app; condição anterior SUPERSEDED, fontes e evidências preservadas. Repository ID 1474775051 e PUBLIC confirmados após inspeção de conteúdo/histórico; o remoto já público não exigiu PATCH. Open Source license, Legal ownership e Production hosting NOT_ESTABLISHED. Dados somente sintéticos em DEV; nenhum segredo, credencial, dado pessoal real, dado institucional protegido ou evidência privada no repositório público.
+
+Vercel Hobby PREFERRED_DEV_CANDIDATE; [WP-02](../research/WP02-VERCEL-HOBBY-DEV-01.md) registra elegibilidade e integração org não estabelecidas e divergência entre páginas oficiais. Preferência não seleciona plano/fornecedor, não contrata e não autoriza deploy. Gates de commit/push, recuperação independente e aceite CTO preservados. Parent Authorization ANCESTRALIDADE-CTO-AUTH-KF06-INTEGRATION-01 REFERENCED_NOT_RECEIVED; não inferir condições de integração ausentes.
+
+Gate CTO_APPLICATION_REPOSITORY_FINAL_ACCEPTANCE_REVIEW. Sem M01/Phase 01, dependências, infraestrutura ou deploy. C10 RESOLVED e R1 PASS preservados pelo aceite KF anterior; AC-KF-14/15 sem PASS definitivo. Engineering Readiness NOT_ESTABLISHED e contratos/T01 NOT_FROZEN; T02–T04 e WP-02–04 mantêm gates. [VAL novo](../validation/VAL-KF06-VISIBILITY-02.md), [handoff](../status/KF06-VISIBILITY-02-HANDOFF.md).
+
+O manifesto App conserva as 14 referências normativas no checkpoint aceito dad48511595f1d0fa3d06590da222cc0fabaef0a. REQ/IMP/VAL e fonte KF06-01 anteriores foram efetivamente recuperados no commit observado 7c95863ab62baeb9d6ef1d5140b172fb04a06d74 e agora recebem ref/blob publicados. A emenda nova permanece local, com ref null; não atribuir sua decisão ao commit anterior ou declarar recuperação independente/aceite do bootstrap por esta validação local.
