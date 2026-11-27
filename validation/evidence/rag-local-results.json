@@ -1,0 +1,128 @@
+[
+    {
+        "id":  "RAG-T01",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "0.1",
+                              "path":  "status/CURRENT-STATUS.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "product/M01-PRODUCT-BASELINE.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "decisions/DECISION-REGISTER.md"
+                          }
+                      ],
+        "query":  "Baseline M01 para Planner"
+    },
+    {
+        "id":  "RAG-T02",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "0.1",
+                              "path":  "architecture/ARCHITECTURE-BASELINE.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "architecture/ADR-REGISTER.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "status/RISK-REGISTER.md"
+                          }
+                      ],
+        "query":  "Arquitetura aceita e questões CTO"
+    },
+    {
+        "id":  "RAG-T03",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "1.0",
+                              "path":  "engineering/REQ-KNOWLEDGE-FOUNDATION-01.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "engineering/REQUIREMENT-REGISTER.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "validation/M01-ACCEPTANCE-CRITERIA.md"
+                          }
+                      ],
+        "query":  "Autorização, requisitos e aceite do Coder"
+    },
+    {
+        "id":  "RAG-T04",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "0.1",
+                              "path":  "planning/ECONOMIC-ASSUMPTIONS.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "decisions/DECISION-REGISTER.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "operations/INSTITUTIONAL-OPERATIONS.md"
+                          }
+                      ],
+        "query":  "Premissas econômicas e responsabilidades Business"
+    },
+    {
+        "id":  "RAG-T05",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "0.1",
+                              "path":  "context/PROJECT-CONTEXT.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "product/PRODUCT-VISION.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "governance/PROJECT-INSTRUCTIONS.md"
+                          }
+                      ],
+        "query":  "Propósito e limites de Marketing"
+    },
+    {
+        "id":  "RAG-T06",
+        "scope":  "LOCAL_DOCUMENT_RETRIEVAL",
+        "reference":  "UNCOMMITTED_WORKSPACE",
+        "result":  "PASS",
+        "documents":  [
+                          {
+                              "version":  "0.1",
+                              "path":  "status/CURRENT-STATUS.md"
+                          },
+                          {
+                              "version":  "0.1",
+                              "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md"
+                          },
+                          {
+                              "version":  "1.0",
+                              "path":  "governance/sources/knowledge-foundation-mandate-01.md"
+                          }
+                      ],
+        "query":  "Aplicativo está autorizado?"
+    }
+]

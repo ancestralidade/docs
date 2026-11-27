@@ -1,0 +1,21 @@
+{
+    "date":  "2026-11-27",
+    "scope":  "LOCAL_DOCUMENT_VALIDATION",
+    "markdown_files":  44,
+    "unique_ids":  44,
+    "p0_expected":  15,
+    "relative_links_checked":  301,
+    "preserved_initial_files":  4,
+    "rag_local_pass":  6,
+    "rag_remote":  "NOT_EXECUTED",
+    "errors":  [
+
+               ],
+    "result":  "PASS",
+    "limitations":  [
+                        "Pattern scan is not a complete privacy or history audit",
+                        "No independent retrieval of unpublished new documents",
+                        "No application/provider tests",
+                        "No acceptance on behalf of CTO"
+                    ]
+}

@@ -1,4 +1,23 @@
-﻿# Disposição CTO e continuidade da Phase 00
+---
+id: ANCESTRALIDADE-INITIAL-DELIVERY-DISPOSITION
+title: "Disposição da primeira entrega documental"
+version: "1.0"
+status: HISTORICAL_SNAPSHOT
+authority: AGENT_CODER_HISTORICAL
+maintainer: CTO_DOCUMENTATION
+module: M01
+classification: PUBLIC
+references:
+  - "../../status/CURRENT-STATUS.md"
+  - "../../README.md"
+  - "planejamento-tecnico-rev-0.2.md"
+supersedes: null
+last_updated: "2026-11-27"
+---
+
+> Referência histórica preservada. O corpo abaixo mantém a revisão e seus estados da primeira entrega; DEC-10–16 foram deliberadas posteriormente e o mandato KF autoriza agora a execução documental local. Consulte [CURRENT-STATUS](../../status/CURRENT-STATUS.md) e o [índice canônico](../../README.md) para a situação corrente. Não usar esta página isoladamente como autorização atual.
+
+# Disposição CTO e continuidade da Phase 00
 
 **Referência:** CTO-ANCESTRALIDADE-M01-TP-REVIEW-02, de 26/11/2026, fornecida na conversa do projeto. **Disposição:** `ACCEPTED_WITH_OPEN_GATES`. A [revisão 0.2 do planejamento](planejamento-tecnico-rev-0.2.md) é o baseline de trabalho; a aceitação não congela os contratos de domínio nem comprova prontidão para implementação.
 

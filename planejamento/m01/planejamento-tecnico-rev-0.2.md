@@ -1,4 +1,22 @@
-﻿# Ancestralidade.org — Planejamento técnico M01
+---
+id: ANCESTRALIDADE-M01-TECHNICAL-PLANNING-0.2
+title: "Planejamento técnico M01 — revisão 0.2"
+version: "0.2"
+status: HISTORICAL_BASELINE
+authority: CTO_REVIEW_02_BASELINE
+maintainer: CTO_DOCUMENTATION
+module: M01
+classification: PUBLIC
+references:
+  - "../../status/CURRENT-STATUS.md"
+  - "../../README.md"
+supersedes: null
+last_updated: "2026-11-27"
+---
+
+> Referência histórica preservada. O corpo abaixo mantém a revisão e seus estados da primeira entrega; DEC-10–16 foram deliberadas posteriormente e o mandato KF autoriza agora a execução documental local. Consulte [CURRENT-STATUS](../../status/CURRENT-STATUS.md) e o [índice canônico](../../README.md) para a situação corrente. Não usar esta página isoladamente como autorização atual.
+
+# Ancestralidade.org — Planejamento técnico M01
 
 **Revisão:** 0.2, 26/11/2026. Incorpora CTO-ANCESTRALIDADE-M01-TP-REVIEW-01 (APPROVED_WITH_CORRECTIONS); contratos não congelados. **Estado:** proposta para revisão CTO. O planejamento e a pesquisa estão autorizados; implementação, contratação e deploy não. Fontes: mandato técnico e três revisões anexadas. O mandato superior completo não foi fornecido: os títulos AC-01–18 devem ser confrontados com o original. Recomendações e estimativas abaixo não constituem decisões aprovadas.
 

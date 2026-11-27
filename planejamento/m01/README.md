@@ -1,4 +1,24 @@
-﻿# Planejamento técnico — M01
+---
+id: ANCESTRALIDADE-INITIAL-DELIVERY-INDEX
+title: "Índice histórico da primeira entrega"
+version: "1.0"
+status: HISTORICAL_SNAPSHOT
+authority: AGENT_CODER_HISTORICAL
+maintainer: CTO_DOCUMENTATION
+module: M01
+classification: PUBLIC
+references:
+  - "../../status/CURRENT-STATUS.md"
+  - "../../README.md"
+  - "planejamento-tecnico-rev-0.2.md"
+  - "disposicao-e-proximos-passos.md"
+supersedes: null
+last_updated: "2026-11-27"
+---
+
+> Referência histórica preservada. O corpo abaixo mantém a revisão e seus estados da primeira entrega; DEC-10–16 foram deliberadas posteriormente e o mandato KF autoriza agora a execução documental local. Consulte [CURRENT-STATUS](../../status/CURRENT-STATUS.md) e o [índice canônico](../../README.md) para a situação corrente. Não usar esta página isoladamente como autorização atual.
+
+# Planejamento técnico — M01
 
 Esta pasta reúne a primeira entrega documental do planejamento técnico do diretório Ancestralidade.org. O projeto é independente do Axodus Core.
 
