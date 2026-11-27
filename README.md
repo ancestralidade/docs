@@ -1,13 +1,14 @@
 ---
 id: ANCESTRALIDADE-CANONICAL-INDEX
 title: "Índice canônico do projeto Ancestralidade"
-version: "0.8"
+version: "0.9"
 status: PUBLIC_DEV_BASELINE_PREPARED_FOR_CTO_REVIEW
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "PUBLICATION.md"
   - "governance/sources/knowledge-foundation-closure-mandate-01.md"
   - "governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
   - "status/CURRENT-STATUS.md"
@@ -83,6 +84,10 @@ previous_revision: "7c95863ab62baeb9d6ef1d5140b172fb04a06d74:README.md@0.7"
 ---
 
 # Ancestralidade.org — documentação canônica
+
+## Site de documentação
+
+A apresentação usa VitePress e publicação pela Vercel CLI, com build remoto. Com Node.js 24 e npm, execute `npm ci`, autentique com `npm run docs:login`, vincule o projeto com `npm run docs:link` e solicite o deploy com `npm run docs:deploy`. Consulte o [guia de publicação](PUBLICATION.md) para acompanhar o build, os artefatos e a configuração de subdiretório. O fluxo não exige preview local; os documentos canônicos e seus estados permanecem nas fontes abaixo.
 
 Este é o repositório `ancestralidade/docs`, fonte canônica documental do M01 — Diretório Religioso Nacional, produto de cliente da Axodus Business independente do Axodus Core. O checkpoint documental aaa4d4bb55f691f63734e949cb0288536de1c03e foi aceito pelo CTO e os seis cenários remotos foram validados por ele, conforme o [mandato de encerramento](governance/sources/knowledge-foundation-closure-mandate-01.md). A fundação documental foi integralmente aceita pelo CTO no checkpoint dad48511595f1d0fa3d06590da222cc0fabaef0a, com Phase 00A/00B encerradas e C10 resolvida. A [fonte executiva vigente](governance/sources/kf-final-acceptance-and-app-bootstrap-01.md) autoriza apenas Phase 00C / KF-06, bootstrap restrito do App. A implementação do aplicativo continua bloqueada e CLIENT_PROJECT é classificação administrativa preliminar, sem titularidade ou modelo comercial determinados.
 
