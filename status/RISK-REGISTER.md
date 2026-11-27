@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RISK-REGISTER
 title: "Riscos, bloqueadores e conflitos"
-version: "0.6"
-status: FINAL_CTO_ACCEPTANCE_PENDING
+version: "0.7"
+status: KF_ACCEPTED_BOOTSTRAP_DEPENDENCIES_PRESERVED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -20,13 +20,12 @@ references:
   - "NORMATIVE-CONFLICT-REGISTER.md"
   - "../governance/reviews/cto-source-transfer-01.md"
   - "../validation/VAL-NI-SOURCE-TRANSFER-01.md"
-  - "../governance/decisions/m01-presidential-ratification-01.md"
-  - "../governance/mandates/m01-normative-effectiveness-01.md"
-  - "../validation/AC-KF-FINAL-PROPOSED.md"
-  - "../validation/VAL-KF-FINALIZATION-01.md"
+  - "../governance/reviews/cto-kf-final-acceptance-01.md"
+  - "../engineering/REQ-APP-BOOTSTRAP-01.md"
+  - "../validation/VAL-APP-BOOTSTRAP-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:status/RISK-REGISTER.md@0.5"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/RISK-REGISTER.md@0.6"
 ---
 
 # Registro de riscos e bloqueadores
@@ -35,7 +34,7 @@ Consolidação do [mandato KF](../governance/sources/knowledge-foundation-mandat
 
 | ID | Risco/pendência | Severidade / estado | Mitigação, dependência e responsável | Gate |
 |---|---|---|---|---|
-| B01/C10 | nove fontes recebidas; reconciliação aceita e Rev. 1.1 ratificada | alta / FINAL_CTO_ACCEPTANCE_PENDING | C10 OPEN e R1 BLOCKED até integração definitiva, recuperação independente e aceite; fontes não são mais bloqueador de transferência | integração definitiva / aceite CTO |
+| B01/C10 | fontes, reconciliação, ratificação, integração e recuperação aceitas pelo CTO | RESOLVED | C10 definitivamente resolvida e R1 PASS; preservar evidência histórica | aceite KF concedido |
 | B02 | instruções globais vigentes recebidas, SOURCE-03 aceita pelo CTO | resolvido quanto à recepção / SOURCE_INSPECTED | aplicar hierarquia §§6/7; SOURCE-03A apenas histórica | governança |
 | T01 | direção normativa aprovada; contratos técnicos ainda não congelados | NORMATIVE_DIRECTION_APPROVED / NOT_FROZEN | preservar distinção de predicados, sem suspensão automática e sem inferir T02; fonte mandato NI | contrato técnico |
 | T02 | perda do último representante | alta / POLICY_SPECIFICATION_REQUIRED | recuperação humana e política de exposição; Produto | contratos/operação |
@@ -68,6 +67,8 @@ O [mandato NI](../governance/sources/normative-integration-mandate-01.md) identi
 
 O [pacote do Planner](../governance/reviews/cto-source-transfer-01.md) foi recebido e sua integridade conferida pelo agente: 6 arquivos, zero erro CRC, UTF-8, hashes e texto preservados. Solicitação ao Planner encerrada. Faltam somente 06/07/09 sob responsabilidade CTO; seis das nove fontes requeridas disponíveis. A integridade não demonstra equivalência histórica ou normativa. Os 26 critérios da construção continuam propostos; números qualificados por origem evitam colisão com os 18 MVP. Falta de preservação dos fluxos positivos é risco de cobertura a verificar na 1.1, sem declarar análise de texto consolidado não recebido. [Registro específico](NORMATIVE-CONFLICT-REGISTER.md) e [VAL](../validation/VAL-NI-SOURCE-TRANSFER-01.md). Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; não autoriza commit/app.
 
-## Estado corrente — ratificação registrada e gates finais preservados
+## Estado corrente — KF aceita, risco de escopo do bootstrap controlado
 
-[Ratificação](../governance/decisions/m01-presidential-ratification-01.md) APPROVED, [vigência normativa](../governance/mandates/m01-normative-effectiveness-01.md) desde 2026-11-27. Transferência e reconciliação aceitas. C10: dependência substantiva resolvida, classificação definitiva pendente; R1 BLOCKED por integração definitiva autorizada, recuperação remota independente e aceite CTO. Nenhuma mudança de risco jurídico, provedor, economia, operação, T02–T04 ou contrato técnico. Engineering Readiness NOT_ESTABLISHED. [Matriz KF proposta](../validation/AC-KF-FINAL-PROPOSED.md), [VAL atual](../validation/VAL-KF-FINALIZATION-01.md). Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; sem commit/push/merge ou implementação.
+[Aceite final CTO](../governance/reviews/cto-kf-final-acceptance-01.md): Phase 00A/00B encerradas, C10 RESOLVED, R1 PASS. KF-06 / Phase 00C autorizado de forma restrita; [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md). App PRIVATE confirmado após correção do usuário, clone vazio com estrutura mínima local. AC-KF-14/15 ainda dependem de integração autorizada, recuperação independente e aceite CTO, sem comprometer o aceite anterior KF-01–05.
+
+Provedores, privacidade, economia, operação, contratos e T02–T04 continuam com seus gates; Engineering Readiness NOT_ESTABLISHED. Evitar tratar bootstrap, permissão técnica admin ou aceite de documentação como autorização de M01/Phase 01, dependências, stack ou infraestrutura. [VAL corrente](../validation/VAL-APP-BOOTSTRAP-01.md), gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Sem commit/push/merge autorizado.

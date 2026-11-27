@@ -1,0 +1,407 @@
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..6036139
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,11 @@
++# Segredos e dados locais; sem pressupor stack ou licença
++.env
++.env.*
++!.env.example
++*.key
++*.pem
++*.p12
++*.pfx
++*.log
++Thumbs.db
++.DS_Store
+
+diff --git a/AGENTS.md b/AGENTS.md
+new file mode 100644
+index 0000000..d6fcaaa
+--- /dev/null
++++ b/AGENTS.md
+@@ -0,0 +1,26 @@
++---
++id: ANCESTRALIDADE-APP-AGENT-INSTRUCTIONS
++title: "Instruções App — recuperação canônica e limites"
++version: "1.0"
++status: ACTIVE_FOR_RESTRICTED_BOOTSTRAP
++authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
++maintainer: CTO_DOCUMENTATION
++module: M01
++classification: PUBLIC
++references:
++  - "governance/NORMATIVE-TRACEABILITY.json"
++supersedes: null
++last_updated: "2026-11-27"
++---
++
++# Instruções operacionais do repositório App
++
++Antes de qualquer atividade relevante, ler este README e o [manifesto](governance/NORMATIVE-TRACEABILITY.json); recuperar os documentos normativos de ancestralidade/docs por SHA explícito. A fonte canônica permanece o repositório documental, sem cópia normativa independente, sincronização automática ou armazenamento vetorial.
++
++Sequência mínima: índice → estado corrente → instruções globais e autoridade → decisões → requisitos R01–R14 → arquitetura/ADRs → critérios de aceitação → contratos/dependências → mandato executivo e REQ/IMP/VAL aplicáveis. Confirmar IDs, versões, blobs, estados históricos e atos posteriores legítimos. O SHA aceito inicial é dad48511595f1d0fa3d06590da222cc0fabaef0a; não substituir a referência por uma branch móvel sem atualizar a rastreabilidade autorizada.
++
++O mandato ratificado 1.1 mantém blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e deve ser lido com seu aditivo de vigência. A revisão final CTO e o mandato KF06-01 recebidos após o checkpoint autorizam apenas a Phase 00C. Seus registros e REQ/IMP/VAL de bootstrap ainda locais não têm SHA de publicação; não inventar links remotos ou tratá-los como recuperados de um commit que não os contém.
++
++Preservar arquivos de terceiros, nunca expor segredos e registrar fontes, resultados e diferenças reais. Sem permissão de commit, push, merge, implementação M01 ou Phase 01. Não instalar dependências/frameworks, escolher stack definitiva, configurar banco/autenticação/endpoints, criar pipeline, provisionar ou executar deploy. Não definir licença/titularidade e não conceder privilégios/políticas adicionais.
++
++Engineering Readiness NOT_ESTABLISHED; contratos de domínio e T01 NOT_FROZEN; T02–T04 OPEN; WP-02–04 com seus gates; DEC-16 APPROVED_FRAMEWORK. M01 implementation, Phase 01 e commit/push/merge: NOT_AUTHORIZED. AC-KF-14/15 aguardam integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. A preparação da estrutura não aprova funcionalidades ou operação real.
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..ea9d759
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,38 @@
++---
++id: ANCESTRALIDADE-APP-README
++title: "Aplicação Ancestralidade — bootstrap restrito"
++version: "1.0"
++status: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE
++authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
++maintainer: CTO_DOCUMENTATION
++module: M01
++classification: PUBLIC
++references:
++  - "governance/NORMATIVE-TRACEABILITY.json"
++  - "AGENTS.md"
++  - "status/INITIAL-STATE.md"
++supersedes: null
++last_updated: "2026-11-27"
++---
++
++# Ancestralidade.org — repositório de aplicação
++
++Fundação mínima de ancestralidade/app, separada da documentação canônica. Repositório remoto PRIVATE; branch padrão observada main; clone local inicialmente vazio, sem commit. Estado desta preparação: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE, sujeito à revisão CTO e integração autorizada.
++
++Escopo atual: KF-06 / Phase 00C, estrutura documental e rastreabilidade. A fundação documental KF-01–05 foi aceita pelo CTO em CTO-ANCESTRALIDADE-KF-FINAL-ACCEPTANCE-01; Phase 00A/00B encerradas, C10 resolvida e AC-KF-03-R1 PASS. O mandato ANCESTRALIDADE-CTO-MANDATE-KF06-01 autoriza este bootstrap restrito. A revisão/mandato foram recebidos após o checkpoint documental abaixo e seus registros ainda estão em preparação local no repositório canônico.
++
++## Recuperação obrigatória
++
++Começar pelo [índice canônico no SHA aceito](https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/README.md), recuperar estado, autoridade, decisões, requisitos, arquitetura/ADRs, critérios e autorização aplicável. O [manifesto de rastreabilidade](governance/NORMATIVE-TRACEABILITY.json) registra caminhos, IDs, versões, SHA e blobs efetivamente recuperados. Consultar também as [instruções locais](AGENTS.md) e o [estado inicial](status/INITIAL-STATE.md).
++
++Mandato M01: ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01 Rev. 1.1, commit ratificado fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. Sua vigência decorre do [aditivo no checkpoint aceito](https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-normative-effectiveness-01.md), EFFECTIVE desde 2026-11-27. Não copiar o texto normativo para este repositório.
++
++Os estados de espera de aceite nos documentos do checkpoint são anteriores à revisão final CTO recebida. O manifesto distingue essa autoridade posterior dos documentos já publicados e não inventa URLs/SHAs para os novos registros. REQ/IMP/VAL de bootstrap são preparados em ancestralidade/docs; suas referências definitivas deverão ser preenchidas após integração autorizada.
++
++## Limites
++
++Não há aplicativo, stack selecionada, dependências, banco, autenticação, endpoints, pipeline, infraestrutura ou deploy nesta preparação. Não há licença jurídica definitiva; visibilidade privada não determina licenciamento ou titularidade. Sem dependência obrigatória do Axodus Core.
++
++Engineering Readiness NOT_ESTABLISHED; contratos NOT_FROZEN; T01 direção aprovada, T02–T04 e WP-02–04 com gates próprios; DEC-16 APPROVED_FRAMEWORK. O mandato de construção continua proposto. AC-KF-14/15 exigem integração autorizada, recuperação independente e aceite CTO para PASS definitivo.
++
++REQ: ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01; IMP: ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01; VAL: ANCESTRALIDADE-VAL-APP-BOOTSTRAP-01. Commit/push/merge e implementação M01 NOT_AUTHORIZED. Gate: CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Não iniciar Phase 01.
+
+diff --git a/governance/NORMATIVE-TRACEABILITY.json b/governance/NORMATIVE-TRACEABILITY.json
+new file mode 100644
+index 0000000..4631ef2
+--- /dev/null
++++ b/governance/NORMATIVE-TRACEABILITY.json
+@@ -0,0 +1,259 @@
++{
++    "id":  "ANCESTRALIDADE-APP-NORMATIVE-TRACEABILITY-01",
++    "version":  "1.0",
++    "status":  "PREPARED_LOCAL_NOT_INTEGRATED",
++    "classification":  "PUBLIC",
++    "application_repository":  "https://github.com/ancestralidade/app",
++    "application_repository_id":  "1474775051",
++    "application_visibility_required":  "private",
++    "application_visibility_observed":  "private",
++    "application_branch":  "main",
++    "application_head":  null,
++    "canonical_documentation_repository":  "https://github.com/ancestralidade/docs",
++    "accepted_documentation_sha":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++    "normative_mandate":  {
++                              "id":  "ANCESTRALIDADE-PRESIDENCY-MANDATE-M01-CONSOLIDATED-01",
++                              "version":  "1.1",
++                              "ratified_commit":  "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b",
++                              "ratified_blob":  "22ce8ac5087cfb1c633f3b266f35776965c09733",
++                              "path":  "governance/mandates/m01-consolidated-mandate-1.1.md",
++                              "effective":  true,
++                              "effective_date":  "2026-11-27",
++                              "effectiveness_record":  "governance/mandates/m01-normative-effectiveness-01.md"
++                          },
++    "references":  [
++                       {
++                           "path":  "README.md",
++                           "document_id":  "ANCESTRALIDADE-CANONICAL-INDEX",
++                           "version":  "0.6",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "df81556dc664456ac1e834408e61dd8ef50b3c8e",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/README.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "AGENTS.md",
++                           "document_id":  "ANCESTRALIDADE-AGENT-INSTRUCTIONS",
++                           "version":  "1.6",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "aab93afa26b54efd579b69cbcf1bd040fedd1041",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/AGENTS.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "status/CURRENT-STATUS.md",
++                           "document_id":  "ANCESTRALIDADE-CURRENT-STATUS",
++                           "version":  "0.6",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "187c9339f54951ddc23064767def732219e0efb6",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/status/CURRENT-STATUS.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "governance/mandates/m01-consolidated-mandate-1.1.md",
++                           "document_id":  "ANCESTRALIDADE-M01-CONSOLIDATED-MANDATE-1.1-DRAFT",
++                           "version":  "1.1",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "22ce8ac5087cfb1c633f3b266f35776965c09733",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-consolidated-mandate-1.1.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "governance/mandates/m01-normative-effectiveness-01.md",
++                           "document_id":  "ANCESTRALIDADE-M01-NORMATIVE-EFFECTIVENESS-01",
++                           "version":  "1.0",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "f5da98fedcd5e2debfed27dc2fb0c385164f562a",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-normative-effectiveness-01.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "decisions/DECISION-REGISTER.md",
++                           "document_id":  "ANCESTRALIDADE-DECISION-REGISTER",
++                           "version":  "0.5",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "e0cebd147b8c0f2f48d848d650831e24bfcb4e1a",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/decisions/DECISION-REGISTER.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "product/M01-FUNCTIONAL-REQUIREMENTS.md",
++                           "document_id":  "ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS",
++                           "version":  "0.5",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "3b668cafdb10ccabb671872fac12d484f7e3c04b",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/product/M01-FUNCTIONAL-REQUIREMENTS.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "architecture/ARCHITECTURE-BASELINE.md",
++                           "document_id":  "ANCESTRALIDADE-ARCHITECTURE-BASELINE",
++                           "version":  "0.4",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "fb816c5f359c51344fad6fac689963b5da4d923b",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/architecture/ARCHITECTURE-BASELINE.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "architecture/ADR-REGISTER.md",
++                           "document_id":  "ANCESTRALIDADE-ADR-REGISTER",
++                           "version":  "0.1",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "bfa0224e183b8675e2a334038a5266b47feda786",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/architecture/ADR-REGISTER.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "validation/M01-ACCEPTANCE-CRITERIA.md",
++                           "document_id":  "ANCESTRALIDADE-M01-ACCEPTANCE-CRITERIA",
++                           "version":  "0.5",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "02947b536e326c3de5341846afe98b8008f3fe9b",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/validation/M01-ACCEPTANCE-CRITERIA.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
++                           "document_id":  "ANCESTRALIDADE-APP-BOOTSTRAP-SPEC",
++                           "version":  "0.1",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "8800171358546eb5dda12d7f40f23d1b86d70b74",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/engineering/APP-BOOTSTRAP-SPECIFICATION.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "governance/AUTHORITY-MODEL.md",
++                           "document_id":  "ANCESTRALIDADE-AUTHORITY-MODEL",
++                           "version":  "0.6",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "2a7c922fe3717129a047bf28be25c7e043677aa5",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/AUTHORITY-MODEL.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "governance/sources/project-instructions-authoritative.md",
++                           "document_id":  "ANCESTRALIDADE-SRC-PROJECT-INSTRUCTIONS-CURRENT",
++                           "version":  "1.0",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "effac902c592410c8239a56e94767e805586b3f5",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/sources/project-instructions-authoritative.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       },
++                       {
++                           "path":  "governance/RAG-PROTOCOL.md",
++                           "document_id":  "ANCESTRALIDADE-RAG-PROTOCOL",
++                           "version":  "0.6",
++                           "repository":  "ancestralidade/docs",
++                           "ref":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
++                           "git_blob":  "d251f65ca2eb2bd0a2573b25b6f1cdcfd45e60ed",
++                           "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/RAG-PROTOCOL.md",
++                           "recovery":  "FETCHED_REMOTE_AND_MATCHED_TO_LOCAL_GIT_BLOB"
++                       }
++                   ],
++    "decisions":  [
++                      "DEC-01",
++                      "DEC-02",
++                      "DEC-03",
++                      "DEC-04",
++                      "DEC-05",
++                      "DEC-06",
++                      "DEC-07",
++                      "DEC-08",
++                      "DEC-09",
++                      "DEC-10",
++                      "DEC-11",
++                      "DEC-12",
++                      "DEC-13",
++                      "DEC-14",
++                      "DEC-15",
++                      "DEC-16"
++                  ],
++    "functional_requirements":  [
++                                    "R01",
++                                    "R02",
++                                    "R03",
++                                    "R04",
++                                    "R05",
++                                    "R06",
++                                    "R07",
++                                    "R08",
++                                    "R09",
++                                    "R10",
++                                    "R11",
++                                    "R12",
++                                    "R13",
++                                    "R14"
++                                ],
++    "subsequent_authority":  {
++                                 "review":  "CTO-ANCESTRALIDADE-KF-FINAL-ACCEPTANCE-01",
++                                 "mandate":  "ANCESTRALIDADE-CTO-MANDATE-KF06-01",
++                                 "mandate_version":  "1.0",
++                                 "source_sha256":  "b224ede859f96657635ff476e622e1e183ef21a5d5d7d77b8088746a6501b3df",
++                                 "source_canonical_path":  "governance/sources/kf-final-acceptance-and-app-bootstrap-01.md",
++                                 "source_ref":  null,
++                                 "publication_status":  "SUPPLIED_BY_USER_PREPARED_IN_DOCS_NOT_YET_IN_ACCEPTED_SHA",
++                                 "scope":  "PHASE_00C_RESTRICTED_BOOTSTRAP_ONLY"
++                             },
++    "bootstrap_records":  [
++                              {
++                                  "id":  "ANCESTRALIDADE-REQ-APP-BOOTSTRAP-01",
++                                  "canonical_path":  "engineering/REQ-APP-BOOTSTRAP-01.md",
++                                  "ref":  null,
++                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                              },
++                              {
++                                  "id":  "ANCESTRALIDADE-IMP-APP-BOOTSTRAP-01",
++                                  "canonical_path":  "engineering/IMP-APP-BOOTSTRAP-01.md",
++                                  "ref":  null,
++                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                              },
++                              {
++                                  "id":  "ANCESTRALIDADE-VAL-APP-BOOTSTRAP-01",
++                                  "canonical_path":  "validation/VAL-APP-BOOTSTRAP-01.md",
++                                  "ref":  null,
++                                  "status":  "PREPARED_LOCAL_IN_DOCS"
++                              }
++                          ],
++    "preserved_dependencies":  {
++                                   "DEC_16":  "APPROVED_FRAMEWORK",
++                                   "T01":  "NORMATIVE_DIRECTION_APPROVED",
++                                   "T01_contract":  "NOT_FROZEN",
++                                   "T02":  "OPEN",
++                                   "T03":  "OPEN",
++                                   "T04":  "OPEN",
++                                   "WP_02":  "OWN_GATE_PRESERVED",
++                                   "WP_03":  "OWN_GATE_PRESERVED",
++                                   "WP_04":  "OWN_GATE_PRESERVED",
++                                   "domain_contracts":  "NOT_FROZEN",
++                                   "engineering_readiness":  "NOT_ESTABLISHED",
++                                   "construction_mandate":  "PROPOSED_FOR_EXECUTIVE_AUTHORIZATION",
++                                   "M01_implementation":  "NOT_AUTHORIZED",
++                                   "Phase_01":  "NOT_AUTHORIZED"
++                               },
++    "authorization_limits":  [
++                                 "NO_COMMIT_PUSH_MERGE",
++                                 "NO_FRAMEWORKS_OR_DEPENDENCIES",
++                                 "NO_FINAL_STACK_SELECTION",
++                                 "NO_DATABASE_AUTH_ENDPOINTS_OR_PRODUCT_CODE",
++                                 "NO_FINAL_LEGAL_LICENSE",
++                                 "NO_EXTERNAL_INFRASTRUCTURE_OR_DEPLOY",
++                                 "NO_VECTOR_STORAGE_OR_AUTOMATIC_DOCUMENT_SYNC",
++                                 "NO_MANDATORY_AXODUS_CORE_DEPENDENCY"
++                             ],
++    "AC_KF_14":  "PENDING_AUTHORIZED_INTEGRATION_INDEPENDENT_RECOVERY_CTO_ACCEPTANCE",
++    "AC_KF_15":  "PENDING_AUTHORIZED_INTEGRATION_INDEPENDENT_RECOVERY_CTO_ACCEPTANCE",
++    "stop_gate":  "CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW"
++}
+\ No newline at end of file
+
+diff --git a/status/INITIAL-STATE.md b/status/INITIAL-STATE.md
+new file mode 100644
+index 0000000..da19529
+--- /dev/null
++++ b/status/INITIAL-STATE.md
+@@ -0,0 +1,37 @@
++---
++id: ANCESTRALIDADE-APP-INITIAL-STATE-01
++title: "Estado inicial do repositório App"
++version: "1.0"
++status: LOCAL_BOOTSTRAP_PREPARED_NOT_INTEGRATED
++authority: AGENT_RECORDING_CTO_BOOTSTRAP_MANDATE
++maintainer: CTO_DOCUMENTATION
++module: M01
++classification: PUBLIC
++references:
++  - "../governance/NORMATIVE-TRACEABILITY.json"
++supersedes: null
++last_updated: "2026-11-27"
++---
++
++# Estado inicial e preparação local do App
++
++| Item | Observação desta execução |
++|---|---|
++| Repositório remoto | ancestralidade/app; criado pelo usuário durante a execução, não pelo agente |
++| Identidade GitHub | repository ID 1474775051, organização ancestralidade |
++| Visibilidade atual | PRIVATE, confirmada por leitura autenticada após ajuste pelo usuário |
++| Branch padrão | main |
++| Histórico inicial | remoto vazio, API commits 409; nenhum ref anunciado; clone sem HEAD de commit |
++| Permissões observadas | pull/push/triage/maintain/admin disponíveis; não ampliam a autorização executiva |
++| Rulesets observados | lista vazia na inspeção inicial; política organizacional integral não estabelecida nem alterada |
++| Conteúdo local preexistente | nenhum arquivo de trabalho; clone vazio, sem conteúdo sobrescrito |
++| Arquivos preparados | README, AGENTS, .gitignore, manifesto e este estado |
++| Commit/push/merge | não executados pelo agente; arquivos locais não integrados |
++| Auto-init | nenhum commit de inicialização observado/usado pelo agente |
++| Stack/dependências/aplicação | ausentes |
++
++A primeira consulta ao conector retornou 404, sem provar inexistência. Após o usuário informar criação, o remoto foi encontrado PUBLIC; o usuário o alterou para PRIVATE. Consulta autenticada nova confirmou o mesmo repository ID privado. Um retorno público em cache e os 404 do conector privado não foram usados como prova do estado final. Nenhuma credencial foi salva ou incluída nos arquivos; nenhuma política/permissão foi alterada pelo agente.
++
++[Manifesto](../governance/NORMATIVE-TRACEABILITY.json): 14 documentos recuperados efetivamente no SHA documental aceito, com blobs conferidos. Novos registros REQ/IMP/VAL e fonte de autorização são preparados em docs e aguardam referência Git após autorização. A validação e o handoff canônicos desta execução ficam em ancestralidade/docs; não são duplicados como fonte normativa no app.
++
++Estado: APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE. Engineering Readiness NOT_ESTABLISHED; AC-KF-14/15 sem PASS definitivo. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; implementação e Phase 01 NOT_AUTHORIZED.
+

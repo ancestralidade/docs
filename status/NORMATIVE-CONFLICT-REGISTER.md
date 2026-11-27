@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-NI-MATERIAL-CONFLICT-REGISTER
 title: "Lacunas e conflitos materiais — integração normativa"
-version: "1.3"
-status: NORMATIVE_DIFFERENCES_RATIFIED_FINAL_ACCEPTANCE_PENDING
+version: "1.4"
+status: C10_RESOLVED_KF_ACCEPTED_BOOTSTRAP_AUTHORIZED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -15,12 +15,12 @@ references:
   - "../validation/M01-NORMATIVE-TRACEABILITY.md"
   - "../governance/mandates/m01-consolidated-mandate-1.1.md"
   - "../governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md"
-  - "../governance/decisions/m01-presidential-ratification-01.md"
-  - "../governance/mandates/m01-normative-effectiveness-01.md"
-  - "../validation/VAL-KF-FINALIZATION-01.md"
+  - "../governance/reviews/cto-kf-final-acceptance-01.md"
+  - "../engineering/REQ-APP-BOOTSTRAP-01.md"
+  - "../validation/VAL-APP-BOOTSTRAP-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:status/NORMATIVE-CONFLICT-REGISTER.md@1.2"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:status/NORMATIVE-CONFLICT-REGISTER.md@1.3"
 ---
 
 # Diferenças materiais — origem, Rev. 1.0 e minuta 1.1
@@ -47,17 +47,16 @@ Não foi identificada diferença material sem tratamento proposto nas fontes com
 | Item | Estado / condição restante |
 |---|---|
 | NI-G01 | PASS, nove fontes e sete essenciais disponíveis/inspecionadas; remissão SOURCE-09 §5 resolvida |
-| C10 | dependência normativa substantiva resolvida; integração definitiva validada e aceite CTO pendentes |
-| AC-KF-03-R1 | BLOCKED; fontes, reconciliação aceita e ratificação concluídas; integração definitiva autorizada, recuperação independente e aceite CTO pendentes |
+| C10 | RESOLVED_BY_SOURCE_RECONCILIATION_AND_AUTHORIZED_NORMATIVE_REBASELINE pelo aceite CTO |
+| AC-KF-03-R1 | PASS, promoção expressa pelo CTO após confirmação de todas as condições |
 | 1.1 | RATIFIED/EFFECTIVE desde 2026-11-27 por aditivo; objeto aprovado sem alteração |
 | T02 | política de perda do último representante não resolvida por T01 |
 | T03/T04 | restore e mídia/cache revogáveis aguardam qualificação técnica |
 | WP-02/03/04 | provedores, jurídico e economia/entrega conservam gates próprios |
-| Construção/KF-06 | NOT_AUTHORIZED; fonte de construção permanece PROPOSED_FOR_EXECUTIVE_AUTHORIZATION |
+| Construção/KF-06 | implementação M01 NOT_AUTHORIZED; KF-06 AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP; construção permanece PROPOSED_FOR_EXECUTIVE_AUTHORIZATION |
 
 Gate: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW. Sem commit/push/merge ou implementação.
 
+## Aceite final e gate corrente
 
-## Ratificação posterior e gate corrente
-
-[Decisão presidencial](../governance/decisions/m01-presidential-ratification-01.md) e [vigência](../governance/mandates/m01-normative-effectiveness-01.md): correções ratificadas sem mudança de conteúdo; nenhuma nova reconciliação conceitual. Os fundamentos das diferenças acima permanecem históricos e rastreáveis. C10 ainda não recebe a classificação definitiva; R1 BLOCKED até integração definitiva, recuperação remota independente e aceite CTO. Gate atual CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; o gate NI citado acima é histórico. [VAL atual](../validation/VAL-KF-FINALIZATION-01.md).
+[Revisão CTO final](../governance/reviews/cto-kf-final-acceptance-01.md) resolve definitivamente C10, promove R1 a PASS e encerra Phase 00A/00B. Sem novo confronto conceitual ou alteração do instrumento ratificado. A matriz histórica de diferenças permanece como origem das correções ratificadas. KF-06 autorizado apenas para bootstrap. O mandato de construção e seus 26 critérios não viram implementação aprovada. [REQ corrente](../engineering/REQ-APP-BOOTSTRAP-01.md), [VAL](../validation/VAL-APP-BOOTSTRAP-01.md). Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. A divergência inicial PUBLIC/PRIVATE do App foi corrigida pelo usuário e verificada em leitura autenticada; não permanece bloqueador. Contratos, T02–T04 e WP-02–04 mantêm seus gates.

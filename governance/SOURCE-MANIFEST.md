@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-NI-SOURCE-MANIFEST
 title: "Manifesto de proveniência e intake normativo"
-version: "1.3"
-status: SOURCES_COMPLETE_RATIFICATION_RECORDED
+version: "1.4"
+status: SOURCES_COMPLETE_KF_ACCEPTED_BOOTSTRAP_AUTHORITY_RECEIVED
 authority: AGENT_CODER_RECORDING_RECEIVED_SOURCES
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -32,16 +32,22 @@ references:
   - "decisions/m01-presidential-ratification-01.md"
   - "reviews/cto-ni-final-review-01.md"
   - "mandates/m01-normative-effectiveness-01.md"
+  - "sources/kf-final-acceptance-and-app-bootstrap-01.md"
+  - "reviews/cto-kf-final-acceptance-01.md"
+  - "../engineering/REQ-APP-BOOTSTRAP-01.md"
+  - "../validation/evidence/app-bootstrap-repository-inspection.json"
+  - "../validation/evidence/app-bootstrap-private-verification.json"
+  - "../validation/VAL-APP-BOOTSTRAP-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:governance/SOURCE-MANIFEST.md@1.2"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:governance/SOURCE-MANIFEST.md@1.3"
 ---
 
 # Manifesto corrente — fontes efetivamente transferidas
 
 Retomada sob a mesma REQ-NORMATIVE-INTEGRATION-01, com [aceitação CTO do pacote](reviews/cto-source-transfer-01.md) e [mandato NI](sources/normative-integration-mandate-01.md). Data de inspeção pelo Agent Coder: 27/11/2026. Não foi emitida nova REQ, reaberto planejamento conceitual ou feita nova solicitação ao Planner.
 
-**Disponibilidade: 9 de 9 fontes requeridas. SOURCE-03A é histórica adicional. NI-G01 PASS:** sete de sete essenciais recebidas/inspecionadas; reconciliação documental autorizada e preparada. Ratificação 1.1 APPROVED; aceite integral KF permanece pendente.
+**Disponibilidade: 9 de 9 fontes requeridas. SOURCE-03A é histórica adicional. NI-G01 PASS:** sete de sete essenciais recebidas/inspecionadas; reconciliação documental autorizada e preparada. Ratificação 1.1 APPROVED; aceite integral KF concedido no ato CTO posterior.
 
 ## Pacote e verificação independente
 
@@ -107,13 +113,22 @@ SOURCE-06 é extração textual da biblioteca, não arquivo binário original; S
 
 SOURCE-09 §5 referencia [mandato NI no checkpoint aceito](https://github.com/ancestralidade/docs/blob/f103f129da7ee2eaffc747d07b96b99b9db74226/governance/sources/normative-integration-mandate-01.md). Leitura remota pelo Agent Coder e objeto Git local: blob `baabca1eb90b4baed5542481af28fb489e3f047d`, mesmo conteúdo e IDs REQ/mandato. SHA-256 da cópia local: `c346b7db8361c6d4cc1d25632506e45faa493f624b8506b4a5f3265bbeb07fd7`. O §5 é remissão expressa resolvida, não texto integral repetido, nem nova REQ.
 
-NI-G01 PASS para completude: 01/02/03/06/07/08/09 essenciais 7/7; com 04/05, requeridas 9/9. Planner e CTO concluíram as transferências requeridas. Estados ausentes em evidências antigas permanecem históricos. A [matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) foi aceita e a [Rev. 1.1](mandates/m01-consolidated-mandate-1.1.md) foi ratificada pelo ato posterior registrado abaixo; não se presume equivalência binária histórica nem aprovação dos 26 critérios propostos de construção. Dependência normativa substantiva de C10 resolvida, classificação definitiva pendente CTO; R1 BLOCKED, T01 aprovado como direção, contrato NOT_FROZEN. [VAL NI histórico](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md). Sem autorização de novo commit/push/merge ou aplicativo.
+NI-G01 PASS para completude: 01/02/03/06/07/08/09 essenciais 7/7; com 04/05, requeridas 9/9. Planner e CTO concluíram as transferências requeridas. Estados ausentes em evidências antigas permanecem históricos. A [matriz](../validation/M01-NORMATIVE-TRACEABILITY.md) foi aceita e a [Rev. 1.1](mandates/m01-consolidated-mandate-1.1.md) foi ratificada pelo ato posterior registrado abaixo; não se presume equivalência binária histórica nem aprovação dos 26 critérios propostos de construção. C10 definitivamente RESOLVED e R1 PASS conforme aceite CTO posterior, T01 aprovado como direção, contrato NOT_FROZEN. [VAL NI histórico](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md). Sem autorização de novo commit/push/merge ou aplicativo.
 
 
-## Ato posterior — ratificação e vigência finalização KF
+## Histórico — ratificação e vigência finalização KF
 
 Fonte adicional de execução, fora do denominador SOURCE-01–09: [mandato CTO de finalização 1.0](sources/knowledge-foundation-finalization-mandate-01.md), ID ANCESTRALIDADE-CTO-MANDATE-KF-FINALIZATION-01, emissão 2026-11-27, AUTHORIZED_FOR_EXECUTION, anexo read-only fornecido pelo usuário. Proveniência presidencial: deliberação expressa na sessão CTO do projeto, transcrita integralmente no mandato §2; nenhum mecanismo adicional de assinatura/autenticação alegado. [Registro presidencial](decisions/m01-presidential-ratification-01.md), [revisão CTO NI](reviews/cto-ni-final-review-01.md), [vigência](mandates/m01-normative-effectiveness-01.md).
 
 Hash SHA-256 do anexo recebido: `04698a9bd10b8a2ad234877f4e69d669402e70396c6e8d46c5d37cf7e1830942`. Hash da cópia canônica com metadados/aviso: `7a0ab46ead7f2842a6d7d830e92a4e250e93881ffda407e9acebc80eb2d173ef`. O payload integral foi preservado; dados pessoais e caminho local do anexo não foram incorporados. Autoridade, versão e data foram fornecidas no instrumento. As fontes originais, transcrições anteriores e seus hashes permanecem intactos.
 
 Ratificação APPROVED sem condições, baseline RATIFIED, EFFECTIVE TRUE desde 2026-11-27. Objeto aprovado fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b / blob 22ce8ac5087cfb1c633f3b266f35776965c09733 preservado sem alteração. Nove fontes/sete essenciais continuam completas; a fonte de finalização não substitui ou renumera as nove. C10 substantiva resolvida, classificação definitiva pendente; R1 BLOCKED para PASS final até integração definitiva autorizada, recuperação independente e aceite CTO. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW; nenhum commit/app autorizado.
+
+
+## Fonte vigente de aceite final e mandato KF-06
+
+[Fonte integral recebida](sources/kf-final-acceptance-and-app-bootstrap-01.md): revisão CTO-ANCESTRALIDADE-KF-FINAL-ACCEPTANCE-01 e mandato ANCESTRALIDADE-CTO-MANDATE-KF06-01 versão 1.0, por anexo read-only do usuário. Data própria não especificada; registrada em 2026-11-27. SHA-256 dos bytes recebidos `b224ede859f96657635ff476e622e1e183ef21a5d5d7d77b8088746a6501b3df`; cópia canônica com metadados/aviso `e1c90135cce015c867f9b2f9a74331cd524e133701bc4d34685702a34789fa2f`. Não há assinatura ou mecanismo adicional de autenticação alegado. A fonte integra revisão, mandato de bootstrap, roadmap e referências; payload integral preservado, sem extrair uma segunda autoridade normativa no App.
+
+[Aceite CTO registrado](reviews/cto-kf-final-acceptance-01.md): Phase 00A/00B CLOSED, KF-01–05 COMPLETE, C10 RESOLVED, R1 PASS, 13 PASS e 2 NOT_EXECUTED antes de KF-06. O CTO confirmou recuperação remota do checkpoint dad48511595f1d0fa3d06590da222cc0fabaef0a e não reexecutou os scripts/hashes anteriores. A fonte posterior não altera o denominador de nove fontes reconciliadas; não renumera SOURCE-01–09 nem modifica os textos históricos.
+
+KF-06 AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP, Phase 00C. [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md), [inspeção dos repositórios](../validation/evidence/app-bootstrap-repository-inspection.json) e [PRIVATE confirmado](../validation/evidence/app-bootstrap-private-verification.json). Novos registros de execução ainda locais não estão no SHA aceito e deverão receber referência após integração autorizada. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; sem implementação M01/Phase 01, commit/push/merge ou infraestrutura. [VAL corrente](../validation/VAL-APP-BOOTSTRAP-01.md).

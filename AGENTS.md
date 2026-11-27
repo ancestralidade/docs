@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-AGENT-INSTRUCTIONS
 title: "Orientações para agentes"
-version: "1.6"
+version: "1.7"
 status: ACTIVE_USER_INSTRUCTIONS
 authority: USER_AND_CTO_KF_MANDATE
 maintainer: CTO_DOCUMENTATION
@@ -30,9 +30,14 @@ references:
   - "governance/mandates/m01-normative-effectiveness-01.md"
   - "validation/VAL-KF-FINALIZATION-01.md"
   - "validation/AC-KF-FINAL-PROPOSED.md"
+  - "governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
+  - "engineering/REQ-APP-BOOTSTRAP-01.md"
+  - "engineering/IMP-APP-BOOTSTRAP-01.md"
+  - "validation/VAL-APP-BOOTSTRAP-01.md"
+  - "governance/reviews/cto-kf-final-acceptance-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:AGENTS.md@1.5"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:AGENTS.md@1.6"
 ---
 
 # Orientações para agentes
@@ -73,7 +78,7 @@ O checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e foi aceito pelo CTO; a rec
 O [manifesto](governance/SOURCE-MANIFEST.md) registra o intake real. Preservar DEC-01–16, DEC-16 APPROVED_FRAMEWORK e a direção T01 NORMATIVE_DIRECTION_APPROVED conforme o mandato NI; contrato técnico NOT_FROZEN e T02–T04 abertos. AC-KF-03-R1 exige mandato vigente integral, reconciliação, aprovação presidencial definitiva da Rev. 1.1, integração autorizada, validação, recuperação remota e aceite CTO: não marcar PASS apenas por localizar a fonte original. A [VAL-NI inicial](validation/VAL-NORMATIVE-INTEGRATION-01.md) permanece histórica; o [aditivo corrente de transferência](validation/VAL-NI-SOURCE-TRANSFER-01.md) registra a retomada; aprovação relatada de direções não comprova transferência ou execução dos critérios.
 
 
-A [disposição de transferência](governance/reviews/cto-source-transfer-01.md) determina critérios qualificados por fonte: MVP:AC-*, CONSTRUCTION:AC-* e CONSOLIDATED:AC-*. Existem 18 no MVP e 26 no mandato de construção proposto; não presumir equivalência ou aprovação por número. Preservar testes funcionais positivos completos junto de negativos/segurança. Integridade verificada do ZIP não prova equivalência com fontes históricas ou comparação integral. NI-G01 PASS (9/9 requeridas, 7/7 essenciais); 1.1 foi submetida como PREPARED_FOR_CTO_REVIEW_AND_PRESIDENTIAL_RATIFICATION; a ratificação posterior consta no aditivo vigente. C10 OPEN e R1 BLOCKED até os gates restantes. Nenhuma nova autorização de commit ou código.
+A [disposição de transferência](governance/reviews/cto-source-transfer-01.md) determina critérios qualificados por fonte: MVP:AC-*, CONSTRUCTION:AC-* e CONSOLIDATED:AC-*. Existem 18 no MVP e 26 no mandato de construção proposto; não presumir equivalência ou aprovação por número. Preservar testes funcionais positivos completos junto de negativos/segurança. Integridade verificada do ZIP não prova equivalência com fontes históricas ou comparação integral. NI-G01 PASS (9/9 requeridas, 7/7 essenciais); 1.1 foi submetida como PREPARED_FOR_CTO_REVIEW_AND_PRESIDENTIAL_RATIFICATION; a ratificação posterior consta no aditivo vigente. C10 OPEN e R1 BLOCKED eram estados daquela etapa, superados pelo aceite final CTO registrado abaixo. Nenhuma nova autorização de commit ou código.
 
 
 ## Histórico — complemento CTO recebido
@@ -81,8 +86,15 @@ A [disposição de transferência](governance/reviews/cto-source-transfer-01.md)
 A [continuação executiva](governance/reviews/cto-execution-continuation-02.md) mantém a mesma REQ. A [minuta 1.1](governance/mandates/m01-consolidated-mandate-1.1.md), [matriz bidirecional](validation/M01-NORMATIVE-TRACEABILITY.md), [redline](governance/mandates/m01-consolidated-mandate-1.0-to-1.1-redline.md) e [VAL final](validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md) estão preparados para revisão; não promover o texto a APPROVED/EFFECTIVE. A referência NI da SOURCE-09 foi resolvida no checkpoint f103f129da7ee2eaffc747d07b96b99b9db74226. Todos os limites de execução permanecem. A classificação de correspondência observa o vocabulário da REQ, sem inferir equivalência pelos números. Preservar os três namespaces, COR-01–06, decisões e dependências. Gate daquela intervenção: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW.
 
 
-## Tarefa vigente — finalização documental KF
+## Histórico — finalização documental KF
 
 O [mandato de finalização](governance/sources/knowledge-foundation-finalization-mandate-01.md) autoriza apenas FINAL-01–05 sob a REQ NI existente. Registrar ratificação presidencial APPROVED sem condições e vigência 2026-11-27 pelo [registro](governance/decisions/m01-presidential-ratification-01.md) e [aditivo](governance/mandates/m01-normative-effectiveness-01.md); preservar integralmente o arquivo ratificado, commit fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b e blob 22ce8ac5087cfb1c633f3b266f35776965c09733. Não reiniciar planejamento ou reconciliação. Os estados de submissão do objeto aprovado e das evidências anteriores permanecem históricos. Não conceder aprovação em nome das autoridades: registrar os atos expressamente recebidos com sua proveniência.
 
 C10 tem dependência normativa substantiva resolvida, classificação final pendente de integração validada e aceite CTO. AC-KF-03-R1 permanece BLOCKED para PASS definitivo até integração definitiva sob autorização específica, recuperação remota independente e aceite CTO. Preservar DEC-01–16, COR-01–06, T01/contrato NOT_FROZEN, T02–T04 OPEN, WP-02–04 e Engineering Readiness NOT_ESTABLISHED. Não executar scripts históricos que sobrescrevam VALs/JSONs. Usar [VAL próprio de finalização](validation/VAL-KF-FINALIZATION-01.md) e [matriz final proposta](validation/AC-KF-FINAL-PROPOSED.md). Parar em CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Commit/push/merge, KF-06, criação/app/implementação, contratação, finanças, infraestrutura, deploy e políticas/visibilidade continuam NOT_AUTHORIZED. Prontidão para revisão não é aceite integral da fundação.
+
+
+## Tarefa vigente — KF-06 Application Repository Bootstrap
+
+A [fonte integral CTO](governance/sources/kf-final-acceptance-and-app-bootstrap-01.md) concede KNOWLEDGE_FOUNDATION_ACCEPTED, Phase 00A/00B CLOSED, KF-01–05 COMPLETE, C10 RESOLVED e AC-KF-03-R1 PASS; checkpoint aceito dad48511595f1d0fa3d06590da222cc0fabaef0a. Registrar o ato recebido com autoria CTO, sem repetir encerramento documental. O mandato KF06-01 autoriza apenas Phase 00C: inspeção, repositório ancestralidade/app PRIVATE, estrutura mínima local, rastreabilidade por SHA, validação e handoff. Repositório criado e visibilidade corrigida pelo usuário; não inferir autorização para novos privilégios/políticas. Preservar o objeto ratificado fe105fef/blob 22ce8ac5087cfb1c633f3b266f35776965c09733 e toda a evidência histórica.
+
+Usar [REQ](engineering/REQ-APP-BOOTSTRAP-01.md), [IMP](engineering/IMP-APP-BOOTSTRAP-01.md), [VAL](validation/VAL-APP-BOOTSTRAP-01.md) e [aceite corrente](governance/reviews/cto-kf-final-acceptance-01.md). Não copiar normativos para o app nem inventar SHA/URL dos novos registros locais. Recuperar contexto obrigatório em docs por referência explícita antes de qualquer atividade relevante. AC-KF-14/15 só recebem PASS definitivo após integração autorizada, recuperação independente e aceite CTO. Parar em CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Commit manual/automático, push, merge, Phase 01, implementação M01, dependências, stack definitiva, banco, infraestrutura, contratação, finanças, políticas organizacionais e deploy NOT_AUTHORIZED. Engineering Readiness NOT_ESTABLISHED, contratos NOT_FROZEN; T01 e T02–T04/WP-02–04/DEC-16 preservados.

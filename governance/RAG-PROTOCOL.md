@@ -1,8 +1,8 @@
 ---
 id: ANCESTRALIDADE-RAG-PROTOCOL
 title: "Protocolo de recuperação contextual"
-version: "0.6"
-status: RATIFIED_BASELINE_REFERENCED_FINAL_ACCEPTANCE_PENDING
+version: "0.7"
+status: KNOWLEDGE_FOUNDATION_ACCEPTED_KF06_BOOTSTRAP_AUTHORIZED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
@@ -35,9 +35,13 @@ references:
   - "decisions/m01-presidential-ratification-01.md"
   - "mandates/m01-normative-effectiveness-01.md"
   - "../validation/VAL-KF-FINALIZATION-01.md"
+  - "reviews/cto-kf-final-acceptance-01.md"
+  - "sources/kf-final-acceptance-and-app-bootstrap-01.md"
+  - "../validation/evidence/app-bootstrap-repository-inspection.json"
+  - "../validation/VAL-APP-BOOTSTRAP-01.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:governance/RAG-PROTOCOL.md@0.5"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:governance/RAG-PROTOCOL.md@0.6"
 ---
 
 # Recuperação contextual por Markdown e GitHub
@@ -82,8 +86,17 @@ Mesma [REQ NI](../engineering/REQ-NORMATIVE-INTEGRATION-01.md) e [continuação 
 DEC-01–16 preservadas, DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04/WP-02–04 mantêm gates. C10 OPEN — RECONCILIATION_PREPARED_PENDING_REVIEW; AC-KF-03-R1 BLOCKED até ratificação, integração autorizada, recuperação independente e aceite CTO. Engineering Readiness NOT_ESTABLISHED. Testes de aplicativo NOT_EXECUTED. [VAL final](../validation/VAL-NORMATIVE-INTEGRATION-FINAL-01.md), [handoff](../status/NI-FINAL-DELIVERY-HANDOFF.md) e [estado corrente](../status/CURRENT-STATUS.md). Gate de parada: CTO_NORMATIVE_BASELINE_INTEGRATION_REVIEW; nenhum commit/push/merge, KF-06 ou implementação autorizado.
 
 
-## Vigência ratificada e limite da recuperação corrente
+## Histórico — vigência ratificada e limite da recuperação na finalização
 
 Para o M01, recuperar o [mandato preservado](mandates/m01-consolidated-mandate-1.1.md), commit fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733, com o [registro presidencial](decisions/m01-presidential-ratification-01.md) e [aditivo de vigência](mandates/m01-normative-effectiveness-01.md). A versão submetida permanece com seus estados históricos; o ato posterior determina ratificação APPROVED e vigência 2026-11-27. Não duplicar ou reescrever o conteúdo normativo.
 
 Nesta finalização o agente confirmou objetos e conteúdo localmente. Não reexecutou recuperação remota independente ou cenários RAG; os seis cenários históricos continuam atribuídos ao CTO e ao respectivo checkpoint. A nova finalização é local: publicação, autorização Git, recuperação independente do checkpoint definitivo e aceite CTO faltam para AC-KF-03-R1 PASS. Gate CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. [Estado](../status/CURRENT-STATUS.md), [VAL atual](../validation/VAL-KF-FINALIZATION-01.md).
+
+
+## Recuperação vigente no KF-06
+
+[Aceite final CTO](reviews/cto-kf-final-acceptance-01.md) confirma recuperação independente e integração de dad48511595f1d0fa3d06590da222cc0fabaef0a. C10 RESOLVED, R1 PASS, Phase 00A/00B CLOSED. Os antigos bloqueios das evidências anteriores são históricos. A mesma [fonte](sources/kf-final-acceptance-and-app-bootstrap-01.md) autoriza Phase 00C/KF-06.
+
+O Agent Coder recuperou 14 documentos remotos nesse SHA para o bootstrap e registrou IDs/versões/blobs na [inspeção](../validation/evidence/app-bootstrap-repository-inspection.json). Essa recuperação atual é distinta da verificação independente CTO que concedeu o aceite KF. O App usa manifesto de referências por SHA, sem duplicação de normativos. A fonte posterior e REQ/IMP/VAL novos ainda estão locais: não inventar URL no checkpoint anterior ou declarar publicação antecipada. Atualizar suas referências somente na integração autorizada.
+
+AC-KF-14/15 aguardam integração, recuperação independente e aceite CTO do bootstrap. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; commit/push/merge e implementação NOT_AUTHORIZED. [VAL](../validation/VAL-APP-BOOTSTRAP-01.md).

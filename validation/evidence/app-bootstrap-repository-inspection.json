@@ -1,0 +1,200 @@
+{
+    "id":  "ANCESTRALIDADE-APP-BOOTSTRAP-REMOTE-INSPECTION",
+    "date":  "2026-11-27",
+    "executor":  "AGENT_CODER",
+    "accepted_checkpoint":  "dad48511595f1d0fa3d06590da222cc0fabaef0a",
+    "documentation_repository":  {
+                                     "full_name":  "ancestralidade/docs",
+                                     "id":  "1473805868",
+                                     "visibility":  "public",
+                                     "default_branch":  "dev",
+                                     "permissions_observed":  {
+                                                                  "admin":  true,
+                                                                  "maintain":  true,
+                                                                  "pull":  true,
+                                                                  "push":  true,
+                                                                  "triage":  true
+                                                              },
+                                     "archived":  false
+                                 },
+    "context_recovery":  [
+                             {
+                                 "path":  "README.md",
+                                 "blob":  "df81556dc664456ac1e834408e61dd8ef50b3c8e",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/README.md",
+                                 "document_id":  "ANCESTRALIDADE-CANONICAL-INDEX",
+                                 "version":  "0.6",
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "AGENTS.md",
+                                 "blob":  "aab93afa26b54efd579b69cbcf1bd040fedd1041",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/AGENTS.md",
+                                 "document_id":  "ANCESTRALIDADE-AGENT-INSTRUCTIONS",
+                                 "version":  "1.6",
+                                 "received_characters":  9889,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "status/CURRENT-STATUS.md",
+                                 "blob":  "187c9339f54951ddc23064767def732219e0efb6",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/status/CURRENT-STATUS.md",
+                                 "document_id":  "ANCESTRALIDADE-CURRENT-STATUS",
+                                 "version":  "0.6",
+                                 "received_characters":  4790,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "governance/mandates/m01-consolidated-mandate-1.1.md",
+                                 "blob":  "22ce8ac5087cfb1c633f3b266f35776965c09733",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-consolidated-mandate-1.1.md",
+                                 "document_id":  "ANCESTRALIDADE-M01-CONSOLIDATED-MANDATE-1.1-DRAFT",
+                                 "version":  "1.1",
+                                 "received_characters":  58454,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "governance/mandates/m01-normative-effectiveness-01.md",
+                                 "blob":  "f5da98fedcd5e2debfed27dc2fb0c385164f562a",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/mandates/m01-normative-effectiveness-01.md",
+                                 "document_id":  "ANCESTRALIDADE-M01-NORMATIVE-EFFECTIVENESS-01",
+                                 "version":  "1.0",
+                                 "received_characters":  4213,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "decisions/DECISION-REGISTER.md",
+                                 "blob":  "e0cebd147b8c0f2f48d848d650831e24bfcb4e1a",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/decisions/DECISION-REGISTER.md",
+                                 "document_id":  "ANCESTRALIDADE-DECISION-REGISTER",
+                                 "version":  "0.5",
+                                 "received_characters":  9720,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                                 "blob":  "3b668cafdb10ccabb671872fac12d484f7e3c04b",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/product/M01-FUNCTIONAL-REQUIREMENTS.md",
+                                 "document_id":  "ANCESTRALIDADE-M01-FUNCTIONAL-REQUIREMENTS",
+                                 "version":  "0.5",
+                                 "received_characters":  8720,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "architecture/ARCHITECTURE-BASELINE.md",
+                                 "blob":  "fb816c5f359c51344fad6fac689963b5da4d923b",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/architecture/ARCHITECTURE-BASELINE.md",
+                                 "document_id":  "ANCESTRALIDADE-ARCHITECTURE-BASELINE",
+                                 "version":  "0.4",
+                                 "received_characters":  6660,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "architecture/ADR-REGISTER.md",
+                                 "blob":  "bfa0224e183b8675e2a334038a5266b47feda786",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/architecture/ADR-REGISTER.md",
+                                 "document_id":  "ANCESTRALIDADE-ADR-REGISTER",
+                                 "version":  "0.1",
+                                 "received_characters":  1830,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "validation/M01-ACCEPTANCE-CRITERIA.md",
+                                 "blob":  "02947b536e326c3de5341846afe98b8008f3fe9b",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/validation/M01-ACCEPTANCE-CRITERIA.md",
+                                 "document_id":  "ANCESTRALIDADE-M01-ACCEPTANCE-CRITERIA",
+                                 "version":  "0.5",
+                                 "received_characters":  12646,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                                 "blob":  "8800171358546eb5dda12d7f40f23d1b86d70b74",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/engineering/APP-BOOTSTRAP-SPECIFICATION.md",
+                                 "document_id":  "ANCESTRALIDADE-APP-BOOTSTRAP-SPEC",
+                                 "version":  "0.1",
+                                 "received_characters":  1649,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "governance/AUTHORITY-MODEL.md",
+                                 "blob":  "2a7c922fe3717129a047bf28be25c7e043677aa5",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/AUTHORITY-MODEL.md",
+                                 "document_id":  "ANCESTRALIDADE-AUTHORITY-MODEL",
+                                 "version":  "0.6",
+                                 "received_characters":  5657,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "governance/sources/project-instructions-authoritative.md",
+                                 "blob":  "effac902c592410c8239a56e94767e805586b3f5",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/sources/project-instructions-authoritative.md",
+                                 "document_id":  "ANCESTRALIDADE-SRC-PROJECT-INSTRUCTIONS-CURRENT",
+                                 "version":  "1.0",
+                                 "received_characters":  8402,
+                                 "result":  "PASS"
+                             },
+                             {
+                                 "path":  "governance/RAG-PROTOCOL.md",
+                                 "blob":  "d251f65ca2eb2bd0a2573b25b6f1cdcfd45e60ed",
+                                 "url":  "https://github.com/ancestralidade/docs/blob/dad48511595f1d0fa3d06590da222cc0fabaef0a/governance/RAG-PROTOCOL.md",
+                                 "document_id":  "ANCESTRALIDADE-RAG-PROTOCOL",
+                                 "version":  "0.6",
+                                 "received_characters":  8962,
+                                 "result":  "PASS"
+                             }
+                         ],
+    "app_repository":  {
+                           "full_name":  "ancestralidade/app",
+                           "id":  "1474775051",
+                           "owner":  "ancestralidade",
+                           "owner_type":  "Organization",
+                           "clone_url":  "https://github.com/ancestralidade/app.git",
+                           "existence":  "CONFIRMED_AFTER_USER_CREATION_REPORT",
+                           "creation_actor":  "USER_REPORTED_NOT_AGENT",
+                           "visibility":  "private",
+                           "visibility_required":  "private",
+                           "visibility_check":  "PASS_AUTHENTICATED_FRESH_API",
+                           "default_branch":  "main",
+                           "permissions_observed":  {
+                                                        "admin":  true,
+                                                        "maintain":  true,
+                                                        "pull":  true,
+                                                        "push":  true,
+                                                        "triage":  true
+                                                    },
+                           "archived":  false,
+                           "size":  0,
+                           "remote_commits":  "409_GIT_REPOSITORY_EMPTY",
+                           "remote_rulesets_observed":  [
+
+                                                        ],
+                           "organization_policy_full":  "NOT_ESTABLISHED_NO_MUTATION",
+                           "local_clone":  "EMPTY_REPOSITORY_CLONED",
+                           "local_branch":  "main",
+                           "local_head":  null,
+                           "local_initial_tracked_files":  0,
+                           "local_initial_working_tree":  "CLEAN",
+                           "initial_get_repo_result":  "404_NOT_FOUND_OR_NOT_ACCESSIBLE",
+                           "connector_creation_capability":  "NOT_AVAILABLE",
+                           "initial_browser_state":  "GITHUB_LOGIN_REQUIRED",
+                           "creation_attempted_by_agent":  false,
+                           "automatic_initialization_commit_observed":  false,
+                           "visibility_changed_by_agent":  false,
+                           "visibility_history":  [
+                                                      "INITIAL_404_NOT_PROOF_OF_ABSENCE",
+                                                      "USER_REPORTED_CREATION_PUBLIC_OBSERVED",
+                                                      "USER_REPORTED_PRIVATE_CHANGE",
+                                                      "AUTHENTICATED_API_PRIVATE_CONFIRMED"
+                                                  ],
+                           "private_verification_evidence":  "validation/evidence/app-bootstrap-private-verification.json",
+                           "latest_private_git_read":  "PASS_EMPTY_REMOTE_NO_ADVERTISED_REFS"
+                       },
+    "limits":  [
+                   "Initial connector 404 was not proof of absence",
+                   "Public observation was superseded by fresh authenticated private metadata after user adjustment",
+                   "Connector cache/private access mismatch required authenticated read using existing Git credentials; no new privileges",
+                   "No Git commit/push/merge, infrastructure or application implementation",
+                   "New CTO source and execution records are prepared locally and absent from accepted checkpoint until authorized integration"
+               ]
+}

@@ -1,37 +1,35 @@
 ---
 id: ANCESTRALIDADE-KNOWLEDGE-READINESS
 title: "Prontidão da fundação de conhecimento"
-version: "0.6"
-status: READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE
+version: "0.7"
+status: KNOWLEDGE_FOUNDATION_ACCEPTED_BOOTSTRAP_PREPARED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
-  - "../governance/reviews/cto-ni-final-review-01.md"
-  - "../governance/decisions/m01-presidential-ratification-01.md"
-  - "../governance/mandates/m01-normative-effectiveness-01.md"
+  - "../governance/reviews/cto-kf-final-acceptance-01.md"
+  - "AC-KF-ACCEPTED-01.md"
   - "../governance/mandates/m01-consolidated-mandate-1.1.md"
-  - "../governance/SOURCE-MANIFEST.md"
-  - "AC-KF-FINAL-PROPOSED.md"
-  - "VAL-KF-FINALIZATION-01.md"
-  - "evidence/kf-finalization-validation.json"
-  - "../status/KF-FINALIZATION-HANDOFF.md"
+  - "../governance/mandates/m01-normative-effectiveness-01.md"
+  - "../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
+  - "../engineering/REQ-APP-BOOTSTRAP-01.md"
+  - "../engineering/IMP-APP-BOOTSTRAP-01.md"
+  - "VAL-APP-BOOTSTRAP-01.md"
+  - "../status/APP-BOOTSTRAP-HANDOFF.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:validation/KNOWLEDGE-READINESS.md@0.5"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:validation/KNOWLEDGE-READINESS.md@0.6"
 ---
 
-# Prontidão para revisão final da fundação
+# Fundação aceita — prontidão do bootstrap em revisão
 
-**READY_FOR_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE**: prontidão documental para revisão, não aceite integral concedido. A [revisão CTO NI](../governance/reviews/cto-ni-final-review-01.md) aceitou NI-01–05 com 16 PASS; a [Presidência ratificou](../governance/decisions/m01-presidential-ratification-01.md) integralmente a Rev. 1.1, sem condições adicionais. [Aditivo](../governance/mandates/m01-normative-effectiveness-01.md): baseline RATIFIED, EFFECTIVE TRUE, data 2026-11-27.
+**KNOWLEDGE_FOUNDATION_ACCEPTED** por [aceite final CTO](../governance/reviews/cto-kf-final-acceptance-01.md), checkpoint dad48511595f1d0fa3d06590da222cc0fabaef0a. Phase 00A/00B CLOSED — ACCEPTED; KF-01–05 e NI COMPLETE. C10 RESOLVED_BY_SOURCE_RECONCILIATION_AND_AUTHORIZED_NORMATIVE_REBASELINE; AC-KF-03-R1 PASS por determinação expressa. [Matriz aceita](AC-KF-ACCEPTED-01.md): 13 PASS, 0 FAIL, 0 BLOCKED e 2 NOT_EXECUTED fora do escopo anterior (KF-06).
 
-O [mandato integral](../governance/mandates/m01-consolidated-mandate-1.1.md) permanece sem alteração, commit fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b, blob 22ce8ac5087cfb1c633f3b266f35776965c09733. Os estados de submissão daquele objeto são históricos; a vigência posterior é registrada fora do texto aprovado. Fontes 9/9 e essenciais 7/7, NI-G01 PASS e reconciliação aceita; [manifesto](../governance/SOURCE-MANIFEST.md).
+O CTO confirmou recuperação independente remota, integração definitiva e blob ratificado. Não reexecutou os scripts/hashes anteriores; métricas 81/1.802/73 permanecem atribuídas ao Agent Coder na finalização aceita. Nenhuma evidência histórica foi sobrescrita. O [mandato M01](../governance/mandates/m01-consolidated-mandate-1.1.md) e seu [aditivo](../governance/mandates/m01-normative-effectiveness-01.md) permanecem inalterados, RATIFIED — EFFECTIVE.
 
-A dependência normativa substantiva de C10 foi resolvida; classificação final PENDING_FINAL_CTO_ACCEPTANCE. **AC-KF-03-R1 BLOCKED** para PASS definitivo até integração definitiva autorizada, recuperação remota independente e aceite CTO. [Matriz final proposta](AC-KF-FINAL-PROPOSED.md), [VAL próprio](VAL-KF-FINALIZATION-01.md), [resultado local](evidence/kf-finalization-validation.json) e [handoff](../status/KF-FINALIZATION-HANDOFF.md).
+Phase 00C/KF-06 AUTHORIZED_FOR_RESTRICTED_BOOTSTRAP pela [fonte vigente](../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md), sem reiniciar fechamento documental. [REQ](../engineering/REQ-APP-BOOTSTRAP-01.md), [IMP](../engineering/IMP-APP-BOOTSTRAP-01.md), [VAL](VAL-APP-BOOTSTRAP-01.md). App PRIVATE confirmado, clone inicialmente vazio e cinco arquivos mínimos preparados; 14 documentos canônicos recuperados por SHA e referenciados no manifesto do App. Nenhum normativo copiado como segunda autoridade.
 
-As evidências RAG-T01–06 remotas anteriores pertencem ao CTO e ao checkpoint aaa4d4bb55f691f63734e949cb0288536de1c03e; não foram reexecutadas pelo agente nem estendidas automaticamente ao futuro checkpoint definitivo. VALs, JSONs, fontes e redlines históricos preservados. Matriz proposta: 12 PASS, 0 FAIL, 1 BLOCKED (R1), 2 NOT_EXECUTED fora do escopo (KF-06/app).
+AC-KF-14/15 permanecem NOT_EXECUTED para PASS definitivo, até integração autorizada, recuperação independente e aceite CTO do bootstrap. Entrega local APP_REPOSITORY_BOOTSTRAP_PREPARED_FOR_ACCEPTANCE não é Engineering Readiness. Engineering Readiness NOT_ESTABLISHED; contratos/T01 NOT_FROZEN, T02–T04 OPEN, WP-02–04 com gates; DEC-16 APPROVED_FRAMEWORK. Construção proposta e implementação M01/Phase 01 NOT_AUTHORIZED.
 
-DEC-16 APPROVED_FRAMEWORK; T01 NORMATIVE_DIRECTION_APPROVED, contrato NOT_FROZEN; T02–T04 OPEN; WP-02–04 com seus gates; Engineering Readiness NOT_ESTABLISHED; contratos de domínio NOT_FROZEN. Construção PROPOSED_FOR_EXECUTIVE_AUTHORIZATION, sem aprovação automática dos 26 critérios. Todos os testes de aplicativo NOT_EXECUTED.
-
-Gate de parada CTO_KNOWLEDGE_FOUNDATION_FINAL_ACCEPTANCE_REVIEW. Commit/push/merge, KF-06, criação/app/implementação, contratação, compromissos financeiros, infraestrutura, deploy e políticas/visibilidade NOT_AUTHORIZED.
+Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW. Commit/push/merge, dependências/frameworks, stack definitiva, banco, infraestrutura, contratação, finanças, políticas organizacionais e deploy NOT_AUTHORIZED. Testes de aplicativo NOT_EXECUTED. [Handoff](../status/APP-BOOTSTRAP-HANDOFF.md).

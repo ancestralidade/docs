@@ -1,13 +1,15 @@
 ---
 id: ANCESTRALIDADE-M01-NORMATIVE-TRACEABILITY
 title: "Rastreabilidade normativa — gate de fontes pendente"
-version: "1.3"
-status: TRACEABILITY_ACCEPTED_FOR_RATIFIED_BASELINE
+version: "1.4"
+status: TRACEABILITY_ACCEPTED_KF_CLOSED
 authority: AGENT_CODER_DERIVED
 maintainer: CTO_DOCUMENTATION
 module: M01
 classification: PUBLIC
 references:
+  - "../governance/reviews/cto-kf-final-acceptance-01.md"
+  - "../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md"
   - "../governance/decisions/m01-presidential-ratification-01.md"
   - "../governance/reviews/cto-ni-final-review-01.md"
   - "../governance/mandates/m01-normative-effectiveness-01.md"
@@ -22,10 +24,15 @@ references:
   - "../status/NORMATIVE-CONFLICT-REGISTER.md"
 supersedes: null
 last_updated: "2026-11-27"
-previous_revision: "fe105fefbf685ffa9a5eb37988f3ca4e22e9d13b:validation/M01-NORMATIVE-TRACEABILITY.md@1.2"
+previous_revision: "dad48511595f1d0fa3d06590da222cc0fabaef0a:validation/M01-NORMATIVE-TRACEABILITY.md@1.3"
 ---
 
 # Rastreabilidade normativa — baseline 1.1 ratificada
+
+## Aceite posterior vigente
+
+[CTO final acceptance](../governance/reviews/cto-kf-final-acceptance-01.md): NI COMPLETE — ACCEPTED, C10 RESOLVED e R1 PASS no checkpoint dad48511595f1d0fa3d06590da222cc0fabaef0a. As correspondências, os textos e os estados de preparação/formalização abaixo são preservados como análise histórica aceita; não se reexecutou reconciliação. [Fonte e mandato KF-06](../governance/sources/kf-final-acceptance-and-app-bootstrap-01.md). Phase 00C bootstrap restrito autorizado; AC-KF-14/15 ainda sem PASS definitivo. Gate CTO_APPLICATION_REPOSITORY_BOOTSTRAP_REVIEW; M01/Phase 01 NOT_AUTHORIZED.
+
 
 ## Leitura vigente
 

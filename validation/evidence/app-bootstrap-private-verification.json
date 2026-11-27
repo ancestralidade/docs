@@ -1,0 +1,24 @@
+{
+    "id":  "ANCESTRALIDADE-APP-PRIVATE-VERIFICATION",
+    "method":  "AUTHENTICATED_READ_USING_EXISTING_GIT_CREDENTIAL_NO_CREDENTIAL_OUTPUT",
+    "repository_full_name":  "ancestralidade/app",
+    "repository_id":  1474775051,
+    "visibility":  "private",
+    "private":  true,
+    "default_branch":  "main",
+    "owner_login":  "ancestralidade",
+    "owner_type":  "Organization",
+    "archived":  false,
+    "permissions":  {
+                        "admin":  true,
+                        "maintain":  true,
+                        "push":  true,
+                        "triage":  true,
+                        "pull":  true
+                    },
+    "size":  0,
+    "no_permission_changes":  true,
+    "no_git_write":  true,
+    "no_credentials_saved":  true,
+    "result":  "PASS"
+}
