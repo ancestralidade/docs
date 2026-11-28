@@ -1,7 +1,7 @@
 ---
 id: ANCESTRALIDADE-DOCS-PUBLICATION-GUIDE
 title: "Publicação da documentação com VitePress"
-version: "1.0"
+version: "1.1"
 status: VERCEL_CLI_PUBLICATION_PREPARED
 authority: USER_REQUESTED_VITEPRESS_SETUP
 maintainer: CTO_DOCUMENTATION
@@ -11,7 +11,7 @@ references:
   - "README.md"
   - "status/CURRENT-STATUS.md"
 supersedes: null
-last_updated: "2026-11-27"
+last_updated: "2026-11-28"
 ---
 
 # Publicação da documentação com VitePress
@@ -38,6 +38,8 @@ npm run docs:inspect -- https://URL-DO-DEPLOY.vercel.app --logs
 As dependências do site estão fixadas pelo manifesto e pelo lockfile. Os comandos de publicação obtêm o CLI oficial Vercel 68.0.0 pelo `npx`, separado das dependências instaladas no build do site. A saída publicável é `.vitepress/dist`; dependências, cache, saída, credenciais e vínculo local `.vercel` não devem ser commitados ou enviados como fontes. A configuração de build/saída está em `vercel.json`; não há integração automática por push configurada nesta entrega.
 
 Para verificar metadados, classificação, navegação, links e artefatos sem servidor local ou build completo, executar `npm run docs:check`.
+
+O comando `npm run docs:test` verifica os links após a renderização Markdown, sem gerar o site ou iniciar servidor, com limite de heap de 192 MiB. Ele também é executado antes do build remoto. A configuração registra `diff` e `ps1` em `VITE_EXTRA_EXTENSIONS` para o build e o roteador do navegador: esses arquivos são downloads, e seus endereços não devem receber o sufixo `.html`. A verificação de links quebrados do VitePress permanece ativa.
 
 Não criar projeto duplicado nem alterar conta/equipe ou produção por inferência. Em um projeto novo, verificar explicitamente o ambiente da primeira publicação antes de executá-la: a Vercel pode tratar o primeiro deployment como Production. Um deployment concluído é verificado pela URL/estado retornados pelo CLI, não somente pelo envio das fontes.
 

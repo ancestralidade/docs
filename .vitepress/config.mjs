@@ -1,6 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { copyLinkedArtifacts, createSidebar } from './content.mjs'
 
+// VitePress 1.x precisa destas extensões tanto no build quanto no roteador
+// do navegador para manter os links de download sem acrescentar .html.
+process.env.VITE_EXTRA_EXTENSIONS = [...new Set([
+  ...(process.env.VITE_EXTRA_EXTENSIONS || '').split(',').filter(Boolean),
+  'diff',
+  'ps1'
+])].join(',')
+
 const base = process.env.DOCS_BASE || '/'
 if (!base.startsWith('/') || !base.endsWith('/')) {
   throw new Error('DOCS_BASE deve começar e terminar com /. Exemplo: /docs/')
